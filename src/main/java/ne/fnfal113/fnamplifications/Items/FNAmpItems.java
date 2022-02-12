@@ -477,7 +477,6 @@ public class FNAmpItems {
             "",
             "&e为你提供基础电力",
             value.tier1Lore(),
-            "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier1Buffer()),
             LoreBuilder.powerPerSecond(value.tier1Power() * 2) + " (日间)",
@@ -860,7 +859,7 @@ public class FNAmpItems {
             "",
             "&f使用金属废料制作",
             "",
-                        "&b合成材料");
+            "&b合成材料");
 
     public static final SlimefunItemStack DIAMOND_PLATING = new SlimefunItemStack(
             "FN_MACHINERY_DIAMOND_PLATING",
