@@ -477,6 +477,7 @@ public class FNAmpItems {
             "",
             "&e为你提供基础电力",
             value.tier1Lore(),
+            "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier1Buffer()),
             LoreBuilder.powerPerSecond(value.tier1Power() * 2) + " (日间)",
