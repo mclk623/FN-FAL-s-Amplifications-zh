@@ -828,40 +828,39 @@ public class FNAmpItems {
     public static final SlimefunItemStack CONDENSER_PART = new SlimefunItemStack(
             "FN_MACHINERY_CONDENSER_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("63be652b2e1b93ed8e93b427de455d446582e6c8d929f8fc96ac488a8f7f53")),
-            "&d冷凝器部分",
-            "&f必不可少的部分 FN机械",
+            "&d冷凝器",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack RECYCLER_PART = new SlimefunItemStack(
             "FN_MACHINERY_RECYCLER_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("4817fc8e16b8e994efb908b71acd1d1352ca5aefa09fecc9339ebea450d83fb8")),
-            "&d回收器部分",
-            "&f必不可少的部分 FN机械",
+            "&d回收器",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack DOWNGRADER_PART = new SlimefunItemStack(
             "FN_MACHINERY_DOWNGRADER_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("a44c5ce2eb643f8671c667e8802c9317ad8cc6af680d4ef671d8c0c63277900a")),
-            "&d降级部分",
-            "&f必不可少的部分 FN机械",
+            "&d降级器",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack FUNNEL_PART = new SlimefunItemStack(
             "FN_MACHINERY_FUNNEL_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("bb2abd66939f4cb7257a88cf52fbc6fdceec1433ec2a6ef16d62e34f6238781")),
-            "&d漏斗部分",
-            "&f必不可少的部分 FN机械",
+            "&d金属漏斗",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack FUNNEL_PART_SCRAP = new SlimefunItemStack(
             "FN_MACHINERY_FUNNEL_PART_SCRAP",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("bb2abd66939f4cb7257a88cf52fbc6fdceec1433ec2a6ef16d62e34f6238781")),
-            "&d漏斗部分",
-            "&f使用金属废料制作");
+            "&d金属漏斗",
+            "",
+            "&f使用金属废料制作",
+            "",
+                        "&b合成材料");
 
     public static final SlimefunItemStack DIAMOND_PLATING = new SlimefunItemStack(
             "FN_MACHINERY_DIAMOND_PLATING",
