@@ -371,7 +371,7 @@ public class FNAmpItems {
             Material.WARPED_NYLIUM,
             "&4FN诡异菌岩生成器",
             "",
-            "&6自动生产诡异菌岩"
+            "&6自动生产诡异菌岩",
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
@@ -757,68 +757,73 @@ public class FNAmpItems {
     public static final SlimefunItemStack MOTOR_SWITCH = new SlimefunItemStack(
             "FN_MACHINERY_MOTOR_SWITCH",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("48748ce96cedbfecaa463966d8fb1ac83c408feea89bd60d76d6024d3befe")),
-            "&d电机开关",
-            "&f必不可少的部分 FN机械",
+            "&d马达开关",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack MOTOR_SWITCH_SCRAP = new SlimefunItemStack(
             "FN_MACHINERY_MOTOR_SWITCH_SCRAP",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("48748ce96cedbfecaa463966d8fb1ac83c408feea89bd60d76d6024d3befe")),
-            "&d电机开关",
-            "&f使用金属废料制作");
+            "&d马达开关",
+            "",
+            "&f使用金属废料制作",
+            "",
+            "&b合成材料");
 
     public static final SlimefunItemStack POWER_COMPONENT = new SlimefunItemStack(
             "FN_MACHINERY_POWER_COMPONENT",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("25ba8456e92f0790222c19c06f61180a195af1008569ed352b93a3c6d9ec7a98")),
-            "&dPower Component",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d电源组件",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack POWER_COMPONENT_SCRAP = new SlimefunItemStack(
             "FN_MACHINERY_POWER_COMPONENT_SCRAP",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("25ba8456e92f0790222c19c06f61180a195af1008569ed352b93a3c6d9ec7a98")),
-            "&dPower Component",
-            "&f使用金属废料制作");
+            "&d电源组件",
+            "",
+            "&f使用金属废料制作",
+            "",
+            "&b合成材料");
 
     public static final SlimefunItemStack GEAR_PART = new SlimefunItemStack(
             "FN_MACHINERY_GEAR_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("faf0c95ceba34c7fe6d33404feb87b4184ccce143978622c1647feaed2b63274")),
-            "&d齿轮零件",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d齿轮",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack GEAR_PART_SCRAP = new SlimefunItemStack(
             "FN_MACHINERY_GEAR_PART_SCRAP",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("faf0c95ceba34c7fe6d33404feb87b4184ccce143978622c1647feaed2b63274")),
-            "&d齿轮零件",
-            "&f使用金属废料制作");
+            "&d齿轮",
+            "",
+            "&f使用金属废料制作",
+            "",
+            "&b合成材料");
 
     public static final SlimefunItemStack THREAD_PART = new SlimefunItemStack(
             "FN_MACHINERY_THREAD_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("87ec65d6649ac1bf7b282575cef299f8601e51d8418d6e546e4fc71b218f7")),
-            "&d螺纹部分",
-            "&f必不可少的部分 FN机械",
+            "&d镶件螺纹",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack THREAD_PART_SCRAP = new SlimefunItemStack(
             "FN_MACHINERY_THREAD_PART_SCRAP",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("87ec65d6649ac1bf7b282575cef299f8601e51d8418d6e546e4fc71b218f7")),
-            "&d螺纹部分",
-            "&f使用金属废料制作");
+            "&d镶件螺纹",
+            "",
+            "&f使用金属废料制作",
+            "",
+            "&b合成材料");
 
     public static final SlimefunItemStack COMPRESSOR_PART = new SlimefunItemStack(
             "FN_MACHINERY_COMPRESSOR_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("e48337f7ede15c3b2f8dc6a63bd92874cdf74ec862b4118c7e35559ce8b4d")),
-            "&d压缩机部分",
-            "&f必不可少的部分 FN机械",
+            "&d压缩零件",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack CONDENSER_PART = new SlimefunItemStack(
             "FN_MACHINERY_CONDENSER_PART",
