@@ -335,276 +335,262 @@ public class FNAmpItems {
     public static final SlimefunItemStack FMG_GENERATOR_MULTIBLOCK = new SlimefunItemStack(
             "FMG_GENERATOR_MULTIBLOCK",
             Material.BEDROCK,
-            "&9生成器多块",
+            "&9FN材料生成器",
             "",
-            "&d构建任何这个插件",
-            "&d像这样的发电机.",
-            "&a他们只会输出到放置在上方的箱子",
-            "&a实际的发电机."
+            "&a在任意FN材料生成器上",
+            "&a放置一个箱子",
+            "&a即可开始生产"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_CLAY_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_CLAY_BROKEN",
             Material.CLAY,
-            "&3FN_FAL的黏土发生器&8(坏掉)",
-            "&8需要修理",
+            "&3FN粘土生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&7需要修复"
     );
 
     public static SlimefunItemStack FMG_GENERATOR_FNFAL_CLAY = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_CLAY",
             Material.CLAY,
-            "&3FN_FAL 的粘土发生器",
-            "&6以一定的速度生成粘土",
+            "&3FN粘土生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产粘土"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_WARPED_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_WARPED_BROKEN",
             Material.WARPED_NYLIUM,
-            "&4FN_FAL 的扭曲尼龙发生器 &8(破损)",
-            "&8需要修理",
+            "&4FN诡异菌岩生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&8需要修理",
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_WARPED1 = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_WARPED1",
             Material.WARPED_NYLIUM,
-            "&4FN_FAL 的扭曲尼龙发生器",
-            "&6以一定的速度生成扭曲的 Nylium",
+            "&4FN诡异菌岩生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产诡异菌岩"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_TERRACOTTA_BROKEN",
             Material.TERRACOTTA,
-            "&4FN_FAL 的陶瓦发生器 &8(损坏)",
-            "&8需要修理",
+            "&4FN陶瓦生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&7需要修复"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_TERRACOTTA = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_TERRACOTTA",
             Material.TERRACOTTA,
-            "&4FN_FAL 的陶瓦发生器",
-            "&6以一定的速度生成陶瓦",
+            "&4FN陶瓦生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产陶瓦"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_BONE_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_BONE_BROKEN",
             Material.BONE_BLOCK,
-            "&fFN_FAL 的骨头生成器 &8(损坏)",
-            "&8需要修理",
+            "&fFN骨头生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&7需要修复"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_BONE = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_BONE",
             Material.BONE_BLOCK,
-            "&fFN_FAL 的骨头生成器",
-            "&6以一定的速度生成骨头",
+            "&fFN骨头生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产骨头"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIAMOND_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_DIAMOND_BROKEN",
             Material.DIAMOND_BLOCK,
-            "&bFN_FAL 的钻石生成器 &8(损坏)",
-            "&8需要修理",
+            "&bFN钻石生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&7需要修复"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_DIAMOND = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_DIAMOND",
             Material.DIAMOND_BLOCK,
-            "&bFN_FAL 的钻石生成器",
-            "&6以一定的速度生成钻石",
+            "&bFN钻石生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产钻石"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_EMERALD_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_EMERALD_BROKEN",
             Material.EMERALD_BLOCK,
-            "&aFN_FAL 的绿宝石生成器 &8(损坏)",
-            "&8需要修理",
+            "&aFN绿宝石生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&7需要修复"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_EMERALD = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_EMERALD",
             Material.EMERALD_BLOCK,
-            "&aFN_FAL 的绿宝石生成器",
-            "&6以一定的速度生成绿宝石",
+            "&aFN绿宝石生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产绿宝石"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIRT_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_DIRT_BROKEN",
             Material.DIRT,
-            "&fFN_FAL 的泥土生成器 &8(损坏)",
-            "&8需要修理",
+            "&fFN泥土生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&7需要修复"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_DIRT = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_DIRT",
             Material.DIRT,
-            "&fFN_FAL 的泥土生成器",
-            "&6以一定的速度产生泥土",
+            "&fFN泥土生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产泥土"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_HONEYCOMB_BROKEN",
             Material.HONEYCOMB_BLOCK,
-            "&6FN_FAL 的蜂巢发生器 &8(损坏)",
-            "&8需要修理",
+            "&6FN蜜脾生成器 &8(破损)",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&7需要修复"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_HONEYCOMB = new SlimefunItemStack(
             "FMG_GENERATOR_FNFAL_HONEYCOMB",
             Material.HONEYCOMB_BLOCK,
-            "&6FN_FAL 的蜂巢发生器",
-            "&6以一定的速度生成蜂巢",
+            "&6FN蜜脾生成器",
             "",
-            "&5&oFN_Fal 的材质生成器"
+            "&6自动生产蜜脾"
     );
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER1 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER1",
             "6d2822cedb3abd579d6dfa2966c1433c3c36cb9732e2c23ec0cc81daedd4403b",
-            "&dFN太阳能发电机 Tier I",
+            "&dFN太阳能发电机组 I",
             "",
-            "&e为需要电力的人准备的太阳能发电机",
+            "&e为你提供基础电力",
             value.tier1Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier1Buffer()),
-            LoreBuilder.powerPerSecond(value.tier1Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier1Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier1PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER2 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER2",
             "35dd37f729fc88133e314a552204c0fa2c0168428b353f957bf15ff24b7707e0",
-            "&dFN太阳能发电机 Tier II",
+            "&dFN太阳能发电机组 II",
             "",
-            "&e为需要电力的人准备的太阳能发电机",
+            "&e为你提供基础电力",
             value.tier2Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier2Buffer()),
-            LoreBuilder.powerPerSecond(value.tier2Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier2Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier2PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER3 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER3",
             "25ddf6af2d6271d8fdfadbdc54faaad5a68d7b8ac20e163883fc38d76336ea6",
-            "&dFN太阳能发电机 Tier III",
+            "&dFN太阳能发电机组 III",
             "",
-            "&e为需要电力的人准备的太阳能发电机",
+            "&e为你提供基础电力",
             value.tier3Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier3Buffer()),
-            LoreBuilder.powerPerSecond(value.tier3Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier3Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier3PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER4 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER4",
             "e7f4c00356d1addb85b45ba5352992d3ecc0c9d11feb9041482f8531fd27d014",
-            "&dFN太阳能发电机 Tier IV",
+            "&dFN太阳能发电机组 IV",
             "",
-            "&e为需要电力的人准备的太阳能发电机",
+            "&e为你提供基础电力",
             value.tier4Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier4Buffer()),
-            LoreBuilder.powerPerSecond(value.tier4Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier4Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier4PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER5 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER5",
             "afdd9e588d2461d2d3d058cb3e0af2b3a3367607aa14d124ed92a833f25fb112",
-            "&dFN太阳能发电机 Tier V",
+            "&dFN太阳能发电机组 V",
             "",
-            "&e为需要电力的人准备的太阳能发电机",
+            "&e为你提供基础电力",
             value.tier5Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier5Buffer()),
-            LoreBuilder.powerPerSecond(value.tier5Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier5Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier5PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER6 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER6",
             "224ad26209fa02f559ef6aa863ee9ba8f3bef0a02f1e9cff8fdc09196402fb6f",
-            "&dFN太阳能发电机 Tier VI",
-            "", "&e为需要电力的人准备的太阳能发电机",
+            "&dFN太阳能发电机组 VI",
+            "",
+            "&e为你提供基础电力",
             value.tier6Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier6Buffer()),
-            LoreBuilder.powerPerSecond(value.tier6Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier6Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier6PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER7 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER7",
             "c4fe135c311f7086edcc5e6dbc4ef4b23f819fddaa42f827dac46e3574de2287",
-            "&dFN太阳能发电机 Tier VII",
-            "", "&e为需要电力的人准备的太阳能发电机",
+            "&dFN太阳能发电机组 VII",
+            "",
+            "&e为你提供基础电力",
             value.tier7Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier7Buffer()),
-            LoreBuilder.powerPerSecond(value.tier7Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier7Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier7PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER8 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER8",
             "240775c3ad75763613f32f04986881bbe4eee4366d0c57f17f7c7514e2d0a77d",
-            "&dFN太阳能发电机 Tier VIII",
-            "", "&e为需要电力的人准备的太阳能发电机",
+            "&dFN太阳能发电机组 VIII",
+            "",
+            "&e为你提供基础电力",
             value.tier8Lore(),
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(value.tier8Buffer()),
-            LoreBuilder.powerPerSecond(value.tier8Power() * 2) + " (Day)",
+            LoreBuilder.powerPerSecond(value.tier8Power() * 2) + " (日间)",
             LoreBuilder.powerPerSecond(value.tier8PowerNight() * 2) + " (夜晚)");
 
     public static final SlimefunItemStack FN_FAL_TRANSFORMER_1 = new SlimefunItemStack(
             "FN_FAL_TRANSFORMER_1",
             Material.BLUE_GLAZED_TERRACOTTA,
-            "&dFN 电力变压器 I",
-            "", "&e可以变换各种物品的机械",
-            "&e其他形式",
+            "&dFN转换器 I",
             "",
-            "&d&oFN机械",
+            "&e使用一些材料",
+            "&e来快速升级机器/物品",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.speed(1),
             LoreBuilder.powerPerSecond(256));
 
     public static final SlimefunItemStack FN_FAL_TRANSFORMER_2 = new SlimefunItemStack(
             "FN_FAL_TRANSFORMER_2",
-            Material.BLUE_GLAZED_TERRACOTTA, "&dFN 电力变压器 II",
-            "", "&e可以变换各种物品的机械",
-            "&e其他形式",
+            Material.BLUE_GLAZED_TERRACOTTA, "&dFN转换器 II",
+            "",
+            "&e使用一些材料",
+            "&e来快速升级机器/物品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -613,9 +599,10 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_TRANSFORMER_3 = new SlimefunItemStack(
             "FN_FAL_TRANSFORMER_3",
-            Material.BLUE_GLAZED_TERRACOTTA, "&dFN 电力变压器 III",
-            "", "&e可以变换各种物品的机械",
-            "&e其他形式",
+            Material.BLUE_GLAZED_TERRACOTTA, "&dFN转换器 III",
+            "",
+            "&e使用一些材料",
+            "&e来快速升级机器/物品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -624,9 +611,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_COMPRESSOR_1 = new SlimefunItemStack(
             "FN_FAL_COMPRESSOR_1",
-            Material.GREEN_GLAZED_TERRACOTTA, "&dFN电动压缩机 I",
-            "", "&e一种可以将物品压缩到",
-            "&e形成一个生物项目",
+            Material.GREEN_GLAZED_TERRACOTTA, "&dFN液压机 I",
+            "",
+            "&e它可以自动压缩一些特定物品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -635,9 +622,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_COMPRESSOR_2 = new SlimefunItemStack(
             "FN_FAL_COMPRESSOR_2",
-            Material.GREEN_GLAZED_TERRACOTTA, "&dFN电动压缩机 II",
-            "", "&e一种可以将物品压缩到",
-            "&e形成一个生物项目",
+            Material.GREEN_GLAZED_TERRACOTTA, "&dFN液压机 II",
+            "",
+            "&e它可以自动压缩一些特定物品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -646,9 +633,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_COMPRESSOR_3 = new SlimefunItemStack(
             "FN_FAL_COMPRESSOR_3",
-            Material.GREEN_GLAZED_TERRACOTTA, "&dFN电动压缩机 III",
-            "", "&e一种可以将物品压缩到",
-            "&e形成一个生物项目",
+            Material.GREEN_GLAZED_TERRACOTTA, "&dFN液压机 III",
+            "",
+            "&e它可以自动压缩一些特定物品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -657,9 +644,10 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_CONDENSER_1 = new SlimefunItemStack(
             "FN_FAL_CONDENSER_1",
-            Material.YELLOW_STAINED_GLASS, "&dFN电铸锭冷凝器 I",
-            "", "&e一种可以将两个锭或物品凝结成",
-            "&e一个生物锭",
+            Material.YELLOW_STAINED_GLASS, "&dFN电锭冷凝机 I",
+            "",
+            "&e它可以将两种材料熔融混合",
+            "&e并冷凝成新的材料",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -668,9 +656,10 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_CONDENSER_2 = new SlimefunItemStack(
             "FN_FAL_CONDENSER_2",
-            Material.YELLOW_STAINED_GLASS, "&dFN电铸锭冷凝器 II",
-            "", "&e一种可以将两个锭或物品凝结成",
-            "&e一个生物锭",
+            Material.YELLOW_STAINED_GLASS, "&dFN电锭冷凝机 II",
+            "",
+            "&e它可以将两种材料熔融混合",
+            "&e并冷凝成新的材料",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -679,9 +668,10 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_CONDENSER_3 = new SlimefunItemStack(
             "FN_FAL_CONDENSER_3",
-            Material.YELLOW_STAINED_GLASS, "&dFN电铸锭冷凝器 III",
-            "", "&e一种可以将两个锭或物品凝结成",
-            "&e一个生物锭",
+            Material.YELLOW_STAINED_GLASS, "&dFN电锭冷凝机 III",
+            "",
+            "&e它可以将两种材料熔融混合",
+            "&e并冷凝成新的材料",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -690,9 +680,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_RECYCLER_1 = new SlimefunItemStack(
             "FN_FAL_RECYCLER_1",
-            Material.PURPLE_STAINED_GLASS, "&dFN 电动回收机 I",
-            "", "&e一种可以回收物品的机器",
-            "&e以较低的形式",
+            Material.PURPLE_STAINED_GLASS, "&dFN电动回收机 I",
+            "",
+            "&e它可以将物品回收成低一级的产品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -701,9 +691,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_RECYCLER_2 = new SlimefunItemStack(
             "FN_FAL_RECYCLER_2",
-            Material.PURPLE_STAINED_GLASS, "&dFN 电动回收机 II",
-            "", "&e一种可以回收物品的机器",
-            "&e以较低的形式",
+            Material.PURPLE_STAINED_GLASS, "&dFN电动回收机 II",
+            "",
+                        "&e它可以将物品回收成低一级的产品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
