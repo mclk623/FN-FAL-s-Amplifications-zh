@@ -869,96 +869,85 @@ public class FNAmpItems {
                         "",
             "&b合成材&d金刚石镀膜",
             "",
-        "&b合成材");
+            "&b合成材");
 
     public static final SlimefunItemStack ALUMINUM_PLATING = new SlimefunItemStack(
             "FN_MACHINERY_ALUMINUM_PLATING",
             Material.WHITE_CARPET,
-            "&d镀铝",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d铝镀膜",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack GOLD_PLATING = new SlimefunItemStack(
             "FN_MACHINERY_GOLD_PLATING",
             Material.YELLOW_CARPET,
-            "&d镀金",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d黄金镀膜",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack BRASS_PLATING = new SlimefunItemStack(
             "FN_MACHINERY_BRASS_PLATING",
             Material.BROWN_CARPET,
-            "&dBrass Plating",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d黄铜镀膜",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack REINFORCED_CASING = new SlimefunItemStack(
             "FN_MACHINERY_REINFORCED_CASING",
             Material.LIGHT_GRAY_CARPET,
-            "&d加强套管",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d强化合金镀膜",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack BASIC_MACHINE_BLOCK = new SlimefunItemStack(
             "FN_MACHINERY_BASIC_MACHINE_BLOCK",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("883dd0f90df05fe6a09aaccaf54bc043e455e1c865bda1fd272e3f47fb9bb910")),
-            "&d基本机器块",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d基础机器核心",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack HIGHTECH_MACHINE_BLOCK = new SlimefunItemStack(
             "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("5a7b3b16e5d0c4cfd21c4eb9133e969aad7cc7303ccdf317512e26a4879b51")),
-            "&d高科技机器块",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d高科技机器核心",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack FN_ASSEMBLY_STATION = new SlimefunItemStack(
             "FN_ASSEMBLY_STATION",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("583150f055935058634576185977ffba49ff4679faa03ad0008feaa0161865b3")),
-            "&dFN组装站"
+            "&dFN组装台",
+            "&f在这里制作FN物品"
     );
 
     public static final SlimefunItemStack FN_SCRAP_RECYCLER = new SlimefunItemStack(
             "FN_SCRAP_RECYCLER",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("656634b556caf5382de65038a10e4d79c7c18695048599df74f9c67c1e1e8736")),
-            "&dFN 废料回收商"
+            "&dFN废料回收器",
+            "&f使用废料来制作部分零件",
+            "&f可用配方在\"金属废料配方\"页面查看"
     );
 
     public static final SlimefunItemStack FN_METAL_SCRAPS = new SlimefunItemStack(
             "FN_METAL_SCRAPS",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("3ff0bee591e5f0000ef16f966b949adcb5c2f409a14ccfc5b91222fd925045db")),
             "&d金属废料",
-            "&f降级机器的剩余物"
-            , "&f可用于制作 FN 机械物品",
             "",
-            "&d&oFN机械 Items"
+            "&f电机降级器的副产物",
+            "&f用于合成机器零件"
     );
 
     public static final SlimefunItemStack FN_BLOCK_BREAKER_1 = new SlimefunItemStack(
             "FN_BLOCK_BREAKER_I",
             Material.DISPENSER,
-            "&4电动断路器 I",
+            "&4电动方块挖掘机 I",
             "",
-            "&6将方块放在前面",
-            "&6分配器破裂",
-            "&d(Vanilla)",
+            "&6将方块放在机口前",
+            "&6便可自动破坏该方块",
+            "&d(原版)",
             "",
-            "&eRate: " + value.blockBreaker1Ticks() + " ticks",
+            "&e挖掘间隔: " + value.blockBreaker1Ticks() + " t",
             "",
-            "&d&oFN机械",
             LoreBuilder.machine(MachineTier.AVERAGE, MachineType.MACHINE),
             LoreBuilder.powerBuffer(512),
             LoreBuilderDynamic.powerPerTick(32)
@@ -967,15 +956,14 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_BLOCK_BREAKER_2 = new SlimefunItemStack(
             "FN_BLOCK_BREAKER_II",
             Material.DISPENSER,
-            "&4电动断路器 II",
+            "&4电动方块挖掘机 II",
             "",
-            "&6将方块放在前面",
-            "&6分配器破裂",
-            "&d(Vanilla)",
+            "&6将方块放在机口前",
+            "&6便可自动破坏该方块",
+            "&d(原版)",
             "",
-            "&e速率: " + value.blockBreaker2Ticks() + " 滴答声",
+            "&e挖掘间隔: " + value.blockBreaker2Ticks() + " t",
             "",
-            "&d&oFN机械",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             LoreBuilder.powerBuffer(1024),
             LoreBuilderDynamic.powerPerTick(64)
@@ -984,15 +972,14 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_BLOCK_BREAKER_3 = new SlimefunItemStack(
             "FN_BLOCK_BREAKER_III",
             Material.DISPENSER,
-            "&4电动断路器 III",
+            "&4电动方块挖掘机 III",
             "",
-            "&6将方块放在前面",
-            "&6分配器破裂",
-            "&d(Vanilla)",
+            "&6将方块放在机口前",
+            "&6便可自动破坏该方块",
+            "&d(原版)",
             "",
-            "&e速率: " + value.blockBreaker3Ticks() + " 滴答声",
+            "&e挖掘间隔: " + value.blockBreaker3Ticks() + " t",
             "",
-            "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.powerBuffer(2048),
             LoreBuilderDynamic.powerPerTick(128)
@@ -1001,85 +988,85 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STICK = new SlimefunItemStack(
             "FN_MYSTERY_STICK_1",
             Material.STICK,
-            "&c神秘棒",
-            "&f我想知道这根棍子有什么作用"
+            "&c神秘棍",
+            "&f我想知道这棍子有什么用"
     );
 
 
     public static final SlimefunItemStack FN_STICK_2 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_2",
             Material.STICK,
-            "&c神秘棒 II",
-            "&f不管它是什么的另一根棍子"
+            "&c神秘棍 II",
+            "&f另一根不知如何使用的棍子"
     );
 
     public static final SlimefunItemStack FN_STICK_3 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_3",
             Material.STICK,
-            "&c神秘棒 III",
-            "&f拿着这根棍子感觉很协调"
+            "&c神秘棍 III",
+            "&f我感受到了力量"
     );
 
     public static final SlimefunItemStack FN_STICK_4 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_4",
             Material.STICK,
-            "&c神秘棒 IV",
-            "&f我以前用过这个还是没用过"
+            "&c神秘棍 IV",
+            "&我是否真该使用它?"
     );
 
     public static final SlimefunItemStack FN_STICK_5 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_5",
             Material.STICK,
-            "&c神秘棒 V",
-            "&f我知道你厌倦了这种棍子"
+            "&c神秘棍 V",
+            "&f我知道你拿这跟棍子很累"
     );
 
     public static final SlimefunItemStack FN_STICK_6 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_6",
             Material.STICK,
-            "&c神秘棒 VI",
-            "&f愿力量和准确性与你同在"
+            "&c神秘棍 VI",
+            "&f愿力量与你同在"
     );
 
     public static final SlimefunItemStack FN_STICK_7 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_7",
             Material.STICK,
-            "&c神秘棒 VII",
-            "&f这根棍子上的光环令人着迷"
+            "&c神秘棍 VII",
+            "&f它的光环令人着迷"
     );
 
     public static final SlimefunItemStack FN_STICK_8 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_8",
             Material.STICK,
-            "&c神秘棒 VIII",
-            "&f这棍子有点重"
+            "&c神秘棍 VIII",
+            "&f这棍子...太重了"
     );
 
     public static final SlimefunItemStack FN_STICK_9 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_9",
             Material.STICK,
-            "&c神秘棒 IX",
-            "&f使用这个时你需要更多的法力"
+            "&c神秘棍 IX",
+            "&f你需要更多法力"
     );
 
     public static final SlimefunItemStack FN_STICK_10 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_10",
             Material.STICK,
-            "&c神秘棒 X",
-            "&f致命或令人毛骨悚然的棍子"
+            "&c神秘棍 X",
+            "&f它致命并令人毛骨悚然"
     );
 
     public static final SlimefunItemStack FN_STICK_11 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_11",
             Material.STICK,
-            "&c神秘棒 XI",
-            "&f北欧之杖"
+            "&c神秘棍 XI",
+            "&定海神针"
     );
 
     public static final SlimefunItemStack FN_STICK_ALTAR = new SlimefunItemStack(
             "FN_STICK_ALTAR",
             Material.ENCHANTING_TABLE,
-            "&dFN 神秘棒祭坛"
+            "&dFN神秘棍祭坛"
     );
 
     public static final SlimefunItemStack FN_GEM_ALTAR = new SlimefunItemStack(
@@ -1091,16 +1078,16 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEAR_HELMET = new SlimefunItemStack(
             "FN_GEAR_HELMET",
             Material.NETHERITE_HELMET,
-            "&cFN的战痕头盔",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "斗牛士头盔",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&f以FN的名义戴上这个头盔，",
-            "&f每场战斗都应该通过奖励属性和",
-            "&f附魔使其变得更加强大",
+            "&f传说中的斗牛士曾使用过这个帽子",
+            "&f据神话记载",
+            "&f戴上它的人会被赐予无穷之力",
             "",
-            "&c◈◈◈◈◈◈| &d&l统计数据 &6|◈◈◈◈◈◈",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
             ChatColor.YELLOW + "头盔等级: 0",
-            ChatColor.YELLOW + "进步:",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1108,16 +1095,16 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEAR_CHESTPLATE = new SlimefunItemStack(
             "FN_GEAR_CHESTPLATE",
             Material.NETHERITE_CHESTPLATE,
-            "&cFN的战痕胸甲",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "&c罗马胸甲",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&f过去的盔甲复活了",
-            "&f再次。它变得更强大",
-            "&f战争与冲突的时代",
+            "&f罗马帝国的勇士所穿的盔甲",
+            "&f在每场战斗之中",
+            "&f它都会不断强化自己",
             "",
-            "&c◈◈◈◈◈◈| &d&l统计数据 &6|◈◈◈◈◈◈",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
             ChatColor.YELLOW + "胸甲等级: 0",
-            ChatColor.YELLOW + "进步:",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1125,18 +1112,15 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEAR_LEGGINGS = new SlimefunItemStack(
             "FN_GEAR_LEGGINGS",
             Material.NETHERITE_LEGGINGS,
-            "&cFN's Chausses of Eminence",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "&c亚历山大护腿",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&fFN在战争期间穿着的光荣紧身裤",
-            "&f在每次战胜敌人时都获得荣耀",
-            "&b上面机翻下面原文",
-            "Glorious leggings worn by ",
-            "FN during war and was",
-            "glorified on every",
-            "&c◈◈◈◈◈◈| &d&l统计数据 &6|◈◈◈◈◈◈",
+            "&f亚历山大远征时所着的护腿",
+            "&f据说穿上它的人是不可战胜的",
+            "&f它将会给予你无限大的勇气",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
             ChatColor.YELLOW + "Leggings等级: 0",
-            ChatColor.YELLOW + "进步:",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1144,16 +1128,16 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEAR_BOOTS = new SlimefunItemStack(
             "FN_GEAR_BOOTS",
             Material.NETHERITE_BOOTS,
-            "&cFN远征战靴的靴子",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "&c远征战靴",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&fFN军队的士兵只想",
-            "&f拥有这双历史悠久的靴子，",
-            "&f但它被隐藏在锡安人的手中",
+            "&f远征者--残暴、血腥",
+            "&f它的脚下是被征服者的血液",
+            "&f在此刻，所有良知都会萧然褪去",
             "",
-            "&c◈◈◈◈◈◈| &d&l统计数据 &6|◈◈◈◈◈◈",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
             ChatColor.YELLOW + "Boots Level: 0",
-            ChatColor.YELLOW + "进步:",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1163,8 +1147,7 @@ public class FNAmpItems {
             Material.BLAZE_ROD,
             "&c传送法杖",
             "",
-            "&d通过右键单击",
-            "&d传送到目标块",
+            "&e右键点击&7传送到看向的方块上",
             "",
             "&e左键使用: " + value.staffOfTeleportation()
     );
@@ -1172,7 +1155,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_INVI = new SlimefunItemStack(
             "FN_STAFF_INVI",
             Material.BLAZE_ROD,
-            "&c隐形法杖",
+            "&c隐身法杖",
             "",
             "&d6秒隐形，即使你的",
             "&d盔甲和名字都被隐藏了",
@@ -1183,7 +1166,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_LOCOMOTION = new SlimefunItemStack(
             "FN_STAFF_LOCOMOTION",
             Material.BLAZE_ROD,
-            "&c运动的工作人员",
+            "&c机动法杖",
             "",
             "&d通过右键单击选择和左键",
             "单击移动实体到目标位置",
@@ -1194,7 +1177,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_HELLFIRE = new SlimefunItemStack(
             "FN_STAFF_HELLFIRE",
             Material.BLAZE_ROD,
-            "&cStaff of Hellfire",
+            "&c地狱火法杖",
             "",
             "&d如果在半径内，",
             "&d8秒内实体会着火",
@@ -1206,7 +1189,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_DEEPFREEZE = new SlimefunItemStack(
             "FN_STAFF_DEEPFREEZE",
             Material.BLAZE_ROD,
-            "&c冰冻法杖",
+            "&c北极冰法杖",
             "",
             "&d如果在半径内持续8秒，",
             "&d则在实体因冰冷而减速",
@@ -1222,7 +1205,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_CONFUSION = new SlimefunItemStack(
             "FN_STAFF_CONFUSION",
             Material.BLAZE_ROD,
-            "&c混乱法杖:Staff of Confusion",
+            "&c混乱法杖",
             "",
             "&d如果在半径内8秒内",
             "&d实体会迷惑方向",
@@ -1246,7 +1229,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_STALLION = new SlimefunItemStack(
             "FN_STAFF_STALLION",
             Material.BLAZE_ROD,
-            "&cStaff of Stallion:种马之杖",
+            "&c骷髅法杖",
             "",
             "&d生成一匹骷髅马,可以骑乘直到乘客下马",
             "",
@@ -1256,7 +1239,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_FORCE = new SlimefunItemStack(
             "FN_STAFF_FORCE",
             Material.BLAZE_ROD,
-            "&c原力法杖",
+            "&c力量法杖",
             "",
             "&d右键单击产生一个效果云,",
             "&d提供向前推动的力或shift-right-click",
@@ -1268,7 +1251,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_HEALING = new SlimefunItemStack(
             "FN_STAFF_HEALING",
             Material.BLAZE_ROD,
-            "&c治疗法杖",
+            "&c治愈法杖",
             "",
             "&d右键单击以产生一团效果云",
             "&d只有在范围内8秒内才会治疗施法者",
@@ -1290,7 +1273,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_EXPLOSION = new SlimefunItemStack(
             "FN_STAFF_EXPLOSION",
             Material.BLAZE_ROD,
-            "&c爆炸法杖",
+            "&c爆裂法杖",
             "",
             "&dRight click a target block to",
             "&dyield an explosion causing damage",
@@ -1301,7 +1284,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_MUSTER = new SlimefunItemStack(
             "FN_STAFF_MUSTER",
             Material.BLAZE_ROD,
-            "&c集结法杖",
+            "&c聚集法杖",
             "",
             "&d右键单击目标方块以传送",
             "&d附近50方块半径内地面上的实体",
@@ -1312,10 +1295,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_AWARENESS = new SlimefunItemStack(
             "FN_STAFF_AWARENESS",
             Material.BLAZE_ROD,
-            "&cStaff of Awareness:意识的工作人员",
+            "&c探测法杖",
             "",
-            "&d右键单击以接收有关50",
-            "&d块半径附近最近玩家的信息",
+            "&e右键点击&7获取",
+            "&d50格内所有玩家的信息",
             "",
             "&e左键使用: " + value.staffOfAwareness()
     );
@@ -1323,10 +1306,9 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_MINERALS = new SlimefunItemStack(
             "FN_STAFF_MINERALS",
             Material.BLAZE_ROD,
-            "&c矿产法杖",
+            "&c矿工法杖",
             "",
-            "&d右键单击以接收使用",
-            "&d法杖时等待的神话信息",
+            "&d获取当前区块所有矿物的信息",
             "",
             "&e左键使用: " + value.staffOfMinerals()
     );
@@ -1334,10 +1316,11 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_FANGS = new SlimefunItemStack(
             "FN_STAFF_FANGS",
             Material.BLAZE_ROD,
-            "&c獠牙法杖",
+            "&c尖牙法杖",
             "",
-            "&d右键单击目标方块以生成",
-            "&d对实体造成伤害的唤魔者尖牙",
+            "&e右键点击&7目标方向",
+            "&7向该方向释放尖牙",
+            "&7并造成伤害",
             "",
             "&e左键使用: " + value.staffOfFangs()
     );
@@ -1345,7 +1328,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_SKULLS = new SlimefunItemStack(
             "FN_STAFF_SKULLS",
             Material.BLAZE_ROD,
-            "&c骷髅法杖",
+            "&c凋灵法杖",
             "",
             "&d右键单击以发射",
             "&d凋灵骷髅射弹",
@@ -1378,56 +1361,69 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_QUIVER = new SlimefunItemStack(
             "FN_QUIVER",
             Material.LEATHER,
-            "&bBow Quiver (Normal)",
+            "&b箭袋 (箭)",
             "",
-            "&d存放在箭筒内",
-            "&d通过右键单击箭头,&d或shift单击颤动以退出",
+            "&7将箭袋放在副手:",
+            "&e右键点击&7储存",
+            "&eShift+右键点击&7取出",
             "",
-            "&e左/右键单击更改状态",
-            "&eSize: 192 Arrows",
-            "&eArrows: " + ChatColor.WHITE + "0"
+            "&7将箭袋放在主手:",
+            "&e右键点击&7切换为打开状态",
+            "&e左键点击&7切换为关闭状态",
+            "",
+            "&e容量: 192 支",
+            "&e箭数: " + ChatColor.WHITE + "0"
     );
 
     public static final SlimefunItemStack FN_SPECTRAL_QUIVER = new SlimefunItemStack(
             "FN_SPECTRAL_QUIVER",
             Material.LEATHER,
-            "&aBow Quiver (Spectral)",
+            "&a箭袋 (光灵箭)",
             "",
-            "&d存放在箭筒内 by",
-            "&d右键单击光谱箭头或",
-            "&d移动单击颤动以退出",
+            "&7将箭袋放在副手:",
+            "&e右键点击&7储存",
+            "&eShift+右键点击&7取出",
             "",
-            "&e左/右键单击更改状态",
-            "&eSize: 192 Spectral Arrows",
-            "&eArrows: " + ChatColor.WHITE + "0"
+            "&7将箭袋放在主手:",
+            "&e右键点击&7切换为打开状态",
+            "&e左键点击&7切换为关闭状态",
+            "",
+            "&e容量: 192 支",
+            "&e箭数: " + ChatColor.WHITE + "0"
     );
 
     public static final SlimefunItemStack FN_UPGRADED_QUIVER = new SlimefunItemStack(
             "FN_UPGRADED_QUIVER",
             Material.LEATHER,
-            "&6升级弓箭袋 (普通的)",
+            "&6强化箭袋 (箭)",
             "",
-            "&d存放在箭筒内",
-            "&d通过右键单击箭头或",
-            "&dshift 点击退出",
+            "&7将箭袋放在副手:",
+            "&e右键点击&7储存",
+            "&eShift+右键点击&7取出",
             "",
-            "&e左/右键单击更改状态",
-            "&e尺寸：288箭",
-            "&eArrows: " + ChatColor.WHITE + "0"
+            "&7将箭袋放在主手:",
+            "&e右键点击&7切换为打开状态",
+            "&e左键点击&7切换为关闭状态",
+            "",
+            "&e容量: 288 支",
+            "&e箭数: " + ChatColor.WHITE + "0"
     );
 
     public static final SlimefunItemStack FN_UPGRADED_SPECTRAL_QUIVER = new SlimefunItemStack(
             "FN_UPGRADED_SPECTRAL_QUIVER",
             Material.LEATHER,
-            "&c升级弓箭袋 (Spectral)",
+            "&c强化箭袋 (光灵箭)",
             "",
-            "&d存放在箭筒内",
-            "&d通过右键单击光谱箭头或",
-            "&dshift 点击退出",
+            "&7将箭袋放在副手:",
+            "&e右键点击&7储存",
+            "&eShift+右键点击&7取出",
             "",
-            "&e左/右键单击更改状态",
-            "&e尺寸：288箭",
-            "&eArrows: " + ChatColor.WHITE + "0"
+            "&7将箭袋放在主手:",
+            "&e右键点击&7切换为打开状态",
+            "&e左键点击&7切换为关闭状态",
+            "",
+            "&e容量: 288 支",
+            "&e箭数: " + ChatColor.WHITE + "0"
     );
 
     public static final SlimefunItemStack FN_HOE_5X5 = new SlimefunItemStack(
