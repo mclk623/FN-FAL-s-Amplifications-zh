@@ -69,7 +69,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/FN-FAL113/FN-FAL-s-Amplifications/issues";
+        return "https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/issues";
     }
 
     private static void setInstance(FNAmplifications ins) {
