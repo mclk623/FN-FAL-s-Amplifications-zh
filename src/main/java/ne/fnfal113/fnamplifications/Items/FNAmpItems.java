@@ -56,100 +56,102 @@ public class FNAmpItems {
             new NamespacedKey(FNAmplifications.getInstance(), "FN_ITEMS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
-            "&e&lFN_FAL113's &b&l汉化作者西瓜"));
+            "&e&lFN&c&l科技 &b&l汉化作者西瓜"));
 
     public static final SubItemGroup POWER_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "POWER_GENERATORS"),
             FN_ITEMS,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "ecb316f7a227a8c59d58ae0dd6768fe4fa546d55b9cfdd56cfe40b6586d81c24")),
-            "&eFN_FAL的功率扩展"));
+            "&eFN发电机"));
 
     public static final SubItemGroup MATERIAL_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MATERIAL_GENERATORS"),
             FN_ITEMS,
             new CustomItemStack(Material.EMERALD_BLOCK,
-            "&eFN_FAL 的材质生成器"));
+            "&eFN材料生成器"));
 
     public static final SubItemGroup SOLAR_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "SOLAR_GENERATORS"),
             FN_ITEMS,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "e7f4c00356d1addb85b45ba5352992d3ecc0c9d11feb9041482f8531fd27d014")),
-            "&eFN_FAL 的太阳能发电机"));
+            "&eFN太阳能发电机"));
 
     public static final SubItemGroup MACHINES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY"),
             FN_ITEMS,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "4a7d54ca45a398c364cebbffb5390ce5e0345e0c7bc5e863acabf57d1342c4bd")),
-            "&eFN_FAL的机械"));
+            "&eFN机器"));
 
     public static final SubItemGroup ITEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY_ITEMS"),
             FN_ITEMS,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8245a1c3e8d7c3d59d05e3634b04af4cbf8d11b70e2a40e2e6364386db49e737")),
-            "&eFN_FAL 的机械物品"));
+            "&eFN零件"));
 
     public static final SubItemGroup MULTIBLOCK = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MULTIBLOCK"),
             FN_ITEMS,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "550c3306bb11522fec380ea248eb6a5b180f4a7ab8843d635d14d4a778d6351")),
-            "&eFN_FAL 的多块"));
+            "&eFN多方块结构"));
 
     public static final SubItemGroup METAL_SCRAP_RECIPES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "METAL_SCRAP_RECIPES"),
             FN_ITEMS,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3ff0bee591e5f0000ef16f966b949adcb5c2f409a14ccfc5b91222fd925045db")),
-            "&e金属废料食谱"));
+            "&e金属废料配方"));
 
     public static final SubItemGroup MYSTERY_STICKS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MYSTERY_STICKS"),
             FN_ITEMS,
             new CustomItemStack(STICK,
-                    "&eFN_FAL 的神秘 PVP/PVE 棒"));
+                    "&eFN神秘PVP/PVE棍"));
 
     public static final SubItemGroup FN_GEARS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEARS"),
             FN_ITEMS,
             new CustomItemStack(ARMOR,
-                    "&eFN_FAL 的摩擦齿轮"));
+                    "&eFN盔甲"));
 
     public static final SubItemGroup FN_STAFFS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_STAFFS"),
             FN_ITEMS,
             new CustomItemStack(Material.BLAZE_ROD,
-                    "&eFN_FAL 的法杖"));
+                    "&eFN法杖"));
 
     public static final SubItemGroup FN_MISC = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_MISC"),
             FN_ITEMS,
             new CustomItemStack(Material.CHEST,
-                    "&eFN_FAL'S Miscellaneous"));
+                    "&eFN杂项"));
 
     public static final SubItemGroup FN_GEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),
             FN_ITEMS,
             new CustomItemStack(Material.EMERALD,
-                    "&eFN_FAL'S Gems"));
+                    "&eFN宝石"));
 
     public static final ItemGroup FN_AMPLIFICATIONS = new ItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_AMPLIFICATIONS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
-            "&e&lFN_FAL113's &b&lAmpli&c&lfications"));
+            "&e&lFN&c&l科技"));
 
     public static final SlimefunItemStack FN_XPANSION_POWER_R1 = new SlimefunItemStack(
             "FN_POWER_XPANSION_POWER_R1",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "33165e254de7863459343543f933481f0dcf8d4730a23433b9a7ff0d3ff79c5a")),
-            "&d&lFN 功率扩展 R1",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R1",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_I_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_I_DAYRATE) + " (Day Rate)",
@@ -160,10 +162,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R2",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "5b78e55e3ea6b3682bd7cead43eb1c91b2527a81aa2894f095801f6ee47a3")),
-            "&d&lFN 功率扩展 R2",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R2",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_II_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_II_DAYRATE) + " (Day Rate)",
@@ -174,10 +178,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R3",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "45ff60d863d1cf76742f275e2ac5749dd0a978a231d3c51e816132c75aef608a")),
-            "&d&lFN 功率扩展 R3",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R3",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_III_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_III_DAYRATE) + " (Day Rate)",
@@ -188,10 +194,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R4",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "efc05af0e88c6fb10b4c8c8b81b7aa658e64649724cb73bb9bb0f25f28bd")),
-            "&d&lFN 功率扩展 R4",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R4",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_IV_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_IV_DAYRATE) + " (Day Rate)",
@@ -202,10 +210,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R5",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8f14f3179b86f69b3efa7472dacaeb2339f6290d2d817362793348abd98e021")),
-            "&d&lFN 功率扩展 R5",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R5",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_V_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_V_DAYRATE) + " (Day Rate)",
@@ -216,8 +226,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R6",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "1d5a09884cb83ef5c908dddd385f246fefdee221712c010177f54376da238fdd")),
-            "&d&lFN 功率扩展 R6",
-            "&9这在晚上有效!",
+            "&d&lFN发电机 R6",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_VI_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_VI_DAYRATE) + " (Day Rate)",
@@ -228,10 +242,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R7",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "f7e541dfb4ba1f7dc28b548e347abbdc987ebe0e61c49fa87111ef1b2dcb2218")),
-            "&d&lFN 功率扩展 R7",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R7",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_VII_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_VII_DAYRATE) + " (Day Rate)",
@@ -242,10 +258,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R8",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "de31efefdd9551af8a4349d3d21e5ec8f37e53c801eb25b14279d6a89fe0c01e")),
-            "&d&lFN 功率扩展 R8",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R8",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_VIII_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_VIII_DAYRATE) + " (Day Rate)",
@@ -256,10 +274,11 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R9",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "6db32b15d7f32704ed626fa52d06fb2b4071d336fdbfe61e6e41c669d6e37f47")),
-            "&d&lFN 功率扩展 R9",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_IX_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_IX_DAYRATE) + " (Day Rate)",
@@ -270,10 +289,11 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R10",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "56a7d2195ff7674bbb12e2f7578a2a63c54a980e64744450ac6656e05a790499")),
-            "&d&lFN 功率扩展 R10",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_X_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_X_DAYRATE) + " (Day Rate)",
@@ -284,10 +304,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R11",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "7f9f356f5fe7d1bc92cddfaeba3ee773ac9df1cc4d1c2f8fe5f47013032c551d")),
-            "&d&lFN 功率扩展 R11",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R11",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_XI_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_XI_DAYRATE) + " (Day Rate)",
@@ -298,10 +320,12 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R12",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3464874df452c1d717eddd0fb3b848202ad15571245af6fade2ecf514f3c80bb")),
-            "&d&lFN 功率扩展 R12",
-            "&9这在晚上有效!",
-            "&9放置并右键单击",
-            "&9电源信息块",
+            "&d&lFN发电机 R12",
+            "",
+            "&9可在夜间工作",
+            "",
+            "&7放置并右键点击该方块",
+            "&7以获取功率信息",
             "",
             LoreBuilderDynamic.powerBuffer(PowahGenerator.FN_POWERGEN_RANK_XII_STORAGE),
             LoreBuilderDynamic.powerPerTick(PowahGenerator.FN_POWERGEN_RANK_XII_DAYRATE) + " (Day Rate)",
