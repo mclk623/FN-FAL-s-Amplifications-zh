@@ -865,11 +865,11 @@ public class FNAmpItems {
     public static final SlimefunItemStack DIAMOND_PLATING = new SlimefunItemStack(
             "FN_MACHINERY_DIAMOND_PLATING",
             Material.LIGHT_BLUE_CARPET,
-            "&d金刚石电镀",
-            "&f必不可少的部分 FN机械"
-            , "&f和 Power Xpansion",
+            "&d金刚石镀膜",
+                        "",
+            "&b合成材&d金刚石镀膜",
             "",
-            "&d&oFN机械 Items");
+        "&b合成材");
 
     public static final SlimefunItemStack ALUMINUM_PLATING = new SlimefunItemStack(
             "FN_MACHINERY_ALUMINUM_PLATING",
