@@ -693,7 +693,7 @@ public class FNAmpItems {
             "FN_FAL_RECYCLER_2",
             Material.PURPLE_STAINED_GLASS, "&dFN电动回收机 II",
             "",
-                        "&e它可以将物品回收成低一级的产品",
+            "&e它可以将物品回收成低一级的产品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -702,9 +702,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_RECYCLER_3 = new SlimefunItemStack(
             "FN_FAL_RECYCLER_3",
-            Material.PURPLE_STAINED_GLASS, "&d电动回收机 III",
-            "", "&e一种可以回收物品的机器",
-            "&e以较低的形式",
+            Material.PURPLE_STAINED_GLASS, "&dFN电动回收机 III",
+            "",
+            "&e它可以将物品回收成低一级的产品",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -713,9 +713,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_FAL_DOWNGRADER = new SlimefunItemStack(
             "FN_FAL_DOWNGRADER",
-            Material.WHITE_GLAZED_TERRACOTTA, "&d电机降级电机降级",
-            "", "&e可以降级SF机器的机器",
-            "&e用于错误制作的层级机器的好机器",
+            Material.WHITE_GLAZED_TERRACOTTA, "&d电机降级器",
+            "",
+            "&e一种可以使粘液机器降级的机器",
             "",
             "&d&oFN机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -725,30 +725,34 @@ public class FNAmpItems {
     public static final SlimefunItemStack MACHINE_PART = new SlimefunItemStack(
             "FN_MACHINERY_MACHINE_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("6ddd4a12da1cc2c9f9d6cd49fc778e3a11f3757de6dd312d70a0d47885189c0")),
-            "&d机器零件",
-            "&f必不可少的部分 FN机械",
+            "&d&d机器零件",
             "",
-            "&d&oFN机械物品");
+            "&b合成材料");
 
     public static final SlimefunItemStack MACHINE_PART_SCRAP = new SlimefunItemStack(
             "FN_MACHINERY_MACHINE_PART_SCRAP",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("6ddd4a12da1cc2c9f9d6cd49fc778e3a11f3757de6dd312d70a0d47885189c0")),
             "&d机器零件",
-            "&f使用金属废料制作");
+            "",
+            "&f使用金属废料制作",
+            "",
+            "&b合成材料");
 
     public static final SlimefunItemStack COMPONENT_PART = new SlimefunItemStack(
             "FN_MACHINERY_COMPONENT_PART",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("74657e89167b17ed581e87ce4215ce8d47145ab34038202d5ccefb0a9bd0d8f4")),
-            "&d组成部分",
-            "&f必不可少的部分 FN机械",
+            "&d散热器",
             "",
-            "&d&oFN机械 Items");
+            "&b合成材料");
 
     public static final SlimefunItemStack COMPONENT_PART_SCRAP = new SlimefunItemStack(
             "FN_MACHINERY_COMPONENT_PART_SCRAP",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("74657e89167b17ed581e87ce4215ce8d47145ab34038202d5ccefb0a9bd0d8f4")),
-            "&d组成部分",
-            "&f使用金属废料制作");
+            "&d散热器",
+            "",
+            "&f使用金属废料制作",
+            "",
+            "&b合成材料");
 
     public static final SlimefunItemStack MOTOR_SWITCH = new SlimefunItemStack(
             "FN_MACHINERY_MOTOR_SWITCH",
