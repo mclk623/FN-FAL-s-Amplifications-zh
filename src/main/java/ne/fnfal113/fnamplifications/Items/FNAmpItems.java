@@ -128,7 +128,13 @@ public class FNAmpItems {
             new NamespacedKey(FNAmplifications.getInstance(), "FN_MISC"),
             FN_ITEMS,
             new CustomItemStack(Material.CHEST,
-                    "&eFN_FAL 的杂项"));
+                    "&eFN_FAL'S Miscellaneous"));
+
+    public static final SubItemGroup FN_GEMS = new SubItemGroup(
+            new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),
+            FN_ITEMS,
+            new CustomItemStack(Material.EMERALD,
+                    "&eFN_FAL'S Gems"));
 
     public static final ItemGroup FN_AMPLIFICATIONS = new ItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_AMPLIFICATIONS"),
@@ -1052,6 +1058,12 @@ public class FNAmpItems {
             "FN_STICK_ALTAR",
             Material.ENCHANTING_TABLE,
             "&dFN 神秘棒祭坛"
+    );
+
+    public static final SlimefunItemStack FN_GEM_ALTAR = new SlimefunItemStack(
+            "FN_GEM_ALTAR",
+            Material.SMITHING_TABLE,
+            "&dFN 宝石祭坛"
     );
 
     public static final SlimefunItemStack FN_GEAR_HELMET = new SlimefunItemStack(
