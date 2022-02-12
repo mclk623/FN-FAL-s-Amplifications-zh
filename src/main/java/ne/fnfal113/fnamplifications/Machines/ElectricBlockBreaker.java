@@ -61,42 +61,38 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     private static final ItemStack VERSIONED_AMETHYST;
 
     private static final CustomItemStack NOT_OPERATING = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-        "&cNot Operating...",
-        "&ePlace a block facing the dispenser!"
+        "&c不能运行...",
+        "&e放置一个面向分配器的方块!"
     );
 
     private static final CustomItemStack NO_POWER = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNo Power!",
-        "&ePower it up first!"
+        "&c没电!",
+        "&e请先上电!"
     );
 
     private static final CustomItemStack NOT_RUNNING = new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE,
-        "&cNot Running",
-        "&eToggle it on first"
+        "&c不能运行",
+        "&e首先打开它"
     );
 
     private static final CustomItemStack BREAK_BLOCK_NATURALLY = new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-        "&d&lMode:",
-        "&eBreak block naturally (No Silk Touch)",
-        "Click to change"
+        "&d&l模式:",
+        "&e自然破坏方块(无精准触碰)点击更改"
     );
 
     private static final CustomItemStack DROP_BLOCK_NATURALLY = new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE,
-        "&d&lMode:",
-        "&eDrop block naturally (Silk Touch)",
-        "Click to change"
+        "&d&l模式:",
+        "&e自然放置块(Silk Touch)点击更改"
     );
 
     private static final CustomItemStack TOGGLED_ON = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-        "&d&lToggle:",
-        "&eEnabled (Running)",
-        "Click to change"
+        "&d&l切换:",
+        "&e已启用(运行中)点击更改"
     );
 
     private static final CustomItemStack TOGGLED_OFF = new CustomItemStack(Material.WHITE_STAINED_GLASS_PANE,
-        "&d&lToggle:",
-        "&eDisabled (Not Running)",
-        "Click to change"
+        "&d&l切换:",
+        "&e禁用(未运行)点击更改"
     );
 
     public static final ItemStack DUMMY_PICK = new ItemStack(Material.DIAMOND_PICKAXE);
@@ -218,9 +214,9 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
 
             @Override
             public void newInstance(@Nonnull BlockMenu menu, @Nonnull Block b) {
-                String breakMode = BlockStorage.getLocationInfo(b.getLocation(), "breakBlockNaturally");
-                String isRunning = BlockStorage.getLocationInfo(b.getLocation(), "toggled_On");
-                String owner = BlockStorage.getLocationInfo(b.getLocation(), "owner");
+                String breakMode = BlockStorage.getLocationInfo(b.getLocation(), "自然断块");
+                String isRunning = BlockStorage.getLocationInfo(b.getLocation(), "切换_开启");
+                String owner = BlockStorage.getLocationInfo(b.getLocation(), "所有者");
 
                 // Mode
                 boolean currentMode = false;
@@ -291,7 +287,7 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
 
                     if (invMenu.hasViewer()) {
                         invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aOperating!",
-                            "", "&bRate: " + this.rate + " Block per tick", "&2Breaking block at rate: " + progress
+                            "", "&b速率: " + this.rate + " 每滴答声块", "&2以速率破坏块: " + progress
                             + "/" + this.rate));
                     }
 
@@ -326,7 +322,7 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
         final BlockBreakerCache cache = CACHE_MAP.get(location);
 
         cache.breakNaturally = !cache.breakNaturally;
-        BlockStorage.addBlockInfo(location, "breakBlockNaturally", String.valueOf(cache.breakNaturally));
+        BlockStorage.addBlockInfo(location, "自然断块", String.valueOf(cache.breakNaturally));
         blockMenu.replaceExistingItem(CHANGE_MODE, cache.breakNaturally ? BREAK_BLOCK_NATURALLY : DROP_BLOCK_NATURALLY);
         CACHE_MAP.put(location, cache);
     }
@@ -336,7 +332,7 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
         final BlockBreakerCache cache = CACHE_MAP.get(location);
 
         cache.isOn = !cache.isOn;
-        BlockStorage.addBlockInfo(location, "toggled_On", String.valueOf(cache.isOn));
+        BlockStorage.addBlockInfo(location, "切换_开启", String.valueOf(cache.isOn));
         blockMenu.replaceExistingItem(ON_OFF, cache.isOn ? TOGGLED_ON : TOGGLED_OFF);
         CACHE_MAP.put(location, cache);
     }
@@ -372,9 +368,9 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     }
 
     public final ElectricBlockBreaker setEnergyConsumption(int energyConsumption) {
-        Validate.isTrue(energyConsumption > 0, "The energy consumption must be greater than zero!");
-        Validate.isTrue(energyCapacity > 0, "You must specify the capacity before you can set the consumption amount.");
-        Validate.isTrue(energyConsumption <= energyCapacity, "The energy consumption cannot be higher than the capacity (" + energyCapacity + ')');
+        Validate.isTrue(energyConsumption > 0, "能耗必须大于零!");
+        Validate.isTrue(energyCapacity > 0, "您必须先指定容量，然后才能设置消耗量.");
+        Validate.isTrue(energyConsumption <= energyCapacity, "能耗不能高于容量 (" + energyCapacity + ')');
 
         this.energyConsumedPerTick = energyConsumption;
         return this;
@@ -386,18 +382,18 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     }
 
     public final ElectricBlockBreaker setCapacity(int capacity) {
-        Validate.isTrue(capacity > 0, "The capacity must be greater than zero!");
+        Validate.isTrue(capacity > 0, "容量必须大于零!");
 
         if (getState() == ItemState.UNREGISTERED) {
             this.energyCapacity = capacity;
             return this;
         } else {
-            throw new IllegalStateException("You cannot modify the capacity after the Item was registered.");
+            throw new IllegalStateException("项目注册后不能修改容量.");
         }
     }
 
     public boolean takeCharge(@Nonnull Location l) {
-        Validate.notNull(l, "Can't attempt to take charge from a null location!");
+        Validate.notNull(l, "无法尝试从零位置负责!");
 
         if (isChargeable()) {
             int charge = getCharge(l);
