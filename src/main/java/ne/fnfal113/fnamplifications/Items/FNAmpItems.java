@@ -363,7 +363,7 @@ public class FNAmpItems {
             Material.WARPED_NYLIUM,
             "&4FN诡异菌岩生成器 &8(破损)",
             "",
-            "&8需要修理",
+            "&8需要修理"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_FNFAL_WARPED1 = new SlimefunItemStack(
@@ -371,7 +371,7 @@ public class FNAmpItems {
             Material.WARPED_NYLIUM,
             "&4FN诡异菌岩生成器",
             "",
-            "&6自动生产诡异菌岩",
+            "&6自动生产诡异菌岩"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
