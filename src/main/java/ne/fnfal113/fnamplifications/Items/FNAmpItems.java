@@ -1544,6 +1544,33 @@ public class FNAmpItems {
             "&d拖放斧头以绑定此宝石"
     );
 
+    public static final SlimefunItemStack FN_GEM_TRI_SWORD = new SlimefunItemStack(
+            "FN_GEM_TRI_SWORD",
+            Material.EMERALD,
+            "&cTri-Sword Gem",
+            "",
+            "&eGives you the ability to throw your",
+            "&esword with additional 2 swords around it that",
+            "&ecan cut through entities and damage them",
+            "",
+            "&dDrag and drop on an sword",
+            "&dto bind this gem"
+    );
+
+    public static final SlimefunItemStack FN_GEM_DAMNATION = new SlimefunItemStack(
+            "FN_GEM_DAMNATION",
+            Material.EMERALD,
+            "&cDamnation Gem",
+            "",
+            "&eShift Right click the weapon that has this gem",
+            "&ethe weapon is ready to serve you in battle and",
+            "&ewill attack entities in the direction of your",
+            "&ecrosshair after 8 seconds",
+            "",
+            "&dDrag and drop on sword or axe",
+            "&dto bind this gem"
+    );
+
     public static final SlimefunItemStack FN_GEM_BLINDBIND = new SlimefunItemStack(
             "FN_GEM_BLINDBIND",
             Material.EMERALD,
