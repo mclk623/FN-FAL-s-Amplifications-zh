@@ -59,8 +59,9 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
 
-        if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("DEV - ")) {
-            new GitHubBuildsUpdater(this, getFile(), "buiawpkgew1/FN-FAL-s-Amplifications-zh/main").start();
+        if (getConfig().getBoolean("auto-update") &&
+            getDescription().getVersion().startsWith("Build")) {
+            new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications-zh", "main", false).start();
         }
     }
 
