@@ -42,12 +42,20 @@ jobs:
         java-version: 17
     - name: Build with Maven
       run: mvn package --file pom.xml
+
+    - name: Upload The Bruh
+      uses: actions/upload-artifact@v2
+      with:
+        name: FN-FAL-s-Amplifications
+        path: |
+        target/*
+
     - name: 自动释放
       uses: marvinpinto/action-automatic-releases@v1.2.1
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "jar"
         prerelease: true
-        title: "自动构建版本"
+        title: "FN-FAL-s-Amplifications 自动构建版本"
         files: |
            target/*
