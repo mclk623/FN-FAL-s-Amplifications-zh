@@ -1,6 +1,7 @@
 package ne.fnfal113.fnamplifications;
 
 import javax.annotation.Nonnull;
+import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
@@ -38,9 +39,9 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
         getLogger().info("************************************************************");
         getLogger().info("              FN Amplifications - FN 科技                   ");
-        getLogger().info("           作者: FN_FAL113  汉化: buiawpkgew1         ");
+        getLogger().info("           作者: FN_FAL113  汉化: buiawpkgew1                ");
         getLogger().info("    感谢 Jeff(LiteXpansion) 与 Walshy(Slimefun) 提供的工具包   ");
-        getLogger().info("               如有任何问题，请前往问题追踪器汇报                 ");
+        getLogger().info("               如有任何问题，请前往问题追踪器汇报                ");
         getLogger().info("                作者 Discord: FN_FAL#7779                    ");
         getLogger().info("************************************************************");
 
@@ -59,8 +60,9 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
 
-        if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("Build")) {
-            new GitHubBuildsUpdater(this, getFile(), "buiawpkgew1/FN-FAL-s-Amplifications-zh/main").start();
+        if (getConfig().getBoolean("auto-update") &&
+            getDescription().getVersion().startsWith("Build")) {
+            new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications-zh", "main", false).start();
         }
     }
 
