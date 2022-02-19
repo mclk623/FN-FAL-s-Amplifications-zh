@@ -12,7 +12,7 @@
 
 **自动更新**: 汉化版构建#1及以后版本包含*自动更新*功能，默认开启。
 
-点击这里下载 FnAmplifications: [下载 FnAmplifications](https://builds.guizhanss.net/ybw0014/FnAmplifications-CN/master)
+点击这里下载 FnAmplifications: [下载 FnAmplifications](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
 
 <p align="center">
   <a href="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml">
