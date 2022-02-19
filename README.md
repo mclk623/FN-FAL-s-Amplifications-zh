@@ -25,7 +25,7 @@ Addon supports 1.15.x, 1.16.x, 1.17.x and 1.18.x minecraft versions
 - **and more coming anytime soon!**
 
 ## :arrow_down: Download from build page with auto updates
-### [Download Official Jar](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)     [下载FN-FAL-s-Amplifications-zh](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
+### [Download Official Jar](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)     | [下载FN-FAL-s-Amplifications-zh](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
 [![Build Status](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main/badge.svg)](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
 
 ## ⏯️ Tutorial by Boomer_1 covering this addon
