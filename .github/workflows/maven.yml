@@ -46,7 +46,7 @@ jobs:
     - name: Upload The Bruh
       uses: actions/upload-artifact@v2
       with:
-        name: FN-FAL-s-Amplifications
+        name: FNAmplifications
         path: |
         target/*
 
@@ -56,6 +56,6 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "jar"
         prerelease: true
-        title: "FN-FAL-s-Amplifications 自动构建版本"
+        title: "FNAmplifications 自动构建版本"
         files: |
            target/*
