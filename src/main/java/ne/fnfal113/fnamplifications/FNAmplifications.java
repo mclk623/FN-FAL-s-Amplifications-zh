@@ -4,7 +4,7 @@ import javax.annotation.Nonnull;
 import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GuizhanBuildsUpdater;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 
 import ne.fnfal113.fnamplifications.Gears.Commands.CheckProgress;
 import ne.fnfal113.fnamplifications.Gears.Listeners.GearListener;
@@ -62,6 +62,11 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
         if (getConfig().getBoolean("auto-update") &&
             getDescription().getVersion().startsWith("Build")) {
+            new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications-zh", "main", false).start();
+        }
+
+		if (cfg.getBoolean("options.auto-update") &&
+            getDescription().getVersion().startsWith("Build ")) {
             new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications-zh", "main", false).start();
         }
     }
