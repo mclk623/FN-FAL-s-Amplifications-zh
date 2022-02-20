@@ -1,7 +1,6 @@
 package ne.fnfal113.fnamplifications;
 
 import javax.annotation.Nonnull;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
@@ -15,6 +14,7 @@ import ne.fnfal113.fnamplifications.Quiver.Listener.QuiverListener;
 import ne.fnfal113.fnamplifications.Staffs.Listener.StaffListener;
 import ne.fnfal113.fnamplifications.Tools.Listener.HoeListener;
 import ne.fnfal113.fnamplifications.Utils.PlayerJoinLister;
+import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bstats.charts.AdvancedPie;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -60,7 +60,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
 
-		if (cfg.getBoolean("auto-update") &&
+		if (cfg.getBoolean("options.auto-update") &&
             getDescription().getVersion().startsWith("Build ")) {
             new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications-zh", "main", false).start();
         }
