@@ -3,8 +3,6 @@ package ne.fnfal113.fnamplifications;
 import javax.annotation.Nonnull;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
-
 import ne.fnfal113.fnamplifications.Gears.Commands.CheckProgress;
 import ne.fnfal113.fnamplifications.Gears.Listeners.GearListener;
 import ne.fnfal113.fnamplifications.Gears.Runnables.ArmorEquipRunnable;
