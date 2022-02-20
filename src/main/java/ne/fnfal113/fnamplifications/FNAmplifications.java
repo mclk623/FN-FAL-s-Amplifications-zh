@@ -4,7 +4,7 @@ import javax.annotation.Nonnull;
 import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GuizhanBuildsUpdater;
 
 import ne.fnfal113.fnamplifications.Gears.Commands.CheckProgress;
 import ne.fnfal113.fnamplifications.Gears.Listeners.GearListener;
