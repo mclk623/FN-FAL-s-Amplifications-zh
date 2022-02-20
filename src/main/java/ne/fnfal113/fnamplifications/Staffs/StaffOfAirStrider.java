@@ -82,15 +82,15 @@ public class StaffOfAirStrider extends SlimefunItem {
         if(decrement > 0) {
             max_Uses.set(key, PersistentDataType.INTEGER, decrement);
             lore.add(0, "");
-            lore.add(1, ChatColor.LIGHT_PURPLE + "Right click to gain the ability to");
-            lore.add(2, ChatColor.LIGHT_PURPLE + "walk on the air for 10 seconds");
+            lore.add(1, ChatColor.LIGHT_PURPLE + "右键点击获得能力");
+            lore.add(2, ChatColor.LIGHT_PURPLE + "在空中行走 10 秒");
             lore.add(3, "");
-            lore.add(4, ChatColor.YELLOW + "Uses left: " + decrement);
+            lore.add(4, ChatColor.YELLOW + "左使用: " + decrement);
             meta.setLore(lore);
             item.setItemMeta(meta);
         } else {
             player.getInventory().setItemInMainHand(null);
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&d&lAir strider staff has reached max uses!"));
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&d&lAir strider 工作人员已达到最大使用次数!"));
             player.playSound(player.getLocation(), Sound.ENTITY_ITEM_BREAK, 1 ,1);
         }
 
