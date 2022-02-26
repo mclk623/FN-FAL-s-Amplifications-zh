@@ -43,11 +43,11 @@ public class PlayerJoinLister implements Listener {
         return Utils.stringSequence(
                 "||---------------------------------------------------||",
                 Utils.colorTranslator("&e&lFN &c&lAmpli&b&lfications &r&e" + FNAmplifications.getInstance().getDescription().getVersion()),
-                Utils.colorTranslator("&fChangelog"),
+                Utils.colorTranslator("&f变更日志"),
                 "",
-                Utils.colorTranslator("&d&l• &dAdded command to check FN Gear progress (/fngear)"),
-                Utils.colorTranslator("&d&l• &r&dAllow multi-blocks to output even with or without output chest"),
-                Utils.colorTranslator("&d&l• &r&dRewritten/Refactored the code for Gears and Quiver"),
+                Utils.colorTranslator("&d&l• &d添加了检查 FN 齿轮进度的命令 (/fngear)"),
+                Utils.colorTranslator("&d&l• &r&d允许多块输出，即使有或没有输出箱"),
+                Utils.colorTranslator("&d&l• &r&d重写/重构了 Gears 和 Quiver 的代码"),
                 Utils.colorTranslator("&e-FN_FAL113"),
                 "||---------------------------------------------------||"
         );
