@@ -15,6 +15,7 @@ import ne.fnfal113.fnamplifications.Utils.PlayerJoinLister;
 import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bstats.charts.AdvancedPie;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import ne.fnfal113.fnamplifications.Items.FNAmpItemSetup;
@@ -62,6 +63,11 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
             getDescription().getVersion().startsWith("Build ")) {
             new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications-zh", "main", false).start();
         }
+    }
+
+    @Override
+    public void onDisable(){
+        Bukkit.getScheduler().cancelTasks(FNAmplifications.getInstance());
     }
 
     @Nonnull
