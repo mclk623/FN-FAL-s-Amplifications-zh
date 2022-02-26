@@ -4,7 +4,6 @@ on:
   push:
     branches:
     - main
-    - Dev/rewrite-gear-quiver
     tags:
       - "v*.*"
   pull_request:
@@ -50,4 +49,9 @@ jobs:
         title: "FNAmplifications 自动构建版本"
         files: |
            target/*
-  
+    - name: Upload The Bruh
+      uses: actions/upload-artifact@v2
+      with:
+        name: artifacts
+        path: |
+           target/*
