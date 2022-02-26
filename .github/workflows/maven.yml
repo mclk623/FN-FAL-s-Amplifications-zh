@@ -50,9 +50,4 @@ jobs:
         title: "FNAmplifications 自动构建版本"
         files: |
            target/*
-    - name: Upload The Bruh
-      uses: actions/upload-artifact@v2
-      with:
-        name: artifacts
-        path: |
-           target/*
+  
