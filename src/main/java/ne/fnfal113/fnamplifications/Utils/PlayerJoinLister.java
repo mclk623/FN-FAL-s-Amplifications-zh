@@ -45,9 +45,9 @@ public class PlayerJoinLister implements Listener {
                 Utils.colorTranslator("&e&lFN &c&lAmpli&b&lfications &r&e" + FNAmplifications.getInstance().getDescription().getVersion()),
                 Utils.colorTranslator("&f变更日志"),
                 "",
-                Utils.colorTranslator("&d&l• &d添加了检查 FN 齿轮进度的命令 (/fngear)"),
-                Utils.colorTranslator("&d&l• &r&d允许多块输出，即使有或没有输出箱"),
-                Utils.colorTranslator("&d&l• &r&d重写/重构了 Gears 和 Quiver 的代码"),
+                Utils.colorTranslator("&d&l• &r&d添加了报复宝石 - 把我的武器还给我"),
+                Utils.colorTranslator("&d&l• &r&d重写/重构神秘棒代码和清理重写/重构神秘棒代码和清理"),
+                Utils.colorTranslator("&d&l• &r&d重写/重构了使武器可投掷的代码"),
                 Utils.colorTranslator("&e-FN_FAL113"),
                 "||---------------------------------------------------||"
         );
