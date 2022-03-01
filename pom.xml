@@ -6,7 +6,7 @@
 
     <groupId>ne.fnfal113</groupId>
     <artifactId>FNAmplifications</artifactId>
-    <version>3.0.0</version>
+    <version>UNOFFICIAL</version>
     <packaging>jar</packaging>
 
     <name>FNAmplifications</name>
@@ -47,18 +47,33 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.4</version>
-
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                        </configuration>
+                    </execution>
+                </executions>
                 <configuration>
-                    <!-- 你可以添加下面这一行，去除所有库中未使用的类，来减少生成jar的大小，非必须，但建议开启 -->
                     <minimizeJar>true</minimizeJar>
                     <relocations>
-                        <!-- 重要: 你需要将以下relocation(迁移)部分添加到你的pom.xml中 -->
+                        <relocation>
+                            <pattern>org.bstats</pattern>
+                            <shadedPattern>ne.fnfal113.fnamplifications.bstats</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>dev.j3fftw.extrautils</pattern>
+                            <shadedPattern>ne.fnfal113.fnamplifications.ExtraUtils</shadedPattern>
+                        </relocation>
                         <relocation>
                             <pattern>net.guizhanss.guizhanlib</pattern>
                             <shadedPattern>ne.fnfal113.fnamplifications.guizhanlib</shadedPattern>
                         </relocation>
                     </relocations>
-
                     <filters>
                         <filter>
                             <artifact>*:*</artifact>
@@ -68,27 +83,16 @@
                         </filter>
                     </filters>
                 </configuration>
-
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
 
     </build>
 
     <repositories>
-
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
-
         <repository>
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
@@ -100,12 +104,6 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>net.guizhanss</groupId>
-            <artifactId>GuizhanLib</artifactId>
-            <version>0.5.3</version>
-            <scope>compile</scope>
-        </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
@@ -135,9 +133,10 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.slimefun-addon-community</groupId>
-            <artifactId>extrautils</artifactId>
-            <version>73e76ac06c</version>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>ExtraUtils</artifactId>
+            <version>bf89aee6ae</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -159,6 +158,13 @@
             <artifactId>SMG</artifactId>
             <version>cce3ce31e7</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>GuizhanLib</artifactId>
+            <version>0.5.3</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
