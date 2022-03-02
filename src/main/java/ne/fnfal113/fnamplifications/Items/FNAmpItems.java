@@ -288,8 +288,8 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_XPANSION_POWER_R10 = new SlimefunItemStack(
             "FN_POWER_XPANSION_POWER_R10",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
-                    "56a7d2195ff7674bbb12e2f7578a2a63c54a980e64744450ac6656e05a790499")),
-            "",
+                    "7b7c9b6a23f21cca2b362b85b36dece3d8389e363014defe5b92ff6ee64f1ae")),
+            "&d&lFN发电机 R01",
             "&9可在夜间工作",
             "",
             "&7放置并右键点击该方块",
@@ -820,8 +820,9 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack COMPRESSOR_PART = new SlimefunItemStack(
             "FN_MACHINERY_COMPRESSOR_PART",
-            PlayerHead.getItemStack(PlayerSkin.fromHashCode("e48337f7ede15c3b2f8dc6a63bd92874cdf74ec862b4118c7e35559ce8b4d")),
+            PlayerHead.getItemStack(PlayerSkin.fromHashCode("d3898f7c444223b7a91a8f038e224222fef8960cfbef94836b014a06ea4cba63")),
             "&d压缩零件",
+            "&fFN机械的重要部件",
             "",
             "&b合成材料");
 
@@ -1157,8 +1158,8 @@ public class FNAmpItems {
             Material.BLAZE_ROD,
             "&c隐身法杖",
             "",
-            "&d6秒隐形，即使你的",
-            "&d盔甲和名字都被隐藏了",
+            "&d 6秒隐形",
+            "&d连你的盔甲和名字都被隐藏了",
             "",
             "&e左键使用: "  + value.staffOfInvisibility()
     );
@@ -1576,9 +1577,10 @@ public class FNAmpItems {
             Material.EMERALD,
             "&cRetaliate Gem",
             "",
-            "&eAllows your weapons to return back to you after",
-            "&ethrowing it, weapon must have any of these gems",
-            "&ebound to it before binding this gem: ",
+            "&eAllows your weapons to return back to ",
+            "&eyou after throwing and hitting an object",
+            "&eor entity, weapon must have any of these",
+            "&egems bound to it before binding this gem:",
             "&e- Damnation Gem",
             "&e- Tri-Sword Gem",
             "&e- Axe Throwie Gem",
@@ -1596,6 +1598,24 @@ public class FNAmpItems {
             "&e有机会致盲敌人4秒",
             "",
             "&d在弓上拖放以绑定此宝石"
+    );
+
+    public static final SlimefunItemStack FN_GEM_GUARDIAN = new SlimefunItemStack(
+            "FN_GEM_GUARDIAN",
+            Material.EMERALD,
+            "&cGuardian Gem",
+            "",
+            "&e" + value.guardianGem() + "&e% chance to spawn a guardian that will",
+            "&efight for you until death, the armor that",
+            "&ehas this gem must be worn in order for",
+            "&ethe guardian to protect you from enemies",
+            "&ewhen you are being attacked.",
+            "&f- Unequipped armor will remove any active guardians",
+            "&f- Guardians don't attack other guardians and",
+            "  &fcan only attack the owner of that guardian",
+            "",
+            "&dDrag and drop on a chestplate",
+            "&dto bind this gem"
     );
 
 }

@@ -45,9 +45,12 @@ public class PlayerJoinLister implements Listener {
                 Utils.colorTranslator("&e&lFN &c&lAmpli&b&lfications &r&e" + FNAmplifications.getInstance().getDescription().getVersion()),
                 Utils.colorTranslator("&f变更日志"),
                 "",
-                Utils.colorTranslator("&d&l• &r&d添加了报复宝石 - 把我的武器还给我"),
-                Utils.colorTranslator("&d&l• &r&d重写/重构神秘棒代码和清理重写/重构神秘棒代码和清理"),
-                Utils.colorTranslator("&d&l• &r&d重写/重构了使武器可投掷的代码"),
+                Utils.colorTranslator("&d&l• &r&d添加了守护者宝石，产生一个实体，"),
+                Utils.colorTranslator("  &d当你被敌人攻击时，它会保护你直到死亡"),
+                Utils.colorTranslator("&d&l• &r&d更改了 R10 Generator 和 Compressor 部分的头部纹理"),
+                Utils.colorTranslator("&d&l• &r&d修复了在受保护的声明和其他宝石中工作的霹雳宝石"),
+                Utils.colorTranslator("&d&l• &r&d重写/重构了 Staffs 的代码"),
+                Utils.colorTranslator("&d&l• &r&d代码清理和改进"),
                 Utils.colorTranslator("&e-FN_FAL113"),
                 "||---------------------------------------------------||"
         );
