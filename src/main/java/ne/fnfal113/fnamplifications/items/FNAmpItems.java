@@ -1145,7 +1145,7 @@ public class FNAmpItems {
             "",
             "&d生成一匹骷髅马,可以骑乘直到乘客下马",
             "",
-            "&e左键使用: " + value.staffOfStallion()
+            "&eUses: " + "&eleft"
     );
 
     public static final SlimefunItemStack FN_STAFF_FORCE = new SlimefunItemStack(
@@ -1157,7 +1157,7 @@ public class FNAmpItems {
             "&d提供向前推动的力或shift-right-click",
             "&d产生一个不同的效果云,提供一个向后的力",
             "",
-            "&e左键使用: " + value.staffOfForce()
+            "&eUses: " + "&eleft"
     );
 
     public static final SlimefunItemStack FN_STAFF_HEALING = new SlimefunItemStack(
@@ -1190,7 +1190,7 @@ public class FNAmpItems {
             "&dRight click a target block to",
             "&dyield an explosion causing damage",
             "",
-            "&e左键使用: " + value.staffOfExplosion()
+            "&eUses: " + "&eleft"
     );
 
     public static final SlimefunItemStack FN_STAFF_MUSTER = new SlimefunItemStack(
