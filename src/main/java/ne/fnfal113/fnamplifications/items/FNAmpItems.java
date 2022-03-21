@@ -142,7 +142,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R1",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "33165e254de7863459343543f933481f0dcf8d4730a23433b9a7ff0d3ff79c5a")),
-            "&d&lFN Power Xpansion R1",
+            "&d&lFN 功率扩展 R1",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -153,7 +153,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R2",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "5b78e55e3ea6b3682bd7cead43eb1c91b2527a81aa2894f095801f6ee47a3")),
-            "&d&lFN Power Xpansion R2",
+            "&d&lFN 功率扩展 R2",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -164,7 +164,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R3",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "45ff60d863d1cf76742f275e2ac5749dd0a978a231d3c51e816132c75aef608a")),
-            "&d&lFN Power Xpansion R3",
+            "&d&lFN 功率扩展 R3",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -175,7 +175,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R4",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "efc05af0e88c6fb10b4c8c8b81b7aa658e64649724cb73bb9bb0f25f28bd")),
-            "&d&lFN Power Xpansion R4",
+            "&d&lFN 功率扩展 R4",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -186,7 +186,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R5",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8f14f3179b86f69b3efa7472dacaeb2339f6290d2d817362793348abd98e021")),
-            "&d&lFN Power Xpansion R5",
+            "&d&lFN 功率扩展 R5",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -197,7 +197,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R6",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "1d5a09884cb83ef5c908dddd385f246fefdee221712c010177f54376da238fdd")),
-            "&d&lFN Power Xpansion R6",
+            "&d&lFN 功率扩展 R6",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -208,7 +208,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R7",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "f7e541dfb4ba1f7dc28b548e347abbdc987ebe0e61c49fa87111ef1b2dcb2218")),
-            "&d&lFN Power Xpansion R7",
+            "&d&lFN 功率扩展 R7",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -219,7 +219,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R8",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "de31efefdd9551af8a4349d3d21e5ec8f37e53c801eb25b14279d6a89fe0c01e")),
-            "&d&lFN Power Xpansion R8",
+            "&d&lFN 功率扩展 R8",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -230,7 +230,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R9",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "6db32b15d7f32704ed626fa52d06fb2b4071d336fdbfe61e6e41c669d6e37f47")),
-            "&d&lFN Power Xpansion R9",
+            "&d&lFN 功率扩展 R9",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -241,7 +241,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R10",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "7b7c9b6a23f21cca2b362b85b36dece3d8389e363014defe5b92ff6ee64f1ae")),
-            "&d&lFN Power Xpansion R10",
+            "&d&lFN 功率扩展 R10",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -252,7 +252,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R11",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "7f9f356f5fe7d1bc92cddfaeba3ee773ac9df1cc4d1c2f8fe5f47013032c551d")),
-            "&d&lFN Power Xpansion R11",
+            "&d&lFN 功率扩展 R11",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
@@ -263,7 +263,7 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R12",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3464874df452c1d717eddd0fb3b848202ad15571245af6fade2ecf514f3c80bb")),
-            "&d&lFN Power Xpansion R12",
+            "&d&lFN 功率扩展 R12",
             "&9This works at Night!",
             "&9Place and right click",
             "&9the block for power info",
