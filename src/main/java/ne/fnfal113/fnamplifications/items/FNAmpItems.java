@@ -53,7 +53,7 @@ public class FNAmpItems {
             new NamespacedKey(FNAmplifications.getInstance(), "FN_ITEMS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
-            "&e&lFN &b&lAmpli&c&lfications"));
+            "&e&lFN&c&l科技 &b&l汉化:西瓜,haiman233"));
 
     public static final SubItemGroup POWER_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "POWER_GENERATORS"),
