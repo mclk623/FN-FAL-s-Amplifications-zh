@@ -1,5 +1,7 @@
 package ne.fnfal113.fnamplifications.items;
 
+import io.github.thebusybiscuit.slimefun4.api.MinecraftVersion;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -407,7 +409,45 @@ public class FNAmpItems {
             "",
             "&6自动生产蜜脾"
     );
+    public static final SlimefunItemStack FMG_GENERATOR_QUARTZ_BROKEN = new SlimefunItemStack(
+            "FMG_GENERATOR_QUARTZ_BROKEN",
+            Material.QUARTZ_BLOCK,
+            "&fFN石英生成器 &8(破损)",
+            "",
+            "&7需要修复"
+    );
 
+    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_QUARTZ = new SlimefunItemStack(
+            "FMG_GENERATOR_FNFAL_QUARTZ",
+            Material.QUARTZ_BLOCK,
+            "&fFN石英生成器",
+            "",
+            "&6自动生产石英"
+    );
+    
+    public static SlimefunItemStack FMG_GENERATOR_AMETHYST_BROKEN;
+    public static SlimefunItemStack FMG_GENERATOR_FNFAL_AMETHYST;
+
+    static {
+        if(Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_17)) {
+            FMG_GENERATOR_AMETHYST_BROKEN = new SlimefunItemStack(
+                    "FMG_GENERATOR_AMETHYST_BROKEN",
+                    Material.AMETHYST_BLOCK,
+                    "&dFN紫水晶生成器 &8(破损)",
+                    "",
+                    "&7需要修复"
+            );
+
+            FMG_GENERATOR_FNFAL_AMETHYST = new SlimefunItemStack(
+                    "FMG_GENERATOR_FNFAL_AMETHYST",
+                    Material.AMETHYST_BLOCK,
+                    "&dFN紫水晶生成器",
+                    "",
+                    "&6自动生产紫水晶"
+            );
+        }
+    }
+    
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER1 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER1",
             "6d2822cedb3abd579d6dfa2966c1433c3c36cb9732e2c23ec0cc81daedd4403b",
