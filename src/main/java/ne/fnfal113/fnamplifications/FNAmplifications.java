@@ -41,7 +41,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
         getLogger().info("************************************************************");
         getLogger().info("              FN Amplifications - FN 科技                   ");
-        getLogger().info("           作者: FN_FAL113  汉化: buiawpkgew1                ");
+        getLogger().info("           作者: FN_FAL113  汉化: buiawpkgew1,haiman233       ");
         getLogger().info("    感谢 Jeff(LiteXpansion) 与 Walshy(Slimefun) 提供的工具包   ");
         getLogger().info("               如有任何问题，请前往问题追踪器汇报                ");
         getLogger().info("                作者 Discord: FN_FAL#7779                    ");
