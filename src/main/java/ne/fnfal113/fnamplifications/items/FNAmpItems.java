@@ -138,7 +138,7 @@ public class FNAmpItems {
 
     public static final SubItemGroup FN_GEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD,
                     "&eFN宝石"));
 
