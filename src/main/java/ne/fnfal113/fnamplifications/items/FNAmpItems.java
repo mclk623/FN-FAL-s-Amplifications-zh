@@ -50,7 +50,8 @@ public class FNAmpItems {
 
     }
 
-    public static final NestedItemGroup FN_ITEMS = new NestedItemGroup(
+    // start of Item Groups
+    public static final NestedItemGroup FN_MAIN_GROUP = new NestedItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_ITEMS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
@@ -58,34 +59,34 @@ public class FNAmpItems {
 
     public static final SubItemGroup POWER_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "POWER_GENERATORS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "ecb316f7a227a8c59d58ae0dd6768fe4fa546d55b9cfdd56cfe40b6586d81c24")),
             "&eFN发电机"));
 
     public static final SubItemGroup MATERIAL_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MATERIAL_GENERATORS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD_BLOCK,
             "&eFN材料生成器"));
 
     public static final SubItemGroup SOLAR_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "SOLAR_GENERATORS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "e7f4c00356d1addb85b45ba5352992d3ecc0c9d11feb9041482f8531fd27d014")),
             "&eFN太阳能发电机"));
 
     public static final SubItemGroup MACHINES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "4a7d54ca45a398c364cebbffb5390ce5e0345e0c7bc5e863acabf57d1342c4bd")),
             "&eFN机器"));
 
     public static final SubItemGroup ITEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY_ITEMS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8245a1c3e8d7c3d59d05e3634b04af4cbf8d11b70e2a40e2e6364386db49e737")),
             "&eFN_FAL'S Machinery Items"));
@@ -99,39 +100,39 @@ public class FNAmpItems {
 
     public static final SubItemGroup MULTIBLOCK = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MULTIBLOCK"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "550c3306bb11522fec380ea248eb6a5b180f4a7ab8843d635d14d4a778d6351")),
             "&eFN多方块结构"));
 
     public static final SubItemGroup METAL_SCRAP_RECIPES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "METAL_SCRAP_RECIPES"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3ff0bee591e5f0000ef16f966b949adcb5c2f409a14ccfc5b91222fd925045db")),
             "&e金属废料配方"));
 
     public static final SubItemGroup MYSTERY_STICKS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MYSTERY_STICKS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(STICK,
                     "&eFN神秘PVP/PVE棍"));
 
     public static final SubItemGroup FN_GEARS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEARS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(ARMOR,
                     "&eFN盔甲"));
 
     public static final SubItemGroup FN_STAFFS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_STAFFS"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(Material.BLAZE_ROD,
                     "&eFN法杖"));
 
     public static final SubItemGroup FN_MISC = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_MISC"),
-            FN_ITEMS,
+            FN_MAIN_GROUP,
             new CustomItemStack(Material.CHEST,
                     "&eFN杂项"));
 
@@ -147,6 +148,7 @@ public class FNAmpItems {
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
             "&e&lFN&c&l科技"));
 
+    // start of FN itemstacks
     public static final SlimefunItemStack FN_XPANSION_POWER_R1 = new SlimefunItemStack(
             "FN_POWER_XPANSION_POWER_R1",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
