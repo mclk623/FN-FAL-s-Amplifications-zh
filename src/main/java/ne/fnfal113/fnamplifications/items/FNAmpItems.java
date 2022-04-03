@@ -31,7 +31,8 @@ public class FNAmpItems {
 
     private static final ItemStack STICK = new ItemStack(Material.STICK);
 
-    private static final ItemStack ARMOR = new ItemStack(Material.NETHERITE_CHESTPLATE);
+    private static final ItemStack ARMOR = Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
+            new ItemStack(Material.NETHERITE_CHESTPLATE) : new ItemStack(Material.DIAMOND_CHESTPLATE);
 
     static{
         ItemMeta meta = STICK.getItemMeta();
@@ -307,22 +308,6 @@ public class FNAmpItems {
             "&6自动生产粘土"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_WARPED_BROKEN = new SlimefunItemStack(
-            "FMG_GENERATOR_WARPED_BROKEN",
-            Material.WARPED_NYLIUM,
-            "&4FN诡异菌岩生成器 &8(破损)",
-            "",
-            "&8需要修理"
-    );
-
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_WARPED1 = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_WARPED1",
-            Material.WARPED_NYLIUM,
-            "&4FN诡异菌岩生成器",
-            "",
-            "&6自动生产诡异菌岩"
-    );
-
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_TERRACOTTA_BROKEN",
             Material.TERRACOTTA,
@@ -433,7 +418,9 @@ public class FNAmpItems {
             "",
             "&6自动生产石英"
     );
-    
+
+    public static SlimefunItemStack FMG_GENERATOR_WARPED_BROKEN;
+    public static SlimefunItemStack FMG_GENERATOR_FNFAL_WARPED1;
     public static SlimefunItemStack FMG_GENERATOR_AMETHYST_BROKEN;
     public static SlimefunItemStack FMG_GENERATOR_FNFAL_AMETHYST;
 
@@ -453,6 +440,29 @@ public class FNAmpItems {
                     "&dFN紫水晶生成器",
                     "",
                     "&6自动生产紫水晶"
+            );
+        }
+
+        if(Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16)){
+            FMG_GENERATOR_WARPED_BROKEN = new SlimefunItemStack(
+                    "FMG_GENERATOR_WARPED_BROKEN",
+                    Material.WARPED_NYLIUM,
+                    "&4FN Warped Nylium Generator &8(Broken)",
+                    "&8Needs to be repaired",
+                    "",
+                    "&d&oFN Material Generators"
+            );
+
+           FMG_GENERATOR_FNFAL_WARPED1 = new SlimefunItemStack(
+                    "FMG_GENERATOR_FNFAL_WARPED1",
+                    Material.WARPED_NYLIUM,
+                    "&4FN Warped Nylium Generator",
+                    "&6Generates warped nylium at a certain rate",
+                    "&6Right click the block for info",
+                    "",
+                    "&6Tickrate: " + "&6ticks",
+                    "",
+                    "&d&oFN Material Generators"
             );
         }
     }
@@ -1156,9 +1166,10 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_GEAR_HELMET = new SlimefunItemStack(
             "FN_GEAR_HELMET",
-            Material.NETHERITE_HELMET,
-            "斗牛士头盔",
-            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
+            Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
+                    Material.NETHERITE_HELMET : Material.DIAMOND_HELMET,
+            "&cFN's Field Tested Helmet",
+            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
             "",
             "&f传说中的斗牛士曾使用过这个帽子",
             "&f据神话记载",
@@ -1173,9 +1184,10 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_GEAR_CHESTPLATE = new SlimefunItemStack(
             "FN_GEAR_CHESTPLATE",
-            Material.NETHERITE_CHESTPLATE,
-            "&c罗马胸甲",
-            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
+            Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
+                    Material.NETHERITE_CHESTPLATE : Material.DIAMOND_CHESTPLATE,
+            "&cFN's Battle Scarred Chestplate",
+            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
             "",
             "&f罗马帝国的勇士所穿的盔甲",
             "&f在每场战斗之中",
@@ -1190,25 +1202,28 @@ public class FNAmpItems {
 
     public static final SlimefunItemStack FN_GEAR_LEGGINGS = new SlimefunItemStack(
             "FN_GEAR_LEGGINGS",
-            Material.NETHERITE_LEGGINGS,
-            "&c亚历山大护腿",
-            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
+            Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
+                    Material.NETHERITE_LEGGINGS: Material.DIAMOND_LEGGINGS,
+            "&cFN's Chausses of Eminence",
+            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
             "",
-            "&f亚历山大远征时所着的护腿",
-            "&f据说穿上它的人是不可战胜的",
-            "&f它将会给予你无限大的勇气",
-            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
-            ChatColor.YELLOW + "Leggings等级: 0",
-            ChatColor.YELLOW + "进阶进度:",
+            "&fGlorious leggings worn by FN during war",
+            "&fand was glorified on every victory against",
+            "&fhis foes",
+            "",
+            "&c◈◈◈◈◈◈| &d&lStats &6|◈◈◈◈◈◈",
+            ChatColor.YELLOW + "Leggings Level: 0",
+            ChatColor.YELLOW + "Progress:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
 
     public static final SlimefunItemStack FN_GEAR_BOOTS = new SlimefunItemStack(
             "FN_GEAR_BOOTS",
-            Material.NETHERITE_BOOTS,
-            "&c远征战靴",
-            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
+            Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
+                    Material.NETHERITE_BOOTS : Material.DIAMOND_BOOTS,
+            "&cFN's Expedition Combat Boots",
+            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
             "",
             "&f远征者--残暴、血腥",
             "&f它的脚下是被征服者的血液",
@@ -1250,7 +1265,8 @@ public class FNAmpItems {
             "&d通过右击选择实体",
             "&d左击移动实体至目标位置",
             "",
-            "&e使用: " + "&e剩余"
+            "&eUses: " + "&eleft",
+            "&eEntity stored: none"
     );
 
     public static final SlimefunItemStack FN_STAFF_HELLFIRE = new SlimefunItemStack(
@@ -1446,11 +1462,10 @@ public class FNAmpItems {
             "&e右击&7储存箭",
             "&eShift+右击&7取出箭",
             "",
-            "&7将箭袋放在主手:",
-            "&e右击&7切换为打开状态",
-            "&e左击&7切换为关闭状态",
-            "&e储存空间: 192支箭",
-            "&e箭数: " + ChatColor.WHITE + "0"
+            "&eClick to change state",
+            "&eSize: 192 Arrows",
+            "&eArrows: " + "&f0",
+            "&eState: Closed (No Arrows)"
     );
 
     public static final SlimefunItemStack FN_SPECTRAL_QUIVER = new SlimefunItemStack(
@@ -1462,11 +1477,10 @@ public class FNAmpItems {
             "&e右击&7储存箭",
             "&eShift+右击&7取出箭",
             "",
-            "&7将箭袋放在主手:",
-            "&e右击&7切换为打开状态",
-            "&e左击&7切换为关闭状态",
-            "&e储存空间: 192支箭",
-            "&e箭数: " + ChatColor.WHITE + "0"
+            "&eClick to close/open",
+            "&eSize: 192 Spectral Arrows",
+            "&eArrows: " + "&f0",
+            "&eState: Closed (No Arrows)"
     );
 
     public static final SlimefunItemStack FN_UPGRADED_QUIVER = new SlimefunItemStack(
@@ -1478,11 +1492,10 @@ public class FNAmpItems {
             "&e右击&7储存箭",
             "&eShift+右击&7取出箭",
             "",
-            "&7将箭袋放在主手:",
-            "&e右击&7切换为打开状态",
-            "&e左击&7切换为关闭状态",
-            "&e储存空间: 288支箭",
-            "&e箭数: " + ChatColor.WHITE + "0"
+            "&eClick to change state",
+            "&eSize: 288 Arrows",
+            "&eArrows: " + "&f0",
+            "&eState: Closed (No Arrows)"
     );
 
     public static final SlimefunItemStack FN_UPGRADED_SPECTRAL_QUIVER = new SlimefunItemStack(
@@ -1494,11 +1507,10 @@ public class FNAmpItems {
             "&e右击&7储存箭",
             "&eShift+右击&7取出箭",
             "",
-            "&7将箭袋放在主手:",
-            "&e右击&7切换为打开状态",
-            "&e左击&7切换为关闭状态",
-            "&e储存空间: 288支箭",
-            "&e箭数: " + ChatColor.WHITE + "0"
+            "&eClick to change state",
+            "&eSize: 288 Arrows",
+            "&eArrows: " + "&f0",
+            "&eState: Closed (No Arrows)"
     );
 
     public static final SlimefunItemStack FN_HOE_5X5 = new SlimefunItemStack(
@@ -1788,6 +1800,30 @@ public class FNAmpItems {
             "&dRight hand: &cUnbind Gem",
             "&dLeft hand: &cWeapon/Armor/Tools",
             "&dAction: &cRight click"
+    );
+
+    public static final SlimefunItemStack FN_GEM_STOUT = new SlimefunItemStack(
+            "FN_GEM_STOUT",
+            Material.EMERALD,
+            "&cStout Gem",
+            "",
+            "&e% chance to prevent armor from",
+            "&etaking any durability damage",
+            "",
+            "&dDrag and drop on any armor type",
+            "&dto bind this gem"
+    );
+
+    public static final SlimefunItemStack FN_GEM_ADAMANTINE = new SlimefunItemStack(
+            "FN_GEM_ADAMANTINE",
+            Material.EMERALD,
+            "&cAdamantine Gem",
+            "",
+            "&e% chance to prevent weapon or tools",
+            "&efrom having durability damage",
+            "",
+            "&dDrag and drop on weapon or",
+            "&dtools to bind this gem"
     );
 
     public static final SlimefunItemStack FN_BLOCK_ROTATOR = new SlimefunItemStack(
