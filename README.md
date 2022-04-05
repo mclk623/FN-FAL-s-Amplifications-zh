@@ -27,9 +27,21 @@ Addon supports 1.15.x, 1.16.x, 1.17.x and 1.18.x minecraft versions
 ### [Download Official Jar](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
 [![Build Status](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main/badge.svg)](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
 
+### 点击这里下载 FnAmplifications: [下载 FnAmplifications](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
+<p align="center">
+  <a href="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml">
+    <img src="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
+  </a>
+  <a href="https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main">
+    <img src="https://builds.guizhanss.net/f/buiawpkgew1/FN-FAL-s-Amplifications-zh/main/badge.svg" alt="Build status"/>
+  </a>
+</p>
+
 ## ⏯️ Tutorial by Boomer_1 covering this addon
 More has changed since this video was released meaning more items and content since the past few months! 
 [![Click to watch video](http://i3.ytimg.com/vi/tXuXoYmx65M/hqdefault.jpg)](https://www.youtube.com/watch?v=tXuXoYmx65M)
+
+
 
 ## :blue_book: The addon as shown in the Slimefun Guide
 ![guide](https://user-images.githubusercontent.com/88238718/136697193-5c52d89f-2f01-40e6-b5b7-6f730a17bbd0.png)
