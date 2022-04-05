@@ -16,7 +16,7 @@ SMG-Recipe-Integration: true
 # 仅在该设置为 true 且服务器版本为 1.17 及以上时生效
 New-Recipe-Integration: true
 
-# Armor Effects Update, the time to update the armor effects in seconds (i.e FN Gears of Friction permanent effects)
+# 装甲效果更新，更新装甲效果的时间为秒(即fn齿轮的摩擦永久效果)
 # For now the chestplate only has a permanent effect at level 30
 armor-update-period: 10
 
