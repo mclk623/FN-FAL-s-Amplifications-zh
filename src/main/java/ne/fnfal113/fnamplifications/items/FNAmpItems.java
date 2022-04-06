@@ -300,12 +300,18 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static SlimefunItemStack FMG_GENERATOR_FNFAL_CLAY = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_CLAY",
+    public static SlimefunItemStack FMG_GENERATOR_CLAY = new SlimefunItemStack(
+            "FMG_GENERATOR_CLAY",
             Material.CLAY,
             "&3FN粘土生成器",
             "",
-            "&6自动生产粘土"
+            "&6Tickrate: " + "&6ticks",
+            "",
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
@@ -316,12 +322,16 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_TERRACOTTA = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_TERRACOTTA",
+    public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA = new SlimefunItemStack(
+            "FMG_GENERATOR_TERRACOTTA",
             Material.TERRACOTTA,
             "&4FN陶瓦生成器",
             "",
-            "&6自动生产陶瓦"
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_BONE_BROKEN = new SlimefunItemStack(
@@ -332,12 +342,16 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_BONE = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_BONE",
+    public static final SlimefunItemStack FMG_GENERATOR_BONE = new SlimefunItemStack(
+            "FMG_GENERATOR_BONE",
             Material.BONE_BLOCK,
             "&fFN骨头生成器",
             "",
-            "&6自动生产骨头"
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIAMOND_BROKEN = new SlimefunItemStack(
@@ -348,12 +362,18 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_DIAMOND = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_DIAMOND",
+    public static final SlimefunItemStack FMG_GENERATOR_DIAMOND = new SlimefunItemStack(
+            "FMG_GENERATOR_DIAMOND",
             Material.DIAMOND_BLOCK,
             "&bFN钻石生成器",
             "",
-            "&6自动生产钻石"
+            "&6Tickrate: " + "&6ticks",
+            "",
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_EMERALD_BROKEN = new SlimefunItemStack(
@@ -364,12 +384,16 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_EMERALD = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_EMERALD",
+    public static final SlimefunItemStack FMG_GENERATOR_EMERALD = new SlimefunItemStack(
+            "FMG_GENERATOR_EMERALD",
             Material.EMERALD_BLOCK,
             "&aFN绿宝石生成器",
             "",
-            "&6自动生产绿宝石"
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIRT_BROKEN = new SlimefunItemStack(
@@ -380,12 +404,18 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_DIRT = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_DIRT",
+    public static final SlimefunItemStack FMG_GENERATOR_DIRT = new SlimefunItemStack(
+            "FMG_GENERATOR_DIRT",
             Material.DIRT,
             "&fFN泥土生成器",
             "",
-            "&6自动生产泥土"
+            "&6Tickrate: " + "&6ticks",
+            "",
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB_BROKEN = new SlimefunItemStack(
@@ -396,12 +426,16 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_HONEYCOMB = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_HONEYCOMB",
+    public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB = new SlimefunItemStack(
+            "FMG_GENERATOR_HONEYCOMB",
             Material.HONEYCOMB_BLOCK,
             "&6FN蜜脾生成器",
             "",
-            "&6自动生产蜜脾"
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
     public static final SlimefunItemStack FMG_GENERATOR_QUARTZ_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_QUARTZ_BROKEN",
@@ -411,18 +445,22 @@ public class FNAmpItems {
             "&7需要修复"
     );
 
-    public static final SlimefunItemStack FMG_GENERATOR_FNFAL_QUARTZ = new SlimefunItemStack(
-            "FMG_GENERATOR_FNFAL_QUARTZ",
+    public static final SlimefunItemStack FMG_GENERATOR_QUARTZ = new SlimefunItemStack(
+            "FMG_GENERATOR_QUARTZ",
             Material.QUARTZ_BLOCK,
             "&fFN石英生成器",
             "",
-            "&6自动生产石英"
+            "&cWarning:",
+            "&fBreaking the block will drop",
+            "&fthe broken type",
+            "",
+            "&d&oFN Material Generators"
     );
 
     public static SlimefunItemStack FMG_GENERATOR_WARPED_BROKEN;
-    public static SlimefunItemStack FMG_GENERATOR_FNFAL_WARPED1;
+    public static SlimefunItemStack FMG_GENERATOR_WARPED;
     public static SlimefunItemStack FMG_GENERATOR_AMETHYST_BROKEN;
-    public static SlimefunItemStack FMG_GENERATOR_FNFAL_AMETHYST;
+    public static SlimefunItemStack FMG_GENERATOR_AMETHYST;
 
     static {
         if(Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_17)) {
@@ -434,12 +472,16 @@ public class FNAmpItems {
                     "&7需要修复"
             );
 
-            FMG_GENERATOR_FNFAL_AMETHYST = new SlimefunItemStack(
-                    "FMG_GENERATOR_FNFAL_AMETHYST",
+            FMG_GENERATOR_AMETHYST = new SlimefunItemStack(
+                    "FMG_GENERATOR_AMETHYST",
                     Material.AMETHYST_BLOCK,
                     "&dFN紫水晶生成器",
                     "",
-                    "&6自动生产紫水晶"
+                    "&cWarning:",
+                    "&fBreaking the block will drop",
+                    "&fthe broken type",
+                    "",
+                    "&d&oFN Material Generators"
             );
         }
 
@@ -453,14 +495,18 @@ public class FNAmpItems {
                     "&d&oFN Material Generators"
             );
 
-           FMG_GENERATOR_FNFAL_WARPED1 = new SlimefunItemStack(
-                    "FMG_GENERATOR_FNFAL_WARPED1",
+           FMG_GENERATOR_WARPED = new SlimefunItemStack(
+                    "FMG_GENERATOR_WARPED",
                     Material.WARPED_NYLIUM,
                     "&4FN Warped Nylium Generator",
                     "&6Generates warped nylium at a certain rate",
                     "&6Right click the block for info",
                     "",
                     "&6Tickrate: " + "&6ticks",
+                    "",
+                    "&cWarning:",
+                    "&fBreaking the block will drop",
+                    "&fthe broken type",
                     "",
                     "&d&oFN Material Generators"
             );

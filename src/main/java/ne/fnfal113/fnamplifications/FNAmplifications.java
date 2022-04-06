@@ -51,7 +51,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         FNAmpItemSetup.INSTANCE.init();
 
         registerEvents();
-        Objects.requireNonNull(getCommand("fngear")).setExecutor(new CheckProgress());
+        registerCommands();
         getServer().getScheduler().runTaskTimerAsynchronously(this, new ArmorEquipRunnable(), 0L, getConfig().getInt("armor-update-period") * 20L);
 
         getConfig().options().copyDefaults();
@@ -67,6 +67,10 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
     public void onDisable(){
         Bukkit.getScheduler().cancelTasks(FNAmplifications.getInstance());
         getLogger().log(Level.INFO, "Cancelled any running task that exist");
+    }
+
+    public void registerCommands(){
+        Objects.requireNonNull(getCommand("fngear")).setExecutor(new CheckProgress());
     }
 
     public void registerEvents(){
