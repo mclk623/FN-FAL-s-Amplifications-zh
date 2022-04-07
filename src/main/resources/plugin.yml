@@ -2,7 +2,7 @@ name: FNAmplifications
 version: '${project.version}'
 main: ne.fnfal113.fnamplifications.FNAmplifications
 api-version: 1.15
-authors: [ FN_FAL113 ]
+authors: [ FN_FAL113,buiawpkgew1 ]
 description: 自定义插件，包括我的其他 slimefun 插件
 website: https://github.com/FN-FAL113
 depend: [Slimefun]
