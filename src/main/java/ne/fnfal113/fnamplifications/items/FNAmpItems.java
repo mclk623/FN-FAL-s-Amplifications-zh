@@ -90,14 +90,14 @@ public class FNAmpItems {
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8245a1c3e8d7c3d59d05e3634b04af4cbf8d11b70e2a40e2e6364386db49e737")),
-            "&eFN_FAL'S Machinery Items"));
+            "&eFN_FAL的机械物品"));
 
     public static final SubItemGroup MAGICAL_ITEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MAGICAL_ITEMS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "72114a80357463fe2f59e397aab9fc66d482a65d524f8870d21c724c18ecf757")),
-                    "&eFN Magical Items"));
+                    "&eFN 魔法物品"));
 
     public static final SubItemGroup MULTIBLOCK = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MULTIBLOCK"),
@@ -305,13 +305,13 @@ public class FNAmpItems {
             Material.CLAY,
             "&3FN粘土生成器",
             "",
-            "&6Tickrate: " + "&6ticks",
+            "&6滴答率: " + "&6ticks",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破方块会掉落",
+            "&f坏掉的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
@@ -489,7 +489,7 @@ public class FNAmpItems {
             FMG_GENERATOR_WARPED_BROKEN = new SlimefunItemStack(
                     "FMG_GENERATOR_WARPED_BROKEN",
                     Material.WARPED_NYLIUM,
-                    "&4FN Warped Nylium Generator &8(Broken)",
+                    "&4FN变形尼龙发生器 &8(Broken)",
                     "&8Needs to be repaired",
                     "",
                     "&d&oFN Material Generators"
@@ -498,7 +498,7 @@ public class FNAmpItems {
            FMG_GENERATOR_WARPED = new SlimefunItemStack(
                     "FMG_GENERATOR_WARPED",
                     Material.WARPED_NYLIUM,
-                    "&4FN Warped Nylium Generator",
+                    "&4FN变形尼龙发生器",
                     "&6Generates warped nylium at a certain rate",
                     "&6Right click the block for info",
                     "",
