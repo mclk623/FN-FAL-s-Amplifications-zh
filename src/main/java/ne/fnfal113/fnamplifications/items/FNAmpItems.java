@@ -1746,7 +1746,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_DISRUPTED = new SlimefunItemStack(
             "FN_GEM_DISRUPTED",
             Material.EMERALD,
-            "&cDisrupted Gem",
+            "&c破碎的宝石",
             "",
             "&e% chance to prevent your enemy",
             "&eguardian from spawning",
@@ -1758,7 +1758,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_ARROW_AVERT = new SlimefunItemStack(
             "FN_GEM_ARROW_AVERT",
             Material.EMERALD,
-            "&cArrow Avert Gem",
+            "&c箭避宝石",
             "",
             "&e% chance to prevent arrow shot by a player",
             "&efrom hitting you, arrow is averted taking",
@@ -1771,7 +1771,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_DEBERSERK = new SlimefunItemStack(
             "FN_GEM_DEBERSERK",
             Material.EMERALD,
-            "&cDeberserk Gem",
+            "&c德塞克宝石",
             "",
             "&e% chance to decrease damage",
             "&etaken from axes by 30%",
