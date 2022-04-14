@@ -2,8 +2,8 @@ name: FNAmplifications
 version: '${project.version}'
 main: ne.fnfal113.fnamplifications.FNAmplifications
 api-version: 1.15
-authors: [ FN_FAL113 ]
-description: Custom Addon that includes my other addons for slimefun
+authors: [ FN_FAL113,wateTina ]
+description: 自定义插件，包括我的其他 slimefun 插件
 website: https://github.com/FN-FAL113
 depend: [Slimefun]
 softdepend:
@@ -11,5 +11,5 @@ softdepend:
   - SimpleMaterialGenerators
 commands:
   fngear:
-    description: Command for checking FN Gears progress
+    description: 检查 FN Gears 进度的命令
     usage: /<command>

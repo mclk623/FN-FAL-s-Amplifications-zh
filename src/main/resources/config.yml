@@ -1,23 +1,25 @@
-# Boolean toggle whether you want to receive new updates everytime your server restart if a new update is released.
-# If set to "false" you will not receive new updates and need to manually update it yourself.
+# 启用自动更新功能
 auto-update: true
 
-# LiteXpansion items (iridium) will be used as recipes for FN PowerXpansion
-# This will only work if LiteXpansion is installed and value is set to true
+# 启用 LiteXpansion 整合
+# LiteXpansion 物品将用于 FN 发电机的配方中
+# 仅在该设置为 true 且服务器已安装 LiteXpansion 时生效
 LiteX-Recipe-Integration: true
 
-# SimpleMaterialGenerators items as some recipes for FN Material Generators
-# Same as above, will only work if SMG is installed and value is set to true
+# 启用 SMG(SimpleMaterialGenerators) 整合
+# SMG 物品将用于 FN 材料发电机的部分配方中
+# 仅在该设置为 true 且服务器已安装 SMG 时生效
 SMG-Recipe-Integration: true
 
-# Use 1.17 items (such as amethyst, copper, calcite, etc) as some recipes for FN Machinery Items
-# This will only work if server is running 1.17 and value is set to true
+# 启用 1.17 整合
+# 使用 1.17 物品作为 FN 机器的配方
+# 仅在该设置为 true 且服务器版本为 1.17 及以上时生效
 New-Recipe-Integration: true
 
-# Armor Effects Update, the time to update the armor effects in seconds (i.e FN Gears of Friction permanent effects)
-# For now the chestplate only has a permanent effect at level 30
+# Armor Effects Update，以秒为单位更新装甲效果的时间（即 FN Gears of Friction 永久效果）
+# 目前胸甲只在30级有永久效果
 armor-update-period: 10
 
-# Enable or disable chat changelogs, this changelog get sent only when players join the server for the first time after server restart
-# If disabled no more changelogs will be sent, requires server restart
+# 启用或禁用聊天更新日志，此更新日志仅在服务器重启后玩家第一次加入服务器时发送
+# 如果禁用，将不再发送更改日志，需要重新启动服务器
 Enable-One-Time-Chat-Changelog: true
