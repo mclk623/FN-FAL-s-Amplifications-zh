@@ -56,4 +56,4 @@ jobs:
       with:
         name: artifacts
         path: |
-           target/*
+           target/FNAmplifications*.jar
