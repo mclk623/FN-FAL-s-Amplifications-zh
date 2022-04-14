@@ -56,7 +56,7 @@ public class StaffOfConfusion extends AbstractStaff {
                 block,
                 Interaction.BREAK_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to cast confusion there!");
+            player.sendMessage(ChatColor.DARK_RED + "你没有允许在那里施加混乱!");
             return;
         }
 
