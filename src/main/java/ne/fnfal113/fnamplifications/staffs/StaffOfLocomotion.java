@@ -127,7 +127,7 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
             LivingEntity entity = ENTITY_OWNER.get(data);
             entity.teleport(block.getLocation().add(0.5, 1, 0.5));
             ENTITY_OWNER.remove(data);
-            Utils.updateValueByPdc(item, meta, "none", "Entity stored: ", "&e", "", "");
+            Utils.updateValueByPdc(item, meta, "none", "实体存储: ", "&e", "", "");
             mainStaff.updateMeta(item, meta, player);
         }
     }
