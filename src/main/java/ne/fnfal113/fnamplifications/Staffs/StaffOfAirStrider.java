@@ -49,16 +49,16 @@ public class StaffOfAirStrider extends AbstractStaff {
 
         if(taskMap.containsKey(player.getUniqueId())) {
             if(!taskMap.get(player.getUniqueId()).isCancelled()){
-                player.sendMessage(Utils.colorTranslator("&6Air strider is not yet expired!"));
+                player.sendMessage(Utils.colorTranslator("&6空气节目尚未过期!"));
             }
             return;
         } else {
             if(Slimefun.getProtectionManager().hasPermission
                     (Bukkit.getOfflinePlayer(player.getUniqueId()), player.getLocation(), Interaction.PLACE_BLOCK)) {
-                player.sendMessage(ChatColor.LIGHT_PURPLE + "You can now walk on the air for 10 seconds");
+                player.sendMessage(ChatColor.LIGHT_PURPLE + "你现在可以在空中走过10秒钟");
                 taskMap.put(player.getUniqueId(), new AirStriderTask(player).runTaskTimer(FNAmplifications.getInstance(), 0, 1L));
             } else{
-                player.sendMessage(ChatColor.RED  + "You have no permission to cast air strider on this land claim!");
+                player.sendMessage(ChatColor.RED  + "您无权在这块土地索赔上施放空气演员!");
                 return;
             }
         }
@@ -73,7 +73,7 @@ public class StaffOfAirStrider extends AbstractStaff {
                 player.sendMessage(Utils.colorTranslator("&dAir strider will expire in ") + i + " seconds");
             }
             if(i.get() == 0){
-                player.sendMessage(ChatColor.LIGHT_PURPLE + "Air Strider has expired!");
+                player.sendMessage(ChatColor.LIGHT_PURPLE + "空气节点已过期!");
                 taskMap.get(player.getUniqueId()).cancel();
                 taskMap.remove(player.getUniqueId());
                 task.cancel();
