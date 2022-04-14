@@ -52,7 +52,7 @@ public class StaffOfAwareness extends AbstractStaff {
         if(bookMeta == null){
             return;
         }
-        bookMeta.setTitle("Players around 50 block radius");
+        bookMeta.setTitle("50个块半径左右的球员");
         bookMeta.setAuthor("FN_FAL113");
 
         for (Entity entity: player.getWorld().getNearbyEntities(player.getLocation().clone(), 50, 50, 50)) {
@@ -65,8 +65,8 @@ public class StaffOfAwareness extends AbstractStaff {
         if(amount != 0) {
             PLAYERS.forEach((key1, value1) -> players.add(ChatColor.DARK_GREEN + value1));
 
-            firstPage.add(ChatColor.GOLD + "  Staff of Awareness\n\n " + ChatColor.GRAY +
-                    "The power of staff yields the needed information around your 50 block radius vicinity in which upon players are nearby in your own knowing only");
+            firstPage.add(ChatColor.GOLD + "  意识的员工\n\n " + ChatColor.GRAY +
+                    "工作人员的权力会产生周围的50个块半径附近的所需信息，在此时，玩家在您自己的知识附近就在附近");
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < players.size(); i = i + 5) {
                     bookMeta.addPage(players.subList(i, Math.min(i + 5, players.size())).toString()
@@ -78,8 +78,8 @@ public class StaffOfAwareness extends AbstractStaff {
 
             }
         } else {
-            firstPage.add(ChatColor.GOLD + "  Staff of Awareness\n\n " + ChatColor.GRAY +
-                    "No players around your vicinity");
+            firstPage.add(ChatColor.GOLD + "  意识的员工\n\n " + ChatColor.GRAY +
+                    "你附近没有玩家");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 
