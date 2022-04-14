@@ -141,7 +141,7 @@ public class FNAmpItems {
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD,
-                    "&eFN宝石"));
+                    "&eFN宝石(机翻"));
 
     public static final ItemGroup FN_AMPLIFICATIONS = new ItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_AMPLIFICATIONS"),
@@ -327,11 +327,10 @@ public class FNAmpItems {
             Material.TERRACOTTA,
             "&4FN陶瓦生成器",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破块就可以了,破碎的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_BONE_BROKEN = new SlimefunItemStack(
@@ -347,11 +346,10 @@ public class FNAmpItems {
             Material.BONE_BLOCK,
             "&fFN骨头生成器",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破块就可以了,破碎的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIAMOND_BROKEN = new SlimefunItemStack(
@@ -369,11 +367,10 @@ public class FNAmpItems {
             "",
             "&6Tickrate: " + "&6ticks",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破块就可以了,破碎的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_EMERALD_BROKEN = new SlimefunItemStack(
@@ -389,11 +386,10 @@ public class FNAmpItems {
             Material.EMERALD_BLOCK,
             "&aFN绿宝石生成器",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破块就可以了,破碎的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIRT_BROKEN = new SlimefunItemStack(
@@ -411,11 +407,10 @@ public class FNAmpItems {
             "",
             "&6Tickrate: " + "&6ticks",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破块就可以了,破碎的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB_BROKEN = new SlimefunItemStack(
@@ -431,11 +426,10 @@ public class FNAmpItems {
             Material.HONEYCOMB_BLOCK,
             "&6FN蜜脾生成器",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破块就可以了,破碎的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN 材料生成器"
     );
     public static final SlimefunItemStack FMG_GENERATOR_QUARTZ_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_QUARTZ_BROKEN",
@@ -450,11 +444,10 @@ public class FNAmpItems {
             Material.QUARTZ_BLOCK,
             "&fFN石英生成器",
             "",
-            "&cWarning:",
-            "&fBreaking the block will drop",
-            "&fthe broken type",
+            "&c警告:",
+            "&f打破块就可以了,破碎的类型",
             "",
-            "&d&oFN Material Generators"
+            "&d&oFN 材料生成器"
     );
 
     public static SlimefunItemStack FMG_GENERATOR_WARPED_BROKEN;
@@ -477,11 +470,10 @@ public class FNAmpItems {
                     Material.AMETHYST_BLOCK,
                     "&dFN紫水晶生成器",
                     "",
-                    "&cWarning:",
-                    "&fBreaking the block will drop",
-                    "&fthe broken type",
+                    "&c警告:",
+                    "&f打破方块会掉落,破碎类型",
                     "",
-                    "&d&oFN Material Generators"
+                    "&d&oFN 材料生成器"
             );
         }
 
@@ -490,25 +482,24 @@ public class FNAmpItems {
                     "FMG_GENERATOR_WARPED_BROKEN",
                     Material.WARPED_NYLIUM,
                     "&4FN变形尼龙发生器 &8(Broken)",
-                    "&8Needs to be repaired",
+                    "&8需要修理",
                     "",
-                    "&d&oFN Material Generators"
+                    "&d&oFN 材料生成器"
             );
 
            FMG_GENERATOR_WARPED = new SlimefunItemStack(
                     "FMG_GENERATOR_WARPED",
                     Material.WARPED_NYLIUM,
                     "&4FN变形尼龙发生器",
-                    "&6Generates warped nylium at a certain rate",
-                    "&6Right click the block for info",
+                    "&6以一定的速率生成扭曲的nylium",
+                    "&6右键单击该块以获取信息",
                     "",
                     "&6Tickrate: " + "&6ticks",
                     "",
-                    "&cWarning:",
-                    "&fBreaking the block will drop",
-                    "&fthe broken type",
+                    "&c警告:",
+                    "&f打破方块会掉落,破碎类型",
                     "",
-                    "&d&oFN Material Generators"
+                    "&d&oFN 材料生成器"
             );
         }
     }
@@ -921,109 +912,102 @@ public class FNAmpItems {
     public static final SlimefunItemStack UNBIND_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_UNBIND_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("4f01ec6331a3bc30a8204ec56398d08ca38788556bca9b81d776f6238d567367")),
-            "&6Unbind Rune",
-            "&fA magical rune from psijic time",
+            "&6解绑符文",
+            "&f来自赛伊克时代的魔法符文",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack SPIRAL_FIRE_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_SPIRAL_FIRE_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("8301aa86cafd4b2d732a9b4894cfcfc65edc828e8571b45dbf0a3ba96575cccf")),
-            "&cSpiral Fire Rune",
-            "&fA heart full of fire is fire",
-            "&fthat spirals within this rune",
+            "&c螺旋火符文",
+            "&f一颗充满火的心就是火",
+            "&f在这个符文中盘旋",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack SPIRIT_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_SPIRIT_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("c738b8af8d7ce1a26dc6d40180b3589403e11ef36a66d7c4590037732829542e")),
-            "&fSpirit Rune",
-            "&fSpirit thy come for",
-            "&fI redeem thy soul",
+            "&f精神符文",
+            "&f精神你来，我赎回你的灵魂",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack PESTILENCE_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_PESTILENCE_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("a8c4811395fbf7f620f05cc3175cef1515aaf775ba04a01045027f0693a90147")),
-            "&aPestilence Rune",
-            "&fA rune from the black death",
-            "&fperiod that holds a deadly sin",
+            "&a瘟疫符文",
+            "&f来自黑死病的符文，",
+            "&f包含致命罪孽的时期",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack SPARKLING_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_SPARKLING_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("f1e2428cb359988f4c4ff0e61de21385c62269de19a69762d773223b75dd1666")),
-            "&eSparkling Rune",
-            "&fToo bright and too flashy",
-            "&ffor this rune is too deadly",
+            "&e闪闪发光的符文",
+            "&f太亮太浮华，因为这个符文太致命了",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack CLOUD_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_CLOUD_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("2273740d454de962484712f9835e35119b37ab867fa6982d5cc1f333c2334e59")),
-            "&3Cloud Rune",
-            "&fUp in the skies is where",
-            "&fthe clouds lies",
+            "&3云符文",
+            "&f高高在上的地方是云层所在的地方",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack ICE_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_ICE_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("cdc57c75adf39ec6f0e0916049dd9671e98a8a1e600104e84e645c988950bd7")),
-            "&bIce Rune",
-            "&fThe rune full of chill",
-            "&fbut can you stay still",
+            "&b冰符文",
+            "&f充满寒意的符文，",
+            "&f但你能保持静止吗？",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack POWER_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_POWER_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("3b481c31dc683bdcb7d375a7c5db7ac7adf9e9fe8b6c04a64931613e29fe470e")),
-            "&9Power Rune",
-            "&fThe power from this rune",
-            "&fcan do dangerous things",
+            "&9能量符文",
+            "&f这符文的力量，可以做危险的事情",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack LINGER_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_LINGER_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("2c4a65c689b2d36409100a60c2ab8d3d0a67ce94eea3c1f7ac974fd893568b5d")),
-            "&2Linger Rune",
-            "&fIt lingers from top to",
-            "&fbottom and soon the middle",
+            "&2灵符符文",
+            "&f它从上到下徘徊，很快就到了中间",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack AGILITY_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_AGILITY_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("35f4861aa5b22ee28a90e75dab45d221efd14c0b1ecc8ee998fb67e43bb8f3de")),
-            "&eAgility Rune",
-            "&fFaster means better but",
-            "&fdoes it matter",
+            "&e敏捷符文",
+            "&f更快意味着更好，但这有关系吗",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack INTELLECT_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_INTELLECT_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("977c1fc93216e96d435cf962e1173de8d1a249b644894d72676eba732fcd56e7")),
-            "&9Intellect Rune",
-            "&fVery useful rune in the",
-            "&ftime of desperation",
+            "&9智力符文",
+            "&f在绝望时期非常有用的符文",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack HEART_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_HEART_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("2c1c179ad51955f1522c48ea9931f09c162741b45e22e9d3feb682c7e5ed8274")),
-            "&dHeart Rune",
-            "&fRejuvenate through this rune",
-            "&fas you sense the aura inside",
+            "&d心符文",
+            "&f通过这个符文恢复活力，",
+            "&f因为你感觉到里面的光环",
             "",
-            "&d&oFN Magical Items");
+            "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack BASIC_MACHINE_BLOCK = new SlimefunItemStack(
             "FN_MACHINERY_BASIC_MACHINE_BLOCK",
@@ -1253,13 +1237,12 @@ public class FNAmpItems {
             "&cFN's Chausses of Eminence",
             "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
             "",
-            "&fGlorious leggings worn by FN during war",
-            "&fand was glorified on every victory against",
-            "&fhis foes",
+            "&fFN在战争中穿着的光荣紧身裤，",
+            "&f在每次战胜对手时都被荣耀",
             "",
-            "&c◈◈◈◈◈◈| &d&lStats &6|◈◈◈◈◈◈",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
             ChatColor.YELLOW + "Leggings Level: 0",
-            ChatColor.YELLOW + "Progress:",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1508,8 +1491,8 @@ public class FNAmpItems {
             "&e右击&7储存箭",
             "&eShift+右击&7取出箭",
             "",
-            "&eClick to change state",
-            "&eSize: 192 Arrows",
+            "&e单击以更改状态，",
+            "&e大小：192 箭头",
             "&eArrows: " + "&f0",
             "&eState: Closed (No Arrows)"
     );
@@ -1760,12 +1743,10 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c箭避宝石",
             "",
-            "&e% chance to prevent arrow shot by a player",
-            "&efrom hitting you, arrow is averted taking",
-            "&eno damage when you get hit",
+            "&e有%几率防止玩家射出的箭击中你，",
+            "&e当你被击中时，箭不会受到伤害",
             "",
-            "&dDrag and drop on any armor type",
-            "&dto bind this gem"
+            "&d拖放任何盔甲类型以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_DEBERSERK = new SlimefunItemStack(
@@ -1773,152 +1754,132 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c德塞克宝石",
             "",
-            "&e% chance to decrease damage",
-            "&etaken from axes by 30%",
+            "&e%几率减少从斧头受到的伤害30%",
             "",
-            "&dDrag and drop on any armor type",
-            "&dto bind this gem"
+            "&d拖放任何盔甲类型以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_PARRY = new SlimefunItemStack(
             "FN_GEM_PARRY",
             Material.EMERALD,
-            "&cParry Gem",
+            "&c招架宝石",
             "",
-            "&e% chance to decrease damage",
-            "&etaken from swords by 25%",
+            "&e%几率减少受到剑的伤害25%",
             "",
-            "&dDrag and drop on any armor type",
-            "&dto bind this gem"
+            "&d拖放任何盔甲类型以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_FLAWLESS_UNBIND = new SlimefunItemStack(
             "FN_GEM_FLAWLESS_UNBIND",
             Material.DIAMOND,
-            "&bFlawless Unbind Gem",
+            "&b无瑕解绑宝石",
             "",
-            "&e% chance to remove any of the",
-            "&eselected gem from an item",
+            "&e%几率从物品中移除任何选定的宝石",
             "",
-            "&f&lInstruction",
-            "&dRight hand: &cUnbind Gem",
-            "&dLeft hand: &cWeapon/Armor/Tools",
-            "&dAction: &cRight click"
+            "&f&l操作说明",
+            "&d右手: &c解绑宝石",
+            "&d左手: &c武器/盔甲/工具",
+            "&d行动: &c右键点击"
     );
 
     public static final SlimefunItemStack FN_GEM_PRECIOUS_UNBIND = new SlimefunItemStack(
             "FN_GEM_PRECIOUS_UNBIND",
             Material.DIAMOND,
-            "&dPrecious Unbind Gem",
+            "&d珍贵的解开宝石",
             "",
-            "&e% chance to remove any of the",
-            "&eselected gem from an item",
+            "&e%几率从物品中移除任何选定的宝石",
             "",
-            "&f&lInstruction",
-            "&dRight hand: &cUnbind Gem",
-            "&dLeft hand: &cWeapon/Armor/Tools",
-            "&dAction: &cRight click"
+            "&f&l操作说明",
+            "&d右手: &c解绑宝石",
+            "&d左手: &c武器/盔甲/工具",
+            "&d行动: &c右键点击"
     );
 
     public static final SlimefunItemStack FN_GEM_BLEMISHED_UNBIND = new SlimefunItemStack(
             "FN_GEM_BLEMISHED_UNBIND",
             Material.DIAMOND,
-            "&aBlemished Unbind Gem",
+            "&a有瑕疵的解开宝石",
             "",
-            "&e% chance to remove any of the",
-            "&eselected gem from an item",
+            "&e%几率从物品中移除任何选定的宝石",
             "",
-            "&f&lInstruction",
-            "&dRight hand: &cUnbind Gem",
-            "&dLeft hand: &cWeapon/Armor/Tools",
-            "&dAction: &cRight click"
+            "&f&l操作说明",
+            "&d右手: &c解绑宝石",
+            "&d左手: &c武器/盔甲/工具",
+            "&d行动: &c右键点击"
     );
 
     public static final SlimefunItemStack FN_GEM_DAMAGED_UNBIND = new SlimefunItemStack(
             "FN_GEM_DAMAGED_UNBIND",
             Material.DIAMOND,
-            "&6Damaged Unbind Gem",
+            "&6损坏的解绑宝石",
             "",
-            "&e% chance to remove any of the",
-            "&eselected gem from an item",
+            "&e%几率从物品中移除任何选定的宝石",
             "",
-            "&f&lInstruction",
-            "&dRight hand: &cUnbind Gem",
-            "&dLeft hand: &cWeapon/Armor/Tools",
-            "&dAction: &cRight click"
+            "&f&l操作说明",
+            "&d右手: &c解绑宝石",
+            "&d左手: &c武器/盔甲/工具",
+            "&d行动: &c右键点击"
     );
 
     public static final SlimefunItemStack FN_GEM_ADAMANTINE = new SlimefunItemStack(
             "FN_GEM_ADAMANTINE",
             Material.EMERALD,
-            "&cAdamantine Gem",
+            "&c精金宝石",
             "",
-            "&e% chance to prevent weapon or tools",
-            "&efrom having durability damage",
+            "&e% 几率防止武器或工具受到耐久伤害",
             "",
-            "&dDrag and drop on weapon or",
-            "&dtools to bind this gem"
+            "&d拖放武器或工具以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_STOUT = new SlimefunItemStack(
             "FN_GEM_STOUT",
             Material.EMERALD,
-            "&cStout Gem",
+            "&c粗壮的宝石",
             "",
-            "&e% chance to prevent armor from",
-            "&etaking any durability damage",
+            "&e%几率防止盔甲受到任何耐久伤害",
             "",
-            "&dDrag and drop on any armor type",
-            "&dto bind this gem"
+            "&d拖放任何盔甲类型以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_AWAKEN = new SlimefunItemStack(
             "FN_GEM_AWAKEN",
             Material.EMERALD,
-            "&cAwaken Gem",
+            "&c觉醒宝石",
             "",
-            "&e% chance to instant resurrect the",
-            "&eplayer upon death at same location",
+            "&e%几率使玩家在同一地点死亡后立即复活",
             "",
-            "&dDrag and drop on a helmet",
-            "&dto bind this gem"
+            "&d拖放到头盔上以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_AVENGE = new SlimefunItemStack(
             "FN_GEM_AVENGE",
             Material.EMERALD,
-            "&cAvenge Gem",
+            "&c复仇宝石",
             "",
-            "&e% chance to spawn primed creeper",
-            "&eupon player death at same location",
+            "&e%几率在玩家死亡时在同一位置生成已启动的爬行者",
             "",
-            "&dDrag and drop on a boots",
-            "&dto bind this gem"
+            "&d拖放到靴子上以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_ACHILLES_HEEL = new SlimefunItemStack(
             "FN_GEM_ACHILLES_HEEL",
             Material.EMERALD,
-            "&cAchilles Heel Gem",
+            "&c阿喀琉斯之踵宝石",
             "",
-            "&e% chance to deal 2x damage when",
-            "&ethe arrow hits the achilles heel",
-            "&eof an entity or player",
+            "&e当箭击中实体或玩家的",
+            "&e致命弱点时，有%几率造成2倍伤害",
             "",
-            "&dDrag and drop on a bow or crossbow",
-            "&dto bind this gem"
+            "&d拖放到弓或弩上以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_DISARMOR = new SlimefunItemStack(
             "FN_GEM_DISARMOR",
             Material.EMERALD,
-            "&cDisarmor Gem",
+            "&c卸甲宝石",
             "",
-            "&e% chance of unequipping a random",
-            "&earmor piece from your enemy",
+            "&e% 几率从你的敌人身上卸下一件随机盔甲",
             "",
-            "&dDrag and drop on sword or axe",
-            "&dto bind this gem"
+            "&d拖放剑或斧头以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_BLOCK_ROTATOR = new SlimefunItemStack(
