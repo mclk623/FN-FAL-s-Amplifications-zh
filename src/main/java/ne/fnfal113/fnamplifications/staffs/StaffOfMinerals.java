@@ -79,8 +79,8 @@ public class StaffOfMinerals extends AbstractStaff {
                     .forEachOrdered(e -> contents.add(ChatColor.DARK_GREEN + e.getValue().toString() + "x " + ChatColor.GOLD + StringUtils.capitalize(e.getKey().toLowerCase(Locale.ROOT))));
 
 
-            firstPage.add(ChatColor.BLUE + "    Staff of Minerals\n\n " + ChatColor.GRAY +
-                    "  Through the power of the staff, you are bestowed with magical information written on this book containing the ores from the chunk you are standing at");
+            firstPage.add(ChatColor.BLUE + "    矿物的员工\n\n " + ChatColor.GRAY +
+                    "  通过工作人员的权力，您将赋予您在本书上写的神奇信息，其中包含来自块的矿石，您正在站立");
 
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < contents.size(); i = i + 5) {
@@ -93,8 +93,8 @@ public class StaffOfMinerals extends AbstractStaff {
             }
 
         } else {
-            firstPage.add(ChatColor.BLUE + "    Staff of Minerals\n\n " + ChatColor.GRAY +
-                    "  There are no ores from your chunk location");
+            firstPage.add(ChatColor.BLUE + "    矿物的员工\n\n " + ChatColor.GRAY +
+                    "  您的块位置没有矿石");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 
