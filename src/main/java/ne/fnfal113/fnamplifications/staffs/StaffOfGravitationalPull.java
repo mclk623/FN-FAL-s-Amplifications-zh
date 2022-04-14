@@ -51,7 +51,7 @@ public class StaffOfGravitationalPull extends AbstractStaff {
                 block,
                 Interaction.BREAK_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to cast gravitational pull there!");
+            player.sendMessage(ChatColor.DARK_RED + "您没有允许在那里投掷引力!");
             return;
         }
 
