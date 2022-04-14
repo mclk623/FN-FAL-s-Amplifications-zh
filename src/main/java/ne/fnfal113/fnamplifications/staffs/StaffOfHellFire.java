@@ -52,7 +52,7 @@ public class StaffOfHellFire extends AbstractStaff {
                 block,
                 Interaction.BREAK_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to cast hellfire there!");
+            player.sendMessage(ChatColor.DARK_RED + "你没有权限在那里铸造地狱!");
             return;
         }
 
