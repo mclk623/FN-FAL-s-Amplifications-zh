@@ -53,7 +53,7 @@ public class StaffOfForce extends AbstractStaff {
                 block,
                 Interaction.BREAK_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to cast force cloud there!");
+            player.sendMessage(ChatColor.DARK_RED + "你没有权限在那里施放强制云!");
             return;
         }
 
@@ -66,11 +66,11 @@ public class StaffOfForce extends AbstractStaff {
         if(!player.isSneaking()) {
             AreaOfEffectStaffTask cloudStaff = new AreaOfEffectStaffTask(player, block, "FN_FORCE", 2.85F, 160, particle, null);
             cloudStaff.spawnCloud();
-            player.sendMessage(ChatColor.GREEN + "You spawned a cloud effect with forward force");
+            player.sendMessage(ChatColor.GREEN + "你用前锋强制产生了云效应");
         } else {
             AreaOfEffectStaffTask cloudStaff = new AreaOfEffectStaffTask(player, block, "FN_BACKWARD_FORCE", 2.85F, 160, Particle.END_ROD, null);
             cloudStaff.spawnCloud();
-            player.sendMessage(ChatColor.RED  + "You spawned a cloud effect with backward force");
+            player.sendMessage(ChatColor.RED  + "你用后向力产生了云效应");
         }
 
     }
