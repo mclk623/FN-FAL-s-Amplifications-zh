@@ -18,7 +18,6 @@ import ne.fnfal113.fnamplifications.staffs.listener.StaffListener;
 import ne.fnfal113.fnamplifications.tools.listener.HoeListener;
 import ne.fnfal113.fnamplifications.tools.listener.RotatorListener;
 import ne.fnfal113.fnamplifications.utils.PlayerJoinLister;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -41,11 +40,10 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         new Metrics(this, 13219);
 
         getLogger().info("************************************************************");
-        getLogger().info("              FN Amplifications - FN 科技                   ");
-        getLogger().info("           作者: FN_FAL113  汉化: buiawpkgew1,haiman233       ");
-        getLogger().info("    感谢 Jeff(LiteXpansion) 与 Walshy(Slimefun) 提供的工具包   ");
-        getLogger().info("               如有任何问题，请前往问题追踪器汇报                ");
-        getLogger().info("                作者 Discord: FN_FAL#7779                    ");
+        getLogger().info("*         FN Amplifications - Created by FN_FAL113         *");
+        getLogger().info("*         Add me on discord if there are any issues        *");
+        getLogger().info("*          FN_FAL#7779 or join SF Addon Community          *");
+        getLogger().info("*                https://discord.gg/SqD3gg5SAU             *");
         getLogger().info("************************************************************");
 
         FNAmpItemSetup.INSTANCE.init();
@@ -57,9 +55,8 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
 
-        if (getConfig().getBoolean("auto-update") &&
-            getDescription().getVersion().startsWith("Build ")) {
-            new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications-zh", "main", false).start();
+        if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("DEV - ")) {
+            new GitHubBuildsUpdater(this, getFile(), "FN-FAL113/FN-FAL-s-Amplifications/main").start();
         }
     }
 
@@ -94,7 +91,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/issues";
+        return "https://github.com/FN-FAL113/FN-FAL-s-Amplifications/issues";
     }
 
     public ConfigManager getConfigManager(){
