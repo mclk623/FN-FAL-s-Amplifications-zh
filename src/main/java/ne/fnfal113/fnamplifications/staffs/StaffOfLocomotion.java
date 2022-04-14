@@ -60,12 +60,12 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
     public void onEntityClick(PlayerInteractEntityEvent event){
         Player player = event.getPlayer();
         if(event.getRightClicked() instanceof Player){
-            player.sendMessage(Utils.colorTranslator("&cStaff is not allowed to move players!"));
+            player.sendMessage(Utils.colorTranslator("&c工作人员不允许移动玩家!"));
             return;
         }
 
         if (!(event.getRightClicked() instanceof LivingEntity)) {
-            player.sendMessage(Utils.colorTranslator("&cYou right clicked an invalid entity"));
+            player.sendMessage(Utils.colorTranslator("&c您右键单击无效实体"));
             return;
         }
 
@@ -76,7 +76,7 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
                 en.getLocation(),
                 Interaction.PLACE_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to select this entity!");
+            player.sendMessage(ChatColor.DARK_RED + "您无权选择此实体!");
             return;
         }
 
@@ -88,10 +88,10 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
             ENTITY_OWNER.remove(data);
             data.set(getStorageKey2(), PersistentDataType.DOUBLE, Math.random()); // for Unique PDC (avoid same pdc contents)
             ENTITY_OWNER.put(data, en);
-            Utils.updateValueByPdc(item, meta, en.getName(), "Entity stored: ", "&e", "", " entity");
+            Utils.updateValueByPdc(item, meta, en.getName(), "实体存储: ", "&e", "", " entity");
             Objects.requireNonNull(player.getLocation().getWorld()).playSound(player.getLocation(), Sound.ENTITY_ILLUSIONER_MIRROR_MOVE, 1 ,1);
         } else {
-            player.sendMessage(Utils.colorTranslator("&eThis entity has been stored already by others!"));
+            player.sendMessage(Utils.colorTranslator("&e此实体已被其他人存储!"));
         }
     }
 
@@ -114,12 +114,12 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
                 block,
                 Interaction.INTERACT_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to teleport entity there!");
+            player.sendMessage(ChatColor.DARK_RED + "您无权在那里传送实体!");
             return;
         }
 
         if(ENTITY_OWNER.get(data) == null){
-            player.sendMessage("You haven't right clicked an entity or Entity ID changed after server restart");
+            player.sendMessage("您尚未正确点击服务器重新启动后更改的实体或实体ID");
             return;
         }
 
