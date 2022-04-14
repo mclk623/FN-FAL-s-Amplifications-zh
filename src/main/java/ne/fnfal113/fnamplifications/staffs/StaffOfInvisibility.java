@@ -45,7 +45,7 @@ public class StaffOfInvisibility extends AbstractStaff {
                 player.isInvisible() : player.hasPotionEffect(PotionEffectType.INVISIBILITY);
 
         if (isInvisible) { // #isInvisible() only supports 1.16 above
-            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cYour invisibility is still active!"));
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c您的隐形仍然活跃!"));
             return;
         }
         ItemStack item = player.getInventory().getItemInMainHand();
@@ -61,7 +61,7 @@ public class StaffOfInvisibility extends AbstractStaff {
         PotionEffect effect2 = new PotionEffect(PotionEffectType.INVISIBILITY,115,1, false, false);
         player.addPotionEffect(effect);
         player.addPotionEffect(effect2);
-        player.sendMessage(ChatColor.GREEN + "You are now invisible to all players!");
+        player.sendMessage(ChatColor.GREEN + "您现在对所有玩家都不可见!");
 
         Bukkit.getScheduler().runTaskLater(FNAmplifications.getInstance(), () -> {
             if(!player.isOnline()){
