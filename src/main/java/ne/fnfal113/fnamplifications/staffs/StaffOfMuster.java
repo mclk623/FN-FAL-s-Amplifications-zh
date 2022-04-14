@@ -54,7 +54,7 @@ public class StaffOfMuster extends AbstractStaff {
                 block,
                 Interaction.BREAK_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to cast muster there!");
+            player.sendMessage(ChatColor.DARK_RED + "你没有允许在那里投球!");
             return;
         }
 
@@ -73,7 +73,7 @@ public class StaffOfMuster extends AbstractStaff {
             } // permission check
         } // for each
 
-        player.sendMessage(ChatColor.GREEN + "Mustered " + amount + " entities");
+        player.sendMessage(ChatColor.GREEN + "鼓舞 " + amount + " 实体");
 
         block.getWorld().playEffect(block.getLocation().clone().add(0.5, 1, 0.5), Effect.ENDER_SIGNAL, 1);
 
