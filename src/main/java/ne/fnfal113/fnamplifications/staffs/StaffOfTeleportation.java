@@ -53,7 +53,7 @@ public class StaffOfTeleportation extends AbstractStaff {
                 block,
                 Interaction.BREAK_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to teleport there!");
+            player.sendMessage(ChatColor.DARK_RED + "您无权传送到那里!");
             return;
         }
 
