@@ -55,7 +55,7 @@ public class StaffOfStallion extends AbstractStaff {
                 block,
                 Interaction.BREAK_BLOCK)
         ) {
-            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to cast stallion there!");
+            player.sendMessage(ChatColor.DARK_RED + "你没有允许在那里铸造种族!");
             return;
         }
 
