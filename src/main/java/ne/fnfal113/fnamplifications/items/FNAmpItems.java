@@ -2048,21 +2048,19 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_LIFESTEAL = new SlimefunItemStack(
             "FN_GEM_LIFESTEAL",
             Material.EMERALD,
-            "&cLifesteal Gem",
+            "&c吸血宝石",
             "",
-            "&eA chance to steal 1 heart from",
-            "&eyour enemy as long as your",
-            "&ehealth is below your max health",
+            "&e只要你的生命值低于最大生命值,",
+            "&e就有机会从敌人身上偷取1颗心",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 层级 &6◥◣◥◣◥◣",
             "&6⨳ Tier I: " + "&e%",
             "&6⨳ Tier II: " + "&e%",
             "&6⨳ Tier III: " + "&e%",
             "&6⨳ Tier IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on sword or axe",
-            "&dto bind this gem"
+            "&d拖放剑或斧头以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_UPGRADES_DISPLAY_ITEM = new SlimefunItemStack(
