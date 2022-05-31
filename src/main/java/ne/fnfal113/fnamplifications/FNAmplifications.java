@@ -11,6 +11,7 @@ import ne.fnfal113.fnamplifications.gears.listener.GearListener;
 import ne.fnfal113.fnamplifications.gears.runnables.ArmorEquipRunnable;
 import ne.fnfal113.fnamplifications.gems.listener.GemListener;
 import ne.fnfal113.fnamplifications.gems.listener.GemUnbinderListener;
+import ne.fnfal113.fnamplifications.integrations.VaultIntegration;
 import ne.fnfal113.fnamplifications.machines.listener.JukeBoxClickListener;
 import ne.fnfal113.fnamplifications.mysteriousitems.listener.MysteryStickListener;
 import ne.fnfal113.fnamplifications.quivers.listener.QuiverListener;
@@ -31,6 +32,7 @@ import java.util.logging.Level;
 public final class FNAmplifications extends JavaPlugin implements SlimefunAddon {
 
     private static FNAmplifications instance;
+    private static VaultIntegration vaultIntegration;
 
     private final ConfigManager configManager = new ConfigManager();
 
@@ -47,6 +49,8 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         getLogger().info("               如有任何问题，请前往问题追踪器汇报                ");
         getLogger().info("                作者 Discord: FN_FAL#7779                    ");
         getLogger().info("************************************************************");
+
+        setVaultIntegration(this);
 
         FNAmpItemSetup.INSTANCE.init();
 
@@ -107,6 +111,14 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
     public static FNAmplifications getInstance() {
         return instance;
+    }
+
+    public static void setVaultIntegration(FNAmplifications ins) {
+        vaultIntegration = new VaultIntegration(ins);
+    }
+
+    public static VaultIntegration getVaultIntegration() {
+        return vaultIntegration;
     }
 
 }

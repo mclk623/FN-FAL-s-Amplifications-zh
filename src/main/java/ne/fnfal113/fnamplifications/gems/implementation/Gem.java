@@ -2,11 +2,12 @@ package ne.fnfal113.fnamplifications.gems.implementation;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import lombok.Getter;
-import ne.fnfal113.fnamplifications.FNAmplifications;
 import ne.fnfal113.fnamplifications.utils.Keys;
 import ne.fnfal113.fnamplifications.utils.Utils;
-import org.apache.commons.lang.Validate;
-import org.bukkit.*;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
@@ -44,9 +45,8 @@ public class Gem {
         this.sfItemName = sfItem.getItemName();
         this.gemID = sfItem.getId();
         this.player = p;
-        this.key1 = new NamespacedKey(FNAmplifications.getInstance(), sfItem.getId().toLowerCase());
-        this.key2 = new NamespacedKey(FNAmplifications.getInstance(), itemToSocket.getType().toString().toLowerCase() + "_socket_amount");
-
+        this.key1 = Keys.createKey(sfItem.getId().toLowerCase());
+        this.key2 = Keys.createKey(itemToSocket.getType().toString().toLowerCase() + "_socket_amount");
     }
 
     public void onDrag(InventoryClickEvent event, boolean retaliateWeapon){
@@ -57,7 +57,7 @@ public class Gem {
             if(!isSameGem(getItemStackToSocket())){ // check if the gem being added already exist
                 getPlayer().setItemOnCursor(new ItemStack(Material.AIR));
                 socketItem();
-                if(retaliateWeapon){
+                if(retaliateWeapon){ // add return weapon pdc value
                     retaliateWeapon();
                 }
             } else{
@@ -75,14 +75,13 @@ public class Gem {
         String name = getSfItemName();
         ItemStack itemStack = getItemStackToSocket();
         ItemMeta meta = itemStack.getItemMeta();
-        Validate.notNull(meta, "Meta must not be null!");
 
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
         int amountOfGems = pdc.getOrDefault(getKey2(), PersistentDataType.INTEGER, 0);
 
         if (amountOfGems == 0) { // add the lore when adding a gem for the first time
             List<String> lore;
-            if(meta.hasLore()){
+            if(meta.hasLore()){ // compatibility with other items that has existing lore
                 lore = meta.getLore();
             }else{
                 lore = new ArrayList<>();
@@ -123,8 +122,7 @@ public class Gem {
      * @return the amount of gem inside the itemstack if there are any
      */
     public int checkGemAmount(PersistentDataContainer pdc, ItemStack itemStack){
-        return pdc.getOrDefault(
-                new NamespacedKey(FNAmplifications.getInstance(), itemStack.getType().toString().toLowerCase() + "_socket_amount"),
+        return pdc.getOrDefault(Keys.createKey(itemStack.getType().toString().toLowerCase() + "_socket_amount"),
                 PersistentDataType.INTEGER, 0);
     }
 

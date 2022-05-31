@@ -4,17 +4,17 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import ne.fnfal113.fnamplifications.FNAmplifications;
 import ne.fnfal113.fnamplifications.gems.implementation.Gem;
 import ne.fnfal113.fnamplifications.gems.abstracts.AbstractGem;
 import ne.fnfal113.fnamplifications.gems.implementation.ThrowableWeapon;
+import ne.fnfal113.fnamplifications.utils.Keys;
 import ne.fnfal113.fnamplifications.utils.WeaponArmorEnum;
 import ne.fnfal113.fnamplifications.gems.handlers.OnRightClickHandler;
 import ne.fnfal113.fnamplifications.utils.Utils;
-import org.bukkit.*;
-import org.bukkit.entity.*;
+import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
@@ -28,21 +28,11 @@ public class AxeThrowieGem extends AbstractGem implements OnRightClickHandler {
     }
 
     @Override
-    public void onDrag(InventoryClickEvent event, Player player){
-        if(event.getCursor() == null){
-            return;
-        }
-
-        ItemStack currentItem = event.getCurrentItem();
-
-        SlimefunItem slimefunItem = SlimefunItem.getByItem(event.getCursor());
-
-        if(slimefunItem != null && currentItem != null) {
-            if (WeaponArmorEnum.AXES.isTagged(currentItem.getType())) {
-                new Gem(slimefunItem, currentItem, player).onDrag(event, false);
-            } else {
-                player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on axes only"));
-            }
+    public void onDrag(InventoryClickEvent event, Player player, SlimefunItem slimefunItem, ItemStack currentItem){
+        if (WeaponArmorEnum.AXES.isTagged(currentItem.getType())) {
+            new Gem(slimefunItem, currentItem, player).onDrag(event, false);
+        } else {
+            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on axes only"));
         }
     }
 
@@ -52,16 +42,25 @@ public class AxeThrowieGem extends AbstractGem implements OnRightClickHandler {
             return;
         }
         if(!hasPermissionToThrow(player)){
-            player.sendMessage(Utils.colorTranslator("&c&l[FNAmpli" + "&b&lfications] > " + "&eYou don't have the permission to throw here!"));
+            player.sendMessage(Utils.colorTranslator("&eYou don't have the permission to throw here! (Needs block interaction flag enabled)"));
             return;
         }
+
         ItemStack itemStack = player.getInventory().getItemInMainHand();
-
+        ItemMeta meta = itemStack.getItemMeta();
         PersistentDataContainer pdc = itemStack.getItemMeta().getPersistentDataContainer();
-        NamespacedKey key = new NamespacedKey(FNAmplifications.getInstance(), "return_weapon");
 
-        throwableWeapon.throwWeapon(player, throwableWeapon.spawnArmorstand(player, itemStack.clone(), false), itemStack.clone(),
-                true, false, false, Boolean.parseBoolean(pdc.getOrDefault(key, PersistentDataType.STRING, "false")));
+        try{
+            String pdcValue = pdc.getOrDefault(Keys.RETURN_WEAPON_KEY, PersistentDataType.STRING, "false");
+
+            // creates throw a task from this object instance
+            throwableWeapon.throwWeapon(player, throwableWeapon.spawnArmorstand(player, itemStack.clone(), false), itemStack.clone(),
+                    true, false, false, pdcValue.equalsIgnoreCase("true"));
+        } catch (IllegalArgumentException e){
+            pdc.set(Keys.RETURN_WEAPON_KEY, PersistentDataType.STRING, "true");
+            itemStack.setItemMeta(meta);
+            return;
+        }
 
         itemStack.setAmount(0);
     }

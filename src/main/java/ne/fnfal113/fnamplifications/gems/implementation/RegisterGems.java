@@ -1,8 +1,11 @@
 package ne.fnfal113.fnamplifications.gems.implementation;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import ne.fnfal113.fnamplifications.FNAmplifications;
 import ne.fnfal113.fnamplifications.gems.*;
 import ne.fnfal113.fnamplifications.gems.unbinder.BlemishedUnbindGem;
 import ne.fnfal113.fnamplifications.gems.unbinder.DamagedUnbindGem;
@@ -10,10 +13,21 @@ import ne.fnfal113.fnamplifications.gems.unbinder.FlawlessUnbindGem;
 import ne.fnfal113.fnamplifications.gems.unbinder.PreciousUnbindGem;
 import ne.fnfal113.fnamplifications.items.FNAmpItems;
 import ne.fnfal113.fnamplifications.multiblocks.FnGemAltar;
+import ne.fnfal113.fnamplifications.multiblocks.FnGemUpgrader;
+import ne.fnfal113.fnamplifications.utils.PotionBuilder;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.potion.PotionType;
 
 public class RegisterGems {
+
+    private static final CustomItemStack anyUpgradeableGem = new CustomItemStack(
+            Material.EMERALD,
+            "&dAny Upgradeable Gem",
+            "",
+            "&eSame gem type and must",
+            "&ebe same level or tier"
+    );
 
     public static void setup(SlimefunAddon instance){
         new ArmorImpairGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_ARMOR_IMPAIR, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
@@ -160,6 +174,74 @@ public class RegisterGems {
                 FNAmpItems.POWER_RUNE, null, FNAmpItems.INTELLECT_RUNE})
                 .register(instance);
 
+        new DisarmGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_DISARM, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.POWER_RUNE, SlimefunItems.MAGIC_SUGAR, FNAmpItems.LINGER_RUNE,
+                new ItemStack(Material.BLAZE_POWDER, 2), new ItemStack(Material.EMERALD), new ItemStack(Material.BLAZE_POWDER, 2),
+                FNAmpItems.PESTILENCE_RUNE, SlimefunItems.MAGIC_SUGAR, FNAmpItems.INTELLECT_RUNE})
+                .register(instance);
+
+        new SmokeCriminalGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_SMOKE_CRIMINAL, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.SPIRIT_RUNE, null, FNAmpItems.CLOUD_RUNE,
+                new ItemStack(Material.ROTTEN_FLESH, 1), new ItemStack(Material.EMERALD), new ItemStack(Material.BLAZE_POWDER, 1),
+                FNAmpItems.CLOUD_RUNE, null, FNAmpItems.POWER_RUNE})
+                .register(instance);
+
+        new LifestealGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_LIFESTEAL, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.HEART_RUNE, SlimefunItems.MAGIC_SUGAR, FNAmpItems.HEART_RUNE,
+                new ItemStack(Material.BLAZE_POWDER, 1), new ItemStack(Material.EMERALD), new ItemStack(Material.BLAZE_POWDER, 1),
+                FNAmpItems.LINGER_RUNE, SlimefunItems.MAGIC_SUGAR, FNAmpItems.PESTILENCE_RUNE})
+                .register(instance);
+
+        new AtrohpyGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_ATROPHY, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.LINGER_RUNE, FNAmpItems.PESTILENCE_RUNE, FNAmpItems.LINGER_RUNE,
+                new PotionBuilder(PotionType.WEAKNESS).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.POISON).createPotion(),
+                FNAmpItems.LINGER_RUNE, FNAmpItems.HEART_RUNE, FNAmpItems.LINGER_RUNE})
+                .register(instance);
+
+        new BaneGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_BANE, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.LINGER_RUNE, FNAmpItems.PESTILENCE_RUNE, FNAmpItems.LINGER_RUNE,
+                new PotionBuilder(PotionType.POISON).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.POISON).createPotion(),
+                FNAmpItems.PESTILENCE_RUNE, FNAmpItems.PESTILENCE_RUNE, FNAmpItems.PESTILENCE_RUNE})
+                .register(instance);
+
+        new SedateGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_SEDATE, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.LINGER_RUNE, null, FNAmpItems.LINGER_RUNE,
+                new PotionBuilder(PotionType.SLOWNESS).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.SLOWNESS).createPotion(),
+                FNAmpItems.AGILITY_RUNE, FNAmpItems.LINGER_RUNE, FNAmpItems.AGILITY_RUNE})
+                .register(instance);
+
+        new DecrepitGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_DECREPIT, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.LINGER_RUNE, null, FNAmpItems.LINGER_RUNE,
+                new PotionBuilder(PotionType.WEAKNESS).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.WEAKNESS).createPotion(),
+                FNAmpItems.LINGER_RUNE, null, FNAmpItems.LINGER_RUNE})
+                .register(instance);
+
+        new DeceptionGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_DECEPTION, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.SPIRIT_RUNE, null, FNAmpItems.SPIRIT_RUNE,
+                new PotionBuilder(PotionType.AWKWARD).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.AWKWARD).createPotion(),
+                FNAmpItems.PESTILENCE_RUNE, FNAmpItems.LINGER_RUNE, FNAmpItems.PESTILENCE_RUNE})
+                .register(instance);
+
+        new CelerityGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_CELERITY, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.AGILITY_RUNE, FNAmpItems.POWER_RUNE, FNAmpItems.AGILITY_RUNE,
+                new PotionBuilder(PotionType.SPEED).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.SPEED).createPotion(),
+                FNAmpItems.AGILITY_RUNE, FNAmpItems.POWER_RUNE, FNAmpItems.AGILITY_RUNE})
+                .register(instance);
+
+        if(FNAmplifications.getVaultIntegration().isVaultInstalled()){
+            new LootGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_LOOT, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                    FNAmpItems.PESTILENCE_RUNE, FNAmpItems.AGILITY_RUNE, FNAmpItems.LINGER_RUNE,
+                    null, new ItemStack(Material.EMERALD), null,
+                    FNAmpItems.LINGER_RUNE, FNAmpItems.CLOUD_RUNE, FNAmpItems.PESTILENCE_RUNE})
+                    .register(instance);
+        }
+
+        new ShockwaveGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_SHOCKWAVE, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
+                FNAmpItems.POWER_RUNE, FNAmpItems.POWER_RUNE, FNAmpItems.POWER_RUNE,
+                null, new ItemStack(Material.EMERALD), null,
+                FNAmpItems.POWER_RUNE, FNAmpItems.POWER_RUNE, FNAmpItems.POWER_RUNE})
+                .register(instance);
+
         new FlawlessUnbindGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_FLAWLESS_UNBIND, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
                 new SlimefunItemStack(SlimefunItems.MAGIC_LUMP_3, 5), FNAmpItems.UNBIND_RUNE, new SlimefunItemStack(SlimefunItems.ENDER_LUMP_3, 5),
                 FNAmpItems.UNBIND_RUNE, new ItemStack(Material.DIAMOND), FNAmpItems.UNBIND_RUNE,
@@ -182,6 +264,12 @@ public class RegisterGems {
                 new SlimefunItemStack(SlimefunItems.MAGIC_LUMP_1, 2), null, new SlimefunItemStack(SlimefunItems.ENDER_LUMP_1, 2),
                 null, new ItemStack(Material.DIAMOND), null,
                 new SlimefunItemStack(SlimefunItems.MAGIC_LUMP_1, 2), FNAmpItems.UNBIND_RUNE, new SlimefunItemStack(SlimefunItems.ENDER_LUMP_1, 2)})
+                .register(instance);
+
+        new SlimefunItem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_UPGRADES_DISPLAY_ITEM, FnGemUpgrader.RECIPE_TYPE, new ItemStack[]{
+                    anyUpgradeableGem.clone(), null, anyUpgradeableGem.clone(),
+                    null, FNAmpItems.FN_GEM_FINE_JASPER_CRAFTING, null,
+                    anyUpgradeableGem.clone(), null, anyUpgradeableGem.clone()})
                 .register(instance);
 
     }

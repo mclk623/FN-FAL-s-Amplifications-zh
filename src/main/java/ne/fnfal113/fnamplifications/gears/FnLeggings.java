@@ -4,7 +4,6 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import lombok.SneakyThrows;
-import ne.fnfal113.fnamplifications.FNAmplifications;
 import ne.fnfal113.fnamplifications.gears.abstracts.AbstractGears;
 import ne.fnfal113.fnamplifications.gears.implementation.MainGears;
 import ne.fnfal113.fnamplifications.utils.Keys;
@@ -21,8 +20,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 @SuppressWarnings("ConstantConditions")
@@ -42,9 +39,7 @@ public class FnLeggings extends AbstractGears {
         this.defaultUsageKey = Keys.FN_GEAR_LEGGINGS;
         this.defaultUsageKey2 = Keys.FN_GEAR_LEGGINGS_LEVEL;
         this.defaultUsageKey3 = Keys.FN_GEAR_LEGGINGS_FINAL;
-        this.mainGears = new MainGears(getStorageKey(), getStorageKey2(), getStorageKey3(), defaultLore(), item, 30, 105);
-        FNAmplifications.getInstance().getConfigManager().setBooleanValues(this.getId() + "-unbreakable", false, "fn-gear-unbreakable-settings");
-        setUnbreakable();
+        this.mainGears = new MainGears(getStorageKey(), getStorageKey2(), getStorageKey3(), item, 30, 105);
     }
 
     protected @Nonnull
@@ -60,22 +55,6 @@ public class FnLeggings extends AbstractGears {
     protected @Nonnull
     NamespacedKey getStorageKey3() {
         return defaultUsageKey3;
-    }
-
-    @Override
-    public List<String> defaultLore(){
-        List<String> lore = new ArrayList<>();
-        lore.add(0, ChatColor.RED + "◬◬◬◬◬◬| "+ ChatColor.LIGHT_PURPLE + ""
-                + ChatColor.BOLD + "Lore " + ChatColor.GOLD + "|◬◬◬◬◬◬");
-        lore.add(1, "");
-        lore.add(2, ChatColor.WHITE + "Glorious leggings worn by FN during war");
-        lore.add(3, ChatColor.WHITE + "and was glorified on every victory against");
-        lore.add(4, ChatColor.WHITE + "his foes");
-        lore.add(5, "");
-        lore.add(6, ChatColor.RED + "◬◬◬◬◬◬| "+ ChatColor.LIGHT_PURPLE + ""
-                + ChatColor.BOLD + "Stats " + ChatColor.GOLD + "|◬◬◬◬◬◬");
-
-        return lore;
     }
 
     @Override
@@ -226,9 +205,4 @@ public class FnLeggings extends AbstractGears {
         return false;
     }
 
-    public final void setUnbreakable() {
-        ItemMeta meta = this.getItem().getItemMeta();
-        meta.setUnbreakable(FNAmplifications.getInstance().getConfigManager().getBoolById(this.getId() + "-unbreakable"));
-        this.getItem().setItemMeta(meta);
-    }
 }

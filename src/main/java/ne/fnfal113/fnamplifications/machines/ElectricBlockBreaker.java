@@ -42,7 +42,12 @@ import org.bukkit.inventory.meta.ItemMeta;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.*;
+
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 
 public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock, EnergyNetComponent {
 
@@ -130,9 +135,9 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     public ElectricBlockBreaker(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, int tickRate) {
         super(itemGroup, item, recipeType, recipe);
 
-        FNAmplifications.getInstance().getConfigManager().setIntegerValues(this.getId() + "-tickrate", tickRate, "block-breaker-tickrate");
+        FNAmplifications.getInstance().getConfigManager().setIntegerValues(this.getId(), "tickrate", tickRate, "block-breaker-tickrate");
         setRate();
-        Utils.setLore(this.getItem(), this.getId(), "-tickrate", "ticks", "&e", " ticks");
+        Utils.setLore(this.getItem(), this.getId(), "tickrate", "ticks", "&e", " ticks");
         addItemHandler(
             new BlockTicker() {
                 @Override
@@ -243,7 +248,6 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
             if (cache.isOn) {
                 invMenu.replaceExistingItem(4, NOT_OPERATING);
 
-
                 if (targetBlock.getType().isSolid() && !ILLEGAL.contains(targetBlock.getType()) && !(BlockStorage.hasBlockInfo(targetBlock))) {
 
                     if (!Slimefun.getProtectionManager().hasPermission(
@@ -309,7 +313,7 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     }
 
     public final void setRate() {
-        this.rate = FNAmplifications.getInstance().getConfigManager().getValueById(this.getId() + "-tickrate");
+        this.rate = FNAmplifications.getInstance().getConfigManager().getValueById(this.getId(), "tickrate");
     }
 
     @Nonnull

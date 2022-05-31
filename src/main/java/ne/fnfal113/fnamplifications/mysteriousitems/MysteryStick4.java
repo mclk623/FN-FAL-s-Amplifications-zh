@@ -3,12 +3,13 @@ package ne.fnfal113.fnamplifications.mysteriousitems;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import ne.fnfal113.fnamplifications.items.FNAmpItems;
+import lombok.Getter;
 import ne.fnfal113.fnamplifications.mysteriousitems.abstracts.AbstractStick;
 import ne.fnfal113.fnamplifications.mysteriousitems.implementation.MainStick;
 import ne.fnfal113.fnamplifications.utils.Keys;
 import ne.fnfal113.fnamplifications.utils.Utils;
-import org.bukkit.*;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
@@ -24,13 +25,17 @@ import java.util.Map;
 
 public class MysteryStick4 extends AbstractStick {
 
-    public final MainStick mainStick;
+    @Getter
+    private final MainStick mainStick;
+    @Getter
+    private final Material material;
 
     @ParametersAreNonnullByDefault
-    public MysteryStick4(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    public MysteryStick4(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, Material material) {
         super(itemGroup, item, recipeType, recipe);
 
         this.mainStick = new MainStick(Keys.STICK_4_EXP_LEVELS, Keys.STICK_4_DAMAGE, enchantments(), weaponLore(), stickLore(), 2, 15);
+        this.material = material;
     }
 
     @Override
@@ -55,7 +60,7 @@ public class MysteryStick4 extends AbstractStick {
 
     @Override
     public void interact(PlayerInteractEvent e) {
-        mainStick.onInteract(e, Material.DIAMOND_SWORD);
+        getMainStick().onInteract(e, getMaterial());
     }
 
     @Override
@@ -63,11 +68,11 @@ public class MysteryStick4 extends AbstractStick {
         Player player = (Player) event.getDamager();
         ItemStack item = player.getInventory().getItemInMainHand();
 
-        if(item.getType() != Material.DIAMOND_SWORD){
+        if(item.getType() != getMaterial()){
             return;
         }
 
-        if(mainStick.onSwing(item, FNAmpItems.FN_STICK_4, player, event.getDamage(), 20, 2))  {
+        if(getMainStick().onSwing(item, player, event.getDamage(), 20, 2))  {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 100, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 40, 0, false, false, false));

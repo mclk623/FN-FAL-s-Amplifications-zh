@@ -4,9 +4,8 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import lombok.Getter;
-import ne.fnfal113.fnamplifications.FNAmplifications;
 import ne.fnfal113.fnamplifications.gems.abstracts.AbstractGem;
+import ne.fnfal113.fnamplifications.gems.handlers.GemUpgrade;
 import ne.fnfal113.fnamplifications.gems.handlers.OnDamageHandler;
 import ne.fnfal113.fnamplifications.gems.implementation.Gem;
 import ne.fnfal113.fnamplifications.utils.Utils;
@@ -18,46 +17,44 @@ import org.bukkit.inventory.ItemStack;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class DisarmorGem extends AbstractGem implements OnDamageHandler {
-
-    @Getter
-    private final int chance;
+public class DisarmorGem extends AbstractGem implements OnDamageHandler, GemUpgrade {
 
     public DisarmorGem(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe, 10);
 
-        this.chance = FNAmplifications.getInstance().getConfigManager().getValueById(this.getId() + "-percent-chance");
     }
 
     @Override
-    public void onDrag(InventoryClickEvent event, Player player) {
-        if(event.getCursor() == null){
-            return;
-        }
-
-        ItemStack currentItem = event.getCurrentItem();
-
-        SlimefunItem slimefunItem = SlimefunItem.getByItem(event.getCursor());
-
-        if(slimefunItem != null && currentItem != null) {
-            if (WeaponArmorEnum.AXES.isTagged(currentItem.getType()) || WeaponArmorEnum.SWORDS.isTagged(currentItem.getType())) {
-                new Gem(slimefunItem, currentItem, player).onDrag(event, false);
+    @SuppressWarnings("ConstantConditions")
+    public void onDrag(InventoryClickEvent event, Player player, SlimefunItem slimefunItem, ItemStack currentItem){
+        if (WeaponArmorEnum.AXES.isTagged(currentItem.getType()) || WeaponArmorEnum.SWORDS.isTagged(currentItem.getType())) {
+            if(isUpgradeGem(event.getCursor(), this.getId())) {
+                upgradeGem(slimefunItem, currentItem, event, player, this.getId());
             } else {
-                player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on swords and axes only"));
+                new Gem(slimefunItem, currentItem, player).onDrag(event, false);
             }
+        } else {
+            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on swords and axes only"));
         }
     }
 
     @Override
-    public void onDamage(EntityDamageByEntityEvent event) {
-        if(!(event.getEntity() instanceof Player) || !(event.getDamager() instanceof Player)){
+    public void onDamage(EntityDamageByEntityEvent event, ItemStack itemStack) {
+        if(!(event.getEntity() instanceof Player)){
             return;
         }
+        if(!(event.getDamager() instanceof Player)){
+            return;
+        }
+        if(event.isCancelled()){
+            return;
+        }
+
         Player victim = (Player) event.getEntity();
         Player damager = (Player) event.getDamager();
 
-        if(ThreadLocalRandom.current().nextInt(100) < getChance()) {
-            int slot = victim.getInventory().firstEmpty();
+        if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())) {
+            int slot = victim.getInventory().firstEmpty(); // get first empty slot from left to right
 
             if (victim.getInventory().getHelmet() != null && ThreadLocalRandom.current().nextInt(100) < 50) {
                 ItemStack helmet = victim.getInventory().getHelmet();
@@ -90,7 +87,7 @@ public class DisarmorGem extends AbstractGem implements OnDamageHandler {
         } else {
             victim.getWorld().dropItem(victim.getLocation(), armor.clone());
         }
-        damager.sendMessage(Utils.colorTranslator("&6Disarmor gem has taken effect!"));
+        sendGemMessage(damager, this.getItemName());
     }
 
 }

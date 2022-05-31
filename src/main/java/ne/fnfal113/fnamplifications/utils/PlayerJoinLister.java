@@ -26,7 +26,7 @@ public class PlayerJoinLister implements Listener {
             return;
         }
 
-        if(players.contains(player.getUniqueId())){
+        if(players.contains(player.getUniqueId())){ // only send once when player joins fresh after server restart
            return;
         }
 
@@ -35,7 +35,7 @@ public class PlayerJoinLister implements Listener {
             for(String string : getChangelog()) {
                 player.sendMessage(string);
             }
-        }, 25L);
+        }, 45L);
 
     }
 
@@ -45,15 +45,16 @@ public class PlayerJoinLister implements Listener {
                 Utils.colorTranslator("&e&lFN &c&lAmpli&b&lfications &r&e" + FNAmplifications.getInstance().getDescription().getVersion()),
                 Utils.colorTranslator("&fChangelog"),
                 "",
-                Utils.colorTranslator("&d&l• &r&d&lAdded Disarmor gem"),
-                Utils.colorTranslator("  &ba chance to disamor your enemy armor!"),
-                Utils.colorTranslator("&d&l• &r&d&lFixed &r&dimportant bugs"),
-                Utils.colorTranslator("&d&l• &r&dAdded gem messages to know it"),
-                Utils.colorTranslator("  &bhas taken effect when triggered"),
-                Utils.colorTranslator("&d&l• &r&dAdded throw and return weapon sounds"),
-                Utils.colorTranslator("  &bfor axe throwie, damnation and tri-sword gem"),
+                Utils.colorTranslator("&d&l• &r&d&lAdded Shockwave Gem!"),
+                Utils.colorTranslator("  &bA chance to deal shockwave damage"),
+                Utils.colorTranslator("  &bto all enemies in a 8 block radius"),
+                Utils.colorTranslator("  &band bounce them off the ground!"),
+                Utils.colorTranslator("&d&l• &r&dFixed recipe for decrepit and sedate gem"),
+                Utils.colorTranslator("&d&l• &r&dFixed lifesteal gem small bug"),
                 Utils.colorTranslator(""),
-                Utils.colorTranslator("&ehttps://github.com/FN-FAL113"),
+                Utils.colorTranslator("&ehttps://fnfal113.tech/pluginStats"),
+                Utils.colorTranslator("&ehttps://fnfal113.tech/fnAmpItems"),
+                Utils.colorTranslator("&ehttps://github.com/FN-FAL113/"),
                 "||---------------------------------------------------||"
         );
     }

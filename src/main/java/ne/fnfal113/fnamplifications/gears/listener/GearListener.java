@@ -30,15 +30,17 @@ public class GearListener implements Listener {
 
             Player p = (Player) event.getEntity();
 
-            if(ThreadLocalRandom.current().nextInt(100) < 20) {
+            if(ThreadLocalRandom.current().nextInt(100) < 23) {
                 for(ItemStack armour : p.getInventory().getArmorContents()) {
                     if (armour != null) {
                         SlimefunItem armor = SlimefunItem.getByItem(armour);
                         if (armor instanceof AbstractGears) {
-                            ((AbstractGears) armor).onHit(event);
-                        }
-                    }
-                }
+                            if(!event.isCancelled()) {
+                                ((AbstractGears) armor).onHit(event);
+                            }
+                        } // instance of Gear
+                    } // armor is not null
+                } // loop armor contents
             }
         } // check if damager is an arrow
 
@@ -48,15 +50,17 @@ public class GearListener implements Listener {
             }
             Player p = (Player) event.getEntity();
 
-            if(ThreadLocalRandom.current().nextInt(100) < 40) {
+            if(ThreadLocalRandom.current().nextInt(100) < 25) {
                 for(ItemStack armour : p.getInventory().getArmorContents()) {
                     if (armour != null) {
                         SlimefunItem armor = SlimefunItem.getByItem(armour);
                         if (armor instanceof AbstractGears) {
-                            ((AbstractGears) armor).onHit(event);
-                        }
-                    }
-                }
+                            if(!event.isCancelled()) {
+                                ((AbstractGears) armor).onHit(event);
+                            }
+                        } // instance of Gear
+                    } // armor is not null
+                } // loop armor contents
             }
         } // check if damager is a living entity
 

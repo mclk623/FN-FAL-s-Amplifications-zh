@@ -11,9 +11,10 @@ import ne.fnfal113.fnamplifications.utils.Keys;
 import ne.fnfal113.fnamplifications.gems.implementation.ThrowableWeapon;
 import ne.fnfal113.fnamplifications.utils.WeaponArmorEnum;
 import ne.fnfal113.fnamplifications.utils.Utils;
-import org.bukkit.entity.*;
+import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
@@ -27,21 +28,11 @@ public class DamnationGem extends AbstractGem implements OnRightClickHandler {
     }
 
     @Override
-    public void onDrag(InventoryClickEvent event, Player player){
-        if(event.getCursor() == null){
-            return;
-        }
-
-        ItemStack currentItem = event.getCurrentItem();
-
-        SlimefunItem slimefunItem = SlimefunItem.getByItem(event.getCursor());
-
-        if(slimefunItem != null && currentItem != null) {
-            if ((WeaponArmorEnum.SWORDS.isTagged(currentItem.getType()) || WeaponArmorEnum.AXES.isTagged(currentItem.getType()))) {
-                new Gem(slimefunItem, currentItem, player).onDrag(event, false);
-            } else {
-                player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on axes and swords only"));
-            }
+    public void onDrag(InventoryClickEvent event, Player player, SlimefunItem slimefunItem, ItemStack currentItem){
+        if ((WeaponArmorEnum.SWORDS.isTagged(currentItem.getType()) || WeaponArmorEnum.AXES.isTagged(currentItem.getType()))) {
+            new Gem(slimefunItem, currentItem, player).onDrag(event, false);
+        } else {
+            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on axes and swords only"));
         }
     }
 
@@ -51,20 +42,31 @@ public class DamnationGem extends AbstractGem implements OnRightClickHandler {
             return;
         }
         if(!hasPermissionToThrow(player)){
-            player.sendMessage(Utils.colorTranslator("&c&l[FNAmpli" + "&b&lfications] > " + "&eYou don't have the permission to throw here!"));
+            player.sendMessage(Utils.colorTranslator("&eYou don't have the permission to use damnation here! (Needs block interaction flag enabled)"));
             return;
         } // check if player has the permission to build on current location
 
         ItemStack itemStack = player.getInventory().getItemInMainHand();
+        ItemMeta meta = itemStack.getItemMeta();
 
-        // check if player has below 4 floating weapons
+        // check if player has less than 4 floating weapons
         if(throwableWeapon.isBelow4Weapons(player)) {
             PersistentDataContainer pdc = itemStack.getItemMeta().getPersistentDataContainer();
 
-            // creates a throwable task from the object instance
-            throwableWeapon.floatThrowItem(player, itemStack.clone(), Boolean.parseBoolean(pdc.getOrDefault(Keys.RETURN_WEAPON_KEY, PersistentDataType.STRING, "false")));
+            try{
+                String pdcValue = pdc.getOrDefault(Keys.RETURN_WEAPON_KEY, PersistentDataType.STRING, "false");
+
+                // creates throw a task from this object instance
+                throwableWeapon.floatThrowItem(player, itemStack.clone(), pdcValue.equalsIgnoreCase("true"));
+            } catch (IllegalArgumentException e){
+                pdc.set(Keys.RETURN_WEAPON_KEY, PersistentDataType.STRING, "true");
+                itemStack.setItemMeta(meta);
+                return;
+            }
 
             itemStack.setAmount(0);
         }
+
     }
+
 }

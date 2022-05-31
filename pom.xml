@@ -6,7 +6,7 @@
 
     <groupId>ne.fnfal113</groupId>
     <artifactId>FNAmplifications</artifactId>
-    <version>3.1.8-UNOFFICIAL</version>
+    <version>3.2.6-UNOFFICIAL</version>
     <packaging>jar</packaging>
 
     <name>FNAmplifications</name>
@@ -121,7 +121,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
+            <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
 
@@ -160,12 +160,19 @@
             <scope>provided</scope>
         </dependency>
 
+       <dependency>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7.1</version>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>net.guizhanss</groupId>
             <artifactId>GuizhanLib</artifactId>
-            <version>0.8.5</version>
+            <version>0.9.2</version>
             <scope>compile</scope>
-        </dependency>
+       </dependency>
 
     </dependencies>
 </project>

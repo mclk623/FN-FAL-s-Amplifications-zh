@@ -9,6 +9,7 @@ depend: [Slimefun]
 softdepend:
   - LiteXpansion
   - SimpleMaterialGenerators
+  - Vault
 commands:
   fngear:
     description: 检查 FN Gears 进度的命令
