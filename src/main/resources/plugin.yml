@@ -16,6 +16,6 @@ commands:
     default: true
     usage: /<command>
   fngear.levelupgears:
-    description: Command for levelling up FN Gears
+    description: IN Gears升级指令
     usage: /<command>
     default: op
