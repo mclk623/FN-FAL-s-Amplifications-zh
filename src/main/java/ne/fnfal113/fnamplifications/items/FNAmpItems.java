@@ -2192,11 +2192,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_LOOT = new SlimefunItemStack(
             "FN_GEM_LOOT",
             Material.EMERALD,
-            "&cLoot Gem",
+            "&c战利品宝石",
             "",
-            "&eA chance to steal money from your",
-            "&eenemy worth 4$ of currency. Make",
-            "&eyour enemies lose money!",
+            "&e有机会从你的敌人那里偷钱，价值4美元的货币. ",
+            "&e制造，你的敌人赔钱!",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
             "&6⨳ Tier I: " + "&e%",
@@ -2205,32 +2204,29 @@ public class FNAmpItems {
             "&6⨳ Tier IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on sword or axe",
-            "&dto bind this gem"
+            "&d拖放剑或斧头以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_SHOCKWAVE = new SlimefunItemStack(
             "FN_GEM_SHOCKWAVE",
             Material.EMERALD,
-            "&cShockwave Gem",
+            "&c冲击波宝石",
             "",
-            "&eA chance to deal shockwave damage",
-            "&eto all enemies in a 8 block radius",
-            "&eand bounce them off the ground!",
+            "&e有几率对8格范围内的所有",
+            "&e敌人造成冲击波伤害，并将其弹离地面!",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
             "&6⨳ Tier I: " + "&e%",
-            "&6  - Damage: &f3",
+            "&6  - 损坏: &f3",
             "&6⨳ Tier II: " + "&e%",
-            "&6  - Damage: &f6",
+            "&6  - 损坏: &f6",
             "&6⨳ Tier III: " + "&e%",
-            "&6  - Damage: &f9",
+            "&6  - 损坏: &f9",
             "&6⨳ Tier IV: " + "&e%",
-            "&6  - Damage: &f12",
+            "&6  - 损坏: &f12",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on any armor type",
-            "&dto bind this gem"
+            "&d拖放任何盔甲类型，以绑定此宝石"
     );
 
     public static final SlimefunItemStack FN_GEM_UPGRADES_DISPLAY_ITEM = new SlimefunItemStack(
@@ -2267,20 +2263,19 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_AUTO_LADDER = new SlimefunItemStack(
             "FN_AUTO_LADDER",
             Material.LADDER,
-            "&cFN's Auto Ladder",
+            "&cFN的自动梯",
             "",
-            "&dAutomatically places a ladder from top to",
-            "&dbottom with a max distance of 8 blocks"
+            "&d自动从上到下放置梯子，",
+            "&d最大距离为 8 个方块"
     );
 
     public static final SlimefunItemStack FN_ORIENT_PEARL = new SlimefunItemStack(
             "FN_ORIENT_PEARL",
             Material.ENDER_PEARL,
-            "&cFN's Orient Pearl",
+            "&cFN末影珍珠",
             "",
-            "&dAn ender pearl that teleports",
-            "&dthe player together with the",
-            "&dmounted entity (Horse, etc)"
+            "&d一个末影珍珠，可以传送",
+            "&d玩家和骑乘的实体（马等）"
     );
 
     public static final SlimefunItemStack FN_JUKEBOX_I = new SlimefunItemStack(
