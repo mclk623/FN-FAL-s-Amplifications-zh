@@ -76,11 +76,11 @@ public class QuiverTask {
         if(itemState.getType() == Material.LEATHER) {
             meta.getPersistentDataContainer().set(getStorageKey3(), PersistentDataType.STRING, "opened");
             itemState.setType(getArrowType().getType());
-            Utils.updateValueByPdc(itemState, meta, "Opened", "State: " ,"&e", "&f", " quiver");
+            Utils.updateValueByPdc(itemState, meta, "Opened", "状态: " ,"&e", "&f", " quiver");
         } else {
             meta.getPersistentDataContainer().set(getStorageKey3(), PersistentDataType.STRING, "closed");
             itemState.setType(Material.LEATHER);
-            Utils.updateValueByPdc(itemState, meta, "Closed", "State: " ,"&e", "&f", " quiver");
+            Utils.updateValueByPdc(itemState, meta, "Closed", "状态: " ,"&e", "&f", " quiver");
         }
     }
 
@@ -106,10 +106,10 @@ public class QuiverTask {
             }
             itemState.setType(Material.LEATHER);
             player.sendMessage(ChatColor.GOLD + getSfItemStack().getDisplayName() + " is now empty");
-            Utils.updateValueByPdc(itemState, meta, "Closed (No arrows)", "State: " ,"&e", "&f", "");
+            Utils.updateValueByPdc(itemState, meta, "Closed (No arrows)", "状态: " ,"&e", "&f", "");
         }
 
-        Utils.updateValueByPdc(itemState, meta, String.valueOf(amount), "Arrows: " ,"&e", "&f", " left");
+        Utils.updateValueByPdc(itemState, meta, String.valueOf(amount), "箭头: " ,"&e", "&f", " left");
         player.getInventory().addItem(getArrowType().clone());
     }
 
@@ -124,7 +124,7 @@ public class QuiverTask {
             return;
         }
         if(item.getAmount() != 1){
-            player.sendMessage(Utils.colorTranslator("&eUnstack the quivers first before using them"));
+            player.sendMessage(Utils.colorTranslator("&e使用前先拆开箭袋"));
             return;
         }
         int increment = arrowsCheckPDC + 1;
@@ -138,7 +138,7 @@ public class QuiverTask {
             item.setType(getArrowType().getType());
             arrow.setAmount(arrow.getAmount() - 1);
             Utils.updateValueByPdc(item, meta, String.valueOf(increment), "Arrows: " ,"&e", "&f", " left");
-            Utils.updateValueByPdc(item, meta, "Opened", "State: " ,"&e", "&f", " quiver");
+            Utils.updateValueByPdc(item, meta, "Opened", "状态: " ,"&e", "&f", " quiver");
             if(increment == getQuiverSize()){
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', getSfItemStack().getDisplayName() + " is full!"));
             }
@@ -190,7 +190,7 @@ public class QuiverTask {
                     meta.getPersistentDataContainer().remove(getStorageKey3());
                 }
                 itemStack.setType(Material.LEATHER);
-                Utils.updateValueByPdc(itemStack, meta, "Closed (No arrows)", "State: " ,"&e", "&f", "");
+                Utils.updateValueByPdc(itemStack, meta, "Closed (No arrows)", "状态: " ,"&e", "&f", "");
             }
             Utils.updateValueByPdc(itemStack, meta, String.valueOf(decrement), "Arrows: " ,"&e", "&f", " left");
         }
