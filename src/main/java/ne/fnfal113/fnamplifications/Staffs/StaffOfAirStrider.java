@@ -41,7 +41,7 @@ public class StaffOfAirStrider extends AbstractStaff {
             return;
         } else {
             if(hasPermissionToCast(item.getItemMeta().getDisplayName(), player, player.getLocation())) {
-                player.sendMessage(Utils.colorTranslator("&dYou can now walk on the air for 10 seconds"));
+                player.sendMessage(Utils.colorTranslator("&d你现在可以在空中行走 10 秒"));
                 taskMap.put(player.getUniqueId(), new AirStriderTask(player).runTaskTimer(FNAmplifications.getInstance(), 0, 1L));
             } else{
                 return;
@@ -55,10 +55,10 @@ public class StaffOfAirStrider extends AbstractStaff {
         AtomicInteger i = new AtomicInteger(10);
         Bukkit.getScheduler().runTaskTimer(FNAmplifications.getInstance(), task -> {
             if(i.get() <= 5){
-                player.sendMessage(Utils.colorTranslator("&dAir strider will expire in ") + i + " seconds");
+                player.sendMessage(Utils.colorTranslator("&d空中绞车将在") + i + " 秒后失效");
             }
             if(i.get() == 0){
-                player.sendMessage(Utils.colorTranslator("&dAir Strider has expired!"));
+                player.sendMessage(Utils.colorTranslator("&d空中飞人已经过期!"));
                 taskMap.get(player.getUniqueId()).cancel();
                 taskMap.remove(player.getUniqueId());
                 task.cancel();

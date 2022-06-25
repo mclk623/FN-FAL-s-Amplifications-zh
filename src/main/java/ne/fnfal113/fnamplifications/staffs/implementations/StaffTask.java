@@ -40,10 +40,10 @@ public class StaffTask {
 
         if(decrement > 0) { // update the staff uses left the lore
             max_Uses.set(getStorageKey(), PersistentDataType.INTEGER, decrement);
-            Utils.updateValueByPdc(item, meta, String.valueOf(decrement), "Uses: ", "&e", "", " left");
+            Utils.updateValueByPdc(item, meta, String.valueOf(decrement), "使用: ", "&e", "", " left");
         } else { // destroy the staff when it reached the max uses
             player.getInventory().setItemInMainHand(null);
-            player.sendMessage(Utils.colorTranslator(meta.getDisplayName() + " &d&lhas reached max uses!"));
+            player.sendMessage(Utils.colorTranslator(meta.getDisplayName() + " &d&l已达到最大使用量!"));
             player.playSound(player.getLocation(), Sound.ENTITY_ITEM_BREAK, 1 ,1);
         }
         Objects.requireNonNull(player.getLocation().getWorld()).playSound(player.getLocation(), Sound.ENTITY_ILLUSIONER_CAST_SPELL, 1, 1);

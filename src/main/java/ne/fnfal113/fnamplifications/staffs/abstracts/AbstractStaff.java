@@ -45,7 +45,7 @@ public abstract class AbstractStaff extends SlimefunItem {
         if(matchMaterial != null){
             this.getItem().setType(matchMaterial);
         } else {
-            FNAmplifications.getInstance().getLogger().log(Level.SEVERE, "Invalid Material ID for " + this.getId() + (". Will use BLAZE_ROD as default material"));
+            FNAmplifications.getInstance().getLogger().log(Level.SEVERE, "无效的材料ID为 " + this.getId() + (". 将使用BLAZE_ROD作为默认材料"));
         }
     }
 
@@ -55,7 +55,7 @@ public abstract class AbstractStaff extends SlimefunItem {
                 Interaction.INTERACT_BLOCK)) {
             return true;
         }
-        player.sendMessage(Utils.colorTranslator("&cYou don't have permission to cast " + staffName + " here!"));
+        player.sendMessage(Utils.colorTranslator("&c你没有权限在此投掷" + staffName + "!"));
         return false;
     }
 
