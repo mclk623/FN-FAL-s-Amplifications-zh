@@ -1191,13 +1191,13 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_UPGRADER = new SlimefunItemStack(
             "FN_GEM_UPGRADER",
             Material.SMITHING_TABLE,
-            "&dFN Gem Upgrader"
+            "&dFN宝石升级器"
     );
 
     public static final SlimefunItemStack FN_MAGIC_ALTAR = new SlimefunItemStack(
             "FN_MAGIC_ALTAR",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("e34930125767c2e34ac939ec94a2aa4e79c381ee336760695c6c874cf12")),
-            "&dFN Magic Altar"
+            "&dFN魔法祭坛"
     );
 
     public static final SlimefunItemStack FN_GEAR_HELMET = new SlimefunItemStack(
