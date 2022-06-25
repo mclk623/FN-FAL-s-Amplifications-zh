@@ -38,7 +38,7 @@ public class GemUnbinderTask {
      */
     @SuppressWarnings("ConstantConditions")
     public void getGemsFromItem(){
-        Inventory inventory = Bukkit.createInventory(null, 9, Utils.colorTranslator("&cSelect a gem to unbind"));
+        Inventory inventory = Bukkit.createInventory(null, 9, Utils.colorTranslator("&c选择要解除绑定的宝石"));
         PersistentDataContainer pdc = getItemInOffhand().getItemMeta().getPersistentDataContainer();
 
         if(pdc.isEmpty()){
@@ -56,7 +56,7 @@ public class GemUnbinderTask {
         }
 
         if(gemArray.isEmpty()){
-            getPlayer().sendMessage(Utils.colorTranslator("&eItem doesn't have any gems bound to it"));
+            getPlayer().sendMessage(Utils.colorTranslator("&e物品没有绑定任何宝石"));
             return;
         }
 
@@ -110,10 +110,10 @@ public class GemUnbinderTask {
 
             meta.setLore(lore);
             getItemInOffhand().setItemMeta(meta);
-            getPlayer().sendMessage(Utils.colorTranslator("&aSuccessfully removed selected gem!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&a已成功移除选定的宝石!"));
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_VILLAGER_WORK_WEAPONSMITH, 1.0F, 1.0F);
         } else {
-            getPlayer().sendMessage(Utils.colorTranslator("&cFailed to unbind the gem from the item!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&c无法解除宝石与物品的绑定!"));
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_ZOMBIE_INFECT, 1.0F, 1.0F);
         }
     }
