@@ -52,24 +52,24 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
     private static final Map<BlockPosition, Integer> generatorStatus = new HashMap<>();
 
     private static final CustomItemStack NOT_GENERATING = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cNot Generating",
-            "&ePlace a chest above first!"
+            "&c不产生",
+            "&e先在上面放置一个箱子!"
     );
 
     private static final CustomItemStack NOT_GENERATING_FULL = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cNot Generating",
-            "&eChest inventory full!"
+            "&c不产生",
+            "&e箱子已满!"
     );
 
     private static final CustomItemStack CONDITION = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cCurrent Condition: ",
-            "&ePlace a chest above first!"
+            "&c目前状况: ",
+            "&e先在上面放置一个箱子!"
     );
 
     private static final CustomItemStack CONDITION_BROKEN = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cCurrent Condition: ",
-            "&eGenerator is broken! please repair!",
-            "&eDestroy the block and craft a new one"
+            "&c目前状况: ",
+            "&e发电机坏了！请修理!",
+            "&e破坏方块并制作一个新方块"
     );
 
     private ItemStack item;
@@ -163,28 +163,28 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
                     int generatorCondition = generatorStatus.get(pos);
 
                     if (invMenu.toInventory() != null && invMenu.hasViewer()) {
-                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aGenerating Material",
+                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a生成材料",
                                 "", "&bMaterial: " + this.material,
                                 "&bRate: " + "" + ChatColor.GREEN + FNAmplifications.getInstance().getConfigManager().getValueById(this.getId(), "tickrate") + " &aticks", "",
                                 "&2Progress: " + progress + "/"+ FNAmplifications.getInstance().getConfigManager().getValueById(this.getId(), "tickrate")));
 
                         if(generatorCondition > 0){
                             if(generatorCondition > 75 && generatorCondition <= 100) {
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                                    "", "&eIn best condition" + " (" + generatorCondition + "%)"));
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a目前状况:",
+                                    "", "&e处于最佳状况" + " (" + generatorCondition + "%)"));
                             } else if(generatorCondition > 50 && generatorCondition < 75){
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                                        "", "&eIn good condition" + " (" + generatorCondition + "%)"));
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&a目前状况:",
+                                        "", "&e状况良好" + " (" + generatorCondition + "%)"));
                             } else if(generatorCondition > 25 && generatorCondition < 50){
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                                        "", "&eIn bad condition" + " (" + generatorCondition + "%)"));
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&a目前状况:",
+                                        "", "&e状况不佳" + " (" + generatorCondition + "%)"));
                             } else if(generatorCondition < 25){
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                                        "", "&eIn worst condition" + " (" + generatorCondition + "%)"));
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a目前状况:",
+                                        "", "&e状况最差" + " (" + generatorCondition + "%)"));
                             }
                         } else {
-                            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                                    "", "&eBroken generator" + " (" + generatorStatus.get(pos) + "%)"));
+                            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a目前状况:",
+                                    "", "&e发电机坏了" + " (" + generatorStatus.get(pos) + "%)"));
                         }
                     }
 

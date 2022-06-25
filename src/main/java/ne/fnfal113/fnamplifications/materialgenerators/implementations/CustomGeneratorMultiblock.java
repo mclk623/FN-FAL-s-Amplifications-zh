@@ -28,7 +28,7 @@ public class CustomGeneratorMultiblock extends SimpleSlimefunItem<ItemUseHandler
     public ItemUseHandler getItemHandler() {
         return e -> {
             e.cancel();
-            e.getPlayer().sendMessage("This item is just a dummy. You need to place the actual generator down.");
+            e.getPlayer().sendMessage("这个项目只是一个假人.你需要把真正的发电机放下来.");
         };
     }
 }

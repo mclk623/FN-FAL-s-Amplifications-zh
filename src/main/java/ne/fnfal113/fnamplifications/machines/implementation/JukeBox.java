@@ -90,7 +90,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, -1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&eJukebox is turned off, please turn it on"));
+            player.sendMessage(Utils.colorTranslator("&e点唱机已关闭，请打开它"));
         }
     }
 
@@ -107,7 +107,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, 1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&eJukebox is turned off, please turn it on"));
+            player.sendMessage(Utils.colorTranslator("&e点唱机已关闭，请打开它"));
         }
     }
 
@@ -129,11 +129,11 @@ public class JukeBox extends AbstractJukeBox {
                 if (isSlotNotNull(menu, cache, 0)) {
                     playCurrentSlot(menu, cache, jukebox, location, 0);
                 } else {
-                    player.sendMessage(Utils.colorTranslator("&dCurrent slot has no music disc"));
+                    player.sendMessage(Utils.colorTranslator("&d当前插槽没有音乐光盘"));
                 }
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eJukebox is turned off, please turn it on"));
+            player.sendMessage(Utils.colorTranslator("&e点唱机已关闭，请打开它"));
         }
     }
 

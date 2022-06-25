@@ -342,9 +342,9 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     }
 
     public final ElectricBlockBreaker setEnergyConsumption(int energyConsumption) {
-        Validate.isTrue(energyConsumption > 0, "The energy consumption must be greater than zero!");
-        Validate.isTrue(energyCapacity > 0, "You must specify the capacity before you can set the consumption amount.");
-        Validate.isTrue(energyConsumption <= energyCapacity, "The energy consumption cannot be higher than the capacity (" + energyCapacity + ')');
+        Validate.isTrue(energyConsumption > 0, "能源消耗必须大于零!");
+        Validate.isTrue(energyCapacity > 0, "您必须先指定容量，然后才能设置消耗量.");
+        Validate.isTrue(energyConsumption <= energyCapacity, "能量消耗不能高于容量 (" + energyCapacity + ')');
 
         this.energyConsumedPerTick = energyConsumption;
         return this;
@@ -356,18 +356,18 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     }
 
     public final ElectricBlockBreaker setCapacity(int capacity) {
-        Validate.isTrue(capacity > 0, "The capacity must be greater than zero!");
+        Validate.isTrue(capacity > 0, "容量必须大于0!");
 
         if (getState() == ItemState.UNREGISTERED) {
             this.energyCapacity = capacity;
             return this;
         } else {
-            throw new IllegalStateException("You cannot modify the capacity after the Item was registered.");
+            throw new IllegalStateException("在项目被注册后，你不能修改容量.");
         }
     }
 
     public boolean takeCharge(@Nonnull Location l) {
-        Validate.notNull(l, "Can't attempt to take charge from a null location!");
+        Validate.notNull(l, "不能试图从一个空的位置进行充电!");
 
         if (isChargeable()) {
             int charge = getCharge(l);
