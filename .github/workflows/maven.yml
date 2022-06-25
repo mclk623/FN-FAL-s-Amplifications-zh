@@ -4,13 +4,13 @@ on:
   push:
     branches:
     - main
-    - main1
+    - dev
     tags:
       - "v*.*"
   pull_request:
     branches:
     - main
-    - main1
+    - dev
     
 jobs:
   create_release:
@@ -31,7 +31,7 @@ jobs:
         files: |
           artifacts/*
   build:
-
+    if: startsWith(github.event.head_commit.message, '[CI skip]') == false
     runs-on: ubuntu-latest
 
     steps:
@@ -51,7 +51,7 @@ jobs:
         title: "FNAmplifications 自动构建版本"
         files: |
            target/*
-    - name: Upload The Bruh
+    - name: 上传 The Bruh
       uses: actions/upload-artifact@v2
       with:
         name: artifacts
