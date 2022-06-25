@@ -75,8 +75,8 @@ public class StaffOfMinerals extends AbstractStaff {
                     .sorted(Map.Entry.comparingByValue())
                     .forEachOrdered(e -> contents.add(ChatColor.DARK_GREEN + e.getValue().toString() + "x " + ChatColor.GOLD + StringUtils.capitalize(e.getKey().toLowerCase(Locale.ROOT))));
 
-            firstPage.add(ChatColor.BLUE + "    Staff of Minerals\n\n " + ChatColor.GRAY +
-                    "  Through the power of the staff, you are bestowed with magical information written on this book containing the ores from the chunk you are standing at");
+            firstPage.add(ChatColor.BLUE + "    矿产工作人员\n\n " + ChatColor.GRAY +
+                    "  通过法杖的力量，你被赋予了写在这本书上的神奇信息，其中包含了你所站的那块矿石。");
 
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < contents.size(); i = i + 5) {
