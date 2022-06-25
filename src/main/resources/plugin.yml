@@ -13,4 +13,9 @@ softdepend:
 commands:
   fngear:
     description: 检查 FN Gears 进度的命令
+    default: true
     usage: /<command>
+  fngear.levelupgears:
+    description: IN Gears升级指令
+    usage: /<command>
+    default: op
