@@ -58,42 +58,42 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     private static final ItemStack VERSIONED_AMETHYST;
 
     private static final CustomItemStack NOT_OPERATING = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-        "&cNot Operating...",
-        "&ePlace a block facing the dispenser!"
+        "&c未运行...",
+        "&e放置一个面向分配器的方块!"
     );
 
     private static final CustomItemStack NO_POWER = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&cNo Power!",
-        "&ePower it up first!"
+        "&c没有电力!",
+        "&e首先通电!"
     );
 
     private static final CustomItemStack NOT_RUNNING = new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE,
-        "&cNot Running",
-        "&eToggle it on first"
+        "&c未运行",
+        "&e首先打开它"
     );
 
     private static final CustomItemStack BREAK_BLOCK_NATURALLY = new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-        "&d&lMode:",
-        "&eBreak block naturally (No Silk Touch)",
-        "Click to change"
+        "&d&l模式:",
+        "&e自然破坏方块（无精准采集）",
+        "点击更改"
     );
 
     private static final CustomItemStack DROP_BLOCK_NATURALLY = new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE,
-        "&d&lMode:",
-        "&eDrop block naturally (Silk Touch)",
-        "Click to change"
+        "&d&l模式:",
+        "&e自然放置块（丝绸触摸）",
+        "点击更改"
     );
 
     private static final CustomItemStack TOGGLED_ON = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-        "&d&lToggle:",
-        "&eEnabled (Running)",
-        "Click to change"
+        "&d&l切换:",
+        "&e已启用（运行中）。",
+        "点击更改"
     );
 
     private static final CustomItemStack TOGGLED_OFF = new CustomItemStack(Material.WHITE_STAINED_GLASS_PANE,
-        "&d&lToggle:",
-        "&eDisabled (Not Running)",
-        "Click to change"
+        "&d&l切换:",
+        "&e禁用（未运行）",
+        "点击更改"
     );
 
     public static final ItemStack DUMMY_PICK = new ItemStack(Material.DIAMOND_PICKAXE);
