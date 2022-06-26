@@ -56,108 +56,108 @@ public class FNAmpItems {
             new NamespacedKey(FNAmplifications.getInstance(), "FN_ITEMS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
-            "&e&lFN &b&lAmpli&c&lfications"));
+            "&e&lFN &b&l科&c&l技"));
 
     public static final SubItemGroup POWER_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "POWER_GENERATORS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "ecb316f7a227a8c59d58ae0dd6768fe4fa546d55b9cfdd56cfe40b6586d81c24")),
-            "&eFN Power Xpansion"));
+            "&eFN 发电机"));
 
     public static final SubItemGroup MATERIAL_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MATERIAL_GENERATORS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD_BLOCK,
-            "&eFN Material Generators"));
+            "&eFN 材料制造机"));
 
     public static final SubItemGroup SOLAR_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "SOLAR_GENERATORS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "e7f4c00356d1addb85b45ba5352992d3ecc0c9d11feb9041482f8531fd27d014")),
-            "&eFN Solar Generators"));
+            "&eFN 太阳能发电机"));
 
     public static final SubItemGroup MACHINES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "4a7d54ca45a398c364cebbffb5390ce5e0345e0c7bc5e863acabf57d1342c4bd")),
-            "&eFN Machinery"));
+            "&eFN 机器"));
 
     public static final SubItemGroup ITEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY_ITEMS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8245a1c3e8d7c3d59d05e3634b04af4cbf8d11b70e2a40e2e6364386db49e737")),
-            "&eFN Machinery Items"));
+            "&eFN 零件"));
 
     public static final SubItemGroup MAGICAL_ITEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MAGICAL_ITEMS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "72114a80357463fe2f59e397aab9fc66d482a65d524f8870d21c724c18ecf757")),
-                    "&eFN Magical Items"));
+                    "&eFN 魔法物品"));
 
     public static final SubItemGroup MULTIBLOCK = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MULTIBLOCK"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "550c3306bb11522fec380ea248eb6a5b180f4a7ab8843d635d14d4a778d6351")),
-            "&eFN Multiblocks"));
+            "&eFN 多方块结构机器"));
 
     public static final SubItemGroup METAL_SCRAP_RECIPES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "METAL_SCRAP_RECIPES"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3ff0bee591e5f0000ef16f966b949adcb5c2f409a14ccfc5b91222fd925045db")),
-            "&eMetal Scrap Recipes"));
+            "&e金属废料配方表"));
 
     public static final SubItemGroup MYSTERY_STICKS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MYSTERY_STICKS"),
             FN_MAIN_GROUP,
             new CustomItemStack(STICK,
-                    "&eFN Mystery PVP/PVE Sticks"));
+                    "&eFN 神秘 PVP/PVE 棍"));
 
     public static final SubItemGroup FN_GEARS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEARS"),
             FN_MAIN_GROUP,
             new CustomItemStack(ARMOR,
-                    "&eFN Gears of Friction"));
+                    "&eFN 盔甲"));
 
     public static final SubItemGroup FN_STAFFS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_STAFFS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.BLAZE_ROD,
-                    "&eFN Staffs"));
+                    "&eFN 法杖"));
 
     public static final SubItemGroup FN_MISC = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_MISC"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.CHEST,
-                    "&eFN Miscellaneous"));
+                    "&eFN 杂项"));
 
     public static final SubItemGroup FN_GEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD,
-                    "&eFN Gems"));
+                    "&eFN 宝石"));
 
     public static final ItemGroup FN_AMPLIFICATIONS = new ItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_AMPLIFICATIONS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
-            "&e&lFN &b&lAmpli&c&lfications"));
+            "&e&lFN &b&l科&c&l技"));
 
     // start of FN itemstacks
     public static final SlimefunItemStack FN_XPANSION_POWER_R1 = new SlimefunItemStack(
             "FN_POWER_XPANSION_POWER_R1",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "33165e254de7863459343543f933481f0dcf8d4730a23433b9a7ff0d3ff79c5a")),
-            "&d&lFN Power Xpansion R1",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R1",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -165,10 +165,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R2",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "5b78e55e3ea6b3682bd7cead43eb1c91b2527a81aa2894f095801f6ee47a3")),
-            "&d&lFN Power Xpansion R2",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R2",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -176,10 +176,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R3",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "45ff60d863d1cf76742f275e2ac5749dd0a978a231d3c51e816132c75aef608a")),
-            "&d&lFN Power Xpansion R3",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R3",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -187,10 +187,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R4",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "efc05af0e88c6fb10b4c8c8b81b7aa658e64649724cb73bb9bb0f25f28bd")),
-            "&d&lFN Power Xpansion R4",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R4",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -198,10 +198,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R5",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8f14f3179b86f69b3efa7472dacaeb2339f6290d2d817362793348abd98e021")),
-            "&d&lFN Power Xpansion R5",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R5",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -209,10 +209,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R6",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "1d5a09884cb83ef5c908dddd385f246fefdee221712c010177f54376da238fdd")),
-            "&d&lFN Power Xpansion R6",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R6",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -220,10 +220,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R7",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "f7e541dfb4ba1f7dc28b548e347abbdc987ebe0e61c49fa87111ef1b2dcb2218")),
-            "&d&lFN Power Xpansion R7",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R7",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -231,10 +231,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R8",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "de31efefdd9551af8a4349d3d21e5ec8f37e53c801eb25b14279d6a89fe0c01e")),
-            "&d&lFN Power Xpansion R8",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R8",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -242,10 +242,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R9",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "6db32b15d7f32704ed626fa52d06fb2b4071d336fdbfe61e6e41c669d6e37f47")),
-            "&d&lFN Power Xpansion R9",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R9",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -253,10 +253,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R10",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "7b7c9b6a23f21cca2b362b85b36dece3d8389e363014defe5b92ff6ee64f1ae")),
-            "&d&lFN Power Xpansion R10",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R10",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -264,10 +264,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R11",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "7f9f356f5fe7d1bc92cddfaeba3ee773ac9df1cc4d1c2f8fe5f47013032c551d")),
-            "&d&lFN Power Xpansion R11",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R11",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -275,10 +275,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R12",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3464874df452c1d717eddd0fb3b848202ad15571245af6fade2ecf514f3c80bb")),
-            "&d&lFN Power Xpansion R12",
-            "&9This works at Night!",
-            "&9Place and right click",
-            "&9the block for power info",
+            "&d&lFN 发电机 R12",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 

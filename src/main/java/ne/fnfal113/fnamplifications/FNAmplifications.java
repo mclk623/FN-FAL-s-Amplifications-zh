@@ -44,10 +44,8 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         new Metrics(this, 13219);
 
         getLogger().info("************************************************************");
-        getLogger().info("*         FN Amplifications - Created by FN_FAL113         *");
-        getLogger().info("*         Add me on discord if there are any issues        *");
-        getLogger().info("*          FN_FAL#7779 or join SF Addon Community          *");
-        getLogger().info("*                https://discord.gg/SqD3gg5SAU             *");
+        getLogger().info("*             FN Amplifications - 作者 FN_FAL113            *");
+        getLogger().info("*                由 SlimefunGuguProject 汉化                *");
         getLogger().info("************************************************************");
 
         setVaultIntegration(this);
@@ -61,16 +59,15 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         registerCommands();
         getServer().getScheduler().runTaskTimerAsynchronously(this, new ArmorEquipRunnable(), 0L, getConfig().getInt("armor-update-period") * 20L);
 
-
         if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("DEV - ")) {
-            new GitHubBuildsUpdater(this, getFile(), "FN-FAL113/FN-FAL-s-Amplifications/main").start();
+            //new GitHubBuildsUpdater(this, getFile(), "FN-FAL113/FN-FAL-s-Amplifications/main").start();
         }
     }
 
     @Override
     public void onDisable(){
         Bukkit.getScheduler().cancelTasks(FNAmplifications.getInstance());
-        getLogger().log(Level.INFO, "Cancelled any running task that exist");
+        getLogger().log(Level.INFO, "已取消所有正在执行的任务");
     }
 
     public void registerCommands(){
@@ -100,7 +97,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/FN-FAL113/FN-FAL-s-Amplifications/issues";
+        return "https://github.com/SlimefunGuguProject/FN-FAL-s-Amplifications";
     }
 
     public ConfigManager getConfigManager(){
