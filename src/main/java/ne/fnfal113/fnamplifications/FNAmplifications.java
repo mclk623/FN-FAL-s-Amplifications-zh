@@ -46,7 +46,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
         getLogger().info("************************************************************");
         getLogger().info("              FN Amplifications - FN 科技                   ");
-        getLogger().info("           作者: FN_FAL113  汉化: buiawpkgew1,haiman233       ");
+        getLogger().info("           作者: FN_FAL113  汉化: buiawpkgew1,haiman233,SlimefunGuguProject       ");
         getLogger().info("    感谢 Jeff(LiteXpansion) 与 Walshy(Slimefun) 提供的工具包   ");
         getLogger().info("               如有任何问题，请前往问题追踪器汇报                ");
         getLogger().info("                作者 Discord: FN_FAL#7779                    ");
@@ -73,7 +73,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
     @Override
     public void onDisable(){
         Bukkit.getScheduler().cancelTasks(FNAmplifications.getInstance());
-        getLogger().log(Level.INFO, "取消了任何存在的正在运行的任务");
+        getLogger().log(Level.INFO, "已取消所有正在执行的任务");
     }
 
     public void registerCommands(){
@@ -103,7 +103,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/issues";
+        return "https://github.com/SlimefunGuguProject/FN-FAL-s-Amplifications";
     }
 
     public ConfigManager getConfigManager(){
