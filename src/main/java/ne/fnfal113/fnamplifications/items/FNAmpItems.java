@@ -56,41 +56,41 @@ public class FNAmpItems {
             new NamespacedKey(FNAmplifications.getInstance(), "FN_ITEMS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
-            "&e&lFN&c&l科技 &b&l汉化:西瓜,haiman233"));
+            "&e&lFN &b&l科&c&l技"));
 
     public static final SubItemGroup POWER_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "POWER_GENERATORS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "ecb316f7a227a8c59d58ae0dd6768fe4fa546d55b9cfdd56cfe40b6586d81c24")),
-            "&eFN发电机"));
+            "&eFN 发电机"));
 
     public static final SubItemGroup MATERIAL_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MATERIAL_GENERATORS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD_BLOCK,
-            "&eFN材料生成器"));
+            "&eFN 材料制造机"));
 
     public static final SubItemGroup SOLAR_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "SOLAR_GENERATORS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "e7f4c00356d1addb85b45ba5352992d3ecc0c9d11feb9041482f8531fd27d014")),
-            "&eFN太阳能发电机"));
+            "&eFN 太阳能发电机"));
 
     public static final SubItemGroup MACHINES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "4a7d54ca45a398c364cebbffb5390ce5e0345e0c7bc5e863acabf57d1342c4bd")),
-            "&eFN机器"));
+            "&eFN 机器"));
 
     public static final SubItemGroup ITEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MACHINERY_ITEMS"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8245a1c3e8d7c3d59d05e3634b04af4cbf8d11b70e2a40e2e6364386db49e737")),
-            "&eFN_FAL的机械物品"));
+            "&eFN 零件"));
 
     public static final SubItemGroup MAGICAL_ITEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MAGICAL_ITEMS"),
@@ -104,60 +104,60 @@ public class FNAmpItems {
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "550c3306bb11522fec380ea248eb6a5b180f4a7ab8843d635d14d4a778d6351")),
-            "&eFN多方块结构"));
+            "&eFN 多方块结构机器"));
 
     public static final SubItemGroup METAL_SCRAP_RECIPES = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "METAL_SCRAP_RECIPES"),
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3ff0bee591e5f0000ef16f966b949adcb5c2f409a14ccfc5b91222fd925045db")),
-            "&e金属废料配方"));
+            "&e金属废料配方表"));
 
     public static final SubItemGroup MYSTERY_STICKS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MYSTERY_STICKS"),
             FN_MAIN_GROUP,
             new CustomItemStack(STICK,
-                    "&eFN神秘PVP/PVE棍"));
+                    "&eFN 神秘 PVP/PVE 棍"));
 
     public static final SubItemGroup FN_GEARS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEARS"),
             FN_MAIN_GROUP,
             new CustomItemStack(ARMOR,
-                    "&eFN盔甲"));
+                    "&eFN 盔甲"));
 
     public static final SubItemGroup FN_STAFFS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_STAFFS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.BLAZE_ROD,
-                    "&eFN法杖"));
+                    "&eFN 法杖"));
 
     public static final SubItemGroup FN_MISC = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_MISC"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.CHEST,
-                    "&eFN杂项"));
+                    "&eFN 杂项"));
 
     public static final SubItemGroup FN_GEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD,
-                    "&eFN宝石(机翻"));
+                    "&eFN 宝石"));
 
     public static final ItemGroup FN_AMPLIFICATIONS = new ItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_AMPLIFICATIONS"),
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "115b670a704ba080a730acf246da64c413901644847edd671c3da9a97441ddc5")),
-            "&e&lFN&c&l科技"));
+            "&e&lFN &b&l科&c&l技"));
 
     // start of FN itemstacks
     public static final SlimefunItemStack FN_XPANSION_POWER_R1 = new SlimefunItemStack(
             "FN_POWER_XPANSION_POWER_R1",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "33165e254de7863459343543f933481f0dcf8d4730a23433b9a7ff0d3ff79c5a")),
-            "&d&lFN 功率扩展 R1",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R1",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -165,10 +165,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R2",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "5b78e55e3ea6b3682bd7cead43eb1c91b2527a81aa2894f095801f6ee47a3")),
-            "&d&lFN 功率扩展 R2",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R2",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -176,10 +176,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R3",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "45ff60d863d1cf76742f275e2ac5749dd0a978a231d3c51e816132c75aef608a")),
-            "&d&lFN 功率扩展 R3",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R3",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -187,10 +187,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R4",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "efc05af0e88c6fb10b4c8c8b81b7aa658e64649724cb73bb9bb0f25f28bd")),
-            "&d&lFN 功率扩展 R4",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R4",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -198,10 +198,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R5",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "8f14f3179b86f69b3efa7472dacaeb2339f6290d2d817362793348abd98e021")),
-            "&d&lFN 功率扩展 R5",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R5",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -209,10 +209,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R6",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "1d5a09884cb83ef5c908dddd385f246fefdee221712c010177f54376da238fdd")),
-            "&d&lFN 功率扩展 R6",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R6",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -220,10 +220,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R7",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "f7e541dfb4ba1f7dc28b548e347abbdc987ebe0e61c49fa87111ef1b2dcb2218")),
-            "&d&lFN 功率扩展 R7",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R7",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -231,10 +231,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R8",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "de31efefdd9551af8a4349d3d21e5ec8f37e53c801eb25b14279d6a89fe0c01e")),
-            "&d&lFN 功率扩展 R8",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R8",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -242,10 +242,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R9",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "6db32b15d7f32704ed626fa52d06fb2b4071d336fdbfe61e6e41c669d6e37f47")),
-            "&d&lFN 功率扩展 R9",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R9",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -253,10 +253,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R10",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "7b7c9b6a23f21cca2b362b85b36dece3d8389e363014defe5b92ff6ee64f1ae")),
-            "&d&lFN 功率扩展 R10",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R10",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -264,10 +264,10 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R11",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "7f9f356f5fe7d1bc92cddfaeba3ee773ac9df1cc4d1c2f8fe5f47013032c551d")),
-            "&d&lFN 功率扩展 R11",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R11",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
@@ -275,179 +275,220 @@ public class FNAmpItems {
             "FN_POWER_XPANSION_POWER_R12",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "3464874df452c1d717eddd0fb3b848202ad15571245af6fade2ecf514f3c80bb")),
-            "&d&lFN 功率扩展 R12",
-            "&9仅在夜晚工作!",
-            "&9放置并右击该方块",
-            "&9以获取能量讯息",
+            "&d&lFN 发电机 R12",
+            "&9可以在夜间工作",
+            "&9放置后右键此发电机",
+            "&9可以查看功率信息",
             ""
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_MULTIBLOCK = new SlimefunItemStack(
             "FMG_GENERATOR_MULTIBLOCK",
             Material.BEDROCK,
-            "&9FN材料生成器",
+            "&9材料生成器",
             "",
-            "&a在任意FN材料生成器上",
-            "&a放置一个箱子",
-            "&a即可开始生产"
+            "&d在任意材料制造机上",
+            "&d像这样放置一个箱子.",
+            "&a制造机所制造出的产物会放入箱子中."
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_CLAY_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_CLAY_BROKEN",
             Material.CLAY,
-            "&3FN粘土生成器 &8(破损)",
+            "&3FN 粘土制造机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static SlimefunItemStack FMG_GENERATOR_CLAY = new SlimefunItemStack(
             "FMG_GENERATOR_CLAY",
             Material.CLAY,
-            "&3FN粘土生成器",
+            "&3FN 粘土生成机",
+            "&6以一定速率自动生成粘土",
+            "&6右键查看生成进度",
             "",
-            "&6滴答率: " + "&6ticks",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破方块会掉落",
-            "&f坏掉的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN材料生成器"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_TERRACOTTA_BROKEN",
             Material.TERRACOTTA,
-            "&4FN陶瓦生成器 &8(破损)",
+            "&4FN 陶瓦生成机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA = new SlimefunItemStack(
             "FMG_GENERATOR_TERRACOTTA",
             Material.TERRACOTTA,
-            "&4FN陶瓦生成器",
+            "&4FN 陶瓦生成机",
+            "&6以一定速率自动生成陶瓦",
+            "&6右键查看生成进度",
+            "",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破块就可以了,破碎的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料生成器"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_BONE_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_BONE_BROKEN",
             Material.BONE_BLOCK,
-            "&fFN骨头生成器 &8(破损)",
+            "&fFN 骨头生成机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_BONE = new SlimefunItemStack(
             "FMG_GENERATOR_BONE",
             Material.BONE_BLOCK,
-            "&fFN骨头生成器",
+            "&fFN 骨头生成机",
+            "&6以一定速率自动生成骨头",
+            "&6右键查看生成进度",
+            "",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破块就可以了,破碎的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料生成器"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIAMOND_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_DIAMOND_BROKEN",
             Material.DIAMOND_BLOCK,
-            "&bFN钻石生成器 &8(破损)",
+            "&bFN 钻石生成机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIAMOND = new SlimefunItemStack(
             "FMG_GENERATOR_DIAMOND",
             Material.DIAMOND_BLOCK,
-            "&bFN钻石生成器",
+            "&bFN 钻石生成机",
+            "&6以一定速率自动生成钻石",
+            "&6右键查看生成进度",
             "",
-            "&6Tickrate: " + "&6ticks",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破块就可以了,破碎的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料生成器"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_EMERALD_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_EMERALD_BROKEN",
             Material.EMERALD_BLOCK,
-            "&aFN绿宝石生成器 &8(破损)",
+            "&aFN 绿宝石生成机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_EMERALD = new SlimefunItemStack(
             "FMG_GENERATOR_EMERALD",
             Material.EMERALD_BLOCK,
-            "&aFN绿宝石生成器",
+            "&aFN 绿宝石生成机",
+            "&66以一定速率自动生成绿宝石",
+            "&6右键查看生成进度",
+            "",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破块就可以了,破碎的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料生成器"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIRT_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_DIRT_BROKEN",
             Material.DIRT,
-            "&fFN泥土生成器 &8(破损)",
+            "&fFN 泥土生成机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIRT = new SlimefunItemStack(
             "FMG_GENERATOR_DIRT",
             Material.DIRT,
-            "&fFN泥土生成器",
+            "&fFN 泥土生成机",
+            "&6以一定速率自动生成泥土",
+            "&6右键查看生成进度",
             "",
-            "&6Tickrate: " + "&6ticks",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破块就可以了,破碎的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料生成器"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_HONEYCOMB_BROKEN",
             Material.HONEYCOMB_BLOCK,
-            "&6FN蜜脾生成器 &8(破损)",
+            "&6FN 蜜脾生成机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB = new SlimefunItemStack(
             "FMG_GENERATOR_HONEYCOMB",
             Material.HONEYCOMB_BLOCK,
-            "&6FN蜜脾生成器",
+            "&6FN 蜜脾生成机",
+            "&6以一定速率自动生成蜜脾",
+            "&6右键查看生成进度",
+            "",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破块就可以了,破碎的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料生成器"
+            "&d&oFN 材料制造机"
     );
     public static final SlimefunItemStack FMG_GENERATOR_QUARTZ_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_QUARTZ_BROKEN",
             Material.QUARTZ_BLOCK,
-            "&fFN石英生成器 &8(破损)",
+            "&fFN 石英生成机 &8(已损坏)",
+            "&8需要修复",
             "",
-            "&7需要修复"
+            "&d&oFN 材料制造机"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_QUARTZ = new SlimefunItemStack(
             "FMG_GENERATOR_QUARTZ",
             Material.QUARTZ_BLOCK,
-            "&fFN石英生成器",
+            "&fFN 石英生成机",
+            "&6以一定速率自动生成石英",
+            "&6右键查看生成进度",
+            "",
+            "&6所需游戏刻: " + "&6tick",
             "",
             "&c警告:",
-            "&f打破块就可以了,破碎的类型",
+            "&f直接破坏机器将会损坏机器",
+            "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料生成器"
+            "&d&oFN 材料制造机"
     );
 
     public static SlimefunItemStack FMG_GENERATOR_WARPED_BROKEN;
@@ -460,20 +501,26 @@ public class FNAmpItems {
             FMG_GENERATOR_AMETHYST_BROKEN = new SlimefunItemStack(
                     "FMG_GENERATOR_AMETHYST_BROKEN",
                     Material.AMETHYST_BLOCK,
-                    "&dFN紫水晶生成器 &8(破损)",
+                    "&dFN 紫水晶簇生成器 &8(已损坏)",
+                    "&8需要修复",
                     "",
-                    "&7需要修复"
+                    "&d&oFN 材料制造机"
             );
 
             FMG_GENERATOR_AMETHYST = new SlimefunItemStack(
                     "FMG_GENERATOR_AMETHYST",
                     Material.AMETHYST_BLOCK,
-                    "&dFN紫水晶生成器",
+                    "&dFN 紫水晶簇生成器",
+                    "&6以一定速率自动生成紫水晶簇",
+                    "&6右键查看生成进度",
+                    "",
+                    "&6所需游戏刻: " + "&6tick",
                     "",
                     "&c警告:",
-                    "&f打破方块会掉落,破碎类型",
+                    "&f直接破坏机器将会损坏机器",
+                    "&f并得到损坏后的机器!",
                     "",
-                    "&d&oFN 材料生成器"
+                    "&d&oFN 材料制造机"
             );
         }
 
@@ -481,25 +528,26 @@ public class FNAmpItems {
             FMG_GENERATOR_WARPED_BROKEN = new SlimefunItemStack(
                     "FMG_GENERATOR_WARPED_BROKEN",
                     Material.WARPED_NYLIUM,
-                    "&4FN变形尼龙发生器 &8(Broken)",
-                    "&8需要修理",
+                    "&4FN 诡异菌岩生成器 &8(已损坏)",
+                    "&8需要修复",
                     "",
-                    "&d&oFN 材料生成器"
+                    "&d&oFN 材料制造机"
             );
 
            FMG_GENERATOR_WARPED = new SlimefunItemStack(
                     "FMG_GENERATOR_WARPED",
                     Material.WARPED_NYLIUM,
-                    "&4FN变形尼龙发生器",
-                    "&6以一定的速率生成扭曲的nylium",
-                    "&6右键单击该块以获取信息",
+                    "&4FN 诡异菌岩生成器",
+                    "&6以一定速率自动生成诡异菌岩",
+                    "&6右键查看生成进度",
                     "",
-                    "&6Tickrate: " + "&6ticks",
+                    "&6所需游戏刻: " + "&6tick",
                     "",
                     "&c警告:",
-                    "&f打破方块会掉落,破碎类型",
+                    "&f直接破坏机器将会损坏机器",
+                    "&f并得到损坏后的机器!",
                     "",
-                    "&d&oFN 材料生成器"
+                    "&d&oFN 材料制造机"
             );
         }
     }
@@ -507,113 +555,95 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER1 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER1",
             "6d2822cedb3abd579d6dfa2966c1433c3c36cb9732e2c23ec0cc81daedd4403b",
-            "&dFN太阳能发电机组 I",
-            "",
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能发电机 等级 I",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER2 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER2",
             "35dd37f729fc88133e314a552204c0fa2c0168428b353f957bf15ff24b7707e0",
-            "&dFN太阳能发电机组 II",
-            "",
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能发电机 等级 II",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER3 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER3",
             "25ddf6af2d6271d8fdfadbdc54faaad5a68d7b8ac20e163883fc38d76336ea6",
-            "&dFN太阳能发电机组 III",
-            "",
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能发电机 等级 III",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER4 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER4",
             "e7f4c00356d1addb85b45ba5352992d3ecc0c9d11feb9041482f8531fd27d014",
-            "&dFN太阳能发电机组 IV",
-            "",
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能发电机 等级 IV",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER5 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER5",
             "afdd9e588d2461d2d3d058cb3e0af2b3a3367607aa14d124ed92a833f25fb112",
-            "&dFN太阳能发电机组 V",
-            "",
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能发电机 等级 V",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER6 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER6",
             "224ad26209fa02f559ef6aa863ee9ba8f3bef0a02f1e9cff8fdc09196402fb6f",
-            "&dFN太阳能发电机组 VI",
-            "", 
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能发电机 等级 VI",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER7 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER7",
             "c4fe135c311f7086edcc5e6dbc4ef4b23f819fddaa42f827dac46e3574de2287",
-            "&dFN太阳能发电机组 VII",
-            "", 
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能发电机 等级 VII",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER8 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER8",
             "240775c3ad75763613f32f04986881bbe4eee4366d0c57f17f7c7514e2d0a77d",
-            "&dFN太阳能发电机组 VIII",
-            "",
-            "&e一种专为缺电人士设计的发电机",
-            "&e仅在白天工作",
+            "&dFN 太阳能阵列 等级 VIII",
+            "", "&e为只在白天需要电力的人设计的发电机",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR));
 
     public static final SlimefunItemStack FN_FAL_TRANSFORMER_1 = new SlimefunItemStack(
             "FN_FAL_TRANSFORMER_1",
             Material.BLUE_GLAZED_TERRACOTTA,
-            "&dFN转换机 I",
+            "&dFN 物品转换机 I",
+            "", "&e一台能够转换物品的机器",
             "",
-            "&e使用一些材料",
-            "&e来快速升级机器/物品",
+            "&d&oFN 机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.speed(1),
             LoreBuilder.powerPerSecond(256));
 
     public static final SlimefunItemStack FN_FAL_TRANSFORMER_2 = new SlimefunItemStack(
             "FN_FAL_TRANSFORMER_2",
-            Material.BLUE_GLAZED_TERRACOTTA, "&dFN转换机 II",
-            "", "&e使用一些材料",
-            "&e来快速升级机器/物品",
+            Material.BLUE_GLAZED_TERRACOTTA, "&dFN 物品转换机 II",
+            "", "&e一台能够转换物品的机器",
             "",
-            "&d&oFN机械",
+            "&d&oFN 机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.speed(2),
             LoreBuilder.powerPerSecond(384));
 
     public static final SlimefunItemStack FN_FAL_TRANSFORMER_3 = new SlimefunItemStack(
             "FN_FAL_TRANSFORMER_3",
-            Material.BLUE_GLAZED_TERRACOTTA, "&dFN转换器 III",
+            Material.BLUE_GLAZED_TERRACOTTA,
+            "&dFN 物品转换机 III",
+            "", "&e一台能够转换物品的机器",
             "",
-            "&e使用一些材料",
-            "&e来快速升级机器/物品",
-            "",
-            "&d&oFN机械",
+            "&d&oFN 机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.speed(4),
             LoreBuilder.powerPerSecond(768));
@@ -1577,10 +1607,10 @@ public class FNAmpItems {
             "&e有机会让7格半径内的敌人着火",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放一把剑来绑定这个宝石"
@@ -1594,10 +1624,10 @@ public class FNAmpItems {
             "&e触发时有机会对所有敌方护甲造成额外的耐久伤害",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -1622,10 +1652,10 @@ public class FNAmpItems {
             "&e有机会向敌人发出闪电",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -1639,10 +1669,10 @@ public class FNAmpItems {
             "&e开采矿石时有几率获得4秒急速",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放工具以绑定此 gem"
@@ -1656,10 +1686,10 @@ public class FNAmpItems {
             "&e有机会抵消所有荆棘伤害",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d在胸甲上拖放以绑定此宝石"
@@ -1673,10 +1703,10 @@ public class FNAmpItems {
             "&e有机会传送到击中你的玩家身后",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放到头盔上以绑定此宝石"
@@ -1690,10 +1720,10 @@ public class FNAmpItems {
             "&e被你的箭击中时有机会将敌人移向你",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放到弓上以绑定此宝石"
@@ -1756,10 +1786,10 @@ public class FNAmpItems {
             "&e被你的箭击中时有机会致盲敌人4秒",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放到弓上以绑定此宝石"
@@ -1776,10 +1806,10 @@ public class FNAmpItems {
             "&f- 守护者不攻击其他守护者，只能攻击该守护者的拥有者",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d在胸甲上拖放以绑定此宝石"
@@ -1793,10 +1823,10 @@ public class FNAmpItems {
             "&e有机会阻止你的敌方守护者生成",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放一把剑来绑定这个宝石"
@@ -1811,10 +1841,10 @@ public class FNAmpItems {
             "&e你当你被击中时箭不会受到伤害",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型以绑定此宝石"
@@ -1828,10 +1858,10 @@ public class FNAmpItems {
             "&e有机会减少30%受到的斧头伤害",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型以绑定此宝石"
@@ -1845,10 +1875,10 @@ public class FNAmpItems {
             "&e有几率减少受到剑的伤害 25%",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型以绑定此宝石"
@@ -1914,10 +1944,10 @@ public class FNAmpItems {
             "&e有机会防止武器或工具受到耐久度伤害",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放武器或工具以绑定此宝石"
@@ -1931,10 +1961,10 @@ public class FNAmpItems {
             "&e有机会防止盔甲受到任何耐久伤害",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型以绑定此宝石"
@@ -1948,10 +1978,10 @@ public class FNAmpItems {
             "&e玩家在同一地点死亡时有机会立即复活",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放到头盔上以绑定此宝石"
@@ -1965,11 +1995,11 @@ public class FNAmpItems {
             "&e玩家死亡时有机会在同",
             "&e一位置生成已启动的爬行者",
             "",
-            "&c◢◤◢◤◢◤ 层级 &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放到靴子上以绑定此宝石"
@@ -1983,11 +2013,11 @@ public class FNAmpItems {
             "&e箭击中实体或玩家的",
             "&e致命弱点时有机会造成2倍伤害",
             "",
-            "&c◢◤◢◤◢◤ 层级 &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放到弓或弩上以绑定此宝石"
@@ -2000,11 +2030,11 @@ public class FNAmpItems {
             "",
             "&e有几率从你的敌人身上卸下一件随机盔甲",
             "",
-            "&c◢◤◢◤◢◤ 层级 &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -2017,11 +2047,11 @@ public class FNAmpItems {
             "",
             "&e有机会卸下敌人持有的武器",
             "",
-            "&c◢◤◢◤◢◤ 层级 &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -2035,11 +2065,11 @@ public class FNAmpItems {
             "&e当生命值低于30%且受到",
             "&e烟雾保护时,有几率在5秒内无敌",
             "",
-            "&c◢◤◢◤◢◤ 层级 &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放到靴子上以绑定此宝石"
@@ -2053,11 +2083,11 @@ public class FNAmpItems {
             "&e只要你的生命值低于最大生命值,",
             "&e就有机会从敌人身上偷取1颗心",
             "",
-            "&c◢◤◢◤◢◤ 层级 &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -2071,14 +2101,14 @@ public class FNAmpItems {
             "&e有几率对你的敌人造成持续4秒的凋零效果",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - 1级凋零效果",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - 2级凋零效果",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - 3级凋零效果",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - 4级凋零效果",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - Level 1 wither effect",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - Level 2 wither effect",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - Level 3 wither effect",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - Level 4 wither effect",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -2092,14 +2122,14 @@ public class FNAmpItems {
             "&e有几率对你的敌人造成持续4秒的毒药效果",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - 1级毒药效果",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - 2级毒药效果",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - 3级毒药效果",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - 4级毒药效果",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - Level 1 poison effect",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - Level 2 poison effect",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - Level 3 poison effect",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - Level 4 poison effect",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -2113,14 +2143,14 @@ public class FNAmpItems {
             "&e有几率对你的敌人造成持续4秒的减速效果",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - 1级减速效果",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - 2级减速效果",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - 3级减速效果",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - 4级减速效果",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - Level 1 slow effect",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - Level 2 slow effect",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - Level 3 slow effect",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - Level 4 slow effect",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -2134,14 +2164,14 @@ public class FNAmpItems {
             "&e有机会对敌人造成持续4秒的虚弱效果",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - 1级虚弱效果",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - 2级虚弱效果",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - 3级虚弱效果",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - 4级虚弱效果",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - Level 1 weakness effect",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - Level 2 weakness effect",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - Level 3 weakness effect",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - Level 4 weakness effect",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型以绑定此宝石"
@@ -2155,14 +2185,14 @@ public class FNAmpItems {
             "&e有几率对你的敌人造成持续4秒的致盲效果",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - 1级失明效果",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - 2级失明效果",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - 3级失明效果",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - 4级失明效果",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - Level 1 blindness effect",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - Level 2 blindness effect",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - Level 3 blindness effect",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - Level 4 blindness effect",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型以绑定此宝石"
@@ -2176,14 +2206,14 @@ public class FNAmpItems {
             "&e有几率对你的敌人造成持续4秒的迅捷效果",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - 1级迅捷效果",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - 2级迅捷效果",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - 3级迅捷效果",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - 4级迅捷效果",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - Level 1 swiftness effect",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - Level 2 swiftness effect",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - Level 3 swiftness effect",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - Level 4 swiftness effect",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型以绑定此宝石"
@@ -2198,10 +2228,10 @@ public class FNAmpItems {
             "&e制造，你的敌人赔钱!",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6⨳ Tier II: " + "&e%",
-            "&6⨳ Tier III: " + "&e%",
-            "&6⨳ Tier IV: " + "&e%",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放剑或斧头以绑定此宝石"
@@ -2216,14 +2246,14 @@ public class FNAmpItems {
             "&e敌人造成冲击波伤害，并将其弹离地面!",
             "",
             "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - 损坏: &f3",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - 损坏: &f6",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - 损坏: &f9",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - 损坏: &f12",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - Damage: &f3",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - Damage: &f6",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - Damage: &f9",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - Damage: &f12",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
             "&d拖放任何盔甲类型，以绑定此宝石"
@@ -2232,7 +2262,7 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_UPGRADES_DISPLAY_ITEM = new SlimefunItemStack(
             "FN_GEM_UPGRADES_DISPLAY_ITEM",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("d3623521c8111ad29e9dcf7acc56085a9ab07da732d1518976aee61d0b3e3bd6")),
-            "&b宝石等级升级",
+            "&bGem 等级 Upgrades",
             "",
             "&d单击此项目以了解如何",
             "&d升级宝石以及FN宝石",

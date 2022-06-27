@@ -52,24 +52,24 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
     private static final Map<BlockPosition, Integer> generatorStatus = new HashMap<>();
 
     private static final CustomItemStack NOT_GENERATING = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cNot Generating",
-            "&ePlace a chest above first!"
+            "&c未在工作",
+            "&e请在上方放置一个箱子!"
     );
 
     private static final CustomItemStack NOT_GENERATING_FULL = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cNot Generating",
-            "&eChest inventory full!"
+            "&c未在工作",
+            "&e箱子已满!"
     );
 
     private static final CustomItemStack CONDITION = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cCurrent Condition: ",
-            "&ePlace a chest above first!"
+            "&c目前状态: ",
+            "&e请在上方放置一个箱子!"
     );
 
     private static final CustomItemStack CONDITION_BROKEN = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cCurrent Condition: ",
-            "&eGenerator is broken! please repair!",
-            "&eDestroy the block and craft a new one"
+            "&c目前状态: ",
+            "&e生成器已损坏, 请立即修复!",
+            "&e直接破坏机器然后重新合成新的机器."
     );
 
     private ItemStack item;
@@ -89,7 +89,7 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
 
         try {
             FNAmplifications.getInstance().getConfigManager().setConfigIntegerValues(item.getItemId(), "tickrate" , tickRate, "material-gen-tickrate", true);
-            Utils.setLore(this.getItem(), this.getId(), "tickrate", "ticks", "&6", " ticks");
+            Utils.setLore(this.getItem(), this.getId(), "tickrate", "tick", "&6", " tick");
         } catch (IOException e) {
             e.printStackTrace();
         }
