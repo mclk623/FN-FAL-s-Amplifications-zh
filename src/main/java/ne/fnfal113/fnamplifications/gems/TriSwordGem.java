@@ -32,7 +32,7 @@ public class TriSwordGem extends AbstractGem implements OnRightClickHandler {
         if (WeaponArmorEnum.SWORDS.isTagged(currentItem.getType())) {
             new Gem(slimefunItem, currentItem, player).onDrag(event, false);
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on swords only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在swords only"));
         }
     }
 

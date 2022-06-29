@@ -47,7 +47,7 @@ public class StaffOfAwareness extends AbstractStaff {
         if(bookMeta == null){
             return;
         }
-        bookMeta.setTitle("50个块半径左右的球员");
+        bookMeta.setTitle("50 格内的所有玩家");
         bookMeta.setAuthor("FN_FAL113");
 
         for (Entity entity: player.getWorld().getNearbyEntities(player.getLocation().clone(), 50, 50, 50)) {

@@ -39,7 +39,7 @@ public class SmokeCriminalGem extends AbstractGem implements OnDamageHandler, Ge
                 new Gem(slimefunItem, currentItem, player).onDrag(event, false);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on boots only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在boots only"));
         }
     }
 
