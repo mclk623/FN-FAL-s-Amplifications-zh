@@ -50,12 +50,12 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
         Player player = event.getPlayer();
 
         if(event.getRightClicked() instanceof Player){
-            player.sendMessage(Utils.colorTranslator("&c工作人员不允许移动玩家!"));
+            player.sendMessage(Utils.colorTranslator("&cStaff is not allowed to move players!"));
             return;
         }
 
         if (!(event.getRightClicked() instanceof LivingEntity)) {
-            player.sendMessage(Utils.colorTranslator("&c您右键单击无效实体"));
+            player.sendMessage(Utils.colorTranslator("&cYou right clicked an invalid entity"));
             return;
         }
 
@@ -75,11 +75,11 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
             getENTITY_OWNER().remove(data);
             data.set(getIdentifierKey(), PersistentDataType.DOUBLE, Math.random()); // for Unique PDC (avoid same pdc contents)
             getENTITY_OWNER().put(data, en);
-            Utils.updateValueByPdc(item, meta, en.getName(), "实体存储: ", "&e", "", " entity");
+            Utils.updateValueByPdc(item, meta, en.getName(), "Entity stored: ", "&e", "", " entity");
             Objects.requireNonNull(player.getLocation().getWorld()).playSound(player.getLocation(), Sound.ENTITY_ILLUSIONER_MIRROR_MOVE, 1 ,1);
             getSTATE_MAP().put(player.getUniqueId(), true);
         } else {
-            player.sendMessage(Utils.colorTranslator("&e此实体已被其他人存储!"));
+            player.sendMessage(Utils.colorTranslator("&eThis entity has been stored already by others!"));
         }
     }
 
@@ -107,12 +107,12 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
         if (!Slimefun.getProtectionManager().hasPermission(
                 Bukkit.getOfflinePlayer(player.getUniqueId()),
                 block, Interaction.BREAK_BLOCK)) {
-            player.sendMessage(ChatColor.DARK_RED + "您无权在那里传送实体!");
+            player.sendMessage(ChatColor.DARK_RED + "You don't have permission to teleport entity there!");
             return;
         }
 
         if(getENTITY_OWNER().get(data) == null){
-            player.sendMessage("您尚未正确点击服务器重新启动后更改的实体或实体ID");
+            player.sendMessage("You haven't right clicked an entity or Entity ID changed after server restart");
             return;
         }
 
@@ -120,7 +120,7 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
             LivingEntity entity = getENTITY_OWNER().get(data);
             entity.teleport(block.getLocation().add(0.5, 1, 0.5));
             getENTITY_OWNER().remove(data);
-            Utils.updateValueByPdc(item, meta, "none", "实体存储: ", "&e", "", "");
+            Utils.updateValueByPdc(item, meta, "无", "储存的实体: ", "&e", "", "");
             getStaffTask().updateMeta(item, meta, player);
         }
     }
