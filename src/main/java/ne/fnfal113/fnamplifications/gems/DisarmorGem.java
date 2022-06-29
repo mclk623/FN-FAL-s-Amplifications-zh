@@ -34,7 +34,7 @@ public class DisarmorGem extends AbstractGem implements OnDamageHandler, GemUpgr
                 new Gem(slimefunItem, currentItem, player).onDrag(event, false);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on swords and axes only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在swords and axes only"));
         }
     }
 
