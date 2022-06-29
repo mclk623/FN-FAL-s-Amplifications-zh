@@ -36,7 +36,7 @@ public class PsychokinesisGem extends AbstractGem implements OnProjectileDamageH
                 new Gem(slimefunItem, currentItem, player).onDrag(event, false);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在bows and crossbows only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在弓和弩上"));
         }
     }
 

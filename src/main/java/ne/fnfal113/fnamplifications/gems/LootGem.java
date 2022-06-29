@@ -35,7 +35,7 @@ public class LootGem extends AbstractGem implements OnDamageHandler, GemUpgrade 
                 new Gem(slimefunItem, currentItem, player).onDrag(event, false);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在swords and axes only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑和斧上"));
         }
     }
 
@@ -60,7 +60,7 @@ public class LootGem extends AbstractGem implements OnDamageHandler, GemUpgrade 
             FNAmplifications.getVaultIntegration().getEconomy().withdrawPlayer(Bukkit.getOfflinePlayer(victim.getUniqueId()), 4.0D);
             FNAmplifications.getVaultIntegration().getEconomy().depositPlayer(Bukkit.getOfflinePlayer(damager.getUniqueId()), 4.0D);
             sendGemMessage(damager, this.getItemName());
-            sendGemMessage(victim, Utils.colorTranslator("&cEnemy ") + this.getItemName());
+            sendGemMessage(victim, Utils.colorTranslator("&c敌人 ") + this.getItemName());
         }
 
     }

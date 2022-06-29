@@ -61,9 +61,9 @@ public class JukeBox extends AbstractJukeBox {
     @Override
     public void changeStatus(BlockMenu invMenu, int currentSlot){
         invMenu.replaceExistingItem(49, new CustomItemStack(Material.MAGENTA_STAINED_GLASS_PANE,
-                "&dNo music disc is being played",
-                "&ePlace a music disc then click",
-                "&eplay button or left/right arrows"));
+                "&d没有正在播放的唱片",
+                "&e放入唱片并单击",
+                "&e播放按钮或者上/下一首按钮"));
     }
 
     @Override
@@ -90,7 +90,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, -1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&eJukebox is turned off, please turn it on"));
+            player.sendMessage(Utils.colorTranslator("&e唱片机关机了, 请先启动唱片机"));
         }
     }
 
@@ -107,7 +107,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, 1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&eJukebox is turned off, please turn it on"));
+            player.sendMessage(Utils.colorTranslator("&e唱片机关机了, 请先启动唱片机"));
         }
     }
 
@@ -129,11 +129,11 @@ public class JukeBox extends AbstractJukeBox {
                 if (isSlotNotNull(menu, cache, 0)) {
                     playCurrentSlot(menu, cache, jukebox, location, 0);
                 } else {
-                    player.sendMessage(Utils.colorTranslator("&dCurrent slot has no music disc"));
+                    player.sendMessage(Utils.colorTranslator("&d对应槽位内没有唱片"));
                 }
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eJukebox is turned off, please turn it on"));
+            player.sendMessage(Utils.colorTranslator("&e唱片机关机了, 请先启动唱片机"));
         }
     }
 
@@ -221,8 +221,8 @@ public class JukeBox extends AbstractJukeBox {
         cache.currentSlot = goToDefaultSlot ? getDefaultSlot() : cache.currentSlot + arithmetic;
         BlockStorage.addBlockInfo(location, "current_Slot", String.valueOf(cache.currentSlot));
         menu.replaceExistingItem(cache.currentSlot, new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-                "&eNo music disc in current slot",
-                "&eplease change the slot"));
+                "&e当前槽位没有唱片",
+                "&e请切换播放槽位"));
         menu.reload();
         getCACHE_MAP().put(menu.getLocation(), cache);
     }
