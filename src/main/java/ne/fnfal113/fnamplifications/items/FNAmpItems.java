@@ -1124,85 +1124,85 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STICK = new SlimefunItemStack(
             "FN_MYSTERY_STICK_1",
             Material.STICK,
-            "&c神秘的法棍",
-            "&f我也很好奇这根法棍是做什么的"
+            "&c神秘的魔棍",
+            "&f我也很好奇这根魔棍是做什么的"
     );
 
 
     public static final SlimefunItemStack FN_STICK_2 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_2",
             Material.STICK,
-            "&c神秘的法棍 II",
-            "&f又一根不知何用的法棍"
+            "&c神秘的魔棍 II",
+            "&f又一根不知何用的魔棍"
     );
 
     public static final SlimefunItemStack FN_STICK_3 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_3",
             Material.STICK,
-            "&c神秘的法棍 III",
-            "&f拿着这根法棍让人感觉与其同调"
+            "&c神秘的魔棍 III",
+            "&f拿着这根魔棍让人感觉与其同调"
     );
 
     public static final SlimefunItemStack FN_STICK_4 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_4",
             Material.STICK,
-            "&c神秘的法棍 IV",
-            "&f我曾经或许用过这根法棍"
+            "&c神秘的魔棍 IV",
+            "&f我曾经或许用过这根魔棍"
     );
 
     public static final SlimefunItemStack FN_STICK_5 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_5",
             Material.STICK,
-            "&c神秘的法棍 V",
+            "&c神秘的魔棍 V",
             "&f我已经厌倦了那些棍子"
     );
 
     public static final SlimefunItemStack FN_STICK_6 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_6",
             Material.STICK,
-            "&c神秘的法棍 VI",
+            "&c神秘的魔棍 VI",
             "&f愿原力与你同在"
     );
 
     public static final SlimefunItemStack FN_STICK_7 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_7",
             Material.STICK,
-            "&c神秘的法棍 VII",
-            "&f这根法棍散发的光环令人着迷"
+            "&c神秘的魔棍 VII",
+            "&f这根魔棍散发的光环令人着迷"
     );
 
     public static final SlimefunItemStack FN_STICK_8 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_8",
             Material.STICK,
-            "&c神秘的法棍 VIII",
-            "&f有些重的法棍"
+            "&c神秘的魔棍 VIII",
+            "&f有些重的魔棍"
     );
 
     public static final SlimefunItemStack FN_STICK_9 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_9",
             Material.STICK,
-            "&c神秘的法棍 IX",
-            "&f这根法棍使用时需要更多魔力"
+            "&c神秘的魔棍 IX",
+            "&f这根魔棍使用时需要更多魔力"
     );
 
     public static final SlimefunItemStack FN_STICK_10 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_10",
             Material.STICK,
-            "&c神秘的法棍 X",
-            "&f致命可怕的法棍"
+            "&c神秘的魔棍 X",
+            "&f致命可怕的魔棍"
     );
 
     public static final SlimefunItemStack FN_STICK_11 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_11",
             Material.STICK,
-            "&c神秘的法棍 XI",
-            "&f诺德人的法棍"
+            "&c神秘的魔棍 XI",
+            "&f诺德人的魔棍"
     );
 
     public static final SlimefunItemStack FN_STICK_ALTAR = new SlimefunItemStack(
             "FN_STICK_ALTAR",
             Material.ENCHANTING_TABLE,
-            "&dFN 神秘法棍祭坛"
+            "&dFN 神秘魔棍祭坛"
     );
 
     public static final SlimefunItemStack FN_GEM_ALTAR = new SlimefunItemStack(
@@ -1282,9 +1282,8 @@ public class FNAmpItems {
             "&cFN 的远征战斗靴",
             "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&fSoldiers from FN's army only wants to posses",
-            "&fthis historical boots but it was kept",
-            "&fhidden under the hands of the zion people",
+            "&fFN 军队的士兵只想拥有这双历史悠久的靴子,",
+            "&f但它却被锡安人私藏了起来",
             "",
             "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
             ChatColor.YELLOW + "靴子等级: 0",
@@ -1322,7 +1321,7 @@ public class FNAmpItems {
             "&d通过右击选择实体将其",
             "&d移动到左击的位置",
             "",
-            "&e可用次数剩余 " + "&e次"
+            "&e可用次数剩余 " + "&e次",
             "&e储存的实体: 无"
     );
 
@@ -1364,11 +1363,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_GRAVITY = new SlimefunItemStack(
             "FN_STAFF_GRAVITY",
             Material.BLAZE_ROD,
-            "&cStaff of Gravitational Pull",
+            "&c引力法杖",
             "",
-            "&dSpawn an area of effect cloud where",
-            "&dentities are being pulled by the gravitational",
-            "&dforce if inside the radius for 8 seconds",
+            "&d召唤出引力法阵",
+            "&d在阵中的实体都会受引力影响 8s",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1376,10 +1374,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_STALLION = new SlimefunItemStack(
             "FN_STAFF_STALLION",
             Material.BLAZE_ROD,
-            "&cStaff of Stallion",
+            "&c种马法杖",
             "",
-            "&dSpawns a skeleton horse that is",
-            "&drideable until passenger dismount",
+            "&d召唤一匹可骑乘的骷髅马",
+            "&d下马后无法再次骑乘",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1387,12 +1385,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_FORCE = new SlimefunItemStack(
             "FN_STAFF_FORCE",
             Material.BLAZE_ROD,
-            "&cStaff of Force",
+            "&c风之法杖",
             "",
-            "&dRight click to spawn a cloud of effect",
-            "&dthat gives a force push forward or",
-            "&dshift-right-click to spawn a different cloud",
-            "&dof effect that gives a backward force",
+            "&d右键召唤向前的风场推动敌人",
+            "&dShift + 右键召唤反向风场",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1400,11 +1396,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_HEALING = new SlimefunItemStack(
             "FN_STAFF_HEALING",
             Material.BLAZE_ROD,
-            "&cStaff of Healing",
+            "&c治疗法杖",
             "",
-            "&dRight click to spawn a cloud of effect",
-            "&dthat heals the caster only if inside the",
-            "&dradius for 8 seconds",
+            "&d右键召唤治疗法阵",
+            "&d在法阵中可以治疗施术者 8s",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1412,11 +1407,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_INVULNERABILITY = new SlimefunItemStack(
             "FN_STAFF_INVULNERABILITY",
             Material.BLAZE_ROD,
-            "&cStaff of Invulnerability",
+            "&c无敌法杖",
             "",
-            "&dRight click to spawn a cloud of effect",
-            "&dthat protects entities inside the radius",
-            "&dfrom damage for 8 seconds",
+            "&d右键召唤无敌法阵",
+            "&d保护在阵中的实体在 8s 内不受任何伤害",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1424,10 +1418,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_EXPLOSION = new SlimefunItemStack(
             "FN_STAFF_EXPLOSION",
             Material.BLAZE_ROD,
-            "&cStaff of Explosion",
+            "&c爆炸法杖",
             "",
-            "&dRight click a target block to",
-            "&dyield an explosion causing damage",
+            "&d右键目标方块产生爆炸造成伤害",
+
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1435,11 +1429,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_MUSTER = new SlimefunItemStack(
             "FN_STAFF_MUSTER",
             Material.BLAZE_ROD,
-            "&cStaff of Muster",
+            "&c群聚法杖",
             "",
-            "&dRight click a target block to teleport",
-            "&dnearby entities that are on ground",
-            "&dwithin 50 block radius",
+            "&d右键一个方块将附近 50 格内",
+            "&d的实体传送到对应方块上",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1447,11 +1440,9 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_AWARENESS = new SlimefunItemStack(
             "FN_STAFF_AWARENESS",
             Material.BLAZE_ROD,
-            "&cStaff of Awareness",
+            "&c认知之杖",
             "",
-            "&dRight click to receive information",
-            "&dregarding the nearest players around",
-            "&d50 block radius",
+            "&d右键获取附近 50 格内玩家的信息",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1459,11 +1450,11 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_MINERALS = new SlimefunItemStack(
             "FN_STAFF_MINERALS",
             Material.BLAZE_ROD,
-            "&cStaff of Minerals",
+            "&c矿物法杖",
             "",
-            "&dRight click to receive mythical",
-            "&dinformation that awaits upon using",
-            "&dthe staff",
+            "&d右键法杖获取来自法杖",
+            "&d法杖的神奇信息",
+            "&d指引你前往矿物所在之地",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1471,11 +1462,10 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_FANGS = new SlimefunItemStack(
             "FN_STAFF_FANGS",
             Material.BLAZE_ROD,
-            "&cStaff of Fangs",
+            "&c尖牙之杖",
             "",
-            "&dRight click a target block to",
-            "&dspawn evoker fangs that causes",
-            "&ddamage to entities",
+            "&d右键召唤唤魔者尖牙",
+            "&d对敌人造成伤害",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1483,10 +1473,9 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_SKULLS = new SlimefunItemStack(
             "FN_STAFF_SKULLS",
             Material.BLAZE_ROD,
-            "&cStaff of Skulls",
+            "&c凋灵之首法杖",
             "",
-            "&dRight click to launch",
-            "&dwither skull projectiles",
+            "&d右键发射凋灵之首攻击敌人",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1494,10 +1483,9 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_AIR_STRIDER = new SlimefunItemStack(
             "FN_STAFF_AIR_STRIDER",
             Material.BLAZE_ROD,
-            "&cStaff of Air Strider",
+            "&c浮空之杖",
             "",
-            "&dRight click to gain the ability to",
-            "&dwalk on the air for 10 seconds",
+            "&d右键给予你在空中行动的能力 10s",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1505,10 +1493,9 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_COBWEB = new SlimefunItemStack(
             "FN_STAFF_COBWEB",
             Material.BLAZE_ROD,
-            "&cStaff of Cobweb",
+            "&c蜘蛛网法杖",
             "",
-            "&dRight click a target block",
-            "&dto spawn a wall of cobwebs",
+            "&d右键方块生成一面蜘蛛网墙",
             "",
             "&e可用次数剩余 " + "&e次"
     );
@@ -1516,227 +1503,209 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_QUIVER = new SlimefunItemStack(
             "FN_QUIVER",
             Material.LEATHER,
-            "&bBow Quiver (Normal)",
+            "&b箭袋 (普通)",
             "",
-            "&dStore inside the quiver",
-            "&dby right clicking arrows or",
-            "&dshift click quiver to withdraw",
+            "&d右键将箭存入箭袋",
+            "&dShift + 右键取出箭",
             "",
-            "&eClick to change state",
-            "&eSize: 192 Arrows",
-            "&eArrows: " + "&f0",
-            "&eState: Closed (No Arrows)"
+            "&e右击修改状态",
+            "&e大小: 192 支",
+            "&e箭矢剩余: " + "&f0",
+            "&e状态: 关闭 (无箭矢)"
     );
 
     public static final SlimefunItemStack FN_SPECTRAL_QUIVER = new SlimefunItemStack(
             "FN_SPECTRAL_QUIVER",
             Material.LEATHER,
-            "&aBow Quiver (Spectral)",
+            "&a箭袋 (光灵箭)",
             "",
-            "&dStore inside the quiver by",
-            "&dright clicking spectral arrows or",
-            "&dshift click quiver to withdraw",
+            "&d右键将箭存入箭袋",
+            "&dShift + 右键取出箭",
             "",
-            "&eClick to close/open",
-            "&eSize: 192 Spectral Arrows",
-            "&eArrows: " + "&f0",
-            "&eState: Closed (No Arrows)"
+            "&e单击开启/关闭箭袋",
+            "&e大小: 192 支光灵箭",
+            "&e箭矢剩余: " + "&f0",
+            "&e状态: 关闭 (无箭矢)"
     );
 
     public static final SlimefunItemStack FN_UPGRADED_QUIVER = new SlimefunItemStack(
             "FN_UPGRADED_QUIVER",
             Material.LEATHER,
-            "&6Upgraded Bow Quiver (Normal)",
+            "&6改良箭袋 (普通)",
             "",
-            "&dStore inside the quiver",
-            "&dby right clicking arrows or",
-            "&dshift click to withdraw",
+            "&d右键将箭存入箭袋",
+            "&dShift + 右键取出箭",
             "",
-            "&eClick to change state",
-            "&eSize: 288 Arrows",
-            "&eArrows: " + "&f0",
-            "&eState: Closed (No Arrows)"
+            "&e右击修改状态",
+            "&e大小: 288 支",
+            "&e箭矢剩余: " + "&f0",
+            "&e状态: 关闭 (无箭矢)"
     );
 
     public static final SlimefunItemStack FN_UPGRADED_SPECTRAL_QUIVER = new SlimefunItemStack(
             "FN_UPGRADED_SPECTRAL_QUIVER",
             Material.LEATHER,
-            "&cUpgraded Bow Quiver (Spectral)",
+            "&c改良箭袋 (光灵箭)",
             "",
-            "&dStore inside the quiver",
-            "&dby right clicking spectral arrows or",
-            "&dshift click quiver to withdraw",
+            "&d右键将箭存入箭袋",
+            "&dShift + 右键取出箭",
             "",
-            "&eClick to change state",
-            "&eSize: 288 Arrows",
-            "&eArrows: " + "&f0",
-            "&eState: Closed (No Arrows)"
+            "&e右击修改状态",
+            "&e大小: 288 支",
+            "&e箭矢剩余: " + "&f0",
+            "&e状态: 关闭 (无箭矢)"
     );
 
     public static final SlimefunItemStack FN_HOE_5X5 = new SlimefunItemStack(
             "FN_HOE_5X5",
             Material.DIAMOND_HOE,
-            "&cFN's Hoe",
+            "&cFN 的锄头",
             "",
-            "&dCan soil/till land and harvest",
-            "&dcrops in a 5x5 square area"
+            "&d可以在 5x5 的耕地中自动收割作物"
     );
 
     public static final SlimefunItemStack FN_HOE_5X5_AUTO_PLANT = new SlimefunItemStack(
             "FN_HOE_5X5_AUTO_PLANT",
             Material.DIAMOND_HOE,
-            "&cFN's Reseeding Hoe",
+            "&cFN 的补种锄头",
             "",
-            "&dCan soil/till land and harvest",
-            "&dcrops in a 5x5 square area",
+            "&d可以在 5x5 的耕地中自动收割作物",
             "",
-            "&dAuto plants if the crops are",
-            "&dharvested at maximum age"
+            "&d在收割到成熟后的作物时",
+            "&d会自动补种对应作物"
     );
 
     public static final SlimefunItemStack FN_GEM_INFERNO = new SlimefunItemStack(
             "FN_GEM_INFERNO",
             Material.EMERALD,
-            "&cInferno Gem",
+            "&c地狱宝石",
             "",
-            "&eA chance to set enemies in a",
-            "&e7 block radius on fire",
+            "&e有几率点燃 7 格以内的敌人",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on a sword",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意剑上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_ARMOR_IMPAIR = new SlimefunItemStack(
             "FN_GEM_ARMOR_IMPAIR",
             Material.EMERALD,
-            "&cArmor Impair Gem",
+            "&c破甲宝石",
             "",
-            "&eA chance to deal extra durability",
-            "&edamage to all enemy armor at proc",
+            "&e有几率对所有敌人的盔甲",
+            "&e在攻击造成额外耐久伤害",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on a sword or axe",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_TELEPATHY = new SlimefunItemStack(
             "FN_GEM_TELEPATHY",
             Material.EMERALD,
-            "&cTelepathy Gem",
+            "&c通灵宝石",
             "",
-            "&eAutomatically places blocks broken by",
-            "&ethe tool in the player's inventory",
+            "&e将对应工具破坏的方块",
+            "&e自动放入玩家的物品栏",
             "",
-            "&dDrag and drop on a tool",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意工具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_THUNDER = new SlimefunItemStack(
             "FN_GEM_THUNDER",
             Material.EMERALD,
-            "&cThunderbolt Gem",
+            "&c雷雳宝石",
             "",
-            "&eA chance to strike",
-            "&elightning to enemies",
+            "&e有几率雷击敌人",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on a sword or axe",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_HASTY = new SlimefunItemStack(
             "FN_GEM_HASTY",
             Material.EMERALD,
-            "&cHasty Gem",
+            "&c急迫宝石",
             "",
-            "&eA chance to receive 4 seconds",
-            "&eof haste when mining ores",
+            "&e在挖矿时有几率",
+            "&e获得 4s 的急迫效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on a tool",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意工具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_THORN_AWAY = new SlimefunItemStack(
             "FN_GEM_THORN_AWAY",
             Material.EMERALD,
-            "&cThorn Away Gem",
+            "&c防荆棘宝石",
             "",
-            "&eA chance to negate",
-            "&eall thorn damage",
+            "&e有几率取消所有荆棘伤害",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on a chestplate",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意护甲上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_IMPOSTOR = new SlimefunItemStack(
             "FN_GEM_IMPOSTOR",
             Material.EMERALD,
-            "&cImpostor Gem",
+            "&c幻象宝石",
             "",
-            "&eA chance to teleport behind",
-            "&ethe player that is hitting you",
+            "&e有几率传送到攻击你的玩家背后",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on a helmet",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意头盔上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_PSYCHOKINESIS = new SlimefunItemStack(
             "FN_GEM_PSYCHOKINESIS",
             Material.EMERALD,
-            "&cPsychokinesis Gem",
+            "&c意志宝石",
             "",
-            "&eA chance to move enemies towards",
-            "&eyou when got hit by your arrow",
+            "&e当箭击中敌人时,",
+            "&e有几率将其传送至你面前",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on a bow",
-            "&dto bind this gem"
+            "&d将宝石拖放到任意弓上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_AXETHROWIE = new SlimefunItemStack(
