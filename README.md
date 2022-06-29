@@ -32,6 +32,16 @@
 
 [](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
 
+### [点击这里下载汉化](https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main) 
+<p align="center">
+  <a href="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml">
+    <img src="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
+  </a>
+  <a href="https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main">
+    <img src="https://builds.guizhanss.cn/f/buiawpkgew1/FN-FAL-s-Amplifications-zh/main/badge.svg" alt="Build status"/>
+  </a>
+</p>
+
 ## :blue_book: 插件在 Slimefun 指南中的样式
 
 ![guide](https://user-images.githubusercontent.com/88238718/136697193-5c52d89f-2f01-40e6-b5b7-6f730a17bbd0.png)
