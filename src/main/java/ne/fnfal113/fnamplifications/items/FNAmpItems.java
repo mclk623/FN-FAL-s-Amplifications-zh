@@ -962,119 +962,113 @@ public class FNAmpItems {
             "FN_MAGICAL_ITEMS_PESTILENCE_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("a8c4811395fbf7f620f05cc3175cef1515aaf775ba04a01045027f0693a90147")),
             "&a瘟疫符文",
-            "&fA rune from the black death",
-            "&fperiod that holds a deadly sin",
+            "&f黑死病时期的符文",
+            "&f蕴含着致命的罪恶",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack SPARKLING_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_SPARKLING_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("f1e2428cb359988f4c4ff0e61de21385c62269de19a69762d773223b75dd1666")),
-            "&eSparkling Rune",
-            "&fToo bright and too flashy",
-            "&ffor this rune is too deadly",
+            "&e闪烁符文",
+            "&f太闪耀的符文反而过于致命",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack CLOUD_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_CLOUD_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("2273740d454de962484712f9835e35119b37ab867fa6982d5cc1f333c2334e59")),
-            "&3Cloud Rune",
-            "&fUp in the skies is where",
-            "&fthe clouds lies",
+            "&3云之符文",
+            "&f直上云朵所在之处",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack ICE_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_ICE_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("cdc57c75adf39ec6f0e0916049dd9671e98a8a1e600104e84e645c988950bd7")),
-            "&bIce Rune",
-            "&fThe rune full of chill",
-            "&fbut can you stay still",
+            "&b冰之符文",
+            "&f充满了寒冷的符文",
+            "&f但你能保持不动吗",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack POWER_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_POWER_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("3b481c31dc683bdcb7d375a7c5db7ac7adf9e9fe8b6c04a64931613e29fe470e")),
-            "&9Power Rune",
-            "&fThe power from this rune",
-            "&fcan do dangerous things",
+            "&9能量符文",
+            "&f符文中强大的力量",
+            "&f可以做到危险的事情",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack LINGER_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_LINGER_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("2c4a65c689b2d36409100a60c2ab8d3d0a67ce94eea3c1f7ac974fd893568b5d")),
-            "&2Linger Rune",
-            "&fIt lingers from top to",
-            "&fbottom and soon the middle",
+            "&2徘徊符文",
+            "&f它从世界顶部到底端",
+            "&f很快就会到地面徘徊",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack AGILITY_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_AGILITY_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("35f4861aa5b22ee28a90e75dab45d221efd14c0b1ecc8ee998fb67e43bb8f3de")),
-            "&eAgility Rune",
-            "&fFaster means better but",
-            "&fdoes it matter",
+            "&e敏捷符文",
+            "&f更快意味着更好",
+            "&f但它真的重要吗",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack INTELLECT_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_INTELLECT_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("977c1fc93216e96d435cf962e1173de8d1a249b644894d72676eba732fcd56e7")),
-            "&9Intellect Rune",
-            "&fVery useful rune in the",
-            "&ftime of desperation",
+            "&9智慧符文",
+            "&f在绝望之时非常有用的符文",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack HEART_RUNE = new SlimefunItemStack(
             "FN_MAGICAL_ITEMS_HEART_RUNE",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("2c1c179ad51955f1522c48ea9931f09c162741b45e22e9d3feb682c7e5ed8274")),
-            "&dHeart Rune",
-            "&fRejuvenate through this rune",
-            "&fas you sense the aura inside",
+            "&d心之符文",
+            "&f符文中的灵气能让你恢复活力",
             "",
             "&d&oFN 魔法物品");
 
     public static final SlimefunItemStack BASIC_MACHINE_BLOCK = new SlimefunItemStack(
             "FN_MACHINERY_BASIC_MACHINE_BLOCK",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("883dd0f90df05fe6a09aaccaf54bc043e455e1c865bda1fd272e3f47fb9bb910")),
-            "&dBasic Machine Block",
-            "&fEssential Part for FN Machinery"
-            , "&fand Power Xpansion",
+            "&d基础机械方块",
+            "&fFN 机械和发电机的基础部分",
             "",
             "&d&oFN 机械材料");
 
     public static final SlimefunItemStack HIGHTECH_MACHINE_BLOCK = new SlimefunItemStack(
             "FN_MACHINERY_HIGHTECH_MACHINE_BLOCK",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("5a7b3b16e5d0c4cfd21c4eb9133e969aad7cc7303ccdf317512e26a4879b51")),
-            "&dHigh Tech Machine Block",
-            "&fEssential Part for FN Machinery"
-            , "&fand Power Xpansion",
+            "&d高科技机械方块",
+            "&fFN 机械和发电机的基础部分",
             "",
             "&d&oFN 机械材料");
 
     public static final SlimefunItemStack FN_ASSEMBLY_STATION = new SlimefunItemStack(
             "FN_ASSEMBLY_STATION",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("583150f055935058634576185977ffba49ff4679faa03ad0008feaa0161865b3")),
-            "&dFN Assembly Station"
+            "&dFN 组装站"
     );
 
     public static final SlimefunItemStack FN_SCRAP_RECYCLER = new SlimefunItemStack(
             "FN_SCRAP_RECYCLER",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("656634b556caf5382de65038a10e4d79c7c18695048599df74f9c67c1e1e8736")),
-            "&dFN Scrap Recycler"
+            "&dFN 废料回收机"
     );
 
     public static final SlimefunItemStack FN_METAL_SCRAPS = new SlimefunItemStack(
             "FN_METAL_SCRAPS",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("3ff0bee591e5f0000ef16f966b949adcb5c2f409a14ccfc5b91222fd925045db")),
-            "&dMetal Scrap",
-            "&fLeftover from downgrading machines"
-            , "&fcan be used to craft FN Machinery Items",
+            "&d金属废料",
+            "&f降级机器时留下的废料"
+            , "&f可以用于合成 FN 机械材料",
             "",
             "&d&oFN 机械材料"
     );
