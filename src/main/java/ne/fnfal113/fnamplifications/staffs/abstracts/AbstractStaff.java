@@ -37,7 +37,7 @@ public abstract class AbstractStaff extends SlimefunItem {
         this.staffTask = new StaffTask(getDefaultUsageKey(), this.getId());
         setConfigValues(maxUses, this.getItem().getType().toString());
         setMaterial();
-        Utils.setLore(this.getItem(), this.getId(), "max-uses", "left", "&e", " left");
+        Utils.setLore(this.getItem(), this.getId(), "max-uses", "次", "&e", " 次");
     }
 
     public void setMaterial(){

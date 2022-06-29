@@ -62,7 +62,7 @@
 
 ![Machinery Category](https://user-images.githubusercontent.com/88238718/138582199-7b18befb-dfd6-42b7-8962-e538a1535b41.png)![Machinery Items Category](https://user-images.githubusercontent.com/88238718/138582200-9995884a-39a5-406f-9f55-598698e3c767.png)
 
-#### :sparkler: 魔棍
+#### :sparkler: 法棍
 
 ![MysterySticks](https://user-images.githubusercontent.com/88238718/145703147-d8c55904-81d4-4509-9eb6-af84ca038ae4.png)
 
