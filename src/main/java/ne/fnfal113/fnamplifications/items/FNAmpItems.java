@@ -1076,13 +1076,12 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_BLOCK_BREAKER_1 = new SlimefunItemStack(
             "FN_BLOCK_BREAKER_I",
             Material.DISPENSER,
-            "&4Electric Block Breaker I",
+            "&4方块挖掘机 I",
             "",
-            "&6Place block in front",
-            "&6of the dispenser to break",
-            "&d(Vanilla)",
+            "&6在发射器面前的方块会被挖掘",
+            "&d(原版方块)",
             "",
-            "&eRate: " + "&eticks",
+            "&e速率: " + "&eticks",
             "",
             "&d&oFN 机械",
             LoreBuilder.machine(MachineTier.AVERAGE, MachineType.MACHINE),
@@ -1093,13 +1092,12 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_BLOCK_BREAKER_2 = new SlimefunItemStack(
             "FN_BLOCK_BREAKER_II",
             Material.DISPENSER,
-            "&4Electric Block Breaker II",
+            "&4方块挖掘机 II",
             "",
-            "&6Place block in front",
-            "&6of the dispenser to break",
-            "&d(Vanilla)",
+            "&6在发射器面前的方块会被挖掘",
+            "&d(原版方块)",
             "",
-            "&eRate: " + "&eticks",
+            "&e速率: " + "&eticks",
             "",
             "&d&oFN 机械",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
@@ -1110,13 +1108,12 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_BLOCK_BREAKER_3 = new SlimefunItemStack(
             "FN_BLOCK_BREAKER_III",
             Material.DISPENSER,
-            "&4Electric Block Breaker III",
+            "&4方块挖掘机 III",
             "",
-            "&6Place block in front",
-            "&6of the dispenser to break",
-            "&d(Vanilla)",
+            "&6在发射器面前的方块会被挖掘",
+            "&d(原版方块)",
             "",
-            "&eRate: " + "&eticks",
+            "&e速率: " + "&eticks",
             "",
             "&d&oFN 机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
@@ -1127,119 +1124,119 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STICK = new SlimefunItemStack(
             "FN_MYSTERY_STICK_1",
             Material.STICK,
-            "&cMysterious Stick",
-            "&fI wonder what this stick does"
+            "&c神秘的法棍",
+            "&f我也很好奇这根法棍是做什么的"
     );
 
 
     public static final SlimefunItemStack FN_STICK_2 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_2",
             Material.STICK,
-            "&cMysterious Stick II",
-            "&fAnother stick of no matter what is it"
+            "&c神秘的法棍 II",
+            "&f又一根不知何用的法棍"
     );
 
     public static final SlimefunItemStack FN_STICK_3 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_3",
             Material.STICK,
-            "&cMysterious Stick III",
-            "&fI feel coordinated when holding this stick"
+            "&c神秘的法棍 III",
+            "&f拿着这根法棍让人感觉与其同调"
     );
 
     public static final SlimefunItemStack FN_STICK_4 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_4",
             Material.STICK,
-            "&cMysterious Stick IV",
-            "&fDid I use this before or maybe not"
+            "&c神秘的法棍 IV",
+            "&f我曾经或许用过这根法棍"
     );
 
     public static final SlimefunItemStack FN_STICK_5 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_5",
             Material.STICK,
-            "&cMysterious Stick V",
-            "&fI know you are tired of this stick thing"
+            "&c神秘的法棍 V",
+            "&f我已经厌倦了那些棍子"
     );
 
     public static final SlimefunItemStack FN_STICK_6 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_6",
             Material.STICK,
-            "&cMysterious Stick VI",
-            "&fMay the force and accuracy be with you"
+            "&c神秘的法棍 VI",
+            "&f愿原力与你同在"
     );
 
     public static final SlimefunItemStack FN_STICK_7 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_7",
             Material.STICK,
-            "&cMysterious Stick VII",
-            "&fThe aura on this stick is mesmerizing"
+            "&c神秘的法棍 VII",
+            "&f这根法棍散发的光环令人着迷"
     );
 
     public static final SlimefunItemStack FN_STICK_8 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_8",
             Material.STICK,
-            "&cMysterious Stick VIII",
-            "&fThis stick is kinda heavy"
+            "&c神秘的法棍 VIII",
+            "&f有些重的法棍"
     );
 
     public static final SlimefunItemStack FN_STICK_9 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_9",
             Material.STICK,
-            "&cMysterious Stick IX",
-            "&fYou need more mana when using this"
+            "&c神秘的法棍 IX",
+            "&f这根法棍使用时需要更多魔力"
     );
 
     public static final SlimefunItemStack FN_STICK_10 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_10",
             Material.STICK,
-            "&cMysterious Stick X",
-            "&fDeadly or creepy stick"
+            "&c神秘的法棍 X",
+            "&f致命可怕的法棍"
     );
 
     public static final SlimefunItemStack FN_STICK_11 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_11",
             Material.STICK,
-            "&cMysterious Stick XI",
-            "&fThe stick of the nords"
+            "&c神秘的法棍 XI",
+            "&f诺德人的法棍"
     );
 
     public static final SlimefunItemStack FN_STICK_ALTAR = new SlimefunItemStack(
             "FN_STICK_ALTAR",
             Material.ENCHANTING_TABLE,
-            "&dFN Mystery Stick Altar"
+            "&dFN 神秘法棍祭坛"
     );
 
     public static final SlimefunItemStack FN_GEM_ALTAR = new SlimefunItemStack(
             "FN_GEM_ALTAR",
             Material.SMITHING_TABLE,
-            "&dFN Gem Altar"
+            "&dFN 宝石祭坛"
     );
 
     public static final SlimefunItemStack FN_GEM_UPGRADER = new SlimefunItemStack(
             "FN_GEM_UPGRADER",
             Material.SMITHING_TABLE,
-            "&dFN Gem Upgrader"
+            "&dFN 宝石升级器"
     );
 
     public static final SlimefunItemStack FN_MAGIC_ALTAR = new SlimefunItemStack(
             "FN_MAGIC_ALTAR",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("e34930125767c2e34ac939ec94a2aa4e79c381ee336760695c6c874cf12")),
-            "&dFN Magic Altar"
+            "&dFN 魔法祭坛"
     );
 
     public static final SlimefunItemStack FN_GEAR_HELMET = new SlimefunItemStack(
             "FN_GEAR_HELMET",
             Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
                     Material.NETHERITE_HELMET : Material.DIAMOND_HELMET,
-            "&cFN's Field Tested Helmet",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "&cFN 的战场头盔",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&fWear this helmet in the name of FN and",
-            "&fevery battle should make it become more",
-            "&fstronger with bonus attributes and enchants",
+            "&f以 FN 之名戴上头盔",
+            "&f战斗只会让头盔变得更强",
+            "&f还会获得额外的属性和附魔",
             "",
-            "&c◈◈◈◈◈◈| &d&lStats &6|◈◈◈◈◈◈",
-            ChatColor.YELLOW + "Helmet Level: 0",
-            ChatColor.YELLOW + "Progress:",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
+            ChatColor.YELLOW + "头盔等级: 0",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1248,16 +1245,15 @@ public class FNAmpItems {
             "FN_GEAR_CHESTPLATE",
             Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
                     Material.NETHERITE_CHESTPLATE : Material.DIAMOND_CHESTPLATE,
-            "&cFN's Battle Scarred Chestplate",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "&cFN 的战痕累累盔甲",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&fThe armor from the past brought to life",
-            "&fonce again. It becomes more powerful during",
-            "&ftimes of war and conflict",
+            "&f来自过去的盔甲被再次赋予生命",
+            "&f在战争与冲突中, 它变得更加强大",
             "",
-            "&c◈◈◈◈◈◈| &d&lStats &6|◈◈◈◈◈◈",
-            ChatColor.YELLOW + "Armor Level: 0",
-            ChatColor.YELLOW + "Progress:",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
+            ChatColor.YELLOW + "盔甲等级: 0",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1266,16 +1262,15 @@ public class FNAmpItems {
             "FN_GEAR_LEGGINGS",
             Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
                     Material.NETHERITE_LEGGINGS: Material.DIAMOND_LEGGINGS,
-            "&cFN's Chausses of Eminence",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "&cFN 的卓越护腿",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
-            "&fGlorious leggings worn by FN during war",
-            "&fand was glorified on every victory against",
-            "&fhis foes",
+            "&fFN 在战争中穿过的光荣护腿",
+            "&f并从敌人的每一次胜利中获得荣耀",
             "",
-            "&c◈◈◈◈◈◈| &d&lStats &6|◈◈◈◈◈◈",
-            ChatColor.YELLOW + "Leggings Level: 0",
-            ChatColor.YELLOW + "Progress:",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
+            ChatColor.YELLOW + "护腿等级: 0",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1284,16 +1279,16 @@ public class FNAmpItems {
             "FN_GEAR_BOOTS",
             Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
                     Material.NETHERITE_BOOTS : Material.DIAMOND_BOOTS,
-            "&cFN's Expedition Combat Boots",
-            "&c◬◬◬◬◬◬| &d&lLore &6|◬◬◬◬◬◬",
+            "&cFN 的远征战斗靴",
+            "&c◬◬◬◬◬◬| &d&l介绍 &6|◬◬◬◬◬◬",
             "",
             "&fSoldiers from FN's army only wants to posses",
             "&fthis historical boots but it was kept",
             "&fhidden under the hands of the zion people",
             "",
-            "&c◈◈◈◈◈◈| &d&lStats &6|◈◈◈◈◈◈",
-            ChatColor.YELLOW + "Boots Level: 0",
-            ChatColor.YELLOW + "Progress:",
+            "&c◈◈◈◈◈◈| &d&l数据 &6|◈◈◈◈◈◈",
+            ChatColor.YELLOW + "靴子等级: 0",
+            ChatColor.YELLOW + "进阶进度:",
             ChatColor.GRAY + "[" + "■■■■■■■■■■" + ChatColor.GRAY + "]"
 
     );
@@ -1301,72 +1296,69 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STAFF_TP = new SlimefunItemStack(
             "FN_STAFF_TP",
             Material.BLAZE_ROD,
-            "&cStaff of Teleportation",
+            "&c传送法杖",
             "",
-            "&dTeleport to a target block by",
-            "&dright clicking it",
+            "&d右键传送到目标方块",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_INVI = new SlimefunItemStack(
             "FN_STAFF_INVI",
             Material.BLAZE_ROD,
-            "&cStaff of Invisibility",
+            "&c隐身法杖",
             "",
-            "&d6 seconds of invisibility",
-            "&deven your armor and name",
-            "&dare hidden",
+            "&d给予你 6s 的隐身效果",
+            "&d还能隐藏你的盔甲和名字!",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_LOCOMOTION = new SlimefunItemStack(
             "FN_STAFF_LOCOMOTION",
             Material.BLAZE_ROD,
-            "&cStaff of Locomotion",
+            "&c位移法杖",
             "",
-            "&dMove entities to a target location by right",
-            "&dclicking to select and left click to move",
+            "&d通过右击选择实体将其",
+            "&d移动到左击的位置",
             "",
-            "&eUses: " + "&eleft",
-            "&eEntity stored: none"
+            "&e可用次数剩余 " + "&e次"
+            "&e储存的实体: 无"
     );
 
     public static final SlimefunItemStack FN_STAFF_HELLFIRE = new SlimefunItemStack(
             "FN_STAFF_HELLFIRE",
             Material.BLAZE_ROD,
-            "&cStaff of Hellfire",
+            "&c地狱火法杖",
             "",
-            "&dSpawn an area of effect cloud",
-            "&dwhere entities are set on fire",
-            "&dif inside the radius for 8 seconds",
+            "&d召唤出地狱火法阵",
+            "&d在阵中的实体都会着火 8s",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_DEEPFREEZE = new SlimefunItemStack(
             "FN_STAFF_DEEPFREEZE",
             Material.BLAZE_ROD,
-            "&cStaff of Deep-Freeze",
+            "&c深冻法杖",
             "",
-            "&dSpawn an area of effect cloud where",
-            "&dentities are being slowed by the freezing",
-            "&dcold if inside the radius for 8 seconds",
+            "&d召唤出冰冻法阵",
+            "&d在阵中的实体都会由于冷冻",
+            "&d获得 8s 的缓慢效果",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_CONFUSION = new SlimefunItemStack(
             "FN_STAFF_CONFUSION",
             Material.BLAZE_ROD,
-            "&cStaff of Confusion",
+            "&c混乱法杖",
             "",
-            "&dSpawn an area of effect cloud where",
-            "&dentities are confused of their direction",
-            "&dif inside the radius for 8 seconds",
+            "&d召唤出混乱法阵",
+            "&d在阵中的实体都会",
+            "&d获得 8s 的反胃效果",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_GRAVITY = new SlimefunItemStack(
@@ -1378,7 +1370,7 @@ public class FNAmpItems {
             "&dentities are being pulled by the gravitational",
             "&dforce if inside the radius for 8 seconds",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_STALLION = new SlimefunItemStack(
@@ -1389,7 +1381,7 @@ public class FNAmpItems {
             "&dSpawns a skeleton horse that is",
             "&drideable until passenger dismount",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_FORCE = new SlimefunItemStack(
@@ -1402,7 +1394,7 @@ public class FNAmpItems {
             "&dshift-right-click to spawn a different cloud",
             "&dof effect that gives a backward force",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_HEALING = new SlimefunItemStack(
@@ -1414,7 +1406,7 @@ public class FNAmpItems {
             "&dthat heals the caster only if inside the",
             "&dradius for 8 seconds",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_INVULNERABILITY = new SlimefunItemStack(
@@ -1426,7 +1418,7 @@ public class FNAmpItems {
             "&dthat protects entities inside the radius",
             "&dfrom damage for 8 seconds",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_EXPLOSION = new SlimefunItemStack(
@@ -1437,7 +1429,7 @@ public class FNAmpItems {
             "&dRight click a target block to",
             "&dyield an explosion causing damage",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_MUSTER = new SlimefunItemStack(
@@ -1449,7 +1441,7 @@ public class FNAmpItems {
             "&dnearby entities that are on ground",
             "&dwithin 50 block radius",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_AWARENESS = new SlimefunItemStack(
@@ -1461,7 +1453,7 @@ public class FNAmpItems {
             "&dregarding the nearest players around",
             "&d50 block radius",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_MINERALS = new SlimefunItemStack(
@@ -1473,7 +1465,7 @@ public class FNAmpItems {
             "&dinformation that awaits upon using",
             "&dthe staff",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_FANGS = new SlimefunItemStack(
@@ -1485,7 +1477,7 @@ public class FNAmpItems {
             "&dspawn evoker fangs that causes",
             "&ddamage to entities",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_SKULLS = new SlimefunItemStack(
@@ -1496,7 +1488,7 @@ public class FNAmpItems {
             "&dRight click to launch",
             "&dwither skull projectiles",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_AIR_STRIDER = new SlimefunItemStack(
@@ -1507,7 +1499,7 @@ public class FNAmpItems {
             "&dRight click to gain the ability to",
             "&dwalk on the air for 10 seconds",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_STAFF_COBWEB = new SlimefunItemStack(
@@ -1518,7 +1510,7 @@ public class FNAmpItems {
             "&dRight click a target block",
             "&dto spawn a wall of cobwebs",
             "",
-            "&eUses: " + "&eleft"
+            "&e可用次数剩余 " + "&e次"
     );
 
     public static final SlimefunItemStack FN_QUIVER = new SlimefunItemStack(
