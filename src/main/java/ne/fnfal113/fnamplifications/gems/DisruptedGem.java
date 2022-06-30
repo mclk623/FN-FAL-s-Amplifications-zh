@@ -34,7 +34,7 @@ public class DisruptedGem extends AbstractGem implements OnGuardianSpawnHandler,
                 new Gem(slimefunItem, currentItem, player).onDrag(event, false);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在swords only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑上"));
         }
     }
 
@@ -47,9 +47,9 @@ public class DisruptedGem extends AbstractGem implements OnGuardianSpawnHandler,
         if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())){
             event.setCancelled(true);
             event.getDamager().sendMessage(Utils
-                    .colorTranslator("&eYou have redeemed the guardian of your enemy and destroyed it upon spawn"));
+                    .colorTranslator("&e你成功扰乱了敌人的守卫者, 它将不会生成"));
             event.getGuardianOwner().sendMessage(Utils
-                    .colorTranslator("&6Your guardian has been redeemed by your attacker and was destroyed upon spawn!"));
+                    .colorTranslator("&6你的守卫者已被攻击你的玩家扰乱, 守卫者将不会生成!"));
             event.getGuardianOwner().playSound(event.getGuardianOwner().getLocation(), Sound.ENTITY_ZOMBIE_DEATH, 1.0F, 1.0F);
         }
     }

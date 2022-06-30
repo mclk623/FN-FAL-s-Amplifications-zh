@@ -1712,33 +1712,34 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c飞斧宝石",
             "",
-            "&e使您能够投掷可以击中实体",
-            "&e并对其造成伤害的斧头",
+            "&e给予你投掷斧头伤害敌人的能力",
             "",
-            "&d释放至斧头上以绑定此宝石"
+            "&d将宝石拖放到任意斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_TRI_SWORD = new SlimefunItemStack(
             "FN_GEM_TRI_SWORD",
             Material.EMERALD,
-            "&c三剑宝石",
+            "&c三相之剑宝石",
             "",
-            "&e当你投掷你的剑时",
-            "&e会有额外2把剑被投出",
-            "&e可以切开实体并伤害它们",
+            "&e给予你投掷剑的能力",
+            "&e投掷时还会额外投出两把剑",
+            "&e能够切开实体伤害它们",
             "",
-            "&d释放至剑上以绑定此宝石"
+            "&d将宝石拖放到任意剑上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_DAMNATION = new SlimefunItemStack(
             "FN_GEM_DAMNATION",
             Material.EMERALD,
-            "&c撕裂宝石",
+            "&c诅咒宝石",
             "",
-            "&eShift右击拥有此宝石的武器",
-            "&e会在8秒后攻击十字准线方向的实体",
+            "&eShift + 右键已绑定此宝石的武器后",
+            "&e它将进入备战状态",
+            "&e并将会在接下来的 8s 内",
+            "&e攻击你所瞄准的敌人",
             "",
-            "&d释放至剑或斧头上以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_RETALIATE = new SlimefunItemStack(
@@ -1746,14 +1747,15 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c忠诚宝石",
             "",
-            "&e允许你的武器在投掷并击中一个实体后返还给你",
-            "&e在绑定该宝石之前",
-            "&e武器必须绑定下列宝石中的任何一个:",
-            "&e- 撕裂宝石",
-            "&e- 三剑宝石",
+            "&e让你丢出的武器在击中后",
+            "&e能够自行返回玩家手中",
+            "&e绑定武器前",
+            "&e必须绑定有以下任意一种宝石:",
+            "&e- 诅咒宝石",
+            "&e- 三相之剑宝石",
             "&e- 飞斧宝石",
             "",
-            "&d释放至剑或斧头上以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_BLINDBIND = new SlimefunItemStack(
@@ -1761,53 +1763,57 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c盲标宝石",
             "",
-            "&e被你的箭击中时有机会致盲敌人4秒",
+            "&e有几率给予被射中的敌人",
+            "&e4 秒的失明效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放到弓上以绑定此宝石"
+            "&d将宝石拖放到任意弓上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_GUARDIAN = new SlimefunItemStack(
             "FN_GEM_GUARDIAN",
             Material.EMERALD,
-            "&c守望宝石",
+            "&c守卫者宝石",
             "",
-            "&e有机会产生一个为你战斗到死的守护者,当你被攻击时,",
-            "&e必须穿上有这个宝石的盔甲，以使守护者保护你免受敌人的攻击.",
-            "&f- 未装备的盔甲将移除任何活跃的守护者",
-            "&f- 守护者不攻击其他守护者，只能攻击该守护者的拥有者",
+            "&e在你快战死时有几率生成",
+            "&e一只守卫者僵尸助战.",
+            "&e你必须穿着镶嵌此宝石的护甲",
+            "&e才能触发效果.",
+            "&f- 脱下对应护甲将会移除此效果",
+            "&f- 守卫者不会攻击其他守卫者",
+            "  &f只会攻击其他守卫者的主人",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d在胸甲上拖放以绑定此宝石"
+            "&d将宝石拖放到任意护甲上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_DISRUPTED = new SlimefunItemStack(
             "FN_GEM_DISRUPTED",
             Material.EMERALD,
-            "&c破碎的宝石",
+            "&c扰乱宝石",
             "",
-            "&e有机会阻止你的敌方守护者生成",
+            "&e有几率让你敌人的守卫者无法生成",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放一把剑来绑定这个宝石"
+            "&d将宝石拖放到任意剑上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_ARROW_AVERT = new SlimefunItemStack(
@@ -1815,154 +1821,160 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c箭避宝石",
             "",
-            "&e有机会防止玩家射出的箭击中",
-            "&e你当你被击中时箭不会受到伤害",
+            "&e有几率防止其他玩家射向你的箭",
+            "&e对你造成伤害",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型以绑定此宝石"
+            "&d将宝石拖放到任意弓上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_DEBERSERK = new SlimefunItemStack(
             "FN_GEM_DEBERSERK",
             Material.EMERALD,
-            "&c德塞克宝石",
+            "&c忍耐宝石",
             "",
-            "&e有机会减少30%受到的斧头伤害",
+            "&e有几率使斧头对你造成的伤害减少 30%",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型以绑定此宝石"
+            "&d将宝石拖放到任意防具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_PARRY = new SlimefunItemStack(
             "FN_GEM_PARRY",
             Material.EMERALD,
-            "&c招架宝石",
+            "&c格挡宝石",
             "",
-            "&e有几率减少受到剑的伤害 25%",
+            "&e有几率使剑对你造成的伤害减少 25%",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型以绑定此宝石"
+            "&d将宝石拖放到任意防具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_FLAWLESS_UNBIND = new SlimefunItemStack(
             "FN_GEM_FLAWLESS_UNBIND",
             Material.DIAMOND,
-            "&b无瑕解绑宝石",
+            "&b无瑕的解绑宝石",
             "",
-            "&e%几率从物品中移除任何选定的宝石",
+            "&e% 几率从物品中解绑",
+            "&e选定的一种宝石",
             "",
-            "&f&l操作说明",
-            "&d右手: &c解绑宝石",
-            "&d左手: &c武器/盔甲/工具",
-            "&d行动: &c右键点击"
+            "&f&l操作方法",
+            "&d右手手持 &c解绑宝石",
+            "&d左手手持 &c要解绑的武器/防具/工具",
+            "&c右键 &d即可解绑"
     );
 
     public static final SlimefunItemStack FN_GEM_PRECIOUS_UNBIND = new SlimefunItemStack(
             "FN_GEM_PRECIOUS_UNBIND",
             Material.DIAMOND,
-            "&d珍贵的解开宝石",
+            "&d珍贵的解绑宝石",
             "",
-            "&e%几率从物品中移除任何选定的宝石",
+            "&e% 几率从物品中解绑",
+            "&e选定的一种宝石",
             "",
-            "&f&l操作说明",
-            "&d右手: &c解绑宝石",
-            "&d左手: &c武器/盔甲/工具",
-            "&d行动: &c右键点击"
+            "&f&l操作方法",
+            "&d右手手持 &c解绑宝石",
+            "&d左手手持 &c要解绑的武器/防具/工具",
+            "&c右键 &d即可解绑"
     );
 
     public static final SlimefunItemStack FN_GEM_BLEMISHED_UNBIND = new SlimefunItemStack(
             "FN_GEM_BLEMISHED_UNBIND",
             Material.DIAMOND,
-            "&a有瑕疵的解开宝石",
+            "&a有瑕疵的解绑宝石",
             "",
-            "&e%几率从物品中移除任何选定的宝石",
+            "&e% 几率从物品中解绑",
+            "&e选定的一种宝石",
             "",
-            "&f&l操作说明",
-            "&d右手: &c解绑宝石",
-            "&d左手: &c武器/盔甲/工具",
-            "&d行动: &c右键点击"
+            "&f&l操作方法",
+            "&d右手手持 &c解绑宝石",
+            "&d左手手持 &c要解绑的武器/防具/工具",
+            "&c右键 &d即可解绑"
     );
 
     public static final SlimefunItemStack FN_GEM_DAMAGED_UNBIND = new SlimefunItemStack(
             "FN_GEM_DAMAGED_UNBIND",
             Material.DIAMOND,
-            "&6损坏的解绑宝石",
+            "&6受损的解绑宝石",
             "",
-            "&e%几率从物品中移除任何选定的宝石",
+            "&e% 几率从物品中解绑",
+            "&e选定的一种宝石",
             "",
-            "&f&l操作说明",
-            "&d右手: &c解绑宝石",
-            "&d左手: &c武器/盔甲/工具",
-            "&d行动: &c右键点击"
+            "&f&l操作方法",
+            "&d右手手持 &c解绑宝石",
+            "&d左手手持 &c要解绑的武器/防具/工具",
+            "&c右键 &d即可解绑"
     );
 
     public static final SlimefunItemStack FN_GEM_ADAMANTINE = new SlimefunItemStack(
             "FN_GEM_ADAMANTINE",
             Material.EMERALD,
-            "&c精金宝石",
+            "&c坚韧宝石",
             "",
-            "&e有机会防止武器或工具受到耐久度伤害",
+            "&e有几率防止你的武器/工具",
+            "&e耐久度受损",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放武器或工具以绑定此宝石"
+            "&d将宝石拖放到任意武器/工具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_STOUT = new SlimefunItemStack(
             "FN_GEM_STOUT",
             Material.EMERALD,
-            "&c粗壮的宝石",
+            "&c坚实宝石",
             "",
-            "&e有机会防止盔甲受到任何耐久伤害",
+            "&e有几率防止你的防具",
+            "&e耐久度受损",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型以绑定此宝石"
+            "&d将宝石拖放到任意防具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_AWAKEN = new SlimefunItemStack(
             "FN_GEM_AWAKEN",
             Material.EMERALD,
-            "&c觉醒宝石",
+            "&c再生宝石",
             "",
-            "&e玩家在同一地点死亡时有机会立即复活",
+            "&e玩家死亡后有几率原地复活",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放到头盔上以绑定此宝石"
+            "&d将宝石拖放到任意头盔上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_AVENGE = new SlimefunItemStack(
@@ -1970,35 +1982,35 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c复仇宝石",
             "",
-            "&e玩家死亡时有机会在同",
-            "&e一位置生成已启动的爬行者",
+            "&e玩家死亡后",
+            "&e有几率生成一只闪电苦力怕",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放到靴子上以绑定此宝石"
+            "&d将宝石拖放到任意靴子上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_ACHILLES_HEEL = new SlimefunItemStack(
             "FN_GEM_ACHILLES_HEEL",
             Material.EMERALD,
-            "&c阿喀琉斯之踵宝石",
+            "&c致命弱点宝石",
             "",
-            "&e箭击中实体或玩家的",
-            "&e致命弱点时有机会造成2倍伤害",
+            "&e当箭射中了实体的致命之处",
+            "&e有几率对其造成两倍的伤害",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放到弓或弩上以绑定此宝石"
+            "&d将宝石拖放到任意弓或弩上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_DISARMOR = new SlimefunItemStack(
@@ -2006,132 +2018,138 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c卸甲宝石",
             "",
-            "&e有几率从你的敌人身上卸下一件随机盔甲",
+            "&e有几率随机卸下敌人",
+            "&e身上的任一防具",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放剑或斧头以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_DISARM = new SlimefunItemStack(
             "FN_GEM_DISARM",
             Material.EMERALD,
-            "&cDisarm Gem",
+            "&c繳械宝石",
             "",
-            "&e有机会卸下敌人持有的武器",
+            "&e有几率随机卸下敌人",
+            "&e手持的武器",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放剑或斧头以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_SMOKE_CRIMINAL = new SlimefunItemStack(
             "FN_GEM_SMOKE_CRIMINAL",
             Material.EMERALD,
-            "&c烟雾犯罪宝石",
+            "&c烟雾罪犯宝石",
             "",
-            "&e当生命值低于30%且受到",
-            "&e烟雾保护时,有几率在5秒内无敌",
+            "&e当生命值低于 30% 时",
+            "&e有几率获得 5s 的无敌效果",
+            "&e并在四周生成烟雾保护玩家",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放到靴子上以绑定此宝石"
+            "&d将宝石拖放到任意靴子上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_LIFESTEAL = new SlimefunItemStack(
             "FN_GEM_LIFESTEAL",
             Material.EMERALD,
-            "&c吸血宝石",
+            "&c生命窃取宝石",
             "",
-            "&e只要你的生命值低于最大生命值,",
-            "&e就有机会从敌人身上偷取1颗心",
+            "&e当你的血量不为满时",
+            "&e攻击时有几率窃取敌人的 2 点血量",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放剑或斧头以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_ATROPHY = new SlimefunItemStack(
             "FN_GEM_ATROPHY",
             Material.EMERALD,
-            "&c凋零宝石",
+            "&c衰弱宝石",
             "",
-            "&e有几率对你的敌人造成持续4秒的凋零效果",
+            "&e有几率在攻击时",
+            "&e给予敌人 4s 的凋零效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
-            "&6  - Level 1 wither effect",
+            "&6  - 1 级凋零效果",
             "&6⨳ 等级 II: " + "&e%",
-            "&6  - Level 2 wither effect",
+            "&6  - 2 级凋零效果",
             "&6⨳ 等级 III: " + "&e%",
-            "&6  - Level 3 wither effect",
+            "&6  - 3 级凋零效果",
             "&6⨳ 等级 IV: " + "&e%",
-            "&6  - Level 4 wither effect",
+            "&6  - 4 级凋零效果",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放剑或斧头以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_BANE = new SlimefunItemStack(
             "FN_GEM_BANE",
             Material.EMERALD,
-            "&c毒药宝石",
+            "&c祸源宝石",
             "",
-            "&e有几率对你的敌人造成持续4秒的毒药效果",
+            "&e有几率在攻击时",
+            "&e给予敌人 4s 的中毒效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
-            "&6  - Level 1 poison effect",
+            "&6  - 1 级中毒效果",
             "&6⨳ 等级 II: " + "&e%",
-            "&6  - Level 2 poison effect",
+            "&6  - 2 级中毒效果",
             "&6⨳ 等级 III: " + "&e%",
-            "&6  - Level 3 poison effect",
+            "&6  - 3 级中毒效果",
             "&6⨳ 等级 IV: " + "&e%",
-            "&6  - Level 4 poison effect",
+            "&6  - 4 级中毒效果",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放剑或斧头以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_SEDATE = new SlimefunItemStack(
             "FN_GEM_SEDATE",
             Material.EMERALD,
-            "&c减速宝石",
+            "&c镇静宝石",
             "",
-            "&e有几率对你的敌人造成持续4秒的减速效果",
+            "&e有几率在攻击时",
+            "&e给予敌人 4s 的缓慢效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
-            "&6  - Level 1 slow effect",
+            "&6  - 1 级缓慢效果",
             "&6⨳ 等级 II: " + "&e%",
-            "&6  - Level 2 slow effect",
+            "&6  - 2 级缓慢效果",
             "&6⨳ 等级 III: " + "&e%",
-            "&6  - Level 3 slow effect",
+            "&6  - 3 级缓慢效果",
             "&6⨳ 等级 IV: " + "&e%",
-            "&6  - Level 4 slow effect",
+            "&6  - 4 级缓慢效果",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放剑或斧头以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_DECREPIT = new SlimefunItemStack(
@@ -2139,80 +2157,80 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c虚弱宝石",
             "",
-            "&e有机会对敌人造成持续4秒的虚弱效果",
+            "&e有几率给予敌人 4s 的虚弱效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
-            "&6  - Level 1 weakness effect",
+            "&6  - 1 级虚弱效果",
             "&6⨳ 等级 II: " + "&e%",
-            "&6  - Level 2 weakness effect",
+            "&6  - 2 级虚弱效果",
             "&6⨳ 等级 III: " + "&e%",
-            "&6  - Level 3 weakness effect",
+            "&6  - 3 级虚弱效果",
             "&6⨳ 等级 IV: " + "&e%",
-            "&6  - Level 4 weakness effect",
+            "&6  - 4 级虚弱效果",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型以绑定此宝石"
+            "&d将宝石拖放到任意防具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_DECEPTION = new SlimefunItemStack(
             "FN_GEM_DECEPTION",
             Material.EMERALD,
-            "&c失明宝石",
+            "&c诡计宝石",
             "",
-            "&e有几率对你的敌人造成持续4秒的致盲效果",
+            "&e有几率给予敌人 4s 的失明效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
-            "&6  - Level 1 blindness effect",
+            "&6  - 1 级失明效果",
             "&6⨳ 等级 II: " + "&e%",
-            "&6  - Level 2 blindness effect",
+            "&6  - 2 级失明效果",
             "&6⨳ 等级 III: " + "&e%",
-            "&6  - Level 3 blindness effect",
+            "&6  - 3 级失明效果",
             "&6⨳ 等级 IV: " + "&e%",
-            "&6  - Level 4 blindness effect",
+            "&6  - 4 级失明效果",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型以绑定此宝石"
+            "&d将宝石拖放到任意防具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_CELERITY = new SlimefunItemStack(
             "FN_GEM_CELERITY",
             Material.EMERALD,
-            "&c迅捷宝石",
+            "&c敏捷宝石",
             "",
-            "&e有几率对你的敌人造成持续4秒的迅捷效果",
+            "&e有几率给予敌人 4s 的迅捷效果",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
-            "&6  - Level 1 swiftness effect",
+            "&6  - 1 级迅捷效果",
             "&6⨳ 等级 II: " + "&e%",
-            "&6  - Level 2 swiftness effect",
+            "&6  - 2 级迅捷效果",
             "&6⨳ 等级 III: " + "&e%",
-            "&6  - Level 3 swiftness effect",
+            "&6  - 3 级迅捷效果",
             "&6⨳ 等级 IV: " + "&e%",
-            "&6  - Level 4 swiftness effect",
+            "&6  - 4 级迅捷效果",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型以绑定此宝石"
+            "&d将宝石拖放到任意防具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_LOOT = new SlimefunItemStack(
             "FN_GEM_LOOT",
             Material.EMERALD,
-            "&c战利品宝石",
+            "&c掠夺宝石",
             "",
-            "&e有机会从你的敌人那里偷钱，价值4美元的货币. ",
-            "&e制造，你的敌人赔钱!",
+            "&e有几率窃取敌人身上的钱 (4 点)",
+            "&e让你的敌人丢钱吧!",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
             "&6⨳ 等级 II: " + "&e%",
             "&6⨳ 等级 III: " + "&e%",
             "&6⨳ 等级 IV: " + "&e%",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放剑或斧头以绑定此宝石"
+            "&d将宝石拖放到任意剑或斧上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_SHOCKWAVE = new SlimefunItemStack(
@@ -2220,104 +2238,100 @@ public class FNAmpItems {
             Material.EMERALD,
             "&c冲击波宝石",
             "",
-            "&e有几率对8格范围内的所有",
-            "&e敌人造成冲击波伤害，并将其弹离地面!",
+            "&e有几率造成一个半径 8 格",
+            "&e的冲击波击飞敌人造成伤害",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
             "&6⨳ 等级 I: " + "&e%",
-            "&6  - Damage: &f3",
+            "&6  - 伤害: &f3",
             "&6⨳ 等级 II: " + "&e%",
-            "&6  - Damage: &f6",
+            "&6  - 伤害: &f6",
             "&6⨳ 等级 III: " + "&e%",
-            "&6  - Damage: &f9",
+            "&6  - 伤害: &f9",
             "&6⨳ 等级 IV: " + "&e%",
-            "&6  - Damage: &f12",
+            "&6  - 伤害: &f12",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&d拖放任何盔甲类型，以绑定此宝石"
+            "&d将宝石拖放到任意防具上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_UPGRADES_DISPLAY_ITEM = new SlimefunItemStack(
             "FN_GEM_UPGRADES_DISPLAY_ITEM",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("d3623521c8111ad29e9dcf7acc56085a9ab07da732d1518976aee61d0b3e3bd6")),
-            "&bGem 等级 Upgrades",
+            "&b宝石等级升级",
             "",
-            "&d单击此项目以了解如何",
-            "&d升级宝石以及FN宝石",
-            "&d升级器多块中需要什么配方"
+            "&d单击此物品了解如何升级宝石",
+            "&d以及 FN 宝石升级器中所需的合成配方"
     );
 
     public static final SlimefunItemStack FN_GEM_FINE_JASPER_CRAFTING = new SlimefunItemStack(
             "FN_GEM_FINE_JASPER_CRAFTING",
             PlayerHead.getItemStack(PlayerSkin.fromHashCode("aac15f6fcf2ce963ef4ca71f1a8685adb97eb769e1d11194cbbd2e964a88978c")),
-            "&b优质碧玉宝石",
+            "&b精美碧玉宝石",
             "",
-            "&f升级您从那时起一直使用",
-            "&f的那些fn宝石所需的闪亮宝石"
+            "&f闪闪发光的宝石",
+            "&f用于升级你使用的 FN 宝石"
     );
 
     public static final SlimefunItemStack FN_BLOCK_ROTATOR = new SlimefunItemStack(
             "FN_BLOCK_ROTATOR",
             Material.CLOCK,
-            "&c方块换向器",
+            "&cFN 方块转向机",
             "",
-            "&d右击 翻转定向方块",
-            "&f如陶土、锁链等",
+            "&d右键旋转有向方块.",
+            "&d&f(例如陶瓦等)",
             "",
-            "&dShift右击 翻转平板/二等分方块",
-            "&d如台阶、楼梯等"
+            "&dShift + 右键翻转半砖、两格高的方块",
+            "&d及有向方块 &f(如台阶、楼梯等)"
     );
 
     public static final SlimefunItemStack FN_AUTO_LADDER = new SlimefunItemStack(
             "FN_AUTO_LADDER",
             Material.LADDER,
-            "&cFN的自动梯",
+            "&cFN 自动搭梯机",
             "",
-            "&d自动从上到下放置梯子，",
-            "&d最大距离为 8 个方块"
+            "&d自动在上下最大8格高度的方块上放置梯子"
     );
 
     public static final SlimefunItemStack FN_ORIENT_PEARL = new SlimefunItemStack(
             "FN_ORIENT_PEARL",
             Material.ENDER_PEARL,
-            "&cFN末影珍珠",
+            "&cFN 闪耀珍珠",
             "",
-            "&d一个末影珍珠，可以传送",
-            "&d玩家和骑乘的实体（马等）"
+            "&d一颗能传送你和",
+            "&d你所骑乘的实体 (例如马)",
+            "&d的末影珍珠"
     );
 
     public static final SlimefunItemStack FN_JUKEBOX_I = new SlimefunItemStack(
             "FN_JUKEBOX_I",
-            Material.JUKEBOX, "&5F&dN&b点&f唱&c机 &6I",
-            "", "&e一种可存储/播放唱片的自动点唱机",
-            "&e它可以循环播放整个光盘槽",
-            "&e并在插入新盘后自动播放新盘",
+            Material.JUKEBOX, "&5F&dN &f唱&b片&e机 &4I",
+            "", "&e唱片机可以储存并播放放入的唱片",
+            "&e并按照顺序播放唱片",
             "",
-            "&d槽数: &d&o3格",
+            "&d可存储 &d&o3 张唱片",
             "",
             LoreBuilder.powerBuffer(512),
             LoreBuilder.powerPerSecond(3));
 
     public static final SlimefunItemStack FN_JUKEBOX_II = new SlimefunItemStack(
             "FN_JUKEBOX_II",
-            Material.JUKEBOX, "&5F&dN&b点&f唱&c机 &6II",
-            "", "&e一种可存储/播放唱片的自动点唱机",
-            "&e它可以循环播放整个光盘槽",
-            "&e并在插入新盘后自动播放新盘",
+            Material.JUKEBOX, "&5F&dN &f唱&b片&e机 &4II",
+            "", "&e唱片机可以储存并播放放入的唱片",
+            "&e并按照顺序播放唱片",
             "",
-            "&d槽数: &d&o7格",
+            "&d可存储 &d&o7 张唱片",
             "",
             LoreBuilder.powerBuffer(768),
             LoreBuilder.powerPerSecond(8));
 
     public static final SlimefunItemStack FN_JUKEBOX_III = new SlimefunItemStack(
             "FN_JUKEBOX_III",
-            Material.JUKEBOX, "&5F&dN&b点&f唱&c机 &6III",
-            "", "&e一种可存储/播放唱片的自动点唱机",
-            "&e它可以循环播放整个光盘槽",
-            "&e并在插入新盘后自动播放新盘",
+            Material.JUKEBOX, "&5F&dN &f唱&b片&e机 &4III",
+            "", "&e唱片机可以储存并播放放入的唱片",
+            "&e并按照顺序播放唱片",
             "",
-            "&d槽数: &d&o12格",
+            "&d可存储 &d&o12 张唱片",
             "",
             LoreBuilder.powerBuffer(1024),
             LoreBuilder.powerPerSecond(16));

@@ -13,7 +13,7 @@ public class JukeBoxClickListener implements Listener {
 
     @EventHandler
     public void onDiscClick(InventoryClickEvent event){
-        if(event.getView().getTitle().contains(Utils.colorTranslator("&5F&dN &fJ&bu&ek&ce&5b&do&4x"))){
+        if(event.getView().getTitle().contains(Utils.colorTranslator("&5F&dN &f唱&b片&e机"))){
             if(event.getCurrentItem() != null) {
                 ItemStack itemStack = event.getCurrentItem();
                 if (Tag.ITEMS_MUSIC_DISCS.isTagged(itemStack.getType()) && itemStack.getItemMeta().hasEnchant(Enchantment.BINDING_CURSE)) {

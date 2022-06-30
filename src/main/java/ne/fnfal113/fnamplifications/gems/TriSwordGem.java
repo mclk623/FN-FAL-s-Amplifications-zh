@@ -32,7 +32,7 @@ public class TriSwordGem extends AbstractGem implements OnRightClickHandler {
         if (WeaponArmorEnum.SWORDS.isTagged(currentItem.getType())) {
             new Gem(slimefunItem, currentItem, player).onDrag(event, false);
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在swords only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑上"));
         }
     }
 
@@ -42,7 +42,7 @@ public class TriSwordGem extends AbstractGem implements OnRightClickHandler {
             return;
         }
         if(!hasPermissionToThrow(player)){
-            player.sendMessage(Utils.colorTranslator("&eYou don't have the permission to throw here! (Needs block interaction flag enabled)"));
+            player.sendMessage(Utils.colorTranslator("&e你没有权限在这里投掷剑! (需要有方块交互权限)"));
             return;
         } // check if player has permission to build on the current location
 

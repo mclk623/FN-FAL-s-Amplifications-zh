@@ -39,7 +39,7 @@ public class AwakenGem extends AbstractGem implements OnPlayerDeathHandler, GemU
                 new Gem(slimefunItem, currentItem, player).onDrag(event, false);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在helmet only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在头盔上"));
         }
     }
 
