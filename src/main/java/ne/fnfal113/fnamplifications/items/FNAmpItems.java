@@ -1123,85 +1123,85 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_STICK = new SlimefunItemStack(
             "FN_MYSTERY_STICK_1",
             Material.STICK,
-            "&c神秘的魔棍",
-            "&f我也很好奇这根魔棍是做什么的"
+            "&c神秘的魔棒",
+            "&f我也很好奇这根魔棒是做什么的"
     );
 
 
     public static final SlimefunItemStack FN_STICK_2 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_2",
             Material.STICK,
-            "&c神秘的魔棍 II",
-            "&f又一根不知何用的魔棍"
+            "&c神秘的魔棒 II",
+            "&f又一根不知何用的魔棒"
     );
 
     public static final SlimefunItemStack FN_STICK_3 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_3",
             Material.STICK,
-            "&c神秘的魔棍 III",
-            "&f拿着这根魔棍让人感觉与其同调"
+            "&c神秘的魔棒 III",
+            "&f拿着这根魔棒让人感觉与其同调"
     );
 
     public static final SlimefunItemStack FN_STICK_4 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_4",
             Material.STICK,
-            "&c神秘的魔棍 IV",
-            "&f我曾经或许用过这根魔棍"
+            "&c神秘的魔棒 IV",
+            "&f我曾经或许用过这根魔棒"
     );
 
     public static final SlimefunItemStack FN_STICK_5 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_5",
             Material.STICK,
-            "&c神秘的魔棍 V",
+            "&c神秘的魔棒 V",
             "&f我已经厌倦了那些棍子"
     );
 
     public static final SlimefunItemStack FN_STICK_6 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_6",
             Material.STICK,
-            "&c神秘的魔棍 VI",
+            "&c神秘的魔棒 VI",
             "&f愿原力与你同在"
     );
 
     public static final SlimefunItemStack FN_STICK_7 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_7",
             Material.STICK,
-            "&c神秘的魔棍 VII",
-            "&f这根魔棍散发的光环令人着迷"
+            "&c神秘的魔棒 VII",
+            "&f这根魔棒散发的光环令人着迷"
     );
 
     public static final SlimefunItemStack FN_STICK_8 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_8",
             Material.STICK,
-            "&c神秘的魔棍 VIII",
-            "&f有些重的魔棍"
+            "&c神秘的魔棒 VIII",
+            "&f有些重的魔棒"
     );
 
     public static final SlimefunItemStack FN_STICK_9 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_9",
             Material.STICK,
-            "&c神秘的魔棍 IX",
-            "&f这根魔棍使用时需要更多魔力"
+            "&c神秘的魔棒 IX",
+            "&f这根魔棒使用时需要更多魔力"
     );
 
     public static final SlimefunItemStack FN_STICK_10 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_10",
             Material.STICK,
-            "&c神秘的魔棍 X",
-            "&f致命可怕的魔棍"
+            "&c神秘的魔棒 X",
+            "&f有时致命有时可怕的魔棒"
     );
 
     public static final SlimefunItemStack FN_STICK_11 = new SlimefunItemStack(
             "FN_MYSTERY_STICK_11",
             Material.STICK,
-            "&c神秘的魔棍 XI",
-            "&f诺德人的魔棍"
+            "&c神秘的魔棒 XI",
+            "&f诺德人的魔棒"
     );
 
     public static final SlimefunItemStack FN_STICK_ALTAR = new SlimefunItemStack(
             "FN_STICK_ALTAR",
             Material.ENCHANTING_TABLE,
-            "&dFN 神秘魔棍祭坛"
+            "&dFN 神秘魔棒祭坛"
     );
 
     public static final SlimefunItemStack FN_GEM_ALTAR = new SlimefunItemStack(

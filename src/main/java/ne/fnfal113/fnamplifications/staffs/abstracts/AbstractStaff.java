@@ -55,7 +55,7 @@ public abstract class AbstractStaff extends SlimefunItem {
                 Interaction.INTERACT_BLOCK)) {
             return true;
         }
-        player.sendMessage(Utils.colorTranslator("&cYou don't have permission to cast " + staffName + " here!"));
+        player.sendMessage(Utils.colorTranslator("&c你没有权限在这里使用 " + staffName + "!"));
         return false;
     }
 

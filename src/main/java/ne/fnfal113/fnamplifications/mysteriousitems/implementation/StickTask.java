@@ -128,7 +128,7 @@ public class StickTask {
 
             player.setLevel(player.getLevel() - levelDeduction);
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.
-                    fromLegacyText(Utils.colorTranslator("&d" + levelDeduction + " xp levels has been consumed from you")));
+                    fromLegacyText(Utils.colorTranslator("&d已消耗你的 " + levelDeduction + " 级经验")));
 
             itemMetaUpdate(item, item.getItemMeta(), getWeaponLore(), (int) damageAmount, levelDeduction, true);
 
@@ -163,17 +163,17 @@ public class StickTask {
 
         lore2.set(0, loreType);
         try {
-            lore2.set(1, ChatColor.YELLOW + "Total Exp Levels Consumed: " + ChatColor.WHITE + xpAmount);
-            lore2.set(2, ChatColor.YELLOW + "Total Damage inflicted: " + ChatColor.WHITE + damageAmount);
-        } catch (IndexOutOfBoundsException e){
-            lore2.add(1, ChatColor.YELLOW + "Total Exp Levels Consumed: " + ChatColor.WHITE + xpAmount);
-            lore2.add(2, ChatColor.YELLOW + "Total Damage inflicted: " + ChatColor.WHITE + damageAmount);
+            lore2.set(1, ChatColor.YELLOW + "总共消耗经验: " + ChatColor.WHITE + xpAmount);
+            lore2.set(2, ChatColor.YELLOW + "总共造成伤害: " + ChatColor.WHITE + damageAmount);
+        } catch (IndexOutOfBoundsException e) {
+            lore2.add(1, ChatColor.YELLOW + "总共消耗经验: " + ChatColor.WHITE + xpAmount);
+            lore2.add(2, ChatColor.YELLOW + "总共造成伤害: " + ChatColor.WHITE + damageAmount);
         }
 
-        if(!(lore2.size() >= 4)){ // add the mystery effect lore
+        if(!(lore2.size() >= 4)) { // add the mystery effect lore
             lore2.add("");
-            lore2.add(Utils.colorTranslator("&c◢◤◢◤◢◤◢◤| &4&lEffects &f|◥◣◥◣◥◣◥◣"));
-            lore2.add(ChatColor.BLUE + "◆ "  + getEffectCount() + " Mystery effect/s");
+            lore2.add(Utils.colorTranslator("&c◢◤◢◤◢◤◢◤| &4&l魔法 &f|◥◣◥◣◥◣◥◣"));
+            lore2.add(ChatColor.BLUE + "◆ " + getEffectCount() + " 法力值/s");
             lore2.add(Utils.colorTranslator("&c◢◤◢◤◢◤◢◤| &4◢◤◤◥◤◥◤◥◤◥◥◣ &f|◥◣◥◣◥◣◥◣"));
         }
 
@@ -182,10 +182,10 @@ public class StickTask {
     }
 
     @ParametersAreNonnullByDefault
-    public void darkenVision(Player player, int level){
+    public void darkenVision(Player player, int level) {
         player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 300, 2, false, false));
-        player.sendTitle(ChatColor.DARK_RED + "Your vision darkens!", ChatColor.RED + "The stick is unpredictable", 45, 120, 135);
-        player.sendMessage(ChatColor.RED + "" + ChatColor.BOLD  + "[FNAmpli" + ChatColor.AQUA + "" + ChatColor.BOLD + "fications] > " + ChatColor.YELLOW + "You're too weak, make sure your exp level is higher than " + level);
+        player.sendTitle(ChatColor.DARK_RED + "你的视线变得昏暗!", ChatColor.RED + "这根魔棒不可莫测", 45, 120, 135);
+        player.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "[FNAmpli" + ChatColor.AQUA + "" + ChatColor.BOLD + "fications] > " + ChatColor.YELLOW + "你的能力不足以驾驭这根魔棒, 确保你的等级高于 " + level);
     }
 
 }

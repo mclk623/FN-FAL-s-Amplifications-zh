@@ -49,12 +49,12 @@ public class MysteryStick10 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Why is this stick too good";
+        return ChatColor.GOLD + "为什么说这根魔棒是神";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Deadly or creepy stick";
+        return ChatColor.WHITE + "有时致命有时可怕的魔棒";
     }
 
     @Override
@@ -82,9 +82,9 @@ public class MysteryStick10 extends AbstractStick {
                 player.setHealth(player.getHealth() + 2);
                 victim.setHealth(victim.getHealth() < 2 ? victim.getHealth() + (victim.getHealth() * (-1)) : victim.getHealth() - 2);
             } else {
-                player.sendMessage(ChatColor.RED + "Make sure your hearts are not full for Lifesteal to proc!");
+                player.sendMessage(ChatColor.RED + "确保你的血量不足以让生命窃取生效!");
             }
-            player.sendMessage(Utils.colorTranslator("&cMystery effects was applied to your enemy"));
+            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
         }
     }
 }

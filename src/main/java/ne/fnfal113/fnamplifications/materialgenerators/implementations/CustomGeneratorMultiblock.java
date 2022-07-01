@@ -19,7 +19,7 @@ public class CustomGeneratorMultiblock extends SimpleSlimefunItem<ItemUseHandler
         super(itemGroup, item, RecipeType.MULTIBLOCK, new ItemStack[] {
                 null, null, null,
                 null, new ItemStack(Material.CHEST), null,
-                null, new CustomItemStack(Material.DIAMOND_BLOCK, "Any FN Material generator"), null
+                null, new CustomItemStack(Material.DIAMOND_BLOCK, "任意 FN 材料生成机"), null
         });
     }
 
@@ -28,7 +28,7 @@ public class CustomGeneratorMultiblock extends SimpleSlimefunItem<ItemUseHandler
     public ItemUseHandler getItemHandler() {
         return e -> {
             e.cancel();
-            e.getPlayer().sendMessage("This item is just a dummy. You need to place the actual generator down.");
+            e.getPlayer().sendMessage("这个物品只是个模型, 你需要放置真正的生成机.");
         };
     }
 }

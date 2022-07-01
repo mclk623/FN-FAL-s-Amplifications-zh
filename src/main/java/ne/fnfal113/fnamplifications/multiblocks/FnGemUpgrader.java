@@ -41,7 +41,7 @@ public class FnGemUpgrader extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_gem_upgrader"),
             FNAmpItems.FN_GEM_UPGRADER,
             "",
-            "&fThis is where you upgrade those shiny gems!"
+            "&f升级闪闪发光宝石的地方!"
     );
 
 
@@ -105,7 +105,7 @@ public class FnGemUpgrader extends MultiBlockMachine {
                 if (sfItem instanceof GemUpgrade && SlimefunUtils.isItemSimilar(itemStack, gem, true, false)) {
                     if(((GemUpgrade) sfItem).getTier(itemStack, sfItem.getId()) == 1){
                         p.playSound(p.getLocation(), Sound.ENTITY_VILLAGER_NO, 1.0F, 1.0F);
-                        p.sendMessage(Utils.colorTranslator("&cMax tier reached! Gem cannot be upgraded anymore!"));
+                        p.sendMessage(Utils.colorTranslator("&c已达到最大等级! 这个宝石不能再升级了!"));
                         return false;
                     }
                 } else {
@@ -131,13 +131,13 @@ public class FnGemUpgrader extends MultiBlockMachine {
         } else {
             dispenser.getWorld().dropItem(b.getLocation(), finalOutput);
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
-            p.sendMessage(Utils.colorTranslator("&dCrafted item has been dropped instead"));
+            p.sendMessage(Utils.colorTranslator("&d合成出的物品将会被丢至附近"));
         }
 
         if(output.getItemMeta().hasDisplayName()){
-            p.sendMessage(Utils.colorTranslator("&dSuccessfully upgraded to " + output.getItemMeta().getDisplayName() + "!"));
+            p.sendMessage(Utils.colorTranslator("&d成功升级 " + output.getItemMeta().getDisplayName() + "!"));
         } else{
-            p.sendMessage(Utils.colorTranslator("&dSuccessfully upgraded the gem!"));
+            p.sendMessage(Utils.colorTranslator("&d成功升级宝石!"));
         }
     }
 

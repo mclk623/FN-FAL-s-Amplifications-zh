@@ -45,12 +45,12 @@ public class MysteryStick3 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "I knew it was something about shooting arrows";
+        return ChatColor.GOLD + "我知道这与射箭有关";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "I feel coordinated when holding this stick";
+        return ChatColor.WHITE + "拿着这根魔棒让人感觉与其同调";
     }
 
     @Override
@@ -75,7 +75,7 @@ public class MysteryStick3 extends AbstractStick {
         if(getStickTask().onSwing(item, player, event.getDamage(), 27, 1)) {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 80, 0, false, false));
-            player.sendMessage(Utils.colorTranslator("&cMystery effects was applied to your enemy"));
+            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
         }
 
     }
