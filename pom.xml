@@ -61,12 +61,16 @@
                 <configuration>
                     <relocations>
                         <relocation>
-                        <pattern>org.bstats</pattern>
-                        <shadedPattern>ne.fnfal113.fnamplifications.bstats</shadedPattern>
+                            <pattern>org.bstats</pattern>
+                            <shadedPattern>ne.fnfal113.fnamplifications.bstats</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>dev.j3fftw.extrautils</pattern>
                             <shadedPattern>ne.fnfal113.fnamplifications.ExtraUtils</shadedPattern>
+                        </relocation>
+                        <relocation><!-- 使用组织包名避免误认 -->
+                            <pattern>net.guizhanss.guizhanlib</pattern>
+                            <shadedPattern>io.github.slimefunguguproject.guizhanlib</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>
@@ -153,6 +157,13 @@
             <artifactId>VaultAPI</artifactId>
             <version>1.7</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>GuizhanLib</artifactId>
+            <version>0.9.9</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
