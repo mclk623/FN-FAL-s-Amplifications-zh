@@ -63,13 +63,13 @@ public class FNAmpItems {
             FN_MAIN_GROUP,
             new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "ecb316f7a227a8c59d58ae0dd6768fe4fa546d55b9cfdd56cfe40b6586d81c24")),
-            "&eFN 发电机"));
+                    "&eFN 能源进化"));
 
     public static final SubItemGroup MATERIAL_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "MATERIAL_GENERATORS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.EMERALD_BLOCK,
-            "&eFN 材料制造机"));
+                    "&eFN 材料生成器"));
 
     public static final SubItemGroup SOLAR_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "SOLAR_GENERATORS"),
@@ -287,24 +287,24 @@ public class FNAmpItems {
             Material.BEDROCK,
             "&9材料生成器",
             "",
-            "&d在任意材料制造机上",
+            "&d在任意材料生成器上",
             "&d像这样放置一个箱子.",
-            "&a制造机所制造出的产物会放入箱子中."
+            "&a生成器所制造出的产物会放入箱子中."
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_CLAY_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_CLAY_BROKEN",
             Material.CLAY,
-            "&3FN 粘土制造机 &8(已损坏)",
+            "&3FN 粘土生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static SlimefunItemStack FMG_GENERATOR_CLAY = new SlimefunItemStack(
             "FMG_GENERATOR_CLAY",
             Material.CLAY,
-            "&3FN 粘土生成机",
+            "&3FN 粘土生成器",
             "&6以一定速率自动生成粘土",
             "&6右键查看生成进度",
             "",
@@ -314,22 +314,22 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_TERRACOTTA_BROKEN",
             Material.TERRACOTTA,
-            "&4FN 陶瓦生成机 &8(已损坏)",
+            "&4FN 陶瓦生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_TERRACOTTA = new SlimefunItemStack(
             "FMG_GENERATOR_TERRACOTTA",
             Material.TERRACOTTA,
-            "&4FN 陶瓦生成机",
+            "&4FN 陶瓦生成器",
             "&6以一定速率自动生成陶瓦",
             "&6右键查看生成进度",
             "",
@@ -339,22 +339,22 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_BONE_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_BONE_BROKEN",
             Material.BONE_BLOCK,
-            "&fFN 骨头生成机 &8(已损坏)",
+            "&fFN 骨头生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_BONE = new SlimefunItemStack(
             "FMG_GENERATOR_BONE",
             Material.BONE_BLOCK,
-            "&fFN 骨头生成机",
+            "&fFN 骨头生成器",
             "&6以一定速率自动生成骨头",
             "&6右键查看生成进度",
             "",
@@ -364,22 +364,22 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIAMOND_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_DIAMOND_BROKEN",
             Material.DIAMOND_BLOCK,
-            "&bFN 钻石生成机 &8(已损坏)",
+            "&bFN 钻石生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIAMOND = new SlimefunItemStack(
             "FMG_GENERATOR_DIAMOND",
             Material.DIAMOND_BLOCK,
-            "&bFN 钻石生成机",
+            "&bFN 钻石生成器",
             "&6以一定速率自动生成钻石",
             "&6右键查看生成进度",
             "",
@@ -389,22 +389,22 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_EMERALD_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_EMERALD_BROKEN",
             Material.EMERALD_BLOCK,
-            "&aFN 绿宝石生成机 &8(已损坏)",
+            "&aFN 绿宝石生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_EMERALD = new SlimefunItemStack(
             "FMG_GENERATOR_EMERALD",
             Material.EMERALD_BLOCK,
-            "&aFN 绿宝石生成机",
+            "&aFN 绿宝石生成器",
             "&66以一定速率自动生成绿宝石",
             "&6右键查看生成进度",
             "",
@@ -414,22 +414,22 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIRT_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_DIRT_BROKEN",
             Material.DIRT,
-            "&fFN 泥土生成机 &8(已损坏)",
+            "&fFN 泥土生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_DIRT = new SlimefunItemStack(
             "FMG_GENERATOR_DIRT",
             Material.DIRT,
-            "&fFN 泥土生成机",
+            "&fFN 泥土生成器",
             "&6以一定速率自动生成泥土",
             "&6右键查看生成进度",
             "",
@@ -439,22 +439,22 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_HONEYCOMB_BROKEN",
             Material.HONEYCOMB_BLOCK,
-            "&6FN 蜜脾生成机 &8(已损坏)",
+            "&6FN 蜜脾生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_HONEYCOMB = new SlimefunItemStack(
             "FMG_GENERATOR_HONEYCOMB",
             Material.HONEYCOMB_BLOCK,
-            "&6FN 蜜脾生成机",
+            "&6FN 蜜脾生成器",
             "&6以一定速率自动生成蜜脾",
             "&6右键查看生成进度",
             "",
@@ -464,22 +464,22 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_QUARTZ_BROKEN = new SlimefunItemStack(
             "FMG_GENERATOR_QUARTZ_BROKEN",
             Material.QUARTZ_BLOCK,
-            "&fFN 石英生成机 &8(已损坏)",
+            "&fFN 石英生成器 &8(已损坏)",
             "&8需要修复",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static final SlimefunItemStack FMG_GENERATOR_QUARTZ = new SlimefunItemStack(
             "FMG_GENERATOR_QUARTZ",
             Material.QUARTZ_BLOCK,
-            "&fFN 石英生成机",
+            "&fFN 石英生成器",
             "&6以一定速率自动生成石英",
             "&6右键查看生成进度",
             "",
@@ -489,7 +489,7 @@ public class FNAmpItems {
             "&f直接破坏机器将会损坏机器",
             "&f并得到损坏后的机器!",
             "",
-            "&d&oFN 材料制造机"
+            "&d&oFN 材料生成器"
     );
 
     public static SlimefunItemStack FMG_GENERATOR_WARPED_BROKEN;
@@ -505,7 +505,7 @@ public class FNAmpItems {
                     "&dFN 紫水晶簇生成器 &8(已损坏)",
                     "&8需要修复",
                     "",
-                    "&d&oFN 材料制造机"
+                    "&d&oFN 材料生成器"
             );
 
             FMG_GENERATOR_AMETHYST = new SlimefunItemStack(
@@ -521,7 +521,7 @@ public class FNAmpItems {
                     "&f直接破坏机器将会损坏机器",
                     "&f并得到损坏后的机器!",
                     "",
-                    "&d&oFN 材料制造机"
+                    "&d&oFN 材料生成器"
             );
         }
 
@@ -532,7 +532,7 @@ public class FNAmpItems {
                     "&4FN 诡异菌岩生成器 &8(已损坏)",
                     "&8需要修复",
                     "",
-                    "&d&oFN 材料制造机"
+                    "&d&oFN 材料生成器"
             );
 
            FMG_GENERATOR_WARPED = new SlimefunItemStack(
@@ -548,7 +548,7 @@ public class FNAmpItems {
                     "&f直接破坏机器将会损坏机器",
                     "&f并得到损坏后的机器!",
                     "",
-                    "&d&oFN 材料制造机"
+                   "&d&oFN 材料生成器"
             );
         }
     }
