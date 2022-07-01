@@ -50,7 +50,7 @@ public class MysteryStick3 extends AbstractStick {
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "I feel coordinated when holding this stick";
+        return ChatColor.WHITE + "拿着这根魔棒让人感觉与其同调";
     }
 
     @Override
