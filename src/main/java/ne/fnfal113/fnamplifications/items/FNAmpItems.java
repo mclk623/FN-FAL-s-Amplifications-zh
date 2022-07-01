@@ -1189,7 +1189,7 @@ public class FNAmpItems {
             "FN_MYSTERY_STICK_10",
             Material.STICK,
             "&c神秘的魔棒 X",
-            "&f致命可怕的魔棒"
+            "&f有时致命有时可怕的魔棒"
     );
 
     public static final SlimefunItemStack FN_STICK_11 = new SlimefunItemStack(
