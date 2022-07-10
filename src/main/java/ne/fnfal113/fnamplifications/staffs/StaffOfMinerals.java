@@ -75,8 +75,8 @@ public class StaffOfMinerals extends AbstractStaff {
                     .sorted(Map.Entry.comparingByValue())
                     .forEachOrdered(e -> contents.add(ChatColor.DARK_GREEN + e.getValue().toString() + "x " + ChatColor.GOLD + StringUtils.capitalize(e.getKey().toLowerCase(Locale.ROOT))));
 
-            firstPage.add(ChatColor.BLUE + "    矿产工作人员\n\n " + ChatColor.GRAY +
-                    "  通过法杖的力量，你被赋予了写在这本书上的神奇信息，其中包含了你所站的那块矿石。");
+            firstPage.add(ChatColor.BLUE + "    矿物法杖\n\n " + ChatColor.GRAY +
+                    "  透过法杖的力量, 你被赐予了一本当前区块所含矿物位置的书本");
 
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < contents.size(); i = i + 5) {
@@ -88,8 +88,8 @@ public class StaffOfMinerals extends AbstractStaff {
                         .replace("_", " "));
             }
         } else {
-            firstPage.add(ChatColor.BLUE + "    矿物的员工\n\n " + ChatColor.GRAY +
-                    "  您的块位置没有矿石");
+            firstPage.add(ChatColor.BLUE + "    矿物法杖\n\n " + ChatColor.GRAY +
+                    "  你所处的区块内矿物丝毫不剩");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 

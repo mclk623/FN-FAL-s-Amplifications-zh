@@ -34,7 +34,7 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler {
                 || WeaponArmorEnum.PICKAXE.isTagged(currentItem.getType())) {
             new Gem(slimefunItem, currentItem, player).onDrag(event, false);
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在shovels, pickaxes and axes only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在铲子, 镐子和斧头上"));
         }
     }
 
@@ -50,7 +50,7 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler {
                 PotionEffect potionEffect = new PotionEffect(PotionEffectType.FAST_DIGGING, 80, 2, true, false, false);
                 player.addPotionEffect(potionEffect);
                 player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
-                        TextComponent.fromLegacyText(Utils.colorTranslator("&eYou're too hasty now!")));
+                        TextComponent.fromLegacyText(Utils.colorTranslator("&e你的动作变快了!")));
             }
         }
     }

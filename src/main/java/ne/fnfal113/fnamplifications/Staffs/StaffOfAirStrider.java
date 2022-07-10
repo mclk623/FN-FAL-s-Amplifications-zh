@@ -36,12 +36,12 @@ public class StaffOfAirStrider extends AbstractStaff {
 
         if(taskMap.containsKey(player.getUniqueId())) {
             if(!taskMap.get(player.getUniqueId()).isCancelled()){
-                player.sendMessage(Utils.colorTranslator("&6空气节目尚未过期!"));
+                player.sendMessage(Utils.colorTranslator("&6浮空之杖赋予你的能力还未消散!"));
             }
             return;
         } else {
             if(hasPermissionToCast(item.getItemMeta().getDisplayName(), player, player.getLocation())) {
-                player.sendMessage(Utils.colorTranslator("&d你现在可以在空中行走 10 秒"));
+                player.sendMessage(Utils.colorTranslator("&d接下来的 10 秒你可以在空中行走了"));
                 taskMap.put(player.getUniqueId(), new AirStriderTask(player).runTaskTimer(FNAmplifications.getInstance(), 0, 1L));
             } else{
                 return;
@@ -55,10 +55,10 @@ public class StaffOfAirStrider extends AbstractStaff {
         AtomicInteger i = new AtomicInteger(10);
         Bukkit.getScheduler().runTaskTimer(FNAmplifications.getInstance(), task -> {
             if(i.get() <= 5){
-                player.sendMessage(Utils.colorTranslator("&d空中绞车将在") + i + " 秒后失效");
+                player.sendMessage(Utils.colorTranslator("&d浮空之杖的效果将在 ") + i + " 秒后消失");
             }
             if(i.get() == 0){
-                player.sendMessage(Utils.colorTranslator("&d空中飞人已经过期!"));
+                player.sendMessage(Utils.colorTranslator("&d浮空之杖的效果已消失!"));
                 taskMap.get(player.getUniqueId()).cancel();
                 taskMap.remove(player.getUniqueId());
                 task.cancel();

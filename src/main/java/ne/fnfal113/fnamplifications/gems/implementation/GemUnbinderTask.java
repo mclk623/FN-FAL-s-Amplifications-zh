@@ -38,7 +38,7 @@ public class GemUnbinderTask {
      */
     @SuppressWarnings("ConstantConditions")
     public void getGemsFromItem(){
-        Inventory inventory = Bukkit.createInventory(null, 9, Utils.colorTranslator("&c选择要解除绑定的宝石"));
+        Inventory inventory = Bukkit.createInventory(null, 9, Utils.colorTranslator("&c选择要解绑的宝石"));
         PersistentDataContainer pdc = getItemInOffhand().getItemMeta().getPersistentDataContainer();
 
         if(pdc.isEmpty()){
@@ -56,7 +56,7 @@ public class GemUnbinderTask {
         }
 
         if(gemArray.isEmpty()){
-            getPlayer().sendMessage(Utils.colorTranslator("&e物品没有绑定任何宝石"));
+            getPlayer().sendMessage(Utils.colorTranslator("&e这个物品还没有镶嵌过任何宝石"));
             return;
         }
 
@@ -92,15 +92,15 @@ public class GemUnbinderTask {
             pdc.set(socketAmountKey, PersistentDataType.INTEGER, pdc.get(socketAmountKey, PersistentDataType.INTEGER) - 1);
 
             if (pdc.get(socketAmountKey, PersistentDataType.INTEGER) == 0) { // remove excess space above the gem lore
-                for (int i = 0; i < lore.indexOf(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥")) + 1; i++) {
-                    if (lore.get(i).contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥"))) {
+                for (int i = 0; i < lore.indexOf(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥")) + 1; i++) {
+                    if (lore.get(i).contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥"))) {
                         lore.remove(i - 1);
                     }
                 }
 
                 Predicate<String> condition = line ->
                         line.contains(Utils.colorTranslator(gem.getItemName())) ||
-                                line.contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥")) ||
+                                line.contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥")) ||
                                 line.contains(Utils.colorTranslator("&6◤◤◤◤◤◤◤◤◤◤◤&c◥◥◥◥◥◥◥◥◥◥◥"));
                 lore.removeIf(condition);
                 pdc.remove(socketAmountKey);
@@ -110,10 +110,10 @@ public class GemUnbinderTask {
 
             meta.setLore(lore);
             getItemInOffhand().setItemMeta(meta);
-            getPlayer().sendMessage(Utils.colorTranslator("&a已成功移除选定的宝石!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&a成功解绑选中的宝石!"));
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_VILLAGER_WORK_WEAPONSMITH, 1.0F, 1.0F);
         } else {
-            getPlayer().sendMessage(Utils.colorTranslator("&c无法解除宝石与物品的绑定!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&c解绑宝石失败!"));
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_ZOMBIE_INFECT, 1.0F, 1.0F);
         }
     }

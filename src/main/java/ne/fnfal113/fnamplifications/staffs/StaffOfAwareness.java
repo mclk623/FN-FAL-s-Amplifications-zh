@@ -60,20 +60,20 @@ public class StaffOfAwareness extends AbstractStaff {
         if(amount != 0) {
             playerMap.forEach((key1, value1) -> players.add(ChatColor.DARK_GREEN + value1));
 
-            firstPage.add(ChatColor.GOLD + "  意识的员工\n\n " + ChatColor.GRAY +
-                    "工作人员的权力会产生周围的50个块半径附近的所需信息，在此时，玩家在您自己的知识附近就在附近");
+            firstPage.add(ChatColor.GOLD + "  认知之杖\n\n " + ChatColor.GRAY +
+                    "法杖的力量让你获取到了 50 格内的玩家信息");
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < players.size(); i = i + 5) {
-                    bookMeta.addPage(players.subList(i, Math.min(i + 5, players.size())).toString()
-                            .replace("[", "")
-                            .replace("]", "")
-                            .replace(":", ChatColor.GRAY + " =")
-                            .replace(", ", "\n\n")
-                            .replace("_", " "));
+                bookMeta.addPage(players.subList(i, Math.min(i + 5, players.size())).toString()
+                        .replace("[", "")
+                        .replace("]", "")
+                        .replace(":", ChatColor.GRAY + " =")
+                        .replace(", ", "\n\n")
+                        .replace("_", " "));
             }
         } else {
-            firstPage.add(ChatColor.GOLD + "  意识的员工\n\n " + ChatColor.GRAY +
-                    "你附近没有玩家");
+            firstPage.add(ChatColor.GOLD + "  认知之杖\n\n " + ChatColor.GRAY +
+                    "附近似乎没有玩家");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 

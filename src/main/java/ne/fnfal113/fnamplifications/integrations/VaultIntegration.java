@@ -20,9 +20,9 @@ public class VaultIntegration {
         this.slimefunAddon = addon;
 
         if(!setupEconomy()){
-            getSlimefunAddon().getLogger().info("Vault not detected! Successfully unregistered items that need vault.");
+            getSlimefunAddon().getLogger().info("未检测到 Vault! 需要 Vault 的物品将不会被加载.");
         } else {
-            getSlimefunAddon().getLogger().info("Vault detected! Successfully registered items that need vault.");
+            getSlimefunAddon().getLogger().info("检测到 Vault! 成功注册了需要 Vault 的物品.");
         }
 
     }

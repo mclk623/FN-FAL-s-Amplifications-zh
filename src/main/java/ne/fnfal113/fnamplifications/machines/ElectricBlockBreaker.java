@@ -58,42 +58,42 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     private static final ItemStack VERSIONED_AMETHYST;
 
     private static final CustomItemStack NOT_OPERATING = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-        "&c未运行...",
-        "&e放置一个面向分配器的方块!"
+            "&c未在运作...",
+            "&e请将要挖掘的方块放在发射器面前!"
     );
 
     private static final CustomItemStack NO_POWER = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-        "&c没有电力!",
-        "&e首先通电!"
+            "&c缺少电力!",
+            "&e必须通电才能运作!"
     );
 
     private static final CustomItemStack NOT_RUNNING = new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE,
-        "&c未运行",
-        "&e首先打开它"
+            "&c未在运行",
+            "&e请先启动机器"
     );
 
     private static final CustomItemStack BREAK_BLOCK_NATURALLY = new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-        "&d&l模式:",
-        "&e自然破坏方块（无精准采集）",
-        "点击更改"
+            "&d&l模式:",
+            "&e正常破坏方块 (无精准采集)",
+            "单击修改模式"
     );
 
     private static final CustomItemStack DROP_BLOCK_NATURALLY = new CustomItemStack(Material.CYAN_STAINED_GLASS_PANE,
-        "&d&l模式:",
-        "&e自然放置块（丝绸触摸）",
-        "点击更改"
+            "&d&l模式:",
+            "&e正常破坏方块 (精准采集)",
+            "单击修改模式"
     );
 
     private static final CustomItemStack TOGGLED_ON = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-        "&d&l切换:",
-        "&e已启用（运行中）。",
-        "点击更改"
+            "&d&l状态:",
+            "&e已启用 (运行中)",
+            "单击切换"
     );
 
     private static final CustomItemStack TOGGLED_OFF = new CustomItemStack(Material.WHITE_STAINED_GLASS_PANE,
-        "&d&l切换:",
-        "&e禁用（未运行）",
-        "点击更改"
+            "&d&lToggle:",
+            "&e已关闭 (未在运行)",
+            "单击切换"
     );
 
     public static final ItemStack DUMMY_PICK = new ItemStack(Material.DIAMOND_PICKAXE);
@@ -261,9 +261,9 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
                     int progress = cache.progress;
 
                     if (invMenu.hasViewer()) {
-                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aOperating!",
-                            "", "&bRate: " + this.rate + " ticks per Block", "&2Breaking block at rate: " + progress
-                            + "/" + this.rate));
+                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a运行中!",
+                                "", "&b速率: " + this.rate + " ticks/每方块", "&2方块破坏进度: " + progress
+                                + "/" + this.rate));
                     }
 
                     if (progress >= this.rate) {
@@ -342,9 +342,9 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     }
 
     public final ElectricBlockBreaker setEnergyConsumption(int energyConsumption) {
-        Validate.isTrue(energyConsumption > 0, "能源消耗必须大于零!");
-        Validate.isTrue(energyCapacity > 0, "您必须先指定容量，然后才能设置消耗量.");
-        Validate.isTrue(energyConsumption <= energyCapacity, "能量消耗不能高于容量 (" + energyCapacity + ')');
+        Validate.isTrue(energyConsumption > 0, "The energy consumption must be greater than zero!");
+        Validate.isTrue(energyCapacity > 0, "You must specify the capacity before you can set the consumption amount.");
+        Validate.isTrue(energyConsumption <= energyCapacity, "The energy consumption cannot be higher than the capacity (" + energyCapacity + ')');
 
         this.energyConsumedPerTick = energyConsumption;
         return this;
@@ -356,18 +356,18 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     }
 
     public final ElectricBlockBreaker setCapacity(int capacity) {
-        Validate.isTrue(capacity > 0, "容量必须大于0!");
+        Validate.isTrue(capacity > 0, "The capacity must be greater than zero!");
 
         if (getState() == ItemState.UNREGISTERED) {
             this.energyCapacity = capacity;
             return this;
         } else {
-            throw new IllegalStateException("在项目被注册后，你不能修改容量.");
+            throw new IllegalStateException("You cannot modify the capacity after the Item was registered.");
         }
     }
 
     public boolean takeCharge(@Nonnull Location l) {
-        Validate.notNull(l, "不能试图从一个空的位置进行充电!");
+        Validate.notNull(l, "Can't attempt to take charge from a null location!");
 
         if (isChargeable()) {
             int charge = getCharge(l);

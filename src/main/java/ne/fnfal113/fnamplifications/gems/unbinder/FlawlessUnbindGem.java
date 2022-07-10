@@ -20,7 +20,7 @@ public class FlawlessUnbindGem extends AbstractGemUnbinder {
     @Override
     public int onRightClick(PlayerInteractEvent event, Player player) {
         if(player.getInventory().getItemInOffHand().getType() == Material.AIR){
-            player.sendMessage(Utils.colorTranslator("&c你的副手没有物品可以解开宝石!"));
+            player.sendMessage(Utils.colorTranslator("&c你的副手上没有用于解绑的物品!"));
             return 0;
         }
         new GemUnbinderTask(player, player.getInventory().getItemInOffHand()).getGemsFromItem();

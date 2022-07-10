@@ -188,7 +188,7 @@ public abstract class AbstractGears extends SlimefunItem {
                 }
             }
         } catch (NullPointerException | IllegalArgumentException e){
-            p.sendMessage(Utils.colorTranslator("&cAn error has occurred upon adding new armor enchants, please ask the admin to check the console for errors and report it on github"));
+            p.sendMessage(Utils.colorTranslator("&c添加额外装备附魔失败, 请联系你的服务器管理员检查并反馈问题"));
             e.printStackTrace();
         }
 
@@ -211,9 +211,9 @@ public abstract class AbstractGears extends SlimefunItem {
 
                 }
 
-                p.sendMessage(Utils.colorTranslator("&6FN Gear attributes has been increased!"));
+                p.sendMessage(Utils.colorTranslator("&6FN 装备属性已更新!"));
             } catch (NullPointerException | IllegalArgumentException e){
-                p.sendMessage(Utils.colorTranslator("&cAn error has occurred upon adding bonus armor attributes, please ask the admin to check the console for errors and report it on github"));
+                p.sendMessage(Utils.colorTranslator("&c添加额外装备属性失败, 请联系你的服务器管理员检查并反馈问题"));
                 e.printStackTrace();
             }
 

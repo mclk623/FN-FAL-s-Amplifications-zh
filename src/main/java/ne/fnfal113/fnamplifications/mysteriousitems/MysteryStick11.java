@@ -47,12 +47,12 @@ public class MysteryStick11 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Behind your enemies awaits danger";
+        return ChatColor.GOLD + "在你的敌人背后等待着危险";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "The stick of the nords";
+        return ChatColor.WHITE + "诺德人的魔棒";
     }
 
     @Override
@@ -69,7 +69,7 @@ public class MysteryStick11 extends AbstractStick {
             return;
         }
 
-        if(getStickTask().onSwing(item, player, event.getDamage(), 13, 4))   {
+        if(getStickTask().onSwing(item, player, event.getDamage(), 13, 4)) {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 80, 2, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 80, 2, false, true, false));
@@ -78,8 +78,8 @@ public class MysteryStick11 extends AbstractStick {
             Location loc = victim.getLocation();
             loc.setYaw(loc.getYaw() + 180);
             victim.teleport(loc);
-            victim.sendMessage(ChatColor.DARK_RED + "You have been disoriented! your opponent's mysterious stick is deadly");
-            player.sendMessage(Utils.colorTranslator("&cMystery effects was applied to your enemy"));
+            victim.sendMessage(ChatColor.DARK_RED + "你已经迷失了方向! 对手的魔棒十分致命");
+            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
         }
 
     }

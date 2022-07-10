@@ -61,11 +61,11 @@ public class Gem {
                     retaliateWeapon();
                 }
             } else{
-                getPlayer().sendMessage(Utils.colorTranslator("&6Your item has " + getSfItemName() + " &6socketed already!"));
+                getPlayer().sendMessage(Utils.colorTranslator("&6你的物品已经镶嵌过 " + getSfItemName() + " &6了!"));
                 getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BAT_TAKEOFF, 1.0F, 1.0F);
             }
         } else {
-            getPlayer().sendMessage(Utils.colorTranslator("&eOnly 5 gems per item is allowed!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&e一个物品最高只能镶嵌五个宝石!"));
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BLAZE_HURT, 1.0F, 1.0F);
         }
         event.setCancelled(true);
@@ -87,7 +87,7 @@ public class Gem {
                 lore = new ArrayList<>();
             }
             lore.add("");
-            lore.add(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥"));
+            lore.add(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥"));
             lore.add(ChatColor.RED + "◬ " + name);
             lore.add(Utils.colorTranslator("&6◤◤◤◤◤◤◤◤◤◤◤&c◥◥◥◥◥◥◥◥◥◥◥"));
 
@@ -96,7 +96,7 @@ public class Gem {
             List<String> lore2 = meta.getLore();
             if (lore2 != null) {
                 for (int i = 0; i < lore2.size(); i++) {
-                    if(lore2.get(i).startsWith(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥"))){
+                    if(lore2.get(i).startsWith(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥"))){
                         lore2.add(i + 1, ChatColor.RED + "◬ " + name);
                     }
                 }
@@ -109,7 +109,7 @@ public class Gem {
         pdc.set(getKey2(), PersistentDataType.INTEGER, amountOfGems + 1);
         itemStack.setItemMeta(meta);
 
-        getPlayer().sendMessage(Utils.colorTranslator("&eSuccessfully bound " + name + " &eto " +
+        getPlayer().sendMessage(Utils.colorTranslator("&e成功镶嵌 " + name + " &e至 " +
                 itemStack.getType().name().replace("_", " ").toLowerCase(Locale.ROOT)));
         getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, 1.0F, 1.0F);
     }

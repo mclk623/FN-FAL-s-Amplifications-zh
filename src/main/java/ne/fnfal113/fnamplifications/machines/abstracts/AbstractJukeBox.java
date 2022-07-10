@@ -26,39 +26,39 @@ import javax.annotation.Nullable;
 public abstract class AbstractJukeBox extends SlimefunItem implements InventoryBlock, EnergyNetComponent {
 
     public CustomItemStack NOT_OPERATING = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-            "&c未运行!",
-            "&e点击播放按钮"
+            "&c未在播放!",
+            "&e单击播放按钮"
     );
 
     public CustomItemStack OPERATING = new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,
-            "&c运作!"
+            "&c播放中!"
     );
 
     public CustomItemStack NO_POWER = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&c没有电力!",
-            "&e首先通电!"
+            "&c缺少电力!",
+            "&e先接通电源吧!"
     );
 
     public CustomItemStack NOT_RUNNING = new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE,
-            "&c未运行",
-            "&e首先打开它"
+            "&c未在运行",
+            "&e请切换到运行模式"
     );
 
     public CustomItemStack TOGGLED_ON = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-            "&d切换:",
-            "&e启用",
-            "点击更改"
+            "&d状态:",
+            "&e已启用",
+            "单击切换"
     );
 
     public CustomItemStack TOGGLED_OFF = new CustomItemStack(Material.WHITE_STAINED_GLASS_PANE,
-            "&d切换:",
-            "&e已禁用",
-            "点击更改"
+            "&d状态:",
+            "&e已关闭",
+            "单击切换"
     );
 
     public CustomItemStack PLAY = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "cecd041f628c005a690fc6b8237e7311bb7c3b3aac10539fefe396a4c7c783e7")),
-            "&d停止"
+            "&d暂停"
     );
 
     public CustomItemStack STOP = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
@@ -68,12 +68,12 @@ public abstract class AbstractJukeBox extends SlimefunItem implements InventoryB
 
     public CustomItemStack PREVIOUS = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "32ff8aaa4b2ec30bc5541d41c8782199baa25ae6d854cda651f1599e654cfc79")),
-            "&d上一张光盘"
+            "&d上一首"
     );
 
     public CustomItemStack NEXT = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "aab95a8751aeaa3c671a8e90b83de76a0204f1be65752ac31be2f98feb64bf7f")),
-            "&d下一张光盘"
+            "&d下一首"
     );
 
     private int energyCapacity = -1;
@@ -105,7 +105,7 @@ public abstract class AbstractJukeBox extends SlimefunItem implements InventoryB
     }
 
     public void takeCharge(@Nonnull Location l) {
-        Validate.notNull(l, "不能试图从一个空的位置进行充电!");
+        Validate.notNull(l, "Can't attempt to take charge from a null location!");
 
         if (isChargeable()) {
             int charge = getCharge(l);

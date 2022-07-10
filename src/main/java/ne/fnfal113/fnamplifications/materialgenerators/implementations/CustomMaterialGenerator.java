@@ -117,7 +117,7 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
                             BlockStorage.clearBlockInfo(e.getBlock().getLocation());
                         } else {
                             e.getPlayer().sendMessage(Utils.
-                                    colorTranslator("&cSlimefun block data is missing! Please ask for replacement from your server admin"));
+                                    colorTranslator("&c此生成器的 Slimefun 方块数据已丢失! 请联系你的服务器管理员处理"));
                         }
                     }
                 });
@@ -163,28 +163,28 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
                     int generatorCondition = generatorStatus.get(pos);
 
                     if (invMenu.toInventory() != null && invMenu.hasViewer()) {
-                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a生成材料",
-                                "", "&bMaterial: " + this.material,
-                                "&bRate: " + "" + ChatColor.GREEN + FNAmplifications.getInstance().getConfigManager().getValueById(this.getId(), "tickrate") + " &aticks", "",
-                                "&2Progress: " + progress + "/"+ FNAmplifications.getInstance().getConfigManager().getValueById(this.getId(), "tickrate")));
+                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a正在生成",
+                                "", "&b材料: " + this.material,
+                                "&b速率: " + "" + ChatColor.GREEN + FNAmplifications.getInstance().getConfigManager().getValueById(this.getId(), "tickrate") + " &aticks", "",
+                                "&2进度: " + progress + "/" + FNAmplifications.getInstance().getConfigManager().getValueById(this.getId(), "tickrate")));
 
-                        if(generatorCondition > 0){
-                            if(generatorCondition > 75 && generatorCondition <= 100) {
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a目前状况:",
-                                    "", "&e处于最佳状况" + " (" + generatorCondition + "%)"));
-                            } else if(generatorCondition > 50 && generatorCondition < 75){
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&a目前状况:",
-                                        "", "&e状况良好" + " (" + generatorCondition + "%)"));
-                            } else if(generatorCondition > 25 && generatorCondition < 50){
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&a目前状况:",
-                                        "", "&e状况不佳" + " (" + generatorCondition + "%)"));
-                            } else if(generatorCondition < 25){
-                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a目前状况:",
-                                        "", "&e状况最差" + " (" + generatorCondition + "%)"));
+                        if (generatorCondition > 0) {
+                            if (generatorCondition > 75 && generatorCondition <= 100) {
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a目前状态:",
+                                        "", "&e极佳" + " (" + generatorCondition + "%)"));
+                            } else if (generatorCondition > 50 && generatorCondition < 75) {
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&a目前状态:",
+                                        "", "&e良好" + " (" + generatorCondition + "%)"));
+                            } else if (generatorCondition > 25 && generatorCondition < 50) {
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&a目前状态n:",
+                                        "", "&e不良" + " (" + generatorCondition + "%)"));
+                            } else if (generatorCondition < 25) {
+                                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a目前状态:",
+                                        "", "&e极差" + " (" + generatorCondition + "%)"));
                             }
                         } else {
-                            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a目前状况:",
-                                    "", "&e发电机坏了" + " (" + generatorStatus.get(pos) + "%)"));
+                            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a目前状态:",
+                                    "", "&e生成器已损坏" + " (" + generatorStatus.get(pos) + "%)"));
                         }
                     }
 

@@ -23,10 +23,9 @@ public class RegisterGems {
 
     private static final CustomItemStack anyUpgradeableGem = new CustomItemStack(
             Material.EMERALD,
-            "&dAny Upgradeable Gem",
+            "&d任意可升级宝石",
             "",
-            "&eSame gem type and must",
-            "&ebe same level or tier"
+            "&e必须是相同等级的同种宝石"
     );
 
     public static void setup(SlimefunAddon instance){

@@ -54,7 +54,7 @@ public class ThrowableWeapon {
             WEAPONS.put(player.getUniqueId(), WEAPONS.get(player.getUniqueId()) + 1);
             return true;
         } else{
-            player.sendMessage(Utils.colorTranslator("&eLimit reached! You can only have 4 weapons simultaneously"));
+            player.sendMessage(Utils.colorTranslator("&e可投掷的武器已达上限! 你只能同时丢出四个武器"));
             return false;
         }
     }

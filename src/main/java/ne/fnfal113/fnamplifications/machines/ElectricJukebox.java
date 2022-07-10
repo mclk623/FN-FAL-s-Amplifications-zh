@@ -212,8 +212,8 @@ public class ElectricJukebox extends JukeBox {
                         invMenu.replaceExistingItem(48, OPERATING);
                         if(jukebox.getPlaying() != Material.AIR) {
                             invMenu.replaceExistingItem(49, new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-                                    "&d&lPlaying: " + jukebox.getPlaying().toString().replace("_", " "),
-                                    "&eDuration : " + durationMap.get(b.getLocation()) + "/" + (DiscDurationsEnum.valueOf(jukebox.getPlaying().toString().toUpperCase()).getDurationInSec() * 2)));
+                                    "&d&l正在播放: " + jukebox.getPlaying().toString().replace("_", " "),
+                                    "&e播放进度 : " + durationMap.get(b.getLocation()) + "/" + (DiscDurationsEnum.valueOf(jukebox.getPlaying().toString().toUpperCase()).getDurationInSec() * 2)));
                         }
                     }
                     if(durationMap.containsKey(b.getLocation())) {
