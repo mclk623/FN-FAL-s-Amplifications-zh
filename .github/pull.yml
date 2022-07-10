@@ -4,6 +4,6 @@ rules:
     upstream: FN-FAL113:main
     mergeMethod: merge
     assignees:
-      - StarWishsama
+      - buiawpkgew1
     conflictReviewers:
-      - StarWishsama
+      - buiawpkgew1
