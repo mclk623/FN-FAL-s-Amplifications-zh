@@ -144,7 +144,7 @@ public class ThrowWeaponTask extends BukkitRunnable {
 
         // drop the weapon if the distance is greater 60 blocks
         if(getArmorStand().getLocation().distanceSquared(getPlayer().getLocation()) > 3600){
-            getPlayer().sendMessage(Utils.colorTranslator("&e您的武器已达到 60 格的最大距离!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&e你的武器已达到 60 格方块的最大距离!"));
 
             dropWeaponTask(getArmorStand(), getPlayer(), getItemStack().clone());
         }
@@ -161,10 +161,8 @@ public class ThrowWeaponTask extends BukkitRunnable {
 
         this.cancel();
 
-        player.sendMessage(Utils.colorTranslator("&6e武器将会掉落在" +
-                "x: " + (int) locInfo.getX() + ", " +
-                "y: " + (int) locInfo.getY() + ", " +
-                "z: " + (int) locInfo.getZ() + "] 附近"));
+        player.sendMessage(Utils.colorTranslator("&e武器将会掉落在 " +
+                "[" + (int) locInfo.getX() + ", " + (int) locInfo.getY() + ", " + (int) locInfo.getZ() + "] 附近"));
     }
 
     public void returnWeapon(){

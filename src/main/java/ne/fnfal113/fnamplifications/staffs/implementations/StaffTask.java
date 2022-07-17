@@ -40,7 +40,7 @@ public class StaffTask {
 
         if(decrement > 0) { // update the staff uses left the lore
             max_Uses.set(getStorageKey(), PersistentDataType.INTEGER, decrement);
-            Utils.setLoreByPdc(item, meta, String.valueOf(decrement), "可用次数剩余: ", "&e", "", " 次");
+            Utils.setLoreByPdc(item, meta, String.valueOf(decrement), "可用次数剩余 ", "&e", "", " 次");
         } else { // destroy the staff when it reached the max uses
             player.getInventory().setItemInMainHand(null);
             player.sendMessage(Utils.colorTranslator(meta.getDisplayName() + " &d&l已达到使用上限!"));
