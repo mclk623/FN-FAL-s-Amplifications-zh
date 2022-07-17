@@ -76,7 +76,7 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
             data.set(getIdentifierKey(), PersistentDataType.DOUBLE, Math.random()); // for Unique PDC (avoid same pdc contents)
             getENTITY_OWNER().put(data, en);
             Utils.setLoreByPdc(item, meta, en.getName(), "储存的实体: ", "&e", "", "");
-            Objects.requireNonNull(player.getLocation().getWorld()).playSound(player.getLocation(), Sound.ENTITY_ILLUSIONER_MIRROR_MOVE, 1 ,1);
+            Objects.requireNonNull(player.getLocation().getWorld()).playSound(player.getLocation(), Sound.ENTITY_ILLUSIONER_MIRROR_MOVE, 1, 1);
             getSTATE_MAP().put(player.getUniqueId(), true);
         } else {
             player.sendMessage(Utils.colorTranslator("&e这个实体已经被他人储存过了!"));
