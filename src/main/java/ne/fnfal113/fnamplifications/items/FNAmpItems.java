@@ -2258,25 +2258,24 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_GEM_BERSERK = new SlimefunItemStack(
             "FN_GEM_BERSERK",
             Material.EMERALD,
-            "&cBerserk Gem",
+            "&c狂热宝石",
             "",
-            "&eA chance to deal more damage against",
-            "&eenemies when your health is below 30%.",
-            "&eHigher tier gem, much deadly!",
+            "&e当你的生命值低于30%时,",
+            "&e有机会对敌人造成更多伤害,",
+            "&e更高等级的宝石,非常致命的!",
             "",
-            "&c◢◤◢◤◢◤ Tiers &6◥◣◥◣◥◣",
-            "&6⨳ Tier I: " + "&e%",
-            "&6  - Damage: &f+6% base damage",
-            "&6⨳ Tier II: " + "&e%",
-            "&6  - Damage: &f+12% base damage",
-            "&6⨳ Tier III: " + "&e%",
-            "&6  - Damage: &f+18% base damage",
-            "&6⨳ Tier IV: " + "&e%",
-            "&6  - Damage: &f+30% base damage",
+            "&c◢◤◢◤◢◤ 几率 &6◥◣◥◣◥◣",
+            "&6⨳ 等级 I: " + "&e%",
+            "&6  - 伤害: &f+6% 基本伤害",
+            "&6⨳ 等级 II: " + "&e%",
+            "&6  - 伤害: &f+12% 基本伤害",
+            "&6⨳ 等级 III: " + "&e%",
+            "&6  - 伤害: &f+18% 基本伤害",
+            "&6⨳ 等级 IV: " + "&e%",
+            "&6  - 伤害: &f+30% 基本伤害",
             "&c◢◤◢◤◢◤◢◤◢◤◢&6◣◥◣◥◣◥◣◥◣◥◣",
             "",
-            "&dDrag and drop on sword or axe",
-            "&dto bind this gem"
+            "&d将宝石拖放到剑或斧头上绑定"
     );
 
     public static final SlimefunItemStack FN_GEM_UPGRADES_DISPLAY_ITEM = new SlimefunItemStack(
@@ -2330,12 +2329,12 @@ public class FNAmpItems {
     public static final SlimefunItemStack FN_THROWABLE_TORCH = new SlimefunItemStack(
             "FN_THROWABLE_TORCH",
             Material.TORCH,
-            "&cFN's Throwable Torch",
+            "&cFN 可投掷火炬",
             "",
-            "&dRight click to throw in the target",
-            "&ddirection and it will be placed if",
-            "&da block got hit. Entities who got hit",
-            "&dwill be set on fire for 4 seconds"
+            "&d右键向目标方向投掷",
+            "&d如果有块状物被击中",
+            "&d它将被放置",
+            "&d被击中的实体将被烧毁4秒"
     );
 
     public static final SlimefunItemStack FN_JUKEBOX_I = new SlimefunItemStack(
