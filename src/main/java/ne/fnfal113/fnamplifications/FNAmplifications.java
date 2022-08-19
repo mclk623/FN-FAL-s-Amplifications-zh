@@ -65,7 +65,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         getServer().getScheduler().runTaskTimerAsynchronously(this, new ArmorEquipRunnable(), 0L, getConfig().getInt("armor-update-period") * 20L);
 
         if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("Build")) {
-            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications", "main", false, "zh-CN");
+            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications", "main", false);
         }
     }
 
