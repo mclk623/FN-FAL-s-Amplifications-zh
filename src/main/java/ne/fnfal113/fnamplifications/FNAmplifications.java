@@ -22,7 +22,7 @@ import ne.fnfal113.fnamplifications.tools.listener.OrientPearlListener;
 import ne.fnfal113.fnamplifications.tools.listener.RotatorListener;
 import ne.fnfal113.fnamplifications.tools.listener.ThrowableItemListener;
 import ne.fnfal113.fnamplifications.utils.PlayerJoinLister;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
+import net.guizhanss.guizhanlibplugin.updater.GuizhanBuildsUpdaterWrapper;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -65,7 +65,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         getServer().getScheduler().runTaskTimerAsynchronously(this, new ArmorEquipRunnable(), 0L, getConfig().getInt("armor-update-period") * 20L);
 
         if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("Build")) {
-            new GuizhanBuildsUpdater(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications", "main", false, "zh-CN").start();
+            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "buiawpkgew1", "FN-FAL-s-Amplifications", "main", false);
         }
     }
 
