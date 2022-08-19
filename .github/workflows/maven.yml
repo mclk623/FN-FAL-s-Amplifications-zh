@@ -45,7 +45,7 @@ jobs:
       uses: marvinpinto/action-automatic-releases@v1.2.1
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "exe"
+        automatic_release_tag: "jar"
         prerelease: true
         title: "FNAmplifications 自动构建版本"
         files: |
@@ -55,4 +55,4 @@ jobs:
       with:
         name: artifacts
         path: |
-           target/FNAmplifications*.jar
+           target/*.jar
