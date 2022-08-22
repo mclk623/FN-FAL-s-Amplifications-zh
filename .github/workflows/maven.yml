@@ -20,10 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 下载构建
-      uses: actions/download-artifact@v2.1.0
+      uses: actions/download-artifact@v3.0.0
         
     - name: 创建发布
-      uses: softprops/action-gh-release@v0.1.14
+      uses: softprops/action-gh-release@v1
       with:
         draft: true
         fail_on_unmatched_files: true
@@ -51,7 +51,7 @@ jobs:
         files: |
            target/*
     - name: 上传 The Bruh
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: artifacts
         path: |
