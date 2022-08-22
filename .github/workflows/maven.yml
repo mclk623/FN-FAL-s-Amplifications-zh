@@ -51,7 +51,7 @@ jobs:
         files: |
            target/*
     - name: 上传 The Bruh
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: artifacts
         path: |
