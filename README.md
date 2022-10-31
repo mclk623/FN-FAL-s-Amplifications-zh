@@ -1,4 +1,4 @@
-# :part_alternation_mark: FN Amplifications - FN 科技
+# :part_alternation_mark: FN-Amplifications - FN 科技
 一个slimefun插件，为你的服务器增加了不同类型的物品和更多的内容! 从太阳能电池板、机器、破块器、齿轮、法杖和更多!
 更多的内容在游戏中等待着玩家自己去尝试和制作。在制作方面，它与InfinityXpansion和LiteXpansion的难度水平相当。
 的难度，快来探索FN的放大功能吧! 
