@@ -169,8 +169,6 @@ public class ThrowWeaponTask extends BukkitRunnable {
         droppedItem.setOwner(getPlayer().getUniqueId()); // only the player who threw can pick up the weapon
         droppedItem.setGlowing(true);
 
-        as.remove();
-
         getArmorStand().remove();
 
         getPlayer().sendMessage(Utils.colorTranslator("&6武器将会掉落在 " +
