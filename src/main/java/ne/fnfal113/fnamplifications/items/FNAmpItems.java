@@ -71,6 +71,12 @@ public class FNAmpItems {
             new CustomItemStack(Material.EMERALD_BLOCK,
                     "&eFN 材料生成器"));
 
+    public static final SubItemGroup MATERIAL_GENERATORS_UPGRADES = new SubItemGroup(
+            new NamespacedKey(FNAmplifications.getInstance(), "MATERIAL_GENERATORS_UPGRADES"),
+            FN_MAIN_GROUP,
+            new CustomItemStack(Material.GOLD_BLOCK,
+                    "&eFN材料生成器升级"));
+
     public static final SubItemGroup SOLAR_GENERATORS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "SOLAR_GENERATORS"),
             FN_MAIN_GROUP,
@@ -551,7 +557,31 @@ public class FNAmpItems {
             );
         }
     }
-    
+
+    public static final SlimefunItemStack FN_MAT_GEN_UPGRADES_REPAIR_ITEM = new SlimefunItemStack(
+            "FN_MAT_GEN_UPGRADES_REPAIR_ITEM",
+            Material.BLACK_DYE,
+            "&fFN Mat Gen 维修项目",
+            "&6维修或增加耐用性维修或增加耐用性",
+            "",
+            "&e耐久性+20",
+            "",
+            "&a右键单击材料生成器",
+            "&d&oFN材料生成器升级"
+    );
+
+    public static final SlimefunItemStack FN_MAT_GEN_UPGRADES_FAST_PRODUCE = new SlimefunItemStack(
+            "FN_MAT_GEN_UPGRADES_FAST_PRODUCE",
+            Material.YELLOW_DYE,
+            "&fFN快速生产物料",
+            "&6更快的生产",
+            "",
+            "&e+1.75倍材料生成速度，持续30分钟",
+            "",
+            "&a右键单击材料生成器",
+            "&d&oFN材料生成器升级"
+    );
+
     public static final SlimefunItemStack FN_FAL_GENERATOR_TIER1 = new SlimefunItemStack(
             "FN_FAL_GENERATOR_TIER1",
             "6d2822cedb3abd579d6dfa2966c1433c3c36cb9732e2c23ec0cc81daedd4403b",
@@ -1214,6 +1244,12 @@ public class FNAmpItems {
             "FN_GEM_UPGRADER",
             Material.SMITHING_TABLE,
             "&dFN 宝石升级器"
+    );
+
+    public static final SlimefunItemStack FN_GEM_DOWNGRADER = new SlimefunItemStack(
+            "FN_GEM_DOWNGRADER",
+            Material.STONECUTTER,
+            "&dFN创业板降级"
     );
 
     public static final SlimefunItemStack FN_MAGIC_ALTAR = new SlimefunItemStack(
@@ -2285,6 +2321,15 @@ public class FNAmpItems {
             "",
             "&d单击此物品了解如何升级宝石",
             "&d以及 FN 宝石升级器中所需的合成配方"
+    );
+
+    public static final SlimefunItemStack FN_GEM_DOWNGRADES_DISPLAY_ITEM = new SlimefunItemStack(
+            "FN_GEM_DOWNGRADE_DISPLAY_ITEM",
+            PlayerHead.getItemStack(PlayerSkin.fromHashCode("36161daa3589ec9c8187459ac36fd4dd2646c040678d3bfacb72a2210c6c801c")),
+            "&b创业板等级降级",
+            "",
+            "&d点击此项目了解如何降级宝石，",
+            "&d以及在FN宝石降级器多块中需要什么配方"
     );
 
     public static final SlimefunItemStack FN_GEM_FINE_JASPER_CRAFTING = new SlimefunItemStack(
