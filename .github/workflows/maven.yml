@@ -39,6 +39,7 @@ jobs:
       uses: actions/setup-java@v1.4.3
       with:
         java-version: 17
+        distribution: 'adopt'
     - name: Build with Maven
       run: mvn package --file pom.xml
     - name: 自动释放
