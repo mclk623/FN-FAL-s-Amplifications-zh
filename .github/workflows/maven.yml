@@ -48,7 +48,7 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "exe"
         prerelease: true
-        title: "FNAmplifications 自动构建版本"
+        title: "FNAmplifications dev 自动构建版本"
         files: |
            target/*
     - name: 上传 The Bruh
