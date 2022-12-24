@@ -574,9 +574,9 @@ public class FNAmpItems {
             "FN_MAT_GEN_UPGRADES_FAST_PRODUCE",
             Material.YELLOW_DYE,
             "&fFN快速生产物料",
-            "&6更快的生产",
+            "&6提升生产速度",
             "",
-            "&e+1.75倍材料生成速度，持续30分钟",
+            "&e在 30 分钟内 提升 +1.75x 生产速度",
             "",
             "&a右键单击材料生成器",
             "&d&oFN材料生成器升级"
