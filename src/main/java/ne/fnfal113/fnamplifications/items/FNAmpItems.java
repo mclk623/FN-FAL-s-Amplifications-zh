@@ -774,7 +774,7 @@ public class FNAmpItems {
             "",
             "&d&oFN 机械",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-            LoreBuilder.speed(2),
+            LoreBuilder.speed(4),
             LoreBuilder.powerPerSecond(672));
 
     public static final SlimefunItemStack FN_FAL_DOWNGRADER = new SlimefunItemStack(
