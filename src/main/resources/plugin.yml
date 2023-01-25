@@ -17,7 +17,7 @@ commands:
     description: 检查 FN Gears 进度的命令
     default: true
     usage: /<command>
+permissions:
   fngear.levelupgears:
-    description: IN Gears升级指令
-    usage: /<command>
+    description: 用于调平玩家磨损的FN齿轮
     default: op
