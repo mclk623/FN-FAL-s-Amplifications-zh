@@ -36,10 +36,6 @@
 
 ## :arrow_down: 下载
 
-### [从构建站下载](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications/main/)
-
-![构建状态](https://builds.guizhanss.net/f/buiawpkgew1/FN-FAL-s-Amplifications/main/badge.svg)
-
 ### [点击这里下载汉化](https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main) 
 <p align="center">
   <a href="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml">
