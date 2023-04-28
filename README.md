@@ -108,6 +108,6 @@
 </p>
 
 ## :label: Credits
-Waleks for  SMG based generators<br>
-Big credits to minecraft-heads for the head textures used by this addon:<br>
+基于SMG的发电机的Waleks<br>
+这个插件使用了头部纹理，这要归功于minecraft-heads:<br>
 https://minecraft-heads.com/
