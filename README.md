@@ -36,7 +36,7 @@
 
 ## :arrow_down: 下载
 
-### [点击这里下载汉化](https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main) 
+### [点击下载汉化](https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main) 
 <p align="center">
   <a href="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml">
     <img src="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
