@@ -107,8 +107,7 @@
   </a>
 </p>
 
-### 特别鸣谢
-
-感谢 waleks 的 SMG 附属 (现在由 Sefiraat 和 Variananora 开发)
-
-非常感谢在此附属中使用到的头颅材质的作者们
+## :label: Credits
+Waleks for  SMG based generators<br>
+Big credits to minecraft-heads for the head textures used by this addon:<br>
+https://minecraft-heads.com/
