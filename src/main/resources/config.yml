@@ -16,12 +16,12 @@ SMG-Recipe-Integration: true
 # 仅在该设置为 true 且服务器版本为 1.17 及以上时生效
 New-Recipe-Integration: true
 
-# Armor effect validator, the time to update the armor effects in seconds (i.e FN Gears of Friction permanent effects)
-# For now the chestplate only has a permanent effect at level 30
+# 装甲效果验证器，更新装甲效果的秒数（例如 FN 摩擦齿轮的永久效果）
+# 目前，胸甲只有在等级30时才有永久效果
 armor-update-period: 10
 
-# Enable or disable modules of the addon
-# Sub-categories will be removed from the guide upon disabling 
+# 启用或禁用插件的模块
+# 禁用后，子类别将从指南中删除。
 Enable-Machineries: true
 Enable-Material-Generators: true
 Enable-Gems: true
