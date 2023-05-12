@@ -145,7 +145,7 @@ public class FNAmpItems {
             new NamespacedKey(FNAmplifications.getInstance(), "FN_QUIVERS"),
             FN_MAIN_GROUP,
             new CustomItemStack(Material.LEATHER,
-                    "&eFN Quivers"));
+                    "&eFN 箭袋"));
 
     public static final SubItemGroup FN_GEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),
