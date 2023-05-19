@@ -272,21 +272,21 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
     public void handleConditionBlockInterface(BlockMenu invMenu, int generatorCondition) {
         if(generatorCondition > 0) {
             if(generatorCondition > 75 && generatorCondition <= 100) {
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                    "", "&eIn best condition" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a当前状态:",
+                    "", "&e极佳" + " (" + generatorCondition + "%)"));
             } else if(generatorCondition > 50 && generatorCondition < 75){
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                        "", "&eIn good condition" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&a当前状态:",
+                        "", "&e良好" + " (" + generatorCondition + "%)"));
             } else if(generatorCondition > 25 && generatorCondition < 50){
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                        "", "&eIn bad condition" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&a当前状态:",
+                        "", "&e不良" + " (" + generatorCondition + "%)"));
             } else if(generatorCondition < 25){
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                        "", "&eIn worst condition" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a当前状态:",
+                        "", "&e极差" + " (" + generatorCondition + "%)"));
             }
         } else {
-            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aCurrent Condition:",
-                    "", "&eBroken generator (0%)"));
+            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a当前状态:",
+                    "", "&e生成器已损坏 (0%)"));
         }
     }
 
