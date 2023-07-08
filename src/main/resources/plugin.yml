@@ -7,11 +7,11 @@ description: Explore plethora of in-game items from machines, tools, pvp and man
 website: https://github.com/FN-FAL113
 depend: 
   - Slimefun
+  - GuizhanLibPlugin
 softdepend:
   - LiteXpansion
   - SimpleMaterialGenerators
   - Vault
-  - GuizhanLibPlugin
 commands:
   fngear:
     description: 检查FN档位进度的命令
