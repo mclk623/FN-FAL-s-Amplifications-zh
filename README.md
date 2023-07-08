@@ -36,11 +36,7 @@
 
 ## :arrow_down: 下载
 
-### [从构建站下载](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications/main/)
-
-![构建状态](https://builds.guizhanss.net/f/buiawpkgew1/FN-FAL-s-Amplifications/main/badge.svg)
-
-### [点击这里下载汉化](https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main) 
+### [点击下载汉化版](https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main) 
 <p align="center">
   <a href="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml">
     <img src="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
@@ -107,8 +103,7 @@
   </a>
 </p>
 
-### 特别鸣谢
-
-感谢 waleks 的 SMG 附属 (现在由 Sefiraat 和 Variananora 开发)
-
-非常感谢在此附属中使用到的头颅材质的作者们
+## :label: Credits
+基于SMG的发电机的Waleks<br>
+这个插件使用了头部纹理，这要归功于minecraft-heads:<br>
+https://minecraft-heads.com/

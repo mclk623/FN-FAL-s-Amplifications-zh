@@ -28,13 +28,13 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler, GemUpg
     }
 
     @Override
-    public void onDrag(Player player, SlimefunItem gem, ItemStack gemItem, ItemStack currentItem){
-        if (WeaponArmorEnum.AXES.isTagged(currentItem.getType()) || WeaponArmorEnum.SHOVELS.isTagged(currentItem.getType())
-                || WeaponArmorEnum.PICKAXE.isTagged(currentItem.getType())) {
+    public void onDrag(Player player, SlimefunItem slimefunGemItem, ItemStack gemItem, ItemStack itemStackToSocket){
+        if (WeaponArmorEnum.AXES.isTagged(itemStackToSocket.getType()) || WeaponArmorEnum.SHOVELS.isTagged(itemStackToSocket.getType())
+                || WeaponArmorEnum.PICKAXE.isTagged(itemStackToSocket.getType())) {
             if(isUpgradeGem(gemItem, this.getId())) {
-                upgradeGem(gem, currentItem, gemItem, player, this.getId());
+                upgradeGem(slimefunGemItem, itemStackToSocket, gemItem, player);
             } else {
-                bindGem(gem, currentItem, player, false);
+                bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
             player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在铲子, 镐子和斧头上"));

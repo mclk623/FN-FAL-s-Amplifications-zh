@@ -27,8 +27,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class FNAmpItems {
 
-    private FNAmpItems() {}
-
     private static final ItemStack STICK = new ItemStack(Material.STICK);
 
     private static final ItemStack ARMOR = Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16) ?
@@ -142,6 +140,12 @@ public class FNAmpItems {
             FN_MAIN_GROUP,
             new CustomItemStack(Material.CHEST,
                     "&eFN 杂项"));
+
+    public static final SubItemGroup FN_QUIVERS = new SubItemGroup(
+            new NamespacedKey(FNAmplifications.getInstance(), "FN_QUIVERS"),
+            FN_MAIN_GROUP,
+            new CustomItemStack(Material.LEATHER,
+                    "&eFN 箭袋"));
 
     public static final SubItemGroup FN_GEMS = new SubItemGroup(
             new NamespacedKey(FNAmplifications.getInstance(), "FN_GEMS"),

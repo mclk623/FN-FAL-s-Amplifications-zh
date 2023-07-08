@@ -6,7 +6,7 @@
 
     <groupId>ne.fnfal113</groupId>
     <artifactId>FNAmplifications</artifactId>
-    <version>Unoffical-3.3.8</version>
+    <version>Unoffical-4.0.1</version>
     <packaging>jar</packaging>
 
     <name>FNAmplifications</name>
@@ -167,7 +167,7 @@
         <dependency>
             <groupId>net.guizhanss</groupId>
             <artifactId>GuizhanLibPlugin</artifactId>
-            <version>1.1.1</version>
+            <version>1.2.1</version>
             <scope>provided</scope>
         </dependency>
 
