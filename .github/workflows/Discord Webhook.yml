@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     ## Only run this on the main repo
-    if: github.repository == 'xMikux/Slimefun4'
+    if: github.repository == 'buiawpkgew1/FN-FAL-s-Amplifications-zh'
 
     steps:
     - name: Checkout repository
