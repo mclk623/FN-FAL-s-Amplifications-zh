@@ -9,16 +9,15 @@ depend:
   - Slimefun
   - GuizhanLibPlugin
 softdepend:
-  - LiteXpansion
   - SimpleMaterialGenerators
   - Vault
 commands:
   fngear:
-    description: 检查FN档位进度的命令
+    description: command for checking player worn FN Gears progress
     default: true
     usage: /<command>
   fnshockwavetest:
-    description: 测试冲击波的基本命令
+    description: command for testing shockwave effect from shockwave gem
     default: op
     usage: /<command>
 permissions:
@@ -26,5 +25,5 @@ permissions:
     description: 用于调平玩家磨损的FN齿轮
     default: op
   fnshockwave.test:
-    description: 用于测试冲击波
+    description: for testing shockwave shockwave effect from shockwave gem
     default: op

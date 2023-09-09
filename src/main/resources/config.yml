@@ -1,16 +1,6 @@
 # 启用自动更新功能
 auto-update: true
 
-# 启用 LiteXpansion 整合
-# LiteXpansion 物品将用于 FN 发电机的配方中
-# 仅在该设置为 true 且服务器已安装 LiteXpansion 时生效
-LiteX-Recipe-Integration: true
-
-# 启用 SMG(SimpleMaterialGenerators) 整合
-# SMG 物品将用于 FN 材料发电机的部分配方中
-# 仅在该设置为 true 且服务器已安装 SMG 时生效
-SMG-Recipe-Integration: true
-
 # 启用 1.17 整合
 # 使用 1.17 物品作为 FN 机器的配方
 # 仅在该设置为 true 且服务器版本为 1.17 及以上时生效
