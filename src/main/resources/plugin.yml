@@ -13,11 +13,11 @@ softdepend:
   - Vault
 commands:
   fngear:
-    description: command for checking player worn FN Gears progress
+    description: 用于检查玩家所穿戴的FN装备进度的命令
     default: true
     usage: /<command>
   fnshockwavetest:
-    description: command for testing shockwave effect from shockwave gem
+    description: 用于测试来自Shockwave宝石的冲击波效果的命令
     default: op
     usage: /<command>
 permissions:
@@ -25,5 +25,5 @@ permissions:
     description: 用于调平玩家磨损的FN齿轮
     default: op
   fnshockwave.test:
-    description: for testing shockwave shockwave effect from shockwave gem
+    description: 用于测试冲击波宝石的冲击波效果
     default: op
