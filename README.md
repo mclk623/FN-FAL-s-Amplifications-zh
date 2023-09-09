@@ -1,9 +1,9 @@
-# :part_alternation_mark: FN Amplifications
-A slimefun addon that adds different types of items and more content for your server! From solar panels, machines, block breakers, gears, staffs and more!
-More awaits ingame for the players to try and craft for themselves. It pars with InfinityXpansion and LiteXpansion level of difficulty in terms
-of crafting. Come and explore FN's Amplifications! 
+# :part_alternation_mark: FN Amplifications - FN 科技
+一个为您的服务器添加不同类型物品和更多内容的 Slimefun 插件！从太阳能电池板、机器、方块破坏器、齿轮、法杖等等！
+还有更多等待玩家在游戏中尝试并自行制作。在制作方面，与InfinityXpansion和LiteXpansion的难度水平相当。
+快来探索FN的科技吧！
 
-Addon supports 1.16.x, 1.17.x, 1.18.x, 1.19.x, and 1.20.x minecraft versions
+此插件支持Minecraft版本1.16.x、1.17.x、1.18.x、1.19.x和1.20.x。
 
 ### :computer: 几乎全部都是可配置的
 
