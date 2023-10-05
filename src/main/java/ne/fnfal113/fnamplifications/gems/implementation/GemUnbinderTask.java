@@ -59,12 +59,12 @@ public class GemUnbinderTask {
         }
 
         if(gemArray.isEmpty()) {
-            getPlayer().sendMessage(Utils.colorTranslator("&eOffhand item doesn't have bounded gems!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&e副手物品没有绑定宝石！"));
             
             return;
         }
 
-        Inventory inventory = Bukkit.createInventory(null, 9, Utils.colorTranslator("&cSelect a gem to unbind"));
+        Inventory inventory = Bukkit.createInventory(null, 9, Utils.colorTranslator("&c选择一个宝石进行解绑"));
 
         for (ItemStack gems: gemArray) { // add all gems inside the inventory UI
             inventory.addItem(gems);
@@ -100,15 +100,15 @@ public class GemUnbinderTask {
             
             if (pdc.get(socketAmountKey, PersistentDataType.INTEGER) == 0) { 
                 // if item does not contain any games, clear gem lore header and footer text and remove newline space above the gem lore
-                for (int i = 0; i < lore.indexOf(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥")) + 1; i++) {
-                    if (lore.get(i).contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥"))) {
+                for (int i = 0; i < lore.indexOf(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥")) + 1; i++) {
+                    if (lore.get(i).contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥"))) {
                         lore.remove(i - 1);
                     }
                 }
 
                 Predicate<String> condition = line ->
                         line.contains(Utils.colorTranslator(gem.getItemName())) ||
-                        line.contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥")) ||
+                        line.contains(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥")) ||
                         line.contains(Utils.colorTranslator("&6◤◤◤◤◤◤◤◤◤◤◤&c◥◥◥◥◥◥◥◥◥◥◥"));
                 
                 lore.removeIf(condition);
@@ -122,10 +122,10 @@ public class GemUnbinderTask {
             meta.setLore(lore);
             getItemInOffhand().setItemMeta(meta);
             
-            getPlayer().sendMessage(Utils.colorTranslator("&aSuccessfully removed selected gem!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&a成功解绑选中的宝石!"));
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_VILLAGER_WORK_WEAPONSMITH, 1.0F, 1.0F);
         } else {
-            getPlayer().sendMessage(Utils.colorTranslator("&cFailed to unbind the gem from the item!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&c解绑宝石失败!"));
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_ZOMBIE_INFECT, 1.0F, 1.0F);
         }
     }

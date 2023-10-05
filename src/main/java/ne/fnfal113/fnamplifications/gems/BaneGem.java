@@ -33,7 +33,7 @@ public class BaneGem extends AbstractGem implements OnDamageHandler, GemUpgrade 
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on swords and axes only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑和斧上"));
         }
     }
 

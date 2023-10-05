@@ -32,7 +32,7 @@ public class AdamantineGem extends AbstractGem implements OnItemDamageHandler, G
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on weapons and tools only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在武器和工具上"));
         }
     }
 

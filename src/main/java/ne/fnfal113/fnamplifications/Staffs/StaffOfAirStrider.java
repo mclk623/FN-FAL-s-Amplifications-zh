@@ -35,11 +35,11 @@ public class StaffOfAirStrider extends AbstractStaff {
         ItemStack item = player.getInventory().getItemInMainHand();
 
         if(taskMap.get(player.getUniqueId()) != null) {
-            player.sendMessage(Utils.colorTranslator("&6Air strider is not yet expired!"));
+            player.sendMessage(Utils.colorTranslator("&6浮空之杖赋予你的能力还未消散!"));
             
             return;
         } else if(hasPermissionToCast(item.getItemMeta().getDisplayName(), player, player.getLocation())) {
-            player.sendMessage(Utils.colorTranslator("&dYou can now walk on the air for 10 seconds"));
+            player.sendMessage(Utils.colorTranslator("&d接下来的 10 秒你可以在空中行走了"));
             
             playerCooldowMap.put(player.getUniqueId(), System.currentTimeMillis());
             taskMap.put(player.getUniqueId(), new AirStriderTask(player));
@@ -55,12 +55,12 @@ public class StaffOfAirStrider extends AbstractStaff {
             Long timer = Utils.cooldownHelper(playerCooldowMap.get(player.getUniqueId()));
 
             if(timer >= 7){
-                player.sendMessage(Utils.colorTranslator("&dAir strider will expire in ") + 
-                    (12 - timer) + " seconds!");
+                player.sendMessage(Utils.colorTranslator("&d浮空之杖的效果将在 ") + 
+                    (12 - timer) + " 秒后消失!");
             }
 
             if(timer >= 12 || !player.isOnline()){
-                player.sendMessage(Utils.colorTranslator("&dAir Strider has expired!"));
+                player.sendMessage(Utils.colorTranslator("&d浮空之杖的效果已消失!"));
                 playerCooldowMap.remove(player.getUniqueId());
                 taskMap.get(player.getUniqueId()).setDone(true);;
                 taskMap.remove(player.getUniqueId());

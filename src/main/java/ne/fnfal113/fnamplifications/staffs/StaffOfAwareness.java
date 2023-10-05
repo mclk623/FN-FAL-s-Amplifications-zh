@@ -47,7 +47,7 @@ public class StaffOfAwareness extends AbstractStaff {
         if(bookMeta == null){
             return;
         }
-        bookMeta.setTitle("Players around 50 block radius");
+        bookMeta.setTitle("50 格内的所有玩家");
         bookMeta.setAuthor("FN_FAL113");
 
         for (Entity entity: player.getWorld().getNearbyEntities(player.getLocation().clone(), 50, 50, 50)) {
@@ -60,20 +60,20 @@ public class StaffOfAwareness extends AbstractStaff {
         if(amount != 0) {
             playerMap.forEach((key1, value1) -> players.add(ChatColor.DARK_GREEN + value1));
 
-            firstPage.add(ChatColor.GOLD + "  Staff of Awareness\n\n " + ChatColor.GRAY +
-                    "The power of staff yields the needed information around your 50 block radius vicinity in which upon players are nearby in your own knowing only");
+            firstPage.add(ChatColor.GOLD + "  认知之杖\n\n " + ChatColor.GRAY +
+                    "法杖的力量让你获取到了 50 格内的玩家信息");
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < players.size(); i = i + 5) {
-                    bookMeta.addPage(players.subList(i, Math.min(i + 5, players.size())).toString()
-                            .replace("[", "")
-                            .replace("]", "")
-                            .replace(":", ChatColor.GRAY + " =")
-                            .replace(", ", "\n\n")
-                            .replace("_", " "));
+                bookMeta.addPage(players.subList(i, Math.min(i + 5, players.size())).toString()
+                        .replace("[", "")
+                        .replace("]", "")
+                        .replace(":", ChatColor.GRAY + " =")
+                        .replace(", ", "\n\n")
+                        .replace("_", " "));
             }
         } else {
-            firstPage.add(ChatColor.GOLD + "  Staff of Awareness\n\n " + ChatColor.GRAY +
-                    "No players around your vicinity");
+            firstPage.add(ChatColor.GOLD + "  认知之杖\n\n " + ChatColor.GRAY +
+                    "附近似乎没有玩家");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 

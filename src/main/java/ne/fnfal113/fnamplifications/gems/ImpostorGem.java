@@ -33,7 +33,7 @@ public class ImpostorGem extends AbstractGem implements OnDamageHandler, GemUpgr
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on helmets only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在头盔上"));
         }
     }
 

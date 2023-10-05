@@ -31,7 +31,7 @@ public class FnAssemblyStation extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_assembly_station"),
             FNAmpItems.FN_ASSEMBLY_STATION,
             "",
-            "&fThis is where you craft some FN stuffs!"
+            "&fFN 物品从此而成!"
     );
 
 
@@ -96,7 +96,7 @@ public class FnAssemblyStation extends MultiBlockMachine {
 
             dispenser.getWorld().dropItem(b.getLocation(), output);
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
-            p.sendMessage(Utils.colorTranslator("&dCrafted item has been dropped instead"));
+            p.sendMessage(Utils.colorTranslator("&d合成出的物品将会被丢至附近"));
         }
     }
 

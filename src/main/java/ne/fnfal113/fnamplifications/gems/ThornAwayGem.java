@@ -31,7 +31,7 @@ public class ThornAwayGem extends AbstractGem implements OnDamageHandler, GemUpg
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on chestplate only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在护甲上"));
         }
     }
 

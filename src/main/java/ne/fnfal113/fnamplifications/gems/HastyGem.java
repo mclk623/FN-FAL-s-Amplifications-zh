@@ -37,7 +37,7 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler, GemUpg
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on shovels, pickaxes and axes only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在铲子, 镐子和斧头上"));
         }
     }
 
@@ -53,7 +53,7 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler, GemUpg
                 PotionEffect potionEffect = new PotionEffect(PotionEffectType.FAST_DIGGING, 80, 2, true, false, false);
                 player.addPotionEffect(potionEffect);
                 player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
-                        TextComponent.fromLegacyText(Utils.colorTranslator("&eYou're too hasty now!")));
+                        TextComponent.fromLegacyText(Utils.colorTranslator("&e你的动作变快了!")));
             }
         }
     }

@@ -32,7 +32,7 @@ public class AchillesHeelGem extends AbstractGem implements OnProjectileDamageHa
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on bows and crossbows only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在弓和弩上"));
         }
     }
 

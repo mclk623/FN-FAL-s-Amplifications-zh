@@ -85,7 +85,7 @@ public abstract class AbstractGem extends SlimefunItem {
      * @param gemName the name of the gem
      */
     public void sendGemMessage(Player player, String gemName){
-        player.sendMessage(Utils.colorTranslator("&6" + gemName + " has taken effect!"));
+        player.sendMessage(Utils.colorTranslator("&6" + gemName + " 的技能已生效!"));
     }
 
     /**

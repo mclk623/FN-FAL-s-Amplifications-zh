@@ -27,10 +27,10 @@ public class RetaliateGem extends AbstractGem {
                 bindGem(slimefunGemItem, itemStackToSocket, player);
                 retaliateWeapon(itemStackToSocket);
             } else {
-                player.sendMessage(Utils.colorTranslator("&eWeapon is missing the needed gem in the weapon, please read the lore of the gem!"));
+                player.sendMessage(Utils.colorTranslator("&e武器中缺少所需的宝石, 请先阅读宝石的介绍!"));
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on axes and swords only"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑和斧上"));
         }
     }
 

@@ -27,54 +27,54 @@ import javax.annotation.Nullable;
 public abstract class AbstractJukeBox extends SlimefunItem implements InventoryBlock, EnergyNetComponent {
 
     public CustomItemStack NOT_OPERATING = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-            "&cNot Operating!",
-            "&eClick Play Button"
+            "&c未在播放!",
+            "&e单击播放按钮"
     );
 
     public CustomItemStack OPERATING = new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,
-            "&cOperating!"
+            "&c播放中!"
     );
 
     public CustomItemStack NO_POWER = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cNo Power!",
-            "&ePower it up first!"
+            "&c缺少电力!",
+            "&e先接通电源吧!"
     );
 
     public CustomItemStack NOT_RUNNING = new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE,
-            "&cNot Running",
-            "&eToggle it on first"
+            "&c未在运行",
+            "&e请切换到运行模式"
     );
 
     public CustomItemStack TOGGLED_ON = new CustomItemStack(Material.BLUE_STAINED_GLASS_PANE,
-            "&dToggle:",
-            "&eEnabled",
-            "Click to change"
+            "&d状态:",
+            "&e已启用",
+            "单击切换"
     );
 
     public CustomItemStack TOGGLED_OFF = new CustomItemStack(Material.WHITE_STAINED_GLASS_PANE,
-            "&dToggle:",
-            "&eDisabled",
-            "Click to change"
+            "&d状态:",
+            "&e已关闭",
+            "单击切换"
     );
 
     public CustomItemStack PLAY = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "cecd041f628c005a690fc6b8237e7311bb7c3b3aac10539fefe396a4c7c783e7")),
-            "&dStop"
+            "&d暂停"
     );
 
     public CustomItemStack STOP = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "fa8f6b131ef847d9160e516a6f44bfa932554d40c18a81796d766a5487b9f710")),
-            "&dPlay"
+            "&d播放"
     );
 
     public CustomItemStack PREVIOUS = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "32ff8aaa4b2ec30bc5541d41c8782199baa25ae6d854cda651f1599e654cfc79")),
-            "&dPrevious disc"
+            "&d上一首"
     );
 
     public CustomItemStack NEXT = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "aab95a8751aeaa3c671a8e90b83de76a0204f1be65752ac31be2f98feb64bf7f")),
-            "&dNext disc"
+            "&d下一首"
     );
 
     private int energyCapacity = -1;

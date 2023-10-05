@@ -71,7 +71,7 @@ public class GearTask {
 
         if(isMaxLevel(armorLevel)){
             if(!uuidList.contains(p.getUniqueId())) {
-                p.sendMessage(Utils.colorTranslator(meta.getDisplayName() + "&c has reached max level!"));
+                p.sendMessage(Utils.colorTranslator(meta.getDisplayName() + "&c 已达到最高等级!"));
                 uuidList.add(p.getUniqueId());
             }
             return false;
@@ -93,15 +93,15 @@ public class GearTask {
     }
 
     public void updateArmour(int armorLevel, int xpAmountIncremented, int maxXpReq, ItemStack item, ItemMeta meta, List<String> lore){
-        lore.set(7, Utils.colorTranslator("&eLevel: ") + armorLevel);
-        lore.set(8, Utils.colorTranslator("&eProgress:"));
+        lore.set(7, Utils.colorTranslator("&e等级: ") + armorLevel);
+        lore.set(8, Utils.colorTranslator("&e进阶进度:"));
         lore.set(9, Utils.colorTranslator("&7[&r" + getProgressBar(xpAmountIncremented, maxXpReq, 10, '■', ChatColor.YELLOW, ChatColor.GRAY) + "&7]"));
 
         if(WeaponArmorEnum.CHESTPLATE.isTagged(getItemStack().getType()) && armorLevel == 30 && xpAmountIncremented == 1){
             lore.add(10,"");
             lore.add(11, ChatColor.RED + "◬◬◬◬◬◬| " + ChatColor.LIGHT_PURPLE + ""
-                    + ChatColor.BOLD + "Effects " + ChatColor.GOLD + "|◬◬◬◬◬◬");
-            lore.add(12, ChatColor.GREEN + "Permanent Saturation");
+                    + ChatColor.BOLD + "效果 " + ChatColor.GOLD + "|◬◬◬◬◬◬");
+            lore.add(12, ChatColor.GREEN + "永久饱和效果");
         }
 
         meta.setLore(lore);
@@ -110,7 +110,7 @@ public class GearTask {
 
     public boolean levelUpArmour(int armorLevel, int xpAmountIncremented, int maxXpReq, ItemStack item, ItemMeta meta, PersistentDataContainer progress, List<String> lore, Player p){
         if(isMaxLevel(armorLevel)){
-            p.sendMessage(Utils.colorTranslator(meta.getDisplayName() + "&c has reached max level!"));
+            p.sendMessage(Utils.colorTranslator(meta.getDisplayName() + "&c 已达到最高等级!"));
             return false;
         }
 
@@ -123,8 +123,8 @@ public class GearTask {
         // increase armor pdc max xp requirement
         progress.set(getStorageKey3(), PersistentDataType.INTEGER, maxXpReq + getIncrementProgress());
 
-        lore.set(7, Utils.colorTranslator("&eLevel: ") + currentArmorLevel);
-        lore.set(8, Utils.colorTranslator("&eProgress:"));
+        lore.set(7, Utils.colorTranslator("&e等级: ") + currentArmorLevel);
+        lore.set(8, Utils.colorTranslator("&e进阶进度:"));
         lore.set(9, Utils.colorTranslator("&7[&r" + getProgressBar(xpAmountIncremented, maxXpReq, 10, '■', ChatColor.YELLOW, ChatColor.GRAY) + "&7]"));
 
         meta.setLore(lore);
@@ -140,7 +140,7 @@ public class GearTask {
     }
 
     public void sendLevelUpMessage(Player p){
-        p.sendMessage(Utils.colorTranslator("&c&l[FNAmpli&b&lfications]> " + getItemStack().getItemMeta().getDisplayName()  + " leveled up!"));
+        p.sendMessage(Utils.colorTranslator("&c&l[FNAmpli&b&lfications]> " + getItemStack().getItemMeta().getDisplayName()  + " 升级了!"));
         p.playSound(p.getLocation(), Sound.UI_TOAST_CHALLENGE_COMPLETE, 1 , 1);
     }
 

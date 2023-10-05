@@ -1,17 +1,17 @@
-# Boolean toggle whether you want to receive new updates everytime your server restart if a new update is released.
-# If set to "false" you will not receive new updates and need to manually update it yourself.
+# 启用自动更新功能
 auto-update: true
 
-# Use 1.17 items (such as amethyst, copper, calcite, etc) as some recipes for FN Machinery Items
-# This will only work if server is running 1.17 and value is set to true
+# 启用 1.17 整合
+# 使用 1.17 物品作为 FN 机器的配方
+# 仅在该设置为 true 且服务器版本为 1.17 及以上时生效
 New-Recipe-Integration: true
 
-# Armor effect validator, the time to update the armor effects in seconds (i.e FN Gears of Friction permanent effects)
-# For now the chestplate only has a permanent effect at level 30
+# 装甲效果验证器，更新装甲效果的秒数（例如 FN 摩擦齿轮的永久效果）
+# 目前，胸甲只有在等级30时才有永久效果
 armor-update-period: 10
 
-# Enable or disable modules of the addon
-# Sub-categories will be removed from the guide upon disabling 
+# 启用或禁用插件的模块
+# 禁用后，子类别将从指南中删除。
 Enable-Machineries: true
 Enable-Material-Generators: true
 Enable-Gems: true
@@ -23,9 +23,9 @@ Enable-Staffs: true
 Enable-Quivers: true
 Enable-Misc: true
 
-# Allow material generators to break over time
+# 允许材料生成器随着时间而损坏
 Enable-Mat-Gen-Break-Over-Time: true
-# Allow material generators to drop broken variant only on block break
+# 允许材料生成器仅在方块破坏时掉落破损变体
 Enable-Mat-Gen-Broken-Drop: true
 
 
