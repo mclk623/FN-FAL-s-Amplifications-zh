@@ -20,9 +20,9 @@ public class VaultIntegration {
         this.slimefunAddon = addon;
 
         if(!setupEconomy()){
-            getSlimefunAddon().getLogger().info("未检测到 Vault! 需要 Vault 的物品将不会被加载.");
+            getSlimefunAddon().getLogger().info("未检测到Vault API！将不注册Loot Gem。");
         } else {
-            getSlimefunAddon().getLogger().info("检测到 Vault! 成功注册了需要 Vault 的物品.");
+            getSlimefunAddon().getLogger().info("检测到Vault API！Loot Gem 将被注册。");
         }
 
     }

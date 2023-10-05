@@ -1,99 +1,54 @@
-# :part_alternation_mark: FN-Amplifications - FN 科技
-一个slimefun插件，为你的服务器增加了不同类型的物品和更多的内容! 从太阳能电池板、机器、破块器、齿轮、法杖和更多!
-更多的内容在游戏中等待着玩家自己去尝试和制作。在制作方面，它与InfinityXpansion和LiteXpansion的难度水平相当。
-的难度，快来探索FN的放大功能吧! 
+# :part_alternation_mark: FN Amplifications - FN 科技
 
-这是一个添加了众多种类物品、为服务器带来更多玩法的 Slimefun 附属插件! 从太阳能板, 机器, 方块挖掘机, 装备, 法杖, 还有各式各样的物品!
+<div align="center">
 
-更多玩法等待着玩家自己在尝试和制作中发现. 附属中物品的合成难度与 InfinityXpansion 和 LiteXpansion 相似, 不过你所付出的努力都是值得的!
+![bStats Servers](https://img.shields.io/bstats/servers/13219)
+![bStats Players](https://img.shields.io/bstats/players/13219)
 
-该附属支持 1.16.x - 1.19.x 版本
+</div>
 
-### :computer: 在功率率、缓冲区、容量、滴答率、工作人员最大使用量等方面，一切都是可配置的。
-``/plugins/FNAmplifications``文件夹里的大部分东西都是可配置的。
- 
+这是一个Slimefun附加模组，为您的服务器添加了不同类型的物品和更多内容！从太阳能电池板、机器、方块破坏器、齿轮、法杖等等！玩家可以在游戏中尝试制作更多物品，等待着他们自己的探索和制作。在合成方面，它与InfinityXpansion和LiteXpansion的难度水平相匹配。快来探索FN的增强功能吧！
+
+此附加模组支持Minecraft版本1.16.x、1.17.x、1.18.x、1.19.x和1.20.x
+
+## 💡 特点
+- **PowerXpansion** - 12种新的电力发生器，带有全息图（可切换），与LiteXpansion的物品整合为合成配方！
+- **太阳能电池板** - 8种只在白天产生能源的太阳能电池板，满足能量需求。
+- **材料发生器** - 黏土、扭曲地菌丝、泥土发生器等等！
+- **机械设备** - 电动机器降级器、冷凝器、压缩机、再生器和变压器。
+- **金属废料** - 使用电动机器降级器从机器降级中获得金属废料，然后将废料用于制作机械设备所需的FN组件。
+- **电动方块破坏器** - 可在机器GUI中切换以带有或不带有丝滑触摸来破坏方块！
+- **20多种法杖** - 从影响区域的云，移动实体等等，都可以查看它们！
+- **11种神秘法杖** - PVP/PVE法杖，每次使用时都会消耗经验等级，非常适合强力PVP！
+- **25多种宝石** - 将这些神奇的宝石拖放到武器、盔甲和工具中，以获得额外的能力和奖励！
+- **箭袋** - 可以存储更多箭矢，节省背包空间的普通和光谱箭袋。
+- **FN齿轮** - 升级齿轮以获得额外属性和附魔。
+- **FN锄头** - 可以在5x5的正方形区域内耕作土地并收获作物，还可以自动重新种植！
+- **FN方块旋转器** - 旋转或翻转方块，如陶瓷、楼梯、门、台阶等等！
+- **FN电动点唱机** - 可以在唱片槽GUI中播放或切换音乐唱片，并在一张唱片播放完毕后自动播放，拥有3到12个槽，您不必担心手动更换每张唱片！
+- **FN自动梯子** - 自动在下方和上方最多8个方块处放置梯子。
+- **FN定向珍珠** - 使用此珍珠在骑乘实体（如马等）时传送您的实体！
+- **FN可投掷火把** - 右键单击将此火把投向目标位置，如果击中方块，它会自动放置！
+- **还有更多功能即将推出！**
+
+## :arrow_down: 从构建页面下载并自动更新
+### [下载官方Jar包](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main) [下载汉化Jar包](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
+[![构建状态](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main/badge.svg)](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
+
+[![汉化构建状态](https://builds.guizhanss.net/f/buiawpkgew1/FN-FAL-s-Amplifications-zh/main/badge.svg)](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
+
+## ⏯️ 由Boomer_1制作的教程，涵盖了此附加模组
+自从发布此视频以来，已经发生了很多变化，意味着在过去的几个月里增加了更多物品和内容！
+[![点击观看视频](http://i3.ytimg.com/vi/tXuXoYmx65M/hqdefault.jpg)](https://www.youtube.com/watch?v=tXuXoYmx65M)
+
+### :computer: 关于电力速率、缓冲、容量、刻度速率、法杖最大使用次数等方面的一切都可以配置
+```/plugins/FNAmplifications``` 文件夹中的大部分内容都可以配置。
+
 每个主要类别都有自己的可配置设置。
 
-## :bulb: 特性
-- **能源进化 (PowerXpansion)** - 添加了 12 种等级的有可切换全息文本的发电机, 还能够使用 LiteXpansion 物品作为合成材料的一部分!
-- **太阳能板** - 为那些全天高耗能的机器新增了 8 种等级的太阳能板
-- **材料生成器** - 粘土、诡异菌岩、泥土, 应有尽有!
-- **机器** - 机器降级机, 冷凝机, 压缩机, 回收机和转换器
-- **金属废料** - 使用机器降级机降级机器可以获取金属废料, 并用作合成 FN 组件的材料
-- **电动方块挖掘机** - 配有可开关精准采集的方块挖掘机!
-- **20+ 种法杖** - 有着[区域效果云](https://wiki.biligame.com/mc/%E6%BB%9E%E7%95%99%E8%8D%AF%E6%B0%B4#%E5%8C%BA%E5%9F%9F%E6%95%88%E6%9E%9C%E4%BA%91), 移动实体等更多效果, 记得去试试!
-- **11 种神秘魔棍** - 用于 PVP/PVE 的魔棍, 使用时通过消耗你的经验值, 提升你的 PVP 能力!
-- **25+ 种宝石** - 将宝石镶嵌在武器或盔甲上获得额外的能力和加成!
-- **箭袋** - 可以储存普通箭和光灵箭, 节省背包空间.
-- **FN 盔甲** - 升级盔甲获得额外属性和附魔
-- **FN 锄头** - 自动耕种 5x5 区域内的农田, 还可以自动补种!
-- **FN 方块转向机** - 能够旋转陶瓦、楼梯、门、台阶等有方向的方块!
-- **FN 唱片机** - 能够播放放入的唱片, 并且支持顺序播放的唱片机, 有 3 到 12 个槽位可供储存唱片, 不必手动换碟!
-- **FN 自动搭梯机** - 自动在上下最大8格高度的方块上放置梯子
-- **FN 闪耀珍珠** - 用这颗珍珠带着你骑着的实体一起传送!
-- **FN 可投掷的火炬** - 点击右键向目标位置投掷火炬，如果碰到障碍物会自动放置!
-- **在未来还有更多!**
+如果您认为它们需要平衡或出于其他原因需要更改，您可以更改它们。
 
-## :arrow_down: 下载
-
-### [点击下载汉化版](https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main) 
-<p align="center">
-  <a href="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml">
-    <img src="https://github.com/buiawpkgew1/FN-FAL-s-Amplifications-zh/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
-  </a>
-  <a href="https://builds.guizhanss.cn/buiawpkgew1/FN-FAL-s-Amplifications-zh/main">
-    <img src="https://builds.guizhanss.cn/f/buiawpkgew1/FN-FAL-s-Amplifications-zh/main/badge.svg" alt="Build status"/>
-  </a>
-</p>
-
-## :blue_book: 插件在 Slimefun 指南中的样式
-
-![guide](image/main-category.png)
-
-#### :battery: 能源扩展
-
-![Power X Category](image/powerxpansion.png)
-
-#### :white_square_button: 材料生成器
-
-![Material Gen Category](image/material-generator.png)
-
-#### :high_brightness: 太阳能发电机
-
-![Solar Gen Category](image/solar-generator.png)
-
-#### :factory: 机器与物品
-
-![Machinery Category](image/machine.png)![Machinery Items Category](image/machine-component.png)
-
-#### :sparkler: 魔棍
-
-![MysterySticks](image/sticks.png)
-
-#### :tshirt: 装备
-
-![Gears](image/gears.png)
-
-#### :oden: 法杖
-
-![Staffs](image/staffs.png)
-
-#### :gift: 杂项
-
-![misc](image/misc.png)
-
-### :computer: 几乎全部都是可配置的
-
-大多数在 ```/plugins/FNAmplifications``` 文件下的文件都是可配置的.
-
-每个文件夹都有不同的可配置设置.
-
-如果担心平衡这类的问题, 你可以修改这些设置.
-
-### :running: 反馈
-
-注意: 在非官方汉化版中遇到问题时, 请在交流群反馈
-
+### :running: 前往SF附加模组社区服务器上的我的插件频道，提供反馈意见。
 <p>
   <a href="https://discord.gg/slimefun">
     <img src="https://discordapp.com/api/guilds/565557184348422174/widget.png?style=banner3" alt="Discord Invite"/>
@@ -103,7 +58,7 @@
   </a>
 </p>
 
-## :label: Credits
+## :label: 鸣谢
 基于SMG的发电机的Waleks<br>
 这个插件使用了头部纹理，这要归功于minecraft-heads:<br>
 https://minecraft-heads.com/
