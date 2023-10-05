@@ -50,7 +50,7 @@ jobs:
             javaVersion: '20'  
     
     steps:        
-      - uses: FN-FAL113/minecraft-plugin-runtime-test@v1.1.2
+      - uses: buiawpkgew1/minecraft-plugin-runtime-test-Guizhan@v1.1.3
         with:
           server-version: ${{ matrix.mcVersion }}
           java-version: ${{ matrix.javaVersion }}
