@@ -65,7 +65,7 @@ public class ShockwaveGem extends AbstractGem implements OnDamageHandler, GemUpg
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在护具上"));
+            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on armors only"));
         }
     }
 

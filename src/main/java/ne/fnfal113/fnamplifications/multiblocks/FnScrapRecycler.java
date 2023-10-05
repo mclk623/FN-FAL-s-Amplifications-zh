@@ -36,7 +36,7 @@ public class FnScrapRecycler extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_scrap_recycler"),
             FNAmpItems.FN_SCRAP_RECYCLER,
             "",
-            "&f回收金属废料的机器!"
+            "&fThis is where you recycle metal scraps!"
     );
 
 

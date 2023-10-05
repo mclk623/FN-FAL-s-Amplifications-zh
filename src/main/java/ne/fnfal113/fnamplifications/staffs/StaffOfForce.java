@@ -47,11 +47,11 @@ public class StaffOfForce extends AbstractStaff {
         if(!player.isSneaking()) {
             AreaOfEffectStaffTask cloudStaff = new AreaOfEffectStaffTask(player, block, "FN_FORCE", 2.85F, 160, particle, null);
             cloudStaff.spawnCloud();
-            player.sendMessage(ChatColor.GREEN + "你召唤了向前的风场");
+            player.sendMessage(ChatColor.GREEN + "You spawned a cloud effect with forward force");
         } else {
             AreaOfEffectStaffTask cloudStaff = new AreaOfEffectStaffTask(player, block, "FN_BACKWARD_FORCE", 2.85F, 160, Particle.END_ROD, null);
             cloudStaff.spawnCloud();
-            player.sendMessage(ChatColor.RED + "你召唤了向后的风场");
+            player.sendMessage(ChatColor.RED  + "You spawned a cloud effect with backward force");
         }
 
     }

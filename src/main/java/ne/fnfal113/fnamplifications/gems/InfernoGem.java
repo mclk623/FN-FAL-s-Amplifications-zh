@@ -32,7 +32,7 @@ public class InfernoGem extends AbstractGem implements OnDamageHandler, GemUpgra
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑上"));
+            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on swords only"));
         }
     }
 

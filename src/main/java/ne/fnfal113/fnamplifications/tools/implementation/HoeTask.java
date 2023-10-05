@@ -103,7 +103,7 @@ public class HoeTask {
         } // x axis loop
 
         if (k > 0) {
-            player.sendMessage(ChatColor.LIGHT_PURPLE + "已自动补种了 " + k + " 株作物");
+            player.sendMessage(ChatColor.LIGHT_PURPLE + "Replanted " + k + " crops");
         }
     }
 

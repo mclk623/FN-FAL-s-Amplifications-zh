@@ -47,12 +47,12 @@ public class MysteryStick9 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "我好奇精灵们是否拥有这个圣物";
+        return ChatColor.GOLD + "I wonder if Elves possess this relic";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "这根魔棒使用时需要更多魔力";
+        return ChatColor.WHITE + "You need more mana when using this";
     }
 
     @Override
@@ -78,7 +78,7 @@ public class MysteryStick9 extends AbstractStick {
             victim.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 60, 1, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 60, 0, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 80, 2, false, false));
-            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
+            player.sendMessage(Utils.colorTranslator("&cMystery effects was applied to your enemy"));
         }
 
     }

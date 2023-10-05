@@ -25,7 +25,7 @@ public class GearCommands implements TabExecutor {
         if (args.length == 0) {
             Player player = (Player) sender;
 
-            player.sendMessage(Utils.colorTranslator("&d◬◬◬◬◬◬◬◬◬◬ &c&lFN 装备强化进度 &6◬◬◬◬◬◬◬◬◬◬"));
+            player.sendMessage(Utils.colorTranslator("&d◬◬◬◬◬◬◬◬◬◬ &c&lFN Gear Progress &6◬◬◬◬◬◬◬◬◬◬"));
             for (ItemStack itemStack : player.getInventory().getArmorContents()) {
                 if (itemStack != null) {
                     SlimefunItem item = SlimefunItem.getByItem(itemStack);
@@ -45,7 +45,7 @@ public class GearCommands implements TabExecutor {
 
             if (args[0].equalsIgnoreCase("levelupgears")) {
                 if(!player.hasPermission("fngear.levelupgears")){
-                    player.sendMessage(Utils.colorTranslator("你没有权限! 需要权限: fngear.levelupgears"));
+                    player.sendMessage(Utils.colorTranslator("Access denied! missing permission node: fngear.levelupgears"));
                     return true;
                 }
 
@@ -62,8 +62,8 @@ public class GearCommands implements TabExecutor {
                             int maxReq = progress.getOrDefault(fnGear.getDefaultUsageKey3(), PersistentDataType.INTEGER, fnGear.getStartingProgress());
 
                             fnGear.getGearTask().levelUpArmour(armorLevel, maxReq, maxReq, itemStack, meta, progress, lore, player);
-                            player.sendMessage(Utils.colorTranslator("&6成功升级了装备 " + fnGear.getItemName() + " &6到 " +
-                                    progress.get(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER)) + " 级");
+                            player.sendMessage(Utils.colorTranslator("&6Successfully leveled up " + fnGear.getItemName() + " &6to " +
+                                    progress.get(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER)));
 
                             fnGear.upgradeArmor(itemStack, progress.getOrDefault(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER, 0), player, fnGear.getEquipmentSlot());
                         }

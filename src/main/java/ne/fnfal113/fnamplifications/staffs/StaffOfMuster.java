@@ -54,7 +54,7 @@ public class StaffOfMuster extends AbstractStaff {
             } // instanceof check
         } // for each
 
-        player.sendMessage(Utils.colorTranslator("&a已集聚了 " + amount + " &a个实体"));
+        player.sendMessage(Utils.colorTranslator( "&aMustered " + amount + " &aentities"));
 
         block.getWorld().playEffect(block.getLocation().clone().add(0.5, 1, 0.5), Effect.ENDER_SIGNAL, 1);
 

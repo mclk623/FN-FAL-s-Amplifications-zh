@@ -54,12 +54,11 @@ public class UpgradedGem extends Gem {
                 }
             } else {
                 getPlayer().playSound(getPlayer().getLocation(), Sound.BLOCK_NOTE_BLOCK_BIT, 1.0F, 1.0F);
-                getPlayer().sendMessage(Utils.colorTranslator("&e不兼容的宝石等级! 你必须按等级顺序(1-2-3-4)升级!"));
+                getPlayer().sendMessage(Utils.colorTranslator("&eGem tier not compatible! upgrades must be in order (1-2-3-4)!"));
             }
         } else {
-            getPlayer().sendMessage(Utils.colorTranslator("&e你不能使用不同的宝石升级!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&eYou do not have a similar gem that can be upgraded!"));
         }
     }
 
 }
-

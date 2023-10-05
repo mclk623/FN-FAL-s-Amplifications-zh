@@ -58,14 +58,14 @@ public class Gem {
                 getPlayer().setItemOnCursor(new ItemStack(Material.AIR));
                 socketGemToItemStack(meta, pdc, itemGemAmount);
             } else {
-                getPlayer().sendMessage(Utils.colorTranslator("&6你的物品已经镶嵌过 " + getSlimefunGemItemName() + " &6了!"));
+                getPlayer().sendMessage(Utils.colorTranslator("&6Your item has " + getSlimefunGemItemName() + " &6socketed already!"));
                 getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BAT_TAKEOFF, 1.0F, 1.0F);
             }
 
             return;
         } 
 
-        getPlayer().sendMessage(Utils.colorTranslator("&e一个物品最高只能镶嵌五个宝石!"));
+        getPlayer().sendMessage(Utils.colorTranslator("&eOnly 5 gems per item are allowed!"));
         getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BLAZE_HURT, 1.0F, 1.0F);
     }
 
@@ -75,14 +75,14 @@ public class Gem {
         
         if (itemGemAmount == 0) { // add the lore when adding a gem for the first time
             lore.add("");
-            lore.add(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥"));
+            lore.add(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥"));
             lore.add(ChatColor.RED + "◬ " + gemSlimefunItemname);
             lore.add(Utils.colorTranslator("&6◤◤◤◤◤◤◤◤◤◤◤&c◥◥◥◥◥◥◥◥◥◥◥"));
 
             meta.setLore(lore);
         } else { // append the new added gem to existing lore
             for (int i = 0; i < lore.size(); i++) {
-                if(lore.get(i).startsWith(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&l宝石 &c|◥◥◥◥◥◥"))){
+                if(lore.get(i).startsWith(Utils.colorTranslator("&6◤◤◤◤◤◤| &d&lGems &c|◥◥◥◥◥◥"))){
                     lore.add(i + 1, ChatColor.RED + "◬ " + gemSlimefunItemname);
                 }
             }
@@ -95,7 +95,7 @@ public class Gem {
         
         getItemStackToSocket().setItemMeta(meta);
 
-        getPlayer().sendMessage(Utils.colorTranslator("&e成功镶嵌 " + gemSlimefunItemname + " &e至 " +
+        getPlayer().sendMessage(Utils.colorTranslator("&eSuccessfully bound " + gemSlimefunItemname + " &eto " +
             getItemStackToSocket().getType().name().replace("_", " ").toLowerCase(Locale.ROOT)));
         getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, 1.0F, 1.0F);
     }

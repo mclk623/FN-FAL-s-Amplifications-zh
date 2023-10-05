@@ -32,7 +32,7 @@ public class FnMysteryStickAltar extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_mystery_stick_altar"),
             FNAmpItems.FN_STICK_ALTAR,
             "",
-            "&f合成神秘魔棒的祭坛!"
+            "&fThis is where you craft the mysterious sticks!"
     );
 
 
@@ -98,7 +98,7 @@ public class FnMysteryStickAltar extends MultiBlockMachine {
             dispenser.getWorld().dropItem(b.getLocation(), output);
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
         }
-        p.sendMessage(Utils.colorTranslator("&d" + output.getItemMeta().getDisplayName() + " 合成成功!"));
+        p.sendMessage(Utils.colorTranslator("&d" + output.getItemMeta().getDisplayName() + " is now ready to use!"));
     }
 
     public void craftItem(Inventory inv, ItemStack[] recipe, Block b){

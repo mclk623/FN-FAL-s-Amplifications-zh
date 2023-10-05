@@ -304,8 +304,8 @@ public class ElectricJukebox extends AbstractJukeBox {
 
                     if(jukebox.getPlaying() != Material.AIR) {
                         menu.replaceExistingItem(49, new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-                            "&d&l正在播放:: " + jukebox.getPlaying().toString().replace("_", " "),
-                            "&e播放进度 : " + 
+                            "&d&lPlaying: " + jukebox.getPlaying().toString().replace("_", " "),
+                            "&eDuration : " + 
                             durationMap.get(b.getLocation()) + "/" + 
                             (DiscDurationsEnum.valueOf(jukebox.getPlaying().toString().toUpperCase()).getDurationInSec() * 2)));
                     }

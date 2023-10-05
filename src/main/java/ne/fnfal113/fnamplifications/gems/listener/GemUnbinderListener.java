@@ -31,7 +31,7 @@ public class GemUnbinderListener implements Listener {
      */
     @EventHandler
     public void onClick(InventoryClickEvent event){
-        if(event.getView().getTitle().equals(Utils.colorTranslator("&c选择一个宝石以解绑"))){
+        if(event.getView().getTitle().equals(Utils.colorTranslator("&cSelect a gem to unbind"))){
             if(event.getClickedInventory() != null && event.getClickedInventory().getHolder() instanceof Player) {
                 event.setCancelled(true);
 

@@ -32,7 +32,7 @@ public class FnMagicAltar extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_magic_altar"),
             FNAmpItems.FN_MAGIC_ALTAR,
             "",
-            "&f合成魔法物品的祭坛!"
+            "&fThis is where you craft magical items!"
     );
 
 
@@ -97,13 +97,13 @@ public class FnMagicAltar extends MultiBlockMachine {
 
             dispenser.getWorld().dropItem(b.getLocation(), output);
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
-            p.sendMessage(Utils.colorTranslator("&d合成出的物品将会被丢至附近"));
+            p.sendMessage(Utils.colorTranslator("&dCrafted item has been dropped instead"));
         }
 
         if(output.getItemMeta().hasDisplayName()){
-            p.sendMessage(Utils.colorTranslator("&d成功合成 " + output.getItemMeta().getDisplayName() + "!"));
+            p.sendMessage(Utils.colorTranslator("&dSuccessfully crafted " + output.getItemMeta().getDisplayName() + "!"));
         } else{
-            p.sendMessage(Utils.colorTranslator("&d成功合成物品!"));
+            p.sendMessage(Utils.colorTranslator("&dSuccessfully crafted item!"));
         }
     }
 

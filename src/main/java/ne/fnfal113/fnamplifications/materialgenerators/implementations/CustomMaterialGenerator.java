@@ -67,25 +67,25 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
     private final boolean dropBrokenVariantOnBreak = FNAmplifications.getInstance().getConfig().getBoolean("Enable-Mat-Gen-Broken-Drop", true);
 
     private static final CustomItemStack NOT_GENERATING = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&c未在工作",
-            "&e请在上方放置一个箱子!"
+            "&cNot Generating",
+            "&ePlace a chest above first!"
     );
 
     private static final CustomItemStack NOT_GENERATING_FULL = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&c未在工作",
-            "&e箱子已满!"
+            "&cNot Generating",
+            "&eChest inventory full!"
     );
 
     private static final CustomItemStack CONDITION = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&c目前状态: ",
-            "&e请在上方放置一个箱子!"
+            "&cCurrent Condition: ",
+            "&ePlace a chest above first!"
     );
 
     private static final CustomItemStack CONDITION_BROKEN = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&c目前状态: ",
-            "&e生成器已损坏, 请立即修复!",
-            "&e摧毁积木并制作一个新的或者，",
-            "使用修理物品来增加耐用性"
+            "&cCurrent Condition: ",
+            "&eGenerator is broken! please repair!",
+            "&eDestroy the block and craft a new one or",
+            "&eUse repair item to add durability"
     );
 
     private ItemStack item;
@@ -203,12 +203,12 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
                     int tickRate = (int) (FNAmplifications.getInstance().getConfigManager().getCustomConfig("material-gen-tickrate").getInt(this.getId() + "." + "tickrate", 1) / fastProduce);
 
                     if(invMenu.toInventory() != null && invMenu.hasViewer()) {
-                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a正在生成",
-                                "", "&b材料: " + this.materialName,
-                                "&bDefault 速率: " + "" + ChatColor.GREEN + FNAmplifications.getInstance().getConfigManager().getCustomConfig("material-gen-tickrate").getInt(this.getId() + "." + "tickrate") + " &aticks", "",
-                                "&2进度: " + progress + "/" + tickRate, "",
-                                getGeneratorFastProduce().get(pos).getMultiplier() != 0 ? "&2快速生产寿命: " +
-                                        getGeneratorFastProduce().get(pos).getCurrentLifetime() + "/" + getGeneratorFastProduce().get(pos).getMaxLifetime() : "&2快速生产: &c不活动的"
+                        invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aGenerating Material",
+                                "", "&bMaterial: " + this.materialName,
+                                "&bDefault Rate: " + "" + ChatColor.GREEN + FNAmplifications.getInstance().getConfigManager().getCustomConfig("material-gen-tickrate").getInt(this.getId() + "." + "tickrate") + " &aticks", "",
+                                "&2Progress: " + progress + "/" + tickRate, "",
+                                getGeneratorFastProduce().get(pos).getMultiplier() != 0 ? "&2Fast Produce Lifetime: " +
+                                        getGeneratorFastProduce().get(pos).getCurrentLifetime() + "/" + getGeneratorFastProduce().get(pos).getMaxLifetime() : "&2Fast Produce: &cInactive"
                         ));
 
                         if(breakOverTime) { // update ui condition info if block breaks overtime
@@ -271,21 +271,21 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
     public void handleConditionBlockInterface(BlockMenu invMenu, int generatorCondition) {
         if(generatorCondition > 0) {
             if(generatorCondition > 75 && generatorCondition <= 100) {
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&a当前状态:",
-                    "", "&e极佳" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aCurrent Condition:",
+                    "", "&eIn best condition" + " (" + generatorCondition + "%)"));
             } else if(generatorCondition > 50 && generatorCondition < 75){
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&a当前状态:",
-                        "", "&e良好" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE, "&aCurrent Condition:",
+                        "", "&eIn good condition" + " (" + generatorCondition + "%)"));
             } else if(generatorCondition > 25 && generatorCondition < 50){
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&a当前状态:",
-                        "", "&e不良" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&aCurrent Condition:",
+                        "", "&eIn bad condition" + " (" + generatorCondition + "%)"));
             } else if(generatorCondition < 25){
-                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a当前状态:",
-                        "", "&e极差" + " (" + generatorCondition + "%)"));
+                invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aCurrent Condition:",
+                        "", "&eIn worst condition" + " (" + generatorCondition + "%)"));
             }
         } else {
-            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&a当前状态:",
-                    "", "&e生成器已损坏 (0%)"));
+            invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aCurrent Condition:",
+                    "", "&eBroken generator (0%)"));
         }
     }
 

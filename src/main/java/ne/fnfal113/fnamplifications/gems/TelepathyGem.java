@@ -29,7 +29,7 @@ public class TelepathyGem extends AbstractGem implements OnBlockBreakHandler {
         if (WeaponArmorEnum.PICKAXE.isTagged(itemStackToSocket.getType()) || WeaponArmorEnum.AXES.isTagged(itemStackToSocket.getType())) {
             bindGem(slimefunGemItem, itemStackToSocket, player);
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在镐子和斧头上"));
+            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on pickaxes and axes only"));
         }
     }
 

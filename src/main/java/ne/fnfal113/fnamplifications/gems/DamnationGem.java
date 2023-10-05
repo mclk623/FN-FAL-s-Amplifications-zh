@@ -40,7 +40,7 @@ public class DamnationGem extends AbstractGem implements OnRightClickHandler {
         if ((WeaponArmorEnum.SWORDS.isTagged(itemStackToSocket.getType()) || WeaponArmorEnum.AXES.isTagged(itemStackToSocket.getType()))) {
             bindGem(slimefunGemItem, itemStackToSocket, player);
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑和斧上"));
+            player.sendMessage(Utils.colorTranslator("&eInvalid item to socket! Gem works on axes and swords only"));
         }
     }
 
@@ -50,7 +50,7 @@ public class DamnationGem extends AbstractGem implements OnRightClickHandler {
             return;
         }
         if(!hasPermissionToThrow(player)){
-            player.sendMessage(Utils.colorTranslator("&e你没有权限在此使用诅咒宝石! (需要有方块交互权限)"));
+            player.sendMessage(Utils.colorTranslator("&eYou don't have the permission to use damnation here! (Needs block interaction flag enabled)"));
             return;
         } // check if player has the permission to build on current location
 

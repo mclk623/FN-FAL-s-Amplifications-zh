@@ -81,7 +81,7 @@ public class GemListener implements Listener {
             }
 
             if(!gem.isEnabledInCurrentWorld(p.getWorld().getName())) {
-                p.sendMessage(Utils.colorTranslator(gem.getItemName() + "&6 在你当前的世界被禁用了!"));
+                p.sendMessage(Utils.colorTranslator(gem.getItemName() + "&6 is disabled in your current world!"));
 
                 continue;
             }

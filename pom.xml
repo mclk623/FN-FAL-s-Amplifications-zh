@@ -16,7 +16,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>https://github.com/buiawpkgew1</url>
+    <url>https://github.com/FN-FAL113</url>
 
     <build>
         <finalName>${project.name} v${project.version}</finalName>
@@ -129,13 +129,6 @@
             <groupId>com.github.MilkBowl</groupId>
             <artifactId>VaultAPI</artifactId>
             <version>1.7</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>net.guizhanss</groupId>
-            <artifactId>GuizhanLibPlugin</artifactId>
-            <version>1.4.0</version>
             <scope>provided</scope>
         </dependency>
 
