@@ -11,43 +11,44 @@
 
 此附加模组支持Minecraft版本1.16.x、1.17.x、1.18.x、1.19.x和1.20.x
 
-## :bulb: Features
-- **PowerXpansion** - 12 new power generators with holograms (toggle-able) which integrates with LiteXpansion's items as recipes!
-- **Solar Panels** - 8 solar panels for power hungry minds during day only
-- **Material Generators** - Clay, Warped Nylium, Dirt generator and more! 
-- **Machineries** - Electric machine downgrader, condenser, compressor, recycler and transformers
-- **Metal Scraps** - Obtain metal scrap from downgrading machines using the electric machine downgrader
-                     and use the scraps for crafting FN components that is needed in machineries
-- **Electric Block Breaker** - Can be toggled in side the machine gui to break with or without silk touch!
-- **20+ sets of Staffs** - From area of effect clouds, moving entities, and many more, check them out!
-- **11 sets of Mystery Sticks** - PVP/PVE sticks, these will consume xp levels by chance per use and best for op pvp!
-- **25+ sets of Gems** - Drag and drop these magical gems into your weapons, armors and tools for extra abilities and bonuses!
-- **Quivers** - Normal and Spectral quivers that can store more arrows saving up spaces in your inventory
-- **FN Gears** - Level up the gears to receive bonus attributes and enchants
-- **FN Hoe** - Soil/till land and harvest crops in a 5x5 square area, can also auto replant!
-- **FN Block Rotator** - Rotate or flip blocks like terracotta, stairs, doors, slabs and many more!
-- **FN Electric Jukebox** - Jukeboxes that can play or traverse music disc in the disc slots gui and can auto play after one has finished playing, ranging from 3 to 12 slots you never have to worry about manually changing each disc!
-- **FN Auto Ladder** - Automatically places a ladder with a max of 8 blocks from below and above
-- **FN Orient Pearl** - Teleport your entity while riding them (horses, etc) with this pearl!
-- **FN Throwable Torch** - Right click to throw this torch in a target location, gets auto placed if it hits a block!
-- **and more coming anytime soon!**
+## 💡 特点
+- **PowerXpansion** - 12种新的电力发生器，带有全息图（可切换），与LiteXpansion的物品整合为合成配方！
+- **太阳能电池板** - 8种只在白天产生能源的太阳能电池板，满足能量需求。
+- **材料发生器** - 黏土、扭曲地菌丝、泥土发生器等等！
+- **机械设备** - 电动机器降级器、冷凝器、压缩机、再生器和变压器。
+- **金属废料** - 使用电动机器降级器从机器降级中获得金属废料，然后将废料用于制作机械设备所需的FN组件。
+- **电动方块破坏器** - 可在机器GUI中切换以带有或不带有丝滑触摸来破坏方块！
+- **20多种法杖** - 从影响区域的云，移动实体等等，都可以查看它们！
+- **11种神秘法杖** - PVP/PVE法杖，每次使用时都会消耗经验等级，非常适合强力PVP！
+- **25多种宝石** - 将这些神奇的宝石拖放到武器、盔甲和工具中，以获得额外的能力和奖励！
+- **箭袋** - 可以存储更多箭矢，节省背包空间的普通和光谱箭袋。
+- **FN齿轮** - 升级齿轮以获得额外属性和附魔。
+- **FN锄头** - 可以在5x5的正方形区域内耕作土地并收获作物，还可以自动重新种植！
+- **FN方块旋转器** - 旋转或翻转方块，如陶瓷、楼梯、门、台阶等等！
+- **FN电动点唱机** - 可以在唱片槽GUI中播放或切换音乐唱片，并在一张唱片播放完毕后自动播放，拥有3到12个槽，您不必担心手动更换每张唱片！
+- **FN自动梯子** - 自动在下方和上方最多8个方块处放置梯子。
+- **FN定向珍珠** - 使用此珍珠在骑乘实体（如马等）时传送您的实体！
+- **FN可投掷火把** - 右键单击将此火把投向目标位置，如果击中方块，它会自动放置！
+- **还有更多功能即将推出！**
 
-## :arrow_down: Download from build page with auto updates
-### [Download Official Jar](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
-[![Build Status](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main/badge.svg)](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
+## :arrow_down: 从构建页面下载并自动更新
+### [下载官方Jar包](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main) [下载汉化Jar包](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
+[![构建状态](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main/badge.svg)](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
 
-## ⏯️ Tutorial by Boomer_1 covering this addon
-More has changed since this video was released meaning more items and content since the past few months! 
-[![Click to watch video](http://i3.ytimg.com/vi/tXuXoYmx65M/hqdefault.jpg)](https://www.youtube.com/watch?v=tXuXoYmx65M)
+[![汉化构建状态](https://builds.guizhanss.net/f/buiawpkgew1/FN-FAL-s-Amplifications-zh/main/badge.svg)](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
 
-### :computer: Everything is configurable in terms of Power Rates, Buffer, Capacity, Tick Rates, Staff max uses and more
-Most of the stuffs inside ```/plugins/FNAmplifications``` folder are configurable.
- 
-Each major category has its own configurable settings. 
+## ⏯️ 由Boomer_1制作的教程，涵盖了此附加模组
+自从发布此视频以来，已经发生了很多变化，意味着在过去的几个月里增加了更多物品和内容！
+[![点击观看视频](http://i3.ytimg.com/vi/tXuXoYmx65M/hqdefault.jpg)](https://www.youtube.com/watch?v=tXuXoYmx65M)
 
-You can change them if you think they need balancing or for several reasons 
+### :computer: 关于电力速率、缓冲、容量、刻度速率、法杖最大使用次数等方面的一切都可以配置
+```/plugins/FNAmplifications``` 文件夹中的大部分内容都可以配置。
 
-### :running: Head to my addon channel at SF Addon Community Server for feedbacks 
+每个主要类别都有自己的可配置设置。
+
+如果您认为它们需要平衡或出于其他原因需要更改，您可以更改它们。
+
+### :running: 前往SF附加模组社区服务器上的我的插件频道，提供反馈意见。
 <p>
   <a href="https://discord.gg/slimefun">
     <img src="https://discordapp.com/api/guilds/565557184348422174/widget.png?style=banner3" alt="Discord Invite"/>
@@ -57,7 +58,7 @@ You can change them if you think they need balancing or for several reasons
   </a>
 </p>
 
-## :label: Credits
+## :label: 鸣谢
 基于SMG的发电机的Waleks<br>
 这个插件使用了头部纹理，这要归功于minecraft-heads:<br>
 https://minecraft-heads.com/
