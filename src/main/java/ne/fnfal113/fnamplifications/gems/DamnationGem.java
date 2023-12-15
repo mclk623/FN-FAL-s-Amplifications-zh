@@ -45,11 +45,12 @@ public class DamnationGem extends AbstractGem implements OnRightClickHandler {
     }
 
     @Override
-    public void onRightClick(Player player){
+    public void onRightClick(Player player) {
         if(!player.isSneaking()){
             return;
         }
-        if(!hasPermissionToThrow(player)){
+        
+        if(!hasPermissionToThrow(player)) {
             player.sendMessage(Utils.colorTranslator("&e你没有权限在此使用诅咒宝石! (需要有方块交互权限)"));
             return;
         } // check if player has the permission to build on current location

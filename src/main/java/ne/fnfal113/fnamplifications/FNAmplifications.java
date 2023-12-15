@@ -3,7 +3,7 @@ package ne.fnfal113.fnamplifications;
 import javax.annotation.Nonnull;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
+import io.github.bakedlibs.dough.updater.BlobBuildUpdater;
 import ne.fnfal113.fnamplifications.config.ConfigManager;
 import ne.fnfal113.fnamplifications.gears.commands.GearCommands;
 import ne.fnfal113.fnamplifications.gears.runnables.ArmorEquipRunnable;
