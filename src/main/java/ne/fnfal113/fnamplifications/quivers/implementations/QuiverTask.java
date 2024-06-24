@@ -59,17 +59,17 @@ public class QuiverTask {
         }
 
         if(quiverItemStack.getType() == Material.LEATHER) {
-            meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "opened");
+            meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "打开");
             
             quiverItemStack.setType(getQuiver().getArrowType().getType());
             
-            Utils.setLoreByPdc(quiverItemStack, meta, "Open", "State: ", "&e", "&f", "");
+            Utils.setLoreByPdc(quiverItemStack, meta, "打开", "State: ", "&e", "&f", "");
         } else {
-            meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "closed");
+            meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "关闭");
             
             quiverItemStack.setType(Material.LEATHER);
             
-            Utils.setLoreByPdc(quiverItemStack, meta, "Closed", "State: ", "&e", "&f", "");
+            Utils.setLoreByPdc(quiverItemStack, meta, "关闭", "State: ", "&e", "&f", "");
         }
     }
 
@@ -97,9 +97,9 @@ public class QuiverTask {
 
             meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "closed");
             
-            player.sendMessage(ChatColor.GOLD + getQuiver().getItemName() + " has been emptied! No more arrows stored");
+            player.sendMessage(ChatColor.GOLD + getQuiver().getItemName() + " 已清空！不再储存箭矢");
             
-            Utils.setLoreByPdc(quiverItemStack, meta, "Closed (empty)", "State: ", "&e", "&f", "");
+            Utils.setLoreByPdc(quiverItemStack, meta, "关闭（空）", "State: ", "&e", "&f", "");
         }
 
         Utils.setLoreByPdc(quiverItemStack, meta, String.valueOf(newStoredArrowAcount), "Arrows: ", "&e", "&f", " left");
@@ -123,7 +123,7 @@ public class QuiverTask {
         } // prevent quiver in a open state (arrow type) from being deposited 
         
         if(quiverItemStack.getAmount() != 1) {
-            player.sendMessage(Utils.colorTranslator("&eCannot use quiver! Unstack the quivers first before using"));
+            player.sendMessage(Utils.colorTranslator("&e不能使用箭筒！使用前请先卸下箭筒"));
             
             return;
         }

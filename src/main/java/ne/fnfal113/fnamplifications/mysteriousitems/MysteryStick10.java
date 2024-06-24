@@ -88,10 +88,10 @@ public class MysteryStick10 extends AbstractStick {
                 player.setHealth(player.getHealth() + 2);
                 victim.setHealth(victim.getHealth() < 2 ? victim.getHealth() + (victim.getHealth() * (-1)) : victim.getHealth() - 2);
             } else {
-                player.sendMessage(ChatColor.RED + "Make sure your hearts are not full for Lifesteal to proc!");
+                player.sendMessage(ChatColor.RED + "确保你的红心没有满，生命值才能持续！");
             }
 
-            player.sendMessage(Utils.colorTranslator("&cMystery effects was applied to your enemy"));
+            player.sendMessage(Utils.colorTranslator("&c敌人受到神秘效果影响"));
         }
     }
 }

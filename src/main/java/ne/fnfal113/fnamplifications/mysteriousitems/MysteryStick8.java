@@ -46,12 +46,12 @@ public class MysteryStick8 extends AbstractStick {
 
     @Override
     public String weaponLore() {
-        return ChatColor.GOLD + "I'm out of words using this";
+        return ChatColor.GOLD + "我已经无话可说了";
     }
 
     @Override
     public String stickLore() {
-        return ChatColor.WHITE + "This stick is kinda heavy";
+        return ChatColor.WHITE + "这根棍子有点重";
     }
 
     @Override
@@ -79,7 +79,7 @@ public class MysteryStick8 extends AbstractStick {
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 60, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 40, 0, false, false, false));
             
-            player.sendMessage(Utils.colorTranslator("&cMystery effects was applied to your enemy"));
+            player.sendMessage(Utils.colorTranslator("&c敌人受到神秘效果影响"));
         }
 
     }

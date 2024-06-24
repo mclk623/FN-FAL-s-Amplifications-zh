@@ -47,12 +47,12 @@ public class MysteryStick11 extends AbstractStick {
 
     @Override
     public String weaponLore() {
-        return ChatColor.GOLD + "Behind your enemies awaits danger";
+        return ChatColor.GOLD + "敌人背后是危险";
     }
 
     @Override
     public String stickLore() {
-        return ChatColor.WHITE + "The stick of the nords";
+        return ChatColor.WHITE + "诺德人的棍子";
     }
 
     @Override
@@ -85,9 +85,9 @@ public class MysteryStick11 extends AbstractStick {
             loc.setYaw(loc.getYaw() + 180);
             
             victim.teleport(loc);
-            victim.sendMessage(ChatColor.DARK_RED + "You have been disoriented! your opponent's mysterious stick is deadly");
+            victim.sendMessage(ChatColor.DARK_RED + "您已迷失方向！对手的神秘棍棒是致命的");
             
-            player.sendMessage(Utils.colorTranslator("&cMystery effects was applied to your enemy"));
+            player.sendMessage(Utils.colorTranslator("&c敌人受到神秘效果影响"));
         }
 
     }
