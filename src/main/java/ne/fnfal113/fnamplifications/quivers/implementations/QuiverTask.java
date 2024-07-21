@@ -1,7 +1,6 @@
 package ne.fnfal113.fnamplifications.quivers.implementations;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import lombok.Getter;
 import ne.fnfal113.fnamplifications.quivers.abstracts.AbstractQuiver;
 import ne.fnfal113.fnamplifications.utils.Utils;
@@ -26,174 +25,182 @@ import java.util.concurrent.ThreadLocalRandom;
 public class QuiverTask {
 
     @Getter
-    private final NamespacedKey storageKey;
-    @Getter
-    private final NamespacedKey storageKey2;
-    @Getter
-    private final NamespacedKey storageKey3;
-    @Getter
-    private final int quiverSize;
-    @Getter
-    private final ItemStack arrowType;
-    @Getter
-    private final SlimefunItemStack sfItemStack;
+    private final AbstractQuiver quiver;
 
-    public QuiverTask(NamespacedKey key1, NamespacedKey key2, NamespacedKey key3, int quiverSize, ItemStack arrow, SlimefunItemStack slimefunItemStack){
-        this.storageKey = key1;
-        this.storageKey2 = key2;
-        this.storageKey3 = key3;
-        this.quiverSize = quiverSize;
-        this.arrowType = arrow;
-        this.sfItemStack = slimefunItemStack;
+    public QuiverTask(AbstractQuiver quiver) {
+        this.quiver = quiver;
     }
 
     @Nullable
-    public SlimefunItem getSfItem(ItemStack itemStack){
+    public SlimefunItem getSfItem(ItemStack itemStack) {
         return SlimefunItem.getByItem(itemStack);
     }
 
-    public int getArrows(PersistentDataContainer arrowPdc, NamespacedKey key){
-        return arrowPdc.getOrDefault(key, PersistentDataType.INTEGER, 0);
+    public int getArrows(PersistentDataContainer quiverPdc, NamespacedKey key) {
+        return quiverPdc.getOrDefault(key, PersistentDataType.INTEGER, 0);
     }
 
-    public boolean isQuiver(@Nullable SlimefunItem item){
-        return item instanceof AbstractQuiver;
+    public boolean isQuiver(@Nullable SlimefunItem sfItem) {
+        return sfItem instanceof AbstractQuiver;
     }
 
     /**
      *
-     * @param itemState the itemstack with the state of closed and open
-     * @param meta the meta of the quiver with the current amount as pdc
-     * @param arrowsCheck the pdc instance where current arrow value is checked
+     * @param quiverItemStack the quiver itemstack
+     * @param meta the meta of the quiver
      */
-    public void changeState(ItemStack itemState, ItemMeta meta, PersistentDataContainer arrowsCheck){
-        int arrowsCheckPDC = getArrows(arrowsCheck, getStorageKey());
-        boolean pdcCheck = arrowsCheckPDC == 0;
-        if(pdcCheck){
+    public void changeState(ItemStack quiverItemStack, ItemMeta meta) {     
+        PersistentDataContainer quiverPdc = meta.getPersistentDataContainer();
+
+        int arrowCount = getArrows(quiverPdc, getQuiver().getStoredArrowsKey());
+
+        if(arrowCount <= 0) {
             return;
         }
 
-        if(itemState.getType() == Material.LEATHER) {
-            meta.getPersistentDataContainer().set(getStorageKey3(), PersistentDataType.STRING, "opened");
-            itemState.setType(getArrowType().getType());
-            Utils.setLoreByPdc(itemState, meta, "打开", "状态: " ,"&e", "&f", " 箭袋");
+        if(quiverItemStack.getType() == Material.LEATHER) {
+            meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "opened");
+            
+            quiverItemStack.setType(getQuiver().getArrowType().getType());
+            
+            Utils.setLoreByPdc(quiverItemStack, meta, "打开", "状态: ", "&e", "&f", "");
         } else {
-            meta.getPersistentDataContainer().set(getStorageKey3(), PersistentDataType.STRING, "closed");
-            itemState.setType(Material.LEATHER);
-            Utils.setLoreByPdc(itemState, meta, "关闭", "状态: " ,"&e", "&f", " 箭袋");
+            meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "closed");
+            
+            quiverItemStack.setType(Material.LEATHER);
+            
+            Utils.setLoreByPdc(quiverItemStack, meta, "关闭", "状态: ", "&e", "&f", "");
         }
     }
 
     /**
      *
-     * @param itemState the itemstack with the state of closed and open
-     * @param meta the meta of the quiver with the current amount as pdc
+     * @param quiverItemStack the quiver itemstack
+     * @param meta the meta of the quiver
      * @param player the player who owns the quiver
-     * @param arrowsCheck the pdc instance where current arrow value is checked
      */
-    public void withdrawArrows(ItemStack itemState, ItemMeta meta, Player player, PersistentDataContainer arrowsCheck){
-        int arrowsCheckPDC = getArrows(arrowsCheck, getStorageKey());
-        boolean pdcCheck = arrowsCheckPDC == 0;
-        if(pdcCheck){
+    public void withdrawArrows(ItemStack quiverItemStack, ItemMeta meta, Player player) {
+        PersistentDataContainer quiverPdc = meta.getPersistentDataContainer();
+
+        int currentStoredArrowCount = getArrows(quiverPdc, getQuiver().getStoredArrowsKey()); 
+        
+        if(currentStoredArrowCount <= 0) {
             return;
         }
 
-        int amount = arrowsCheckPDC - 1;
-        meta.getPersistentDataContainer().set(getStorageKey(), PersistentDataType.INTEGER, amount);
-        if(amount == 0){
-            if(meta.getPersistentDataContainer().has(getStorageKey3(), PersistentDataType.STRING)) {
-                meta.getPersistentDataContainer().remove(getStorageKey3());
-            }
-            itemState.setType(Material.LEATHER);
-            player.sendMessage(ChatColor.GOLD + getSfItemStack().getDisplayName() + " 现在已清空");
-            Utils.setLoreByPdc(itemState, meta, "关闭 (无箭矢)", "状态: " ,"&e", "&f", "");
+        int newStoredArrowAcount = currentStoredArrowCount - 1;
+        
+        meta.getPersistentDataContainer().set(getQuiver().getStoredArrowsKey(), PersistentDataType.INTEGER, newStoredArrowAcount);
+        
+        if(newStoredArrowAcount == 0) { 
+            quiverItemStack.setType(Material.LEATHER);
+
+            meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "关闭");
+            
+            player.sendMessage(ChatColor.GOLD + getQuiver().getItemName() + " 已清空！不再存储箭矢。");
+            
+            Utils.setLoreByPdc(quiverItemStack, meta, "关闭 (无箭矢)", "状态: ", "&e", "&f", "");
         }
 
-        Utils.setLoreByPdc(itemState, meta, String.valueOf(amount), "箭矢剩余: " ,"&e", "&f", "");
+        Utils.setLoreByPdc(itemState, meta, String.valueOf(amount), "箭矢剩余: " ,"&e", "&f", " left");
         player.getInventory().addItem(getArrowType().clone());
     }
 
-    public void depositArrows(ItemStack item, ItemMeta meta, PersistentDataContainer arrowsCheck, Player player) {
-        ItemStack arrow = player.getInventory().getItemInMainHand();
-        int arrowsCheckPDC = getArrows(arrowsCheck, getStorageKey());
+    public void depositArrows(ItemStack quiverItemStack, ItemMeta meta, Player player) {
+        ItemStack arrowItemStack = player.getInventory().getItemInMainHand();
+        
+        PersistentDataContainer quiverPdc = meta.getPersistentDataContainer();
+        
+        int currentStoredArrowCount = getArrows(quiverPdc, getQuiver().getStoredArrowsKey());
 
-        if(arrow.getType() != getArrowType().getType()){
+        if(arrowItemStack.getType() != getQuiver().getArrowType().getType()) {
             return;
         }
-        if(isQuiver(getSfItem(arrow))){
+        
+        if(isQuiver(getSfItem(arrowItemStack))) { 
+            return;
+        } // prevent quiver in a open state (arrow type) from being deposited 
+        
+        if(quiverItemStack.getAmount() != 1) {
+            player.sendMessage(Utils.colorTranslator("&e无法使用箭筒！使用前请先卸下箭筒。"));
+            
             return;
         }
-        if(item.getAmount() != 1){
-            player.sendMessage(Utils.colorTranslator("&e首次使用箭袋时不能堆叠箭袋"));
-            return;
-        }
-        int increment = arrowsCheckPDC + 1;
+        
+        int newStoredArrowCount = currentStoredArrowCount + 1;
 
-        if (increment != getQuiverSize() + 1) {
-            meta.getPersistentDataContainer().set(getStorageKey(), PersistentDataType.INTEGER, increment);
-            if(increment <= 2) {
-                int random = ThreadLocalRandom.current().nextInt(1, 999999 + 1);
-                meta.getPersistentDataContainer().set(getStorageKey2(), PersistentDataType.INTEGER, random);
-            } // pdc to make item un-stackable and unique
-            item.setType(getArrowType().getType());
-            arrow.setAmount(arrow.getAmount() - 1);
-            Utils.setLoreByPdc(item, meta, String.valueOf(increment), "箭矢剩余: " ,"&e", "&f", "");
-            Utils.setLoreByPdc(item, meta, "打开", "状态: " ,"&e", "&f", " 箭袋");
-            if(increment == getQuiverSize()){
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', getSfItemStack().getDisplayName() + " is full!"));
-            }
+        // update stored arrow count
+        if(newStoredArrowCount <= getQuiver().getQuiverSize()) { 
+            quiverPdc.set(getQuiver().getStoredArrowsKey(), PersistentDataType.INTEGER, newStoredArrowCount);
+            
+            if(!quiverPdc.has(getQuiver().getRandomIdKey(), PersistentDataType.INTEGER)) {
+                int random = ThreadLocalRandom.current().nextInt(1, 1000000);
+                
+                quiverPdc.set(getQuiver().getRandomIdKey(), PersistentDataType.INTEGER, random);
+            
+            } // pdc to make quiver unique and unstackable
 
+            quiverItemStack.setType(getQuiver().getArrowType().getType());
+            arrowItemStack.setAmount(arrowItemStack.getAmount() - 1);
+            
+            Utils.setLoreByPdc(quiverItemStack, meta, String.valueOf(newStoredArrowCount), "箭矢剩余: " ,"&e", "&f", " left");
+            Utils.setLoreByPdc(quiverItemStack, meta, "打开", "状态: ", "&e", "&f", "");
+        } else {
+            player.sendMessage(ChatColor.translateAlternateColorCodes('&', getQuiver().getItemName() + " 已满！无法存入箭矢。"));
         }
 
     }
 
-    public void bowShoot(EntityShootBowEvent event, ItemStack itemStack, boolean checkInfinity){
-        if(itemStack == null){
-            return;
-        }
-
+    public void bowShoot(EntityShootBowEvent event, ItemStack quiverItemStack, boolean isNormalArrow) {
         Player player = (Player) event.getEntity();
 
         event.setCancelled(true);
+        
+        // emulate bow shoot due to event cancellation
         float bowForce = event.getForce();
-        if(itemStack.getType() == Material.ARROW) {
+
+        if(quiverItemStack.getType() == Material.ARROW) {
             Arrow arrow = player.launchProjectile(Arrow.class);
+
             arrow.setVelocity(arrow.getVelocity().multiply(bowForce));
-        }
-        if(itemStack.getType() == Material.SPECTRAL_ARROW) {
+        } else if(quiverItemStack.getType() == Material.SPECTRAL_ARROW) {
             SpectralArrow spectralArrow = player.launchProjectile(SpectralArrow.class);
+
             spectralArrow.setVelocity(spectralArrow.getVelocity().multiply(bowForce));
         }
 
         player.getWorld().playSound(player.getLocation(), Sound.ENTITY_ARROW_SHOOT, 1.0F, 1.0F);
         player.updateInventory();
-        ItemMeta meta = itemStack.getItemMeta();
+
+        ItemMeta meta = quiverItemStack.getItemMeta();
         ItemMeta bowMeta = player.getInventory().getItemInMainHand().getItemMeta();
 
-        if(meta == null || bowMeta == null){
+        if(meta == null || bowMeta == null) {
             return;
         }
 
-        PersistentDataContainer arrow_Left = meta.getPersistentDataContainer();
-        int arrows = getArrows(arrow_Left, getStorageKey());
-        int decrement = arrows - 1;
+        PersistentDataContainer quiverPdc = meta.getPersistentDataContainer();
+        
+        int currentStoredArrowCount = getArrows(quiverPdc, getQuiver().getStoredArrowsKey());
+        int newStoredArrowCount = isNormalArrow && bowMeta.hasEnchant(Enchantment.ARROW_INFINITE) ?
+            currentStoredArrowCount : currentStoredArrowCount - 1;
 
-        if(checkInfinity && bowMeta.hasEnchant(Enchantment.ARROW_INFINITE)) {
-            decrement = arrows;
-        }
+        if(newStoredArrowCount >= 0) { // update quiver lore and pdc
+            quiverPdc.set(getQuiver().getStoredArrowsKey(), PersistentDataType.INTEGER, newStoredArrowCount);
 
-        if (decrement >= 0) { // if arrow amount is decremented and greater than 0 then update lore
-            arrow_Left.set(getStorageKey(), PersistentDataType.INTEGER, decrement);
+            Utils.setLoreByPdc(quiverItemStack, meta, String.valueOf(newStoredArrowCount), "箭矢: ", "&e", "&f", " left");
 
-            if (decrement == 0) {
-                if(arrow_Left.has(getStorageKey3(), PersistentDataType.STRING)) {
-                    meta.getPersistentDataContainer().remove(getStorageKey3());
-                }
-                itemStack.setType(Material.LEATHER);
-                Utils.setLoreByPdc(itemStack, meta, "Closed (No arrows)", "状态: " ,"&e", "&f", "");
+            if(newStoredArrowCount == 0) {              
+                quiverItemStack.setType(Material.LEATHER);
+
+                meta.getPersistentDataContainer().set(getQuiver().getStateKey(), PersistentDataType.STRING, "closed");
+
+                player.sendMessage(ChatColor.GOLD + getQuiver().getItemName() + "已清空！不再存储箭矢。");
+                
+                Utils.setLoreByPdc(quiverItemStack, meta, "关闭（空）", "状态: ", "&e", "&f", "");
             }
-            Utils.setLoreByPdc(itemStack, meta, String.valueOf(decrement), "箭矢剩余: " ,"&e", "&f", "");
         }
+
     }
 
 }

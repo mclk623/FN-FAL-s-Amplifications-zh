@@ -39,13 +39,15 @@ public class BaneGem extends AbstractGem implements OnDamageHandler, GemUpgrade 
 
     @Override
     public void onDamage(EntityDamageByEntityEvent event, ItemStack itemStack){
-        if(!(event.getEntity() instanceof LivingEntity)){
+        if(!(event.getEntity() instanceof LivingEntity)) {
             return;
         }
-        if(!(event.getDamager() instanceof Player)){
+
+        if(!(event.getDamager() instanceof Player)) {
             return;
         }
-        if(event.isCancelled()){
+
+        if(event.isCancelled()) {
             return;
         }
 
@@ -55,10 +57,10 @@ public class BaneGem extends AbstractGem implements OnDamageHandler, GemUpgrade 
 
         int tier = getTier(itemStack, this.getId());
 
-        if(ThreadLocalRandom.current().nextInt(100) < getChance() / tier){
+        if(ThreadLocalRandom.current().nextInt(100) < getChance() / tier) {
             int level = Math.abs(tier - 4);
 
-            livingEntity.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 80, level));
+            livingEntity.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 120, level));
             sendGemMessage(player, this.getItemName());
         }
 

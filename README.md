@@ -31,9 +31,8 @@
 - **FN可投掷火把** - 右键单击将此火把投向目标位置，如果击中方块，它会自动放置！
 - **还有更多功能即将推出！**
 
-## :arrow_down: 从构建页面下载并自动更新
-### [下载官方Jar包](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main) [下载汉化Jar包](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
-[![构建状态](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main/badge.svg)](https://thebusybiscuit.github.io/builds/FN-FAL113/FN-FAL-s-Amplifications/main)
+## :arrow_down: Download from build page with auto updates
+### [Download Official Jar](https://blob.build/project/FNAmplifications)
 
 [![汉化构建状态](https://builds.guizhanss.net/f/buiawpkgew1/FN-FAL-s-Amplifications-zh/main/badge.svg)](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
 
@@ -41,14 +40,14 @@
 自从发布此视频以来，已经发生了很多变化，意味着在过去的几个月里增加了更多物品和内容！
 [![点击观看视频](http://i3.ytimg.com/vi/tXuXoYmx65M/hqdefault.jpg)](https://www.youtube.com/watch?v=tXuXoYmx65M)
 
-### :computer: 关于电力速率、缓冲、容量、刻度速率、法杖最大使用次数等方面的一切都可以配置
-```/plugins/FNAmplifications``` 文件夹中的大部分内容都可以配置。
+### :computer: Everything is configurable in terms of Power Rates, Buffer, Capacity, Tick Rates, Staff max uses and more
+Most of the stuffs inside ```/plugins/FNAmplifications``` folder are configurable.
+ 
+Each major category has its own configurable settings. 
 
-每个主要类别都有自己的可配置设置。
+You can change them if you think they need balancing or for several reasons 
 
-如果您认为它们需要平衡或出于其他原因需要更改，您可以更改它们。
-
-### :running: 前往SF附加模组社区服务器上的我的插件频道，提供反馈意见。
+### :running: Head over to SF Addon Community Server for feedbacks 
 <p>
   <a href="https://discord.gg/slimefun">
     <img src="https://discordapp.com/api/guilds/565557184348422174/widget.png?style=banner3" alt="Discord Invite"/>
@@ -58,7 +57,14 @@
   </a>
 </p>
 
-## :label: 鸣谢
-基于SMG的发电机的Waleks<br>
-这个插件使用了头部纹理，这要归功于minecraft-heads:<br>
-https://minecraft-heads.com/
+## 💖 Support the Project/Dev
+I develop stuff for free with dedication and hard work. Sharing this project with fellow minecraft gamers/server owners or giving it a star is a huge sign of appreciation!</br>
+a donation button (currently using parent's paypal due to my pending account requirements).<br/>
+<a href="https://www.paypal.com/paypalme/ameliaOrbeta" target=_blank>
+  <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="40%" />
+</a>
+
+## :label: Credits
+Waleks for SMG based generators<br>
+Minecraft-Heads for the head textures used by the addon:<br>
+[Visit MC Heads Site](https://minecraft-heads.com/)

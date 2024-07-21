@@ -38,22 +38,23 @@ public class DeberserkGem extends AbstractGem implements OnDamageHandler, GemUpg
 
     @Override
     public void onDamage(EntityDamageByEntityEvent event, ItemStack itemStack) {
-        if(!(event.getDamager() instanceof LivingEntity)){
+        if(!(event.getDamager() instanceof LivingEntity)) {
             return;
         }
-        if(event.isCancelled()){
+
+        if(event.isCancelled()) {
             return;
         }
 
         LivingEntity damager = (LivingEntity) event.getDamager();
 
-        if(damager.getEquipment() == null){
+        if(damager.getEquipment() == null) {
             return;
         }
 
-        if(WeaponArmorEnum.AXES.isTagged(damager.getEquipment().getItemInMainHand().getType())){
-            if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())){
-                event.setDamage(event.getDamage() * 0.75);
+        if(WeaponArmorEnum.AXES.isTagged(damager.getEquipment().getItemInMainHand().getType())) {
+            if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())) {
+                event.setDamage(event.getDamage() * 0.6);
 
                 if(event.getEntity() instanceof Player) {
                     sendGemMessage((Player) event.getEntity(), this.getItemName());

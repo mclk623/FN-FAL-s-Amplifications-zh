@@ -37,13 +37,15 @@ public class DisarmGem extends AbstractGem implements OnDamageHandler, GemUpgrad
 
     @Override
     public void onDamage(EntityDamageByEntityEvent event, ItemStack itemStack) {
-        if(!(event.getEntity() instanceof Player)){
+        if(!(event.getEntity() instanceof Player)) {
             return;
         }
-        if(!(event.getDamager() instanceof Player)){
+        
+        if(!(event.getDamager() instanceof Player)) {
             return;
         }
-        if(event.isCancelled()){
+
+        if(event.isCancelled()) {
             return;
         }
 
@@ -56,11 +58,13 @@ public class DisarmGem extends AbstractGem implements OnDamageHandler, GemUpgrad
                 int slot = victim.getInventory().firstEmpty(); // get first empty slot from left to right
 
                 victim.getInventory().setItemInMainHand(null);
+                
                 if (slot != -1) {
                     victim.getInventory().setItem(slot, itemInMainHand.clone());
                 } else {
                     victim.getWorld().dropItem(victim.getLocation(), itemInMainHand.clone());
                 }
+
                 sendGemMessage(damager, this.getItemName());
             }
         }

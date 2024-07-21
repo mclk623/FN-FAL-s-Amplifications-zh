@@ -38,12 +38,14 @@ public class AvengeGem extends AbstractGem implements OnPlayerDeathHandler, GemU
 
     @Override
     public void onPlayerDeath(PlayerDeathEvent event, ItemStack itemStack) {
-        if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())){
+        if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())) {
             Player player = event.getEntity();
             Location loc = player.getLocation();
             Creeper creeper = player.getWorld().spawn(loc.clone(), Creeper.class);
+            
             creeper.setPowered(true); // big boomer creeper
-            creeper.setExplosionRadius(3);
+            creeper.setExplosionRadius(4);
+            
             sendGemMessage(event.getEntity(), this.getItemName());
         }
     }

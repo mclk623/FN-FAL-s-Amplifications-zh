@@ -25,39 +25,41 @@ public class TelepathyGem extends AbstractGem implements OnBlockBreakHandler {
     }
 
     @Override
-    public void onDrag(Player player, SlimefunItem slimefunGemItem, ItemStack gemItem, ItemStack itemStackToSocket){
-        if (WeaponArmorEnum.PICKAXE.isTagged(itemStackToSocket.getType()) || WeaponArmorEnum.AXES.isTagged(itemStackToSocket.getType())) {
+    public void onDrag(Player player, SlimefunItem slimefunGemItem, ItemStack gemItem, ItemStack itemStackToSocket) {
+        if (WeaponArmorEnum.PICKAXE.isTagged(itemStackToSocket.getType()) || WeaponArmorEnum.HOES.isTagged(itemStackToSocket.getType())
+            || WeaponArmorEnum.SHOVELS.isTagged(itemStackToSocket.getType()) || WeaponArmorEnum.AXES.isTagged(itemStackToSocket.getType())
+        ) {
             bindGem(slimefunGemItem, itemStackToSocket, player);
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在镐子和斧头上"));
+            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在镐子和锄和斧头上"));
         }
     }
 
     @Override
-    public void onBlockBreak(BlockBreakEvent event, Player player, ItemStack itemStack){
-        if (event.isCancelled()){
+    public void onBlockBreak(BlockBreakEvent event, Player player, ItemStack itemStack) {
+        if (event.isCancelled()) {
             return;
         }
 
         Block block = event.getBlock();
 
-        if(block.getType() == Material.LADDER){ // dupe fix against auto ladder
+        if(block.getType() == Material.LADDER) { // dupe fix against auto ladder
             return;
         }
 
         Optional<SlimefunItem> sfItem = Optional.ofNullable(BlockStorage.check(block));
 
-        if(sfItem.isPresent()){ // drop sf blocks instead
+        if(sfItem.isPresent()) { // drop sf blocks instead
             return;
         }
 
         Collection<ItemStack> drops = block.getDrops(player.getInventory().getItemInMainHand());
 
-        if(drops.isEmpty()){
+        if(drops.isEmpty()) {
             return;
         } // if collection is empty don't do anything further
 
-        if(player.getInventory().firstEmpty() == -1){
+        if(player.getInventory().firstEmpty() == -1) {
             return;
         } // if player inventory is full drop item instead
 

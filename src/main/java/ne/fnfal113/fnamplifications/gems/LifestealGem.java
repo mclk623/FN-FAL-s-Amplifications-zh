@@ -41,13 +41,15 @@ public class LifestealGem extends AbstractGem implements OnDamageHandler, GemUpg
 
     @Override
     public void onDamage(EntityDamageByEntityEvent event, ItemStack itemStack){
-        if(event.isCancelled()){
+        if(event.isCancelled()) {
             return;
         }
-        if(!(event.getEntity() instanceof LivingEntity)){
+
+        if(!(event.getEntity() instanceof LivingEntity)) {
             return;
         }
-        if(!(event.getDamager() instanceof Player)){
+
+        if(!(event.getDamager() instanceof Player)) {
             return;
         }
 
@@ -55,13 +57,14 @@ public class LifestealGem extends AbstractGem implements OnDamageHandler, GemUpg
 
         LivingEntity livingEntity = (LivingEntity) event.getEntity();
 
-        if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())){
+        if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())) {
             Bukkit.getScheduler().runTaskLater(FNAmplifications.getInstance(), () -> { // delay getting the actual hp of the damager
                 int playerDefaultHealth = (int) Objects.requireNonNull(player.getAttribute(Attribute.GENERIC_MAX_HEALTH)).getValue();
-                if (player.getHealth() <= playerDefaultHealth - 2 && !livingEntity.isDead()) {
+                
+                if (player.getHealth() <= playerDefaultHealth - 2 && livingEntity.getHealth() > 2 && !livingEntity.isDead()) {
                     player.setHealth(player.getHealth() + 2);
-                    livingEntity.setHealth(livingEntity.getHealth() < 2 ? livingEntity.getHealth() + (livingEntity.getHealth() * (-1)) :
-                            livingEntity.getHealth() - 2);
+                    livingEntity.setHealth(livingEntity.getHealth() - 2);
+                    
                     sendGemMessage(player, this.getItemName());
                 }
             }, 3L);

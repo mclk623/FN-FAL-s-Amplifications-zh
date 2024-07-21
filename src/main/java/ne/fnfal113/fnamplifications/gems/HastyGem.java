@@ -43,15 +43,18 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler, GemUpg
 
     @Override
     public void onBlockBreak(BlockBreakEvent event, Player player, ItemStack itemStack){
-        if(event.isCancelled()){
+        if(event.isCancelled()) {
             return;
         }
+        
         Block block = event.getBlock();
 
         if(SlimefunTag.ORES.isTagged(block.getType()) || SlimefunTag.STONE_VARIANTS.isTagged(block.getType())) {
             if (ThreadLocalRandom.current().nextInt(100) < (getChance() / getTier(itemStack, this.getId()))) {
-                PotionEffect potionEffect = new PotionEffect(PotionEffectType.FAST_DIGGING, 80, 2, true, false, false);
+                PotionEffect potionEffect = new PotionEffect(PotionEffectType.FAST_DIGGING, 120, 2, true, false, false);
+                
                 player.addPotionEffect(potionEffect);
+                
                 player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
                         TextComponent.fromLegacyText(Utils.colorTranslator("&e你的动作变快了!")));
             }
