@@ -102,8 +102,9 @@ public class QuiverTask {
             Utils.setLoreByPdc(quiverItemStack, meta, "关闭 (无箭矢)", "状态: ", "&e", "&f", "");
         }
 
-        Utils.setLoreByPdc(itemState, meta, String.valueOf(amount), "箭矢剩余: " ,"&e", "&f", " left");
-        player.getInventory().addItem(getArrowType().clone());
+        Utils.setLoreByPdc(quiverItemStack, meta, String.valueOf(newStoredArrowAcount), "箭矢剩余: ", "&e", "&f", " left");
+        
+        player.getInventory().addItem(getQuiver().getArrowType().clone());
     }
 
     public void depositArrows(ItemStack quiverItemStack, ItemMeta meta, Player player) {
