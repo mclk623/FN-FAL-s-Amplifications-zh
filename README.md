@@ -31,23 +31,20 @@
 - **FN可投掷火把** - 右键单击将此火把投向目标位置，如果击中方块，它会自动放置！
 - **还有更多功能即将推出！**
 
-## :arrow_down: Download from build page with auto updates
+## :arrow_down: 下载
 ### [Download Official Jar](https://blob.build/project/FNAmplifications)
 
 [![汉化构建状态](https://builds.guizhanss.net/f/buiawpkgew1/FN-FAL-s-Amplifications-zh/main/badge.svg)](https://builds.guizhanss.net/buiawpkgew1/FN-FAL-s-Amplifications-zh/main)
 
-## ⏯️ 由Boomer_1制作的教程，涵盖了此附加模组
+## ⏯️ 教程
 自从发布此视频以来，已经发生了很多变化，意味着在过去的几个月里增加了更多物品和内容！
 [![点击观看视频](http://i3.ytimg.com/vi/tXuXoYmx65M/hqdefault.jpg)](https://www.youtube.com/watch?v=tXuXoYmx65M)
 
-### :computer: Everything is configurable in terms of Power Rates, Buffer, Capacity, Tick Rates, Staff max uses and more
+### :computer: 配置
 Most of the stuffs inside ```/plugins/FNAmplifications``` folder are configurable.
- 
-Each major category has its own configurable settings. 
+Each major category has its own configurable settings. You can change them if you think they need balancing or for several reasons.
 
-You can change them if you think they need balancing or for several reasons 
-
-### :running: Head over to SF Addon Community Server for feedbacks 
+### :running: 反馈
 <p>
   <a href="https://discord.gg/slimefun">
     <img src="https://discordapp.com/api/guilds/565557184348422174/widget.png?style=banner3" alt="Discord Invite"/>
@@ -57,14 +54,13 @@ You can change them if you think they need balancing or for several reasons
   </a>
 </p>
 
-## 💖 Support the Project/Dev
+## 💖 支持项目/开发者
 I develop stuff for free with dedication and hard work. Sharing this project with fellow minecraft gamers/server owners or giving it a star is a huge sign of appreciation!</br>
-a donation button (currently using parent's paypal due to my pending account requirements).<br/>
 <a href="https://www.paypal.com/paypalme/ameliaOrbeta" target=_blank>
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="40%" />
 </a>
 
-## :label: Credits
+## :label: 致谢
 Waleks for SMG based generators<br>
 Minecraft-Heads for the head textures used by the addon:<br>
 [Visit MC Heads Site](https://minecraft-heads.com/)
