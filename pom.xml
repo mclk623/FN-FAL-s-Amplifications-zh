@@ -6,7 +6,7 @@
 
     <groupId>ne.fnfal113</groupId>
     <artifactId>FNAmplifications</artifactId>
-    <version>Unoffical-4.2.1</version>
+    <version>Unofficial-4.2.1</version>
     <packaging>jar</packaging>
 
     <name>FNAmplifications</name>
@@ -134,52 +134,50 @@
             </resource>
         </resources>
 
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.13.0</version>
-                    <configuration>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-shade-plugin</artifactId>
-                    <version>3.6.0</version>
-                    <executions>
-                        <execution>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>shade</goal>
-                            </goals>
-                            <configuration>
-                                <createDependencyReducedPom>false</createDependencyReducedPom>
-                                <minimizeJar>true</minimizeJar>
-                            </configuration>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <relocations>
-                            <relocation>
-                                <pattern>org.bstats</pattern>
-                                <shadedPattern>ne.fnfal113.fnamplifications.bstats</shadedPattern>
-                            </relocation>
-                            <relocation>
-                                <pattern>io.github.bakedlibs.dough.updater</pattern>
-                                <shadedPattern>ne.fnfal113.fnamplifications.dough.updater</shadedPattern>
-                            </relocation>
-                            <relocation>
-                                <pattern>io.github.bakedlibs.dough.versions</pattern>
-                                <shadedPattern>ne.fnfal113.fnamplifications.dough.versions</shadedPattern>
-                            </relocation>
-                        </relocations>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.6.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <minimizeJar>true</minimizeJar>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <relocations>
+                        <relocation>
+                            <pattern>org.bstats</pattern>
+                            <shadedPattern>ne.fnfal113.fnamplifications.bstats</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>io.github.bakedlibs.dough.updater</pattern>
+                            <shadedPattern>ne.fnfal113.fnamplifications.dough.updater</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>io.github.bakedlibs.dough.versions</pattern>
+                            <shadedPattern>ne.fnfal113.fnamplifications.dough.versions</shadedPattern>
+                        </relocation>
+                    </relocations>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <repositories>
