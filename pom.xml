@@ -30,7 +30,7 @@
             <dependency>
                 <groupId>com.github.Slimefun</groupId>
                 <artifactId>Slimefun4</artifactId>
-                <version>4bcce20249</version>
+                <version>RC-37</version>
             </dependency>
             <dependency>
                 <groupId>com.github.baked-libs.dough</groupId>
