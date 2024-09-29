@@ -1,8 +1,10 @@
 package ne.fnfal113.fnamplifications.gears.commands;
 
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+
 import ne.fnfal113.fnamplifications.gears.abstracts.AbstractGears;
 import ne.fnfal113.fnamplifications.utils.Utils;
+
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -16,7 +18,6 @@ import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("ConstantConditions")
 public class GearCommands implements TabExecutor {
 
     @Override
@@ -33,6 +34,7 @@ public class GearCommands implements TabExecutor {
 
                     if (item instanceof AbstractGears) {
                         AbstractGears gear = (AbstractGears) item;
+
                         player.sendMessage(Utils.colorTranslator(item.getItemName() + ": &e" +
                                 pdc.get(gear.getDefaultUsageKey(), PersistentDataType.INTEGER)) +
                                 "/" +
@@ -45,25 +47,28 @@ public class GearCommands implements TabExecutor {
 
             if (args[0].equalsIgnoreCase("levelupgears")) {
                 if(!player.hasPermission("fngear.levelupgears")){
-                    player.sendMessage(Utils.colorTranslator("你没有权限! 需要权限: fngear.levelupgears"));
+                    Utils.sendMessage("你没有权限! 需要权限: fngear.levelupgears", player);
+
                     return true;
                 }
 
-                for (ItemStack itemStack : player.getInventory().getArmorContents()) {
+                for(ItemStack itemStack : player.getInventory().getArmorContents()) {
                     if (itemStack != null) {
                         SlimefunItem item = SlimefunItem.getByItem(itemStack);
                         ItemMeta meta = itemStack.getItemMeta();
                         List<String> lore = meta.getLore();
                         PersistentDataContainer progress = meta.getPersistentDataContainer();
 
-                        if (item instanceof AbstractGears) {
+                        if(item instanceof AbstractGears) {
                             AbstractGears fnGear = (AbstractGears) item;
+                            
                             int armorLevel = progress.getOrDefault(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER, 0);
                             int maxReq = progress.getOrDefault(fnGear.getDefaultUsageKey3(), PersistentDataType.INTEGER, fnGear.getStartingProgress());
 
                             fnGear.getGearTask().levelUpArmour(armorLevel, maxReq, maxReq, itemStack, meta, progress, lore, player);
-                            player.sendMessage(Utils.colorTranslator("&6成功升级了装备 " + fnGear.getItemName() + " &6到 " +
-                                    progress.get(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER)) + " 级");
+                            
+                            Utils.sendMessage("&6成功升级了装备 " + fnGear.getItemName() + " &6到 " +
+                                progress.get(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER), player + " 级");
 
                             fnGear.upgradeArmor(itemStack, progress.getOrDefault(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER, 0), player, fnGear.getEquipmentSlot());
                         }
@@ -78,6 +83,7 @@ public class GearCommands implements TabExecutor {
     @Override
     public List<String> onTabComplete(@Nonnull CommandSender sender, @Nonnull Command command, @Nonnull String alias, String[] args) {
         List<String> levelUpArg = new ArrayList<>();
+        
         if(args.length == 1){
             levelUpArg.add("levelUpGears");
         }

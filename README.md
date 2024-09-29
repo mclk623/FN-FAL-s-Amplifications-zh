@@ -9,7 +9,7 @@
 
 这是一个Slimefun附加模组，为您的服务器添加了不同类型的物品和更多内容！从太阳能电池板、机器、方块破坏器、齿轮、法杖等等！玩家可以在游戏中尝试制作更多物品，等待着他们自己的探索和制作。在合成方面，它与InfinityXpansion和LiteXpansion的难度水平相匹配。快来探索FN的增强功能吧！
 
-此附加模组支持Minecraft版本1.16.x、1.17.x、1.18.x、1.19.x和1.20.x
+此附加模组支持Minecraft版本1.16.x、1.17.x、1.18.x、1.19.x、1.20.x和1.21.x
 
 ## 💡 特点
 - **PowerXpansion** - 12种新的电力发生器，带有全息图（可切换），与LiteXpansion的物品整合为合成配方！
@@ -59,7 +59,7 @@ You can change them if you think they need balancing or for several reasons
 
 ## 💖 Support the Project/Dev
 I develop stuff for free with dedication and hard work. Sharing this project with fellow minecraft gamers/server owners or giving it a star is a huge sign of appreciation!</br>
-a donation button (currently using parent's paypal due to my pending account requirements).<br/>
+Donations are welcome but not required. 💖<br/>
 <a href="https://www.paypal.com/paypalme/ameliaOrbeta" target=_blank>
   <img src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" width="40%" />
 </a>
