@@ -85,7 +85,7 @@ jobs:
             javaVersion: '21'  
     
     steps:        
-      - uses: buiawpkgew1/minecraft-plugin-runtime-test@v1.1.5
+      - uses: buiawpkgew1/minecraft-plugin-runtime-test@v1.1.6
         with:
           server-version: ${{ matrix.mcVersion }}
           java-version: ${{ matrix.javaVersion }}
