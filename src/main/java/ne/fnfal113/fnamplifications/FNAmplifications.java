@@ -40,13 +40,6 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
 
         new Metrics(this, 13219);
 
-        if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-            getLogger().log(Level.SEVERE, "从此处下载: https://50l.cc/gzlib");
-            getServer().getPluginManager().disablePlugin(this);
-            return;
-        }
-
         getLogger().info("************************************************************");
         getLogger().info("              FN Amplifications - FN 科技                   ");
         getLogger().info("           作者: FN_FAL113  汉化: lroj,haiman233,SlimefunGuguProject       ");
