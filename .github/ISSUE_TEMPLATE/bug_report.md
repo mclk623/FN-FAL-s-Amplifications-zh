@@ -1,41 +1,41 @@
 ---
-name: Bug report
-about: Create a bug report to improve this addon
+name: 错误报告
+about: 创建一个错误报告以改善此附加组件
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**描述错误**
+清晰简明地描述错误是什么。
 
-**To Reproduce (Important)**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**重现步骤（重要）**
+重现行为的步骤：
+1. 转到 '...'
+2. 点击 '....'
+3. 向下滚动到 '....'
+4. 查看错误
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**预期行为**
+清晰简明地描述你期望发生的事情。
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**截图**
+如果适用，添加截图以帮助解释你的问题。
 
-**Server Log**
-<!-- Take a look at your Server Log and post any errors you can find via https://pastebin.com/ -->
-<!-- If you are unsure about it, post your full log, you can find it under /logs/latest.log -->
-<!-- Start writing below this line -->
+**服务器日志**
+<!-- 查看你的服务器日志并发布你在 https://pastebin.com/ 上找到的任何错误 -->
+<!-- 如果你不确定，请发布完整日志，可以在 /logs/latest.log 下找到 -->
+<!-- 从这一行开始写 -->
 
-**Environment (REQUIRED)**
-<!-- Any info without the exact version numbers will be closed! -->
-<!-- "latest" IS NOT A VERSION NUMBER. -->
-<!-- We recommend running "/sf versions" and showing us a screenshot of that. -->
-<!-- Make sure that the screenshot covers the entire output of that command. -->
-<!-- If your issue is related to other plugins, make sure to include the versions of these plugins too! -->
+**环境（必填）**
+<!-- 任何没有确切版本号的信息将被关闭！ -->
+<!-- “最新”并不是一个版本号。 -->
+<!-- 我们建议运行 "/sf versions" 并向我们展示该命令的截图。 -->
+<!-- 确保截图涵盖该命令的全部输出。 -->
+<!-- 如果你的问题与其他插件有关，请确保也包括这些插件的版本！ -->
 
- - Server Software and Version (Spigot/Paper):
- - Minecraft version:
- - Slimefun version:
- - FNAmplification version:
+ - 服务器软件和版本（Spigot/Paper）：
+ - Minecraft 版本：
+ - Slimefun 版本：
+ - FNAmplification 版本：
