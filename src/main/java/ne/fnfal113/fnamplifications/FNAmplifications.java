@@ -4,17 +4,18 @@ import javax.annotation.Nonnull;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.bakedlibs.dough.updater.BlobBuildUpdater;
+
 import ne.fnfal113.fnamplifications.config.ConfigManager;
 import ne.fnfal113.fnamplifications.gears.commands.GearCommands;
 import ne.fnfal113.fnamplifications.gears.runnables.ArmorEquipRunnable;
 import ne.fnfal113.fnamplifications.integrations.VaultIntegration;
 import ne.fnfal113.fnamplifications.test.ShockwaveTest;
+import ne.fnfal113.fnamplifications.items.FNAmpItemSetup;
 import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
+
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import ne.fnfal113.fnamplifications.items.FNAmpItemSetup;
 
 import java.util.Objects;
 import java.util.logging.Level;
@@ -65,13 +66,15 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
     }
 
     @Override
-    public void onDisable(){
+    public void onDisable() {
         Bukkit.getScheduler().cancelTasks(FNAmplifications.getInstance());
+
         getLogger().log(Level.INFO, "已取消所有正在执行的任务");
     }
 
-    public void registerCommands(){
+    public void registerCommands() {
         Objects.requireNonNull(getCommand("fngear")).setExecutor(new GearCommands());
+
         getCommand("fnshockwavetest").setExecutor(new ShockwaveTest());
     }
 
@@ -86,7 +89,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         return "https://github.com/SlimefunGuguProject/FN-FAL-s-Amplifications";
     }
 
-    public ConfigManager getConfigManager(){
+    public ConfigManager getConfigManager() {
         return instance.configManager;
     }
 

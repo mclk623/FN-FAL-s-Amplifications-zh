@@ -1,7 +1,7 @@
 package ne.fnfal113.fnamplifications.gems.implementation;
 
-import lombok.Getter;
 import ne.fnfal113.fnamplifications.utils.Utils;
+
 import org.bukkit.Location;
 import org.bukkit.Sound;
 import org.bukkit.entity.ArmorStand;
@@ -16,16 +16,12 @@ import org.bukkit.util.Vector;
  */
 public class ReturnWeaponTask extends BukkitRunnable {
 
-    @Getter
     private final Player player;
 
-    @Getter
     private final ItemStack itemStack;
     
-    @Getter
     private final ArmorStand armorStand;
 
-    @Getter
     private final boolean isTriWeapon;
 
     public ReturnWeaponTask(Player player, ItemStack itemStack, ArmorStand armorStand, boolean isTriWeapon) {
@@ -84,22 +80,28 @@ public class ReturnWeaponTask extends BukkitRunnable {
         // drop the item if the distance between player and throwable is 150 blocks away
         if(distanceBetween(asLocation, pLocation) > 150) {
             Location dropLoc = dropItem(asLocation);
-            getPlayer().sendMessage(Utils.colorTranslator("&c武器未能退还, 因为你离得太远了!"));
-            getPlayer().sendMessage(Utils.colorTranslator("&c它掉落在了坐标 &e" +
-                    "[" + (int) dropLoc.getX() + ", " + (int) dropLoc.getY() + ", " + (int) dropLoc.getZ()) + "]");
+
+            Utils.sendMessage("Weapon has not been returned because you're too far!", getPlayer());
+
+            getPlayer().sendMessage(Utils.colorTranslator("&cit was dropped at: &e" +
+                    "x: " + (int) dropLoc.getX() + ", " +
+                    "y: " + (int) dropLoc.getY() + ", " +
+                    "z: " + (int) dropLoc.getZ()));
 
             stopTask();
         }
 
         if(distanceBetween(asLocation, pLocation) < 0.5) {
-            if(getPlayer().getInventory().firstEmpty() == -1){
-                getPlayer().sendMessage(Utils.colorTranslator("&e你的背包已满! 武器将会掉落在地上"));
+            if(getPlayer().getInventory().firstEmpty() == -1) {
+                Utils.sendMessage("Inventory full! dropped the item instead", getPlayer());
+                
                 dropItem(pLocation);
             } else {
                 getPlayer().getInventory().addItem(getItemStack().clone());
             }
 
             getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_ITEM_PICKUP, 1.0F, 1.0F);
+            
             stopTask();
         }
     }
@@ -121,5 +123,21 @@ public class ReturnWeaponTask extends BukkitRunnable {
         this.cancel();
 
         getArmorStand().remove();
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public ItemStack getItemStack() {
+        return itemStack;
+    }
+
+    public ArmorStand getArmorStand() {
+        return armorStand;
+    }
+
+    public boolean isTriWeapon() {
+        return isTriWeapon;
     }
 }
