@@ -24,7 +24,10 @@ jobs:
         java-version: 17
         
     - name: Maven Build
-      run: mvn clean package --file pom.xml
+      run: |
+        mvn -v
+        mvn dependency:tree
+        mvn clean package --file pom.xml
       
     - name: Upload the artifact
       uses: actions/upload-artifact@v3
