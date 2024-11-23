@@ -83,6 +83,16 @@
                     </relocations>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <outputEncoding>UTF-8</outputEncoding>
+                    <defaultLocale>zh_CN</defaultLocale>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
