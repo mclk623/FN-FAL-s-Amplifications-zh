@@ -21,7 +21,7 @@ public class RepairItem extends AbstractUpgrades {
     private final boolean breakOverTime = FNAmplifications.getInstance().getConfig().getBoolean("Enable-Mat-Gen-Break-Over-Time", true);
 
     public RepairItem(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
-        super(itemGroup, item, recipeType, recipe, Utils.colorTranslator("&aMaterial Generator repair successful!"));
+        super(itemGroup, item, recipeType, recipe, Utils.colorTranslator("&a材料发生器修复成功!"));
     }
 
     @Override
@@ -32,7 +32,7 @@ public class RepairItem extends AbstractUpgrades {
         int addCondition = 20;
 
         if(generatorCondition == 100) {
-            player.sendMessage(Utils.colorTranslator("&6Cannot repair! material generator in good condition!"));
+            player.sendMessage(Utils.colorTranslator("&6无法修复！材料发生器状况良好!"));
             
             return false;
         }

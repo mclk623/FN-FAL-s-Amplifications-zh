@@ -25,7 +25,7 @@ public class FastProduce extends AbstractUpgrades {
         String blockInfo = BlockStorage.getLocationInfo(sfBlock.getLocation(), "fast_produce_multiplier");
 
         if(blockInfo != null && Double.parseDouble(BlockStorage.getLocationInfo(sfBlock.getLocation(), "fast_produce_multiplier")) > 0){
-            Utils.sendMessage("This material generator still has fast produce upgrade!", player);
+            Utils.sendMessage("这个材料生成器仍然有快速的生产升级!", player);
 
             return false;
         }
