@@ -23,7 +23,6 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Set;
 
-
 public class HoeTask {
 
     private static Material GRASS_PATH = Material.matchMaterial("GRASS_PATH");
@@ -37,8 +36,38 @@ public class HoeTask {
         
         MAT.addAll(Tag.FLOWERS.getValues());
         MAT.addAll(Tag.SMALL_FLOWERS.getValues());
-        MAT.addAll(Tag.TALL_FLOWERS.getValues());
         MAT.addAll(Tag.SAPLINGS.getValues());
+        
+        // 处理 TALL_FLOWERS 标签的兼容性问题
+        try {
+            // 尝试获取 TALL_FLOWERS 标签（适用于较旧版本）
+            MAT.addAll(Tag.TALL_FLOWERS.getValues());
+        } catch (NoSuchFieldError e) {
+            // 如果 TALL_FLOWERS 不存在，手动添加高花材料（适用于 1.21.8）
+            addTallFlowersManually();
+        }
+    }
+
+    // 手动添加高花材料的方法
+    private static void addTallFlowersManually() {
+        try {
+            // 尝试添加所有可能的高花材料
+            Set<Material> tallFlowers = new HashSet<>();
+            
+            // 向日葵
+            tallFlowers.add(Material.SUNFLOWER);
+            // 丁香
+            tallFlowers.add(Material.LILAC);
+            // 玫瑰丛
+            tallFlowers.add(Material.ROSE_BUSH);
+            // 牡丹
+            tallFlowers.add(Material.PEONY);
+            
+            MAT.addAll(tallFlowers);
+        } catch (Exception e) {
+            // 如果添加失败，记录错误但继续运行
+            Bukkit.getLogger().warning("[FNAmplifications] Failed to add tall flowers manually: " + e.getMessage());
+        }
     }
 
     private final Set<Material> dirtBlocks = EnumSet.of(
@@ -143,5 +172,4 @@ public class HoeTask {
 
         return integers;
     }
-
 }
