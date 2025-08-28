@@ -3,8 +3,6 @@ name: Build with Maven and Do Runtime Test
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -80,9 +78,19 @@ jobs:
           - mcVersion: '1.21.1'
             javaVersion: '22'
           - mcVersion: '1.20.4'
-            javaVersion: '21'  
+            javaVersion: '21'
           - mcVersion: '1.21'
-            javaVersion: '21'  
+            javaVersion: '21'
+          - mcVersion: '1.21.1'
+            javaVersion: '21'
+          - mcVersion: '1.21.5'
+            javaVersion: '21'
+          - mcVersion: '1.21.6'
+            javaVersion: '21'
+          - mcVersion: '1.21.7'
+            javaVersion: '21'
+          - mcVersion: '1.21.8'
+            javaVersion: '21'
     
     steps:        
       - uses: buiawpkgew1/minecraft-plugin-runtime-test@v1.1.6

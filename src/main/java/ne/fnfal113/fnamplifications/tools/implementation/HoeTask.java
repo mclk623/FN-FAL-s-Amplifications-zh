@@ -34,10 +34,10 @@ public class HoeTask {
         if (Slimefun.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_17)) {
             GRASS_PATH = Material.DIRT_PATH;
         }
-        
+
         MAT.addAll(Tag.FLOWERS.getValues());
         MAT.addAll(Tag.SMALL_FLOWERS.getValues());
-        MAT.addAll(Tag.TALL_FLOWERS.getValues());
+//        MAT.addAll(Tag.TALL_FLOWERS.getValues());
         MAT.addAll(Tag.SAPLINGS.getValues());
     }
 
