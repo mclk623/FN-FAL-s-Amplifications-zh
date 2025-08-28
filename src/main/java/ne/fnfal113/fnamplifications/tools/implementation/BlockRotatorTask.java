@@ -66,7 +66,7 @@ public class BlockRotatorTask {
 
         if(player.isSneaking()) {
             if(Tag.DOORS.isTagged(block.getType()) || Tag.FENCES.isTagged(block.getType()) ||
-                    Tag.FLOWERS.isTagged(block.getType())){
+                    Tag.TALL_FLOWERS.isTagged(block.getType())){
                 return;
             }
 
