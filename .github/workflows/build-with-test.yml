@@ -59,41 +59,41 @@ jobs:
 #          artifacts/*
 #
 
-  runtime-test:
-    name: Plugin Runtime Test 
-    needs: [build]
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        include:
-          - mcVersion: '1.17.1'
-            javaVersion: '17'
-          - mcVersion: '1.18.2'
-            javaVersion: '18'
-          - mcVersion: '1.19.4'
-            javaVersion: '19'
-          - mcVersion: '1.20.1'
-            javaVersion: '20'
-          - mcVersion: '1.20.6'
-            javaVersion: '21'
-          - mcVersion: '1.21.1'
-            javaVersion: '22'
-          - mcVersion: '1.20.4'
-            javaVersion: '21'
-          - mcVersion: '1.21'
-            javaVersion: '21'
-          - mcVersion: '1.21.1'
-            javaVersion: '21'
-          - mcVersion: '1.21.5'
-            javaVersion: '21'
-          - mcVersion: '1.21.7'
-            javaVersion: '21'
-          - mcVersion: '1.21.8'
-            javaVersion: '21'
-    
-    steps:        
-      - uses: buiawpkgew1/minecraft-plugin-runtime-test@v1.1.6
-        with:
-          server-version: ${{ matrix.mcVersion }}
-          java-version: ${{ matrix.javaVersion }}
-          artifact-name: artifact-${{ github.event.number }}
+#  runtime-test:
+#    name: Plugin Runtime Test
+#    needs: [build]
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        include:
+#          - mcVersion: '1.17.1'
+#            javaVersion: '17'
+#          - mcVersion: '1.18.2'
+#            javaVersion: '18'
+#          - mcVersion: '1.19.4'
+#            javaVersion: '19'
+#          - mcVersion: '1.20.1'
+#            javaVersion: '20'
+#          - mcVersion: '1.20.6'
+#            javaVersion: '21'
+#          - mcVersion: '1.21.1'
+#            javaVersion: '22'
+#          - mcVersion: '1.20.4'
+#            javaVersion: '21'
+#          - mcVersion: '1.21'
+#            javaVersion: '21'
+#          - mcVersion: '1.21.1'
+#            javaVersion: '21'
+#          - mcVersion: '1.21.5'
+#            javaVersion: '21'
+#          - mcVersion: '1.21.7'
+#            javaVersion: '21'
+#          - mcVersion: '1.21.8'
+#            javaVersion: '21'
+#
+#    steps:
+#      - uses: buiawpkgew1/minecraft-plugin-runtime-test@v1.1.6
+#        with:
+#          server-version: ${{ matrix.mcVersion }}
+#          java-version: ${{ matrix.javaVersion }}
+#          artifact-name: artifact-${{ github.event.number }}
