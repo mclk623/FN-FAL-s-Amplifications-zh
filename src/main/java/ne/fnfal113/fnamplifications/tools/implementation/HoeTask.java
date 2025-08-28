@@ -3,11 +3,9 @@ package ne.fnfal113.fnamplifications.tools.implementation;
 import io.github.thebusybiscuit.slimefun4.api.MinecraftVersion;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
-
 import ne.fnfal113.fnamplifications.FNAmplifications;
 import ne.fnfal113.fnamplifications.utils.Utils;
 import ne.fnfal113.fnamplifications.utils.compatibility.VersionedMaterial;
-
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Tag;
@@ -17,11 +15,7 @@ import org.bukkit.block.data.Ageable;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.EnumSet;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Set;
+import java.util.*;
 
 
 public class HoeTask {
@@ -37,8 +31,34 @@ public class HoeTask {
 
         MAT.addAll(Tag.FLOWERS.getValues());
         MAT.addAll(Tag.SMALL_FLOWERS.getValues());
-//        MAT.addAll(Tag.TALL_FLOWERS.getValues());
+        try {
+            MAT.addAll(Tag.TALL_FLOWERS.getValues());
+        } catch (NoSuchFieldError e) {
+            addTallFlowersManually();
+        }
+
         MAT.addAll(Tag.SAPLINGS.getValues());
+    }
+
+    private static void addTallFlowersManually() {
+        try {
+            // 尝试添加所有可能的高花材料
+            Set<Material> tallFlowers = new HashSet<>();
+
+            // 向日葵
+            tallFlowers.add(Material.SUNFLOWER);
+            // 丁香
+            tallFlowers.add(Material.LILAC);
+            // 玫瑰丛
+            tallFlowers.add(Material.ROSE_BUSH);
+            // 牡丹
+            tallFlowers.add(Material.PEONY);
+
+            MAT.addAll(tallFlowers);
+        } catch (Exception e) {
+            // 如果添加失败，记录错误但继续运行
+            Bukkit.getLogger().warning("[FNAmplifications] Failed to add tall flowers manually: " + e.getMessage());
+        }
     }
 
     private final Set<Material> dirtBlocks = EnumSet.of(
