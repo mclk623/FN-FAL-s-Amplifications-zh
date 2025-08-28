@@ -85,8 +85,6 @@ jobs:
             javaVersion: '21'
           - mcVersion: '1.21.5'
             javaVersion: '21'
-          - mcVersion: '1.21.6'
-            javaVersion: '21'
           - mcVersion: '1.21.7'
             javaVersion: '21'
           - mcVersion: '1.21.8'
